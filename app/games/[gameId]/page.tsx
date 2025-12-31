@@ -40,10 +40,15 @@ interface GameData {
   header: {
     competitions: Array<{
       competitors: Array<{
-        team: TeamStats & { record: string };
+        team: TeamStats;
         score: string;
         homeAway: string;
         winner?: boolean;
+        record: Array<{
+          type: string;
+          summary: string;
+          displayValue: string;
+        }>;
       }>;
       status: {
         type: {
@@ -142,6 +147,12 @@ export default function GamePage() {
     return null;
   }
 
+  // Helper to get total record from record array
+  const getRecord = (competitor: typeof awayTeam) => {
+    const totalRecord = competitor.record?.find(r => r.type === 'total');
+    return totalRecord?.displayValue || '';
+  };
+
   // Get box score stats columns
   const statColumns = ['MIN', 'FG', '3PT', 'FT', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS'];
 
@@ -203,8 +214,8 @@ export default function GamePage() {
                 <h2 className="text-3xl font-black text-gray-900 mb-1">
                   {awayTeam.team.displayName}
                 </h2>
-                <p className="text-sm text-gray-500 font-medium">
-                  {awayTeam.team.record}
+                <p className="text-xs text-gray-500 font-medium">
+                  {getRecord(awayTeam)}
                 </p>
               </div>
             </div>
@@ -253,8 +264,8 @@ export default function GamePage() {
                 <h2 className="text-3xl font-black text-gray-900 mb-1">
                   {homeTeam.team.displayName}
                 </h2>
-                <p className="text-sm text-gray-500 font-medium">
-                  {homeTeam.team.record}
+                <p className="text-xs text-gray-500 font-medium">
+                  {getRecord(homeTeam)}
                 </p>
               </div>
             </div>
