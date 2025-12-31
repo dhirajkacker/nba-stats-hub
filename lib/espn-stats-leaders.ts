@@ -39,15 +39,26 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
   try {
     const url = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}`;
 
+    console.log(`Fetching player ${playerId}...`);
+
     const response = await fetch(url, {
-      next: { revalidate: 1800 },
+      cache: 'no-store', // Don't cache in API routes
     });
 
-    if (!response.ok) return null;
+    if (!response.ok) {
+      console.log(`Failed to fetch player ${playerId}: ${response.status}`);
+      return null;
+    }
 
     const data = await response.json();
     const athlete = data.athlete;
-    const stats = athlete?.statsSummary?.statistics || [];
+
+    if (!athlete) {
+      console.log(`No athlete data for player ${playerId}`);
+      return null;
+    }
+
+    const stats = athlete.statsSummary?.statistics || [];
 
     const getStat = (name: string): number => {
       const stat = stats.find((s: any) => s.name === name);
@@ -58,8 +69,13 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 
     const gamesPlayed = getStat('gamesPlayed');
 
+    console.log(`Player ${playerId} (${athlete.displayName}): ${gamesPlayed} games, ${getStat('avgPoints')} PPG`);
+
     // Skip players who haven't played
-    if (gamesPlayed === 0) return null;
+    if (gamesPlayed === 0) {
+      console.log(`Skipping ${athlete.displayName} - 0 games played`);
+      return null;
+    }
 
     return {
       id: athlete.id,
@@ -89,6 +105,7 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
       },
     };
   } catch (error) {
+    console.error(`Error fetching player ${playerId}:`, error);
     return null;
   }
 }
