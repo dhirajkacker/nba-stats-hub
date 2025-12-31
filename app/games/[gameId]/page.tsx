@@ -203,8 +203,8 @@ export default function GamePage() {
                 <h2 className="text-3xl font-black text-gray-900 mb-1">
                   {awayTeam.team.displayName}
                 </h2>
-                <p className="text-lg text-gray-600">
-                  {awayTeam.team.abbreviation} • {awayTeam.team.record}
+                <p className="text-sm text-gray-500 font-medium">
+                  {awayTeam.team.record}
                 </p>
               </div>
             </div>
@@ -253,8 +253,8 @@ export default function GamePage() {
                 <h2 className="text-3xl font-black text-gray-900 mb-1">
                   {homeTeam.team.displayName}
                 </h2>
-                <p className="text-lg text-gray-600">
-                  {homeTeam.team.abbreviation} • {homeTeam.team.record}
+                <p className="text-sm text-gray-500 font-medium">
+                  {homeTeam.team.record}
                 </p>
               </div>
             </div>
