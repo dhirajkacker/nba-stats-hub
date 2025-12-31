@@ -40,74 +40,15 @@ function getCurrentSeason(): string {
 
 /**
  * Fetch NBA scoreboard for a specific date with live scores
- * Revalidates every 30 seconds for real-time updates
- * @param date - Optional date string in YYYY-MM-DD format. Defaults to today.
+ * Always uses ESPN API to avoid timezone issues with NBA.com
+ * @param date - Optional date string in YYYY-MM-DD format. Defaults to server's today.
  */
 export async function getScoreboard(date?: string): Promise<Scoreboard | null> {
   const dateString = date || getTodayDateString();
-  const todayString = getTodayDateString();
-
   console.log('getScoreboard() called for date:', dateString);
 
-  // If requesting a date other than today, use ESPN API directly
-  // because NBA.com's todaysScoreboard_00.json only has today's games
-  if (dateString !== todayString) {
-    console.log('Fetching non-today date, using ESPN API for:', dateString);
-    return await getESPNScoreboard(dateString);
-  }
-
-  // For today's games, try NBA.com first, then fall back to ESPN
-  try {
-    const url = `${NBA_BASE_URL}/static/json/liveData/scoreboard/todaysScoreboard_00.json`;
-    console.log('Attempting to fetch from NBA.com:', url);
-
-    const response = await fetch(url, {
-      cache: 'no-store', // Disable caching for real-time data
-      headers: commonHeaders,
-    });
-
-    console.log('NBA.com scoreboard response status:', response.status);
-
-    if (!response.ok) {
-      console.log('NBA.com scoreboard API failed, falling back to ESPN API');
-      return await getESPNScoreboard(dateString);
-    }
-
-    const data = await response.json();
-
-    console.log('NBA.com data structure:', Object.keys(data));
-    console.log('NBA.com scoreboard games count:', data.scoreboard?.games?.length);
-
-    if (data.scoreboard?.games && data.scoreboard.games.length > 0) {
-      console.log('Sample NBA.com game:', JSON.stringify(data.scoreboard.games[0]).substring(0, 500));
-    }
-
-    // Transform NBA.com format to match our types
-    const games = (data.scoreboard?.games || []).map((game: any) => ({
-      ...game,
-      // NBA.com returns gameStatus as a number, but our types expect an object
-      // Preserve both nested and top-level properties for compatibility
-      period: game.period,
-      gameClock: game.gameClock || '',
-      gameStatus: {
-        status: game.gameStatus,
-        statusText: game.gameStatusText || '',
-        period: game.period || 0,
-        gameClock: game.gameClock || '',
-        displayClock: game.gameClock || '',
-      }
-    }));
-
-    console.log('Transformed games count:', games.length);
-
-    return {
-      gameDate: data.scoreboard?.gameDate || dateString,
-      games,
-    };
-  } catch (error) {
-    console.error('Error fetching NBA.com scoreboard, trying ESPN:', error);
-    return await getESPNScoreboard(dateString);
-  }
+  // Use ESPN API for all dates to ensure consistent handling
+  return await getESPNScoreboard(dateString);
 }
 
 /**
@@ -119,63 +60,23 @@ export async function getTodayScoreboard(): Promise<Scoreboard | null> {
 
 /**
  * Fetch NBA scoreboard for API routes (without Next.js cache options)
- * @param date - Optional date string in YYYY-MM-DD format. Defaults to today.
+ * Always uses ESPN API to ensure consistent date handling regardless of server timezone
+ * @param date - Optional date string in YYYY-MM-DD format. Uses client's date if not provided.
  */
 export async function getScoreboardForAPI(date?: string): Promise<Scoreboard | null> {
-  const dateString = date || getTodayDateString();
-  const todayString = getTodayDateString();
-
-  console.log('getScoreboardForAPI() called for date:', dateString);
-
-  // If requesting a date other than today, use ESPN API directly
-  if (dateString !== todayString) {
-    console.log('Fetching non-today date, using ESPN API for:', dateString);
-    return await getESPNScoreboard(dateString);
+  // If no date provided, we can't determine client's date server-side
+  // Client should always pass the date explicitly
+  if (!date) {
+    console.warn('getScoreboardForAPI called without date parameter - this should not happen');
+    // Fallback to ESPN with undefined date (ESPN will use its own "today")
+    return await getESPNScoreboard(undefined);
   }
 
-  // For today's games, try NBA.com first, then fall back to ESPN
-  try {
-    const url = `${NBA_BASE_URL}/static/json/liveData/scoreboard/todaysScoreboard_00.json`;
-    console.log('Attempting to fetch from NBA.com (API route):', url);
+  console.log('getScoreboardForAPI() called for date:', date);
 
-    const response = await fetch(url, {
-      headers: commonHeaders,
-    });
-
-    console.log('NBA.com scoreboard response status:', response.status);
-
-    if (!response.ok) {
-      console.log('NBA.com scoreboard API failed, falling back to ESPN API');
-      return await getESPNScoreboard(dateString);
-    }
-
-    const data = await response.json();
-
-    // Transform NBA.com format to match our types
-    const games = (data.scoreboard?.games || []).map((game: any) => ({
-      ...game,
-      // Preserve both nested and top-level properties for compatibility
-      period: game.period,
-      gameClock: game.gameClock || '',
-      gameStatus: {
-        status: game.gameStatus,
-        statusText: game.gameStatusText || '',
-        period: game.period || 0,
-        gameClock: game.gameClock || '',
-        displayClock: game.gameClock || '',
-      }
-    }));
-
-    console.log('Transformed games count:', games.length);
-
-    return {
-      gameDate: data.scoreboard?.gameDate || dateString,
-      games,
-    };
-  } catch (error) {
-    console.error('Error fetching NBA.com scoreboard, trying ESPN:', error);
-    return await getESPNScoreboard(dateString);
-  }
+  // Always use ESPN API for consistent date handling
+  // This avoids timezone mismatches between server and client
+  return await getESPNScoreboard(date);
 }
 
 /**

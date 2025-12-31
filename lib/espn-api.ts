@@ -7,16 +7,28 @@ const ESPN_BASE_URL = 'https://site.api.espn.com/apis/site/v2/sports/basketball/
 
 /**
  * Fetch scoreboard from ESPN for a specific date
- * @param date - Date string in YYYY-MM-DD format. Defaults to today.
+ * @param date - Date string in YYYY-MM-DD format (REQUIRED for correct timezone handling)
  */
 export async function getESPNScoreboard(date?: string): Promise<Scoreboard | null> {
   try {
-    // Convert date to YYYYMMDD format for ESPN
-    const dateObj = date ? new Date(date + 'T00:00:00') : new Date();
-    const dateString = dateObj.toISOString().split('T')[0].replace(/-/g, '');
+    // Format date as YYYYMMDD for ESPN API
+    // Use the date string directly to avoid timezone conversion issues
+    let dateString: string;
+    if (date) {
+      // Remove hyphens from YYYY-MM-DD to get YYYYMMDD
+      dateString = date.replace(/-/g, '');
+    } else {
+      // Fallback only - client should always provide date
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      dateString = `${year}${month}${day}`;
+      console.warn('ESPN API called without date - using server date:', dateString);
+    }
 
     const url = `${ESPN_BASE_URL}/scoreboard?dates=${dateString}`;
-    console.log('Fetching from ESPN scoreboard:', url, 'for date:', dateString);
+    console.log('Fetching from ESPN scoreboard:', url, 'for input date:', date, 'formatted:', dateString);
 
     const response = await fetch(url, {
       next: { revalidate: 30 },
