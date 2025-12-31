@@ -111,62 +111,82 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 }
 
 /**
- * Fetch top NBA players by points per game from ESPN
+ * Extract athlete ID from ESPN API $ref URL
+ * Example: "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2026/athletes/3945274?lang=en&region=us"
+ * Returns: "3945274"
+ */
+function extractAthleteId(refUrl: string): string | null {
+  const match = refUrl.match(/athletes\/(\d+)/);
+  return match ? match[1] : null;
+}
+
+/**
+ * Fetch top NBA players by points per game from ESPN Stats Leaders API
  * This provides real-time data with correct teams and current stats
+ * Dynamically fetches the current top scorers instead of using a hardcoded list
  */
 export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader[]> {
-  // Curated list of top NBA player IDs from ESPN
-  // These are the actual ESPN IDs for top performers
-  const topPlayerIds = [
-    '3059318', // Joel Embiid
-    '3112335', // Nikola Jokic
-    '3945274', // Luka Doncic (actual ESPN ID)
-    '3202', // Kevin Durant
-    '3975', // Stephen Curry
-    '1966', // LeBron James
-    '3032977', // Giannis Antetokounmpo
-    '4065648', // Jayson Tatum
-    '4278073', // Shai Gilgeous-Alexander
-    '6583', // Anthony Davis
-    '4277905', // Trae Young
-    '4431678', // Anthony Edwards
-    '4279888', // Ja Morant
-    '6606', // Damian Lillard
-    '3136193', // Devin Booker
-    '4066636', // Donovan Mitchell
-    '4065679', // De'Aaron Fox
-    '3917376', // Jaylen Brown
-    '2991043', // Kawhi Leonard
-    '6450', // Paul George (actual ESPN ID)
-    '4395628', // Zion Williamson
-    '4432816', // LaMelo Ball
-    '3136776', // Karl-Anthony Towns (actual ESPN ID)
-    '3147657', // Rudy Gobert
-    '4066421', // Brandon Ingram
-    '4277847', // Darius Garland
-    '4397020', // Jaren Jackson Jr
-    '1628389', // Bam Adebayo
-    '4433134', // Tyrese Haliburton
-    '3136777', // D'Angelo Russell
-  ];
+  try {
+    // Get current season year (ESPN uses 2026 for 2025-26 season)
+    const currentYear = new Date().getFullYear();
+    const seasonYear = currentYear + 1; // ESPN uses next year for current season
 
-  const players: ESPNStatsLeader[] = [];
+    // Fetch stats leaders from ESPN API
+    const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
+    console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
 
-  // Fetch players in parallel
-  const playerPromises = topPlayerIds.map(id => fetchPlayerById(id));
-  const results = await Promise.all(playerPromises);
+    const leadersResponse = await fetch(leadersUrl, {
+      cache: 'no-store',
+    });
 
-  for (const player of results) {
-    if (player) {
-      players.push(player);
+    if (!leadersResponse.ok) {
+      throw new Error(`Failed to fetch leaders: ${leadersResponse.status}`);
     }
+
+    const leadersData = await leadersResponse.json();
+
+    // Find the PPG category
+    const ppgCategory = leadersData.categories?.find(
+      (cat: any) => cat.abbreviation === 'PTS' || cat.name === 'pointsPerGame'
+    );
+
+    if (!ppgCategory || !ppgCategory.leaders) {
+      throw new Error('PPG leaders data not found in ESPN API response');
+    }
+
+    // Extract athlete IDs from the top leaders
+    const topLeaders = ppgCategory.leaders.slice(0, limit);
+    const athleteIds: string[] = [];
+
+    for (const leader of topLeaders) {
+      if (leader.athlete?.$ref) {
+        const athleteId = extractAthleteId(leader.athlete.$ref);
+        if (athleteId) {
+          athleteIds.push(athleteId);
+        }
+      }
+    }
+
+    console.log(`Found ${athleteIds.length} top scorers from ESPN leaders API`);
+
+    // Fetch detailed stats for each player in parallel
+    const players: ESPNStatsLeader[] = [];
+    const playerPromises = athleteIds.map(id => fetchPlayerById(id));
+    const results = await Promise.all(playerPromises);
+
+    for (const player of results) {
+      if (player) {
+        players.push(player);
+      }
+    }
+
+    console.log(`Successfully fetched ${players.length} players with complete stats`);
+    return players;
+  } catch (error) {
+    console.error('Error fetching top scorers from ESPN API:', error);
+    // Return empty array on error
+    return [];
   }
-
-  // Sort by PPG descending
-  players.sort((a, b) => (b.stats.ppg || 0) - (a.stats.ppg || 0));
-
-  console.log(`Fetched ${players.length} top players from ESPN individual pages`);
-  return players.slice(0, limit);
 }
 
 /**
