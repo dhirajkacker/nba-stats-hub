@@ -28,6 +28,8 @@ export interface TeamScore {
   score: number;
   inBonus: boolean;
   timeoutsRemaining: number;
+  wins?: number;
+  losses?: number;
 }
 
 export interface Game {
