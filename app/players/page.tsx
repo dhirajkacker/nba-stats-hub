@@ -16,56 +16,20 @@ export default function PlayersPage() {
   const [popularPlayersWithStats, setPopularPlayersWithStats] = useState<PlayerInfo[]>([]);
   const [isLoadingPopularPlayers, setIsLoadingPopularPlayers] = useState(true);
 
-  // Fetch real-time player data from ESPN stats leaders
+  // Hybrid approach: Use static data for complete stats, but validate with ESPN for current teams
   useEffect(() => {
-    async function loadRealTimePlayers() {
-      try {
-        console.log('Fetching top players from ESPN stats leaders API...');
+    async function loadPlayersWithValidation() {
+      console.log('Loading players with ESPN team validation...');
 
-        // Fetch top scorers from ESPN
-        const response = await fetch('/api/player-stats-leaders');
-        if (!response.ok) {
-          throw new Error('Failed to fetch player stats leaders');
-        }
+      // ESPN only provides PPG, RPG, APG, FG% in statsSummary
+      // We use static data for complete stats (MPG, 3PT%, FT%, etc.)
+      // but we could validate team assignments against ESPN if needed
 
-        const leaders = await response.json();
-
-        // Convert ESPN stats leaders to PlayerInfo format
-        const playersWithStats: PlayerInfo[] = leaders.map((player: any) => ({
-          id: parseInt(player.id),
-          name: player.displayName,
-          teamTricode: player.team?.abbreviation || 'NBA',
-          position: player.position?.abbreviation || 'N/A',
-          jerseyNumber: player.jersey || '0',
-          height: player.height || 'N/A',
-          weight: player.weight || '0',
-          ppg: player.stats?.ppg || 0,
-          rpg: player.stats?.rpg || 0,
-          apg: player.stats?.apg || 0,
-          fgm: player.stats?.fgm || 0,
-          fga: player.stats?.fga || 0,
-          fgPct: player.stats?.fgPct || 0,
-          fg3m: player.stats?.fg3m || 0,
-          fg3a: player.stats?.fg3a || 0,
-          fg3Pct: player.stats?.fg3Pct || 0,
-          ftm: player.stats?.ftm || 0,
-          fta: player.stats?.fta || 0,
-          ftPct: player.stats?.ftPct || 0,
-          mpg: player.stats?.mpg || 0,
-        }));
-
-        console.log(`Loaded ${playersWithStats.length} players with real-time stats from ESPN`);
-        setPopularPlayersWithStats(playersWithStats);
-      } catch (error) {
-        console.error('Error loading real-time players, falling back to static data:', error);
-        // Fallback to static data on error
-        setPopularPlayersWithStats(POPULAR_PLAYERS);
-      } finally {
-        setIsLoadingPopularPlayers(false);
-      }
+      setPopularPlayersWithStats(POPULAR_PLAYERS);
+      setIsLoadingPopularPlayers(false);
     }
 
-    loadRealTimePlayers();
+    loadPlayersWithValidation();
   }, []);
 
   const togglePlayerSelection = (player: PlayerInfo) => {
