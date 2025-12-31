@@ -50,6 +50,19 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
       const homeTeam = competition.competitors.find((c: any) => c.homeAway === 'home');
       const awayTeam = competition.competitors.find((c: any) => c.homeAway === 'away');
 
+      // Extract wins/losses from records
+      const getRecord = (competitor: any) => {
+        const recordStr = competitor.records?.[0]?.summary || '0-0';
+        const recordParts = recordStr.split('-');
+        return {
+          wins: parseInt(recordParts[0]) || 0,
+          losses: parseInt(recordParts[1]) || 0,
+        };
+      };
+
+      const homeRecord = getRecord(homeTeam);
+      const awayRecord = getRecord(awayTeam);
+
       // Map ESPN status to our status codes (1=scheduled, 2=live, 3=finished)
       let gameStatus = 1;
       if (competition.status.type.completed) {
@@ -79,6 +92,8 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
           score: parseInt(homeTeam.score) || 0,
           inBonus: false,
           timeoutsRemaining: 0,
+          wins: homeRecord.wins,
+          losses: homeRecord.losses,
         },
         awayTeam: {
           teamId: parseInt(awayTeam.team.id),
@@ -88,6 +103,8 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
           score: parseInt(awayTeam.score) || 0,
           inBonus: false,
           timeoutsRemaining: 0,
+          wins: awayRecord.wins,
+          losses: awayRecord.losses,
         },
         period: parseInt(competition.status.period) || 0,
         gameClock: competition.status.displayClock || '',
