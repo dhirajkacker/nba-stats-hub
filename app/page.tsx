@@ -1,30 +1,20 @@
-import { getTodayScoreboard, getStandings } from '@/lib/nba-api';
+import { getStandings } from '@/lib/nba-api';
 import LiveScores from '@/components/LiveScores';
 import StandingsTable from '@/components/StandingsTable';
+import ClientDate from '@/components/ClientDate';
 
 export default async function Home() {
   // Fetch data on the server with error handling
   console.log('Home page rendering, fetching data...');
 
-  let scoreboard = null;
   let standings = null;
 
   try {
-    [scoreboard, standings] = await Promise.all([
-      getTodayScoreboard(),
-      getStandings(),
-    ]);
-    console.log('Data fetched - Scoreboard:', scoreboard ? `${scoreboard.games.length} games` : 'null', 'Standings:', standings ? `${standings.standings.length} teams` : 'null');
+    standings = await getStandings();
+    console.log('Data fetched - Standings:', standings ? `${standings.standings.length} teams` : 'null');
   } catch (error) {
     console.error('Error fetching data:', error);
   }
-
-  const today = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
@@ -36,7 +26,7 @@ export default async function Home() {
               <h1 className="text-4xl font-black tracking-tight">
                 🏀 NBA Stats Hub
               </h1>
-              <p className="text-orange-200 mt-2 font-medium">{today}</p>
+              <ClientDate />
             </div>
             <div className="hidden md:flex items-center gap-4">
               <div className="bg-orange-500 bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-400">
@@ -77,7 +67,7 @@ export default async function Home() {
               NBA Games
             </h2>
           </div>
-          <LiveScores initialScoreboard={scoreboard} />
+          <LiveScores />
         </div>
 
       </main>

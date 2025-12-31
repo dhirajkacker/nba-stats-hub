@@ -5,7 +5,7 @@ import ScoreCard from './ScoreCard';
 import { Scoreboard } from '@/lib/types';
 
 interface LiveScoresProps {
-  initialScoreboard: Scoreboard | null;
+  initialScoreboard?: Scoreboard | null;
 }
 
 // Helper to format date as YYYY-MM-DD
@@ -40,8 +40,8 @@ function getDateDisplay(dateString: string): string {
 
 export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
   const [selectedDate, setSelectedDate] = useState<string>(formatDate(new Date()));
-  const [scoreboard, setScoreboard] = useState<Scoreboard | null>(initialScoreboard);
-  const [isLoading, setIsLoading] = useState(false);
+  const [scoreboard, setScoreboard] = useState<Scoreboard | null>(initialScoreboard || null);
+  const [isLoading, setIsLoading] = useState(!initialScoreboard);
   const [error, setError] = useState<string | null>(null);
 
   // Fetch scoreboard when date changes
