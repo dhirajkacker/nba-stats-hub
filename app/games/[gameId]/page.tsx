@@ -153,8 +153,13 @@ export default function GamePage() {
     return totalRecord?.displayValue || '';
   };
 
-  // Get box score stats columns - must match ESPN's stats array order
-  const statColumns = ['MIN', 'FG', '3PT', 'FT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', '+/-', 'PTS'];
+  // Define which stats to show and in what order (PTS first as requested)
+  // ESPN's actual order: ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-']
+  const displayOrder = ['PTS', 'MIN', 'FG', '3PT', 'FT', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', '+/-'];
+
+  // Map from ESPN's stat order to our display order
+  const espnStatOrder = ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-'];
+  const statIndices = displayOrder.map(stat => espnStatOrder.indexOf(stat));
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
@@ -305,7 +310,7 @@ export default function GamePage() {
                           Player
                         </th>
                         <th className="text-center py-3 px-2 font-bold text-gray-700">POS</th>
-                        {statColumns.map(col => (
+                        {displayOrder.map(col => (
                           <th key={col} className="text-center py-3 px-2 font-bold text-gray-700">
                             {col}
                           </th>
@@ -324,9 +329,9 @@ export default function GamePage() {
                           <td className="text-center py-3 px-2 text-gray-600 font-medium">
                             {player.athlete.position?.abbreviation}
                           </td>
-                          {player.stats.map((stat, statIdx) => (
-                            <td key={statIdx} className="text-center py-3 px-2 text-gray-900 font-medium">
-                              {stat}
+                          {statIndices.map((espnIdx, displayIdx) => (
+                            <td key={displayIdx} className="text-center py-3 px-2 text-gray-900 font-medium">
+                              {player.stats[espnIdx]}
                             </td>
                           ))}
                         </tr>
