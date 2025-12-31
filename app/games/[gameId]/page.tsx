@@ -153,8 +153,8 @@ export default function GamePage() {
     return totalRecord?.displayValue || '';
   };
 
-  // Get box score stats columns
-  const statColumns = ['MIN', 'FG', '3PT', 'FT', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS'];
+  // Get box score stats columns - must match ESPN's stats array order
+  const statColumns = ['MIN', 'FG', '3PT', 'FT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', '+/-', 'PTS'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
