@@ -16,20 +16,58 @@ export default function PlayersPage() {
   const [popularPlayersWithStats, setPopularPlayersWithStats] = useState<PlayerInfo[]>([]);
   const [isLoadingPopularPlayers, setIsLoadingPopularPlayers] = useState(true);
 
-  // Hybrid approach: Use static data for complete stats, but validate with ESPN for current teams
+  // Fetch real-time player data from ESPN API
+  // ESPN only provides: PPG, RPG, APG, FG% (no MPG, 3PT%, FT%)
   useEffect(() => {
-    async function loadPlayersWithValidation() {
-      console.log('Loading players with ESPN team validation...');
+    async function loadRealTimePlayers() {
+      try {
+        console.log('Fetching real-time top players from ESPN API...');
 
-      // ESPN only provides PPG, RPG, APG, FG% in statsSummary
-      // We use static data for complete stats (MPG, 3PT%, FT%, etc.)
-      // but we could validate team assignments against ESPN if needed
+        const response = await fetch('/api/player-stats-leaders');
+        if (!response.ok) {
+          throw new Error('Failed to fetch player stats leaders');
+        }
 
-      setPopularPlayersWithStats(POPULAR_PLAYERS);
-      setIsLoadingPopularPlayers(false);
+        const leaders = await response.json();
+
+        // Convert ESPN stats leaders to PlayerInfo format
+        // Only include stats that ESPN provides
+        const playersWithStats: PlayerInfo[] = leaders.map((player: any) => ({
+          id: parseInt(player.id),
+          name: player.displayName,
+          teamTricode: player.team?.abbreviation || 'NBA',
+          position: player.position?.abbreviation || 'N/A',
+          jerseyNumber: player.jersey || '0',
+          height: player.height || 'N/A',
+          weight: player.weight || '0',
+          ppg: player.stats?.ppg || 0,
+          rpg: player.stats?.rpg || 0,
+          apg: player.stats?.apg || 0,
+          fgPct: player.stats?.fgPct || 0,
+          // ESPN doesn't provide these - set to undefined
+          fg3Pct: undefined,
+          ftPct: undefined,
+          mpg: undefined,
+          fgm: undefined,
+          fga: undefined,
+          fg3m: undefined,
+          fg3a: undefined,
+          ftm: undefined,
+          fta: undefined,
+        }));
+
+        console.log(`Loaded ${playersWithStats.length} players with real-time ESPN data`);
+        setPopularPlayersWithStats(playersWithStats);
+      } catch (error) {
+        console.error('Error loading real-time players:', error);
+        // On error, show empty array rather than fallback
+        setPopularPlayersWithStats([]);
+      } finally {
+        setIsLoadingPopularPlayers(false);
+      }
     }
 
-    loadPlayersWithValidation();
+    loadRealTimePlayers();
   }, []);
 
   const togglePlayerSelection = (player: PlayerInfo) => {
@@ -312,23 +350,7 @@ export default function PlayersPage() {
                     ))}
                   </tr>
 
-                  {/* Shooting Stats */}
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">FG Made/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.fgm?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">FG Attempted/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.fga?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
+                  {/* Shooting Stats - Only FG% available from ESPN */}
                   <tr className="bg-orange-50 border-b border-gray-200">
                     <td className="py-2 px-4 font-bold text-orange-900 sticky left-0 bg-orange-50">FG%</td>
                     {selectedPlayers.map((player) => (
@@ -338,74 +360,6 @@ export default function PlayersPage() {
                         ) : (
                           player.fgPct !== undefined ? `${player.fgPct.toFixed(1)}%` : '-'
                         )}
-                      </td>
-                    ))}
-                  </tr>
-
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">3PT Made/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.fg3m?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">3PT Attempted/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.fg3a?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="bg-yellow-50 border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-yellow-900 sticky left-0 bg-yellow-50">3PT%</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 font-bold text-yellow-900">
-                        {loadingPlayers.has(player.id) ? (
-                          <span className="text-gray-400 text-xs">Loading...</span>
-                        ) : (
-                          player.fg3Pct !== undefined ? `${player.fg3Pct.toFixed(1)}%` : '-'
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">FT Made/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.ftm?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-gray-700 sticky left-0 bg-white">FT Attempted/Game</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 text-gray-900">
-                        {player.fta?.toFixed(1) || '-'}
-                      </td>
-                    ))}
-                  </tr>
-                  <tr className="bg-indigo-50 border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-indigo-900 sticky left-0 bg-indigo-50">FT%</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 font-bold text-indigo-900">
-                        {loadingPlayers.has(player.id) ? (
-                          <span className="text-gray-400 text-xs">Loading...</span>
-                        ) : (
-                          player.ftPct !== undefined ? `${player.ftPct.toFixed(1)}%` : '-'
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-
-                  {/* Other Stats */}
-                  <tr className="bg-teal-50 border-b border-gray-200">
-                    <td className="py-2 px-4 font-bold text-teal-900 sticky left-0 bg-teal-50">MPG</td>
-                    {selectedPlayers.map((player) => (
-                      <td key={player.id} className="text-center py-2 px-4 font-bold text-teal-900">
-                        {player.mpg?.toFixed(1) || '-'}
                       </td>
                     ))}
                   </tr>
@@ -520,62 +474,33 @@ export default function PlayersPage() {
                   </div>
                 </div>
 
-                {/* Main Stats - PPG, RPG, APG */}
-                <div className="grid grid-cols-3 gap-3 mb-4 pb-4 border-b border-gray-200">
+                {/* Main Stats - PPG, RPG, APG, FG% */}
+                <div className="grid grid-cols-2 gap-3">
                   {player.ppg !== undefined && (
-                    <div className="text-center bg-blue-50 rounded-lg p-2">
+                    <div className="text-center bg-blue-50 rounded-lg p-3">
                       <p className="text-xs text-blue-600 font-semibold uppercase">PPG</p>
-                      <p className="text-xl font-black text-blue-900">{player.ppg.toFixed(1)}</p>
+                      <p className="text-2xl font-black text-blue-900">{player.ppg.toFixed(1)}</p>
                     </div>
                   )}
                   {player.rpg !== undefined && (
-                    <div className="text-center bg-green-50 rounded-lg p-2">
+                    <div className="text-center bg-green-50 rounded-lg p-3">
                       <p className="text-xs text-green-600 font-semibold uppercase">RPG</p>
-                      <p className="text-xl font-black text-green-900">{player.rpg.toFixed(1)}</p>
+                      <p className="text-2xl font-black text-green-900">{player.rpg.toFixed(1)}</p>
                     </div>
                   )}
                   {player.apg !== undefined && (
-                    <div className="text-center bg-purple-50 rounded-lg p-2">
+                    <div className="text-center bg-purple-50 rounded-lg p-3">
                       <p className="text-xs text-purple-600 font-semibold uppercase">APG</p>
-                      <p className="text-xl font-black text-purple-900">{player.apg.toFixed(1)}</p>
+                      <p className="text-2xl font-black text-purple-900">{player.apg.toFixed(1)}</p>
+                    </div>
+                  )}
+                  {player.fgPct !== undefined && (
+                    <div className="text-center bg-orange-50 rounded-lg p-3">
+                      <p className="text-xs text-orange-600 font-semibold uppercase">FG%</p>
+                      <p className="text-2xl font-black text-orange-900">{player.fgPct.toFixed(1)}%</p>
                     </div>
                   )}
                 </div>
-
-                {/* Shooting Stats */}
-                {(player.fgPct !== undefined || player.fg3Pct !== undefined || player.ftPct !== undefined) && (
-                <div className="space-y-2 mb-4 pb-4 border-b border-gray-200">
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">Shooting</p>
-                  <div className="grid grid-cols-3 gap-2 text-xs">
-                    {player.fgPct !== undefined && (
-                      <div className="text-center bg-orange-50 rounded-lg p-2">
-                        <p className="text-gray-500">FG%</p>
-                        <p className="text-orange-600 font-bold text-base">{player.fgPct.toFixed(1)}%</p>
-                      </div>
-                    )}
-                    {player.fg3Pct !== undefined && (
-                      <div className="text-center bg-yellow-50 rounded-lg p-2">
-                        <p className="text-gray-500">3PT%</p>
-                        <p className="text-yellow-600 font-bold text-base">{player.fg3Pct.toFixed(1)}%</p>
-                      </div>
-                    )}
-                    {player.ftPct !== undefined && (
-                      <div className="text-center bg-blue-50 rounded-lg p-2">
-                        <p className="text-gray-500">FT%</p>
-                        <p className="text-blue-600 font-bold text-base">{player.ftPct.toFixed(1)}%</p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-                )}
-
-                {/* Minutes Per Game */}
-                {player.mpg !== undefined && (
-                  <div className="text-center">
-                    <p className="text-xs text-gray-500">Minutes Per Game</p>
-                    <p className="text-lg font-black text-gray-900">{player.mpg.toFixed(1)} MPG</p>
-                  </div>
-                )}
               </Link>
               </div>
             ))}
