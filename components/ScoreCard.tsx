@@ -46,7 +46,14 @@ export default function ScoreCard({ game }: ScoreCardProps) {
       );
     }
     if (isFinished) {
-      return <span className="text-gray-500 font-medium">FINAL</span>;
+      // Check if game went to overtime based on gameStatusText
+      const statusText = game.gameStatusText || game.gameStatus.statusText || '';
+      const isOT = statusText.includes('OT');
+      return (
+        <span className="text-gray-500 font-medium">
+          {isOT ? statusText : 'FINAL'}
+        </span>
+      );
     }
     if (isUpcoming) {
       const gameTime = new Date(game.gameTimeUTC);

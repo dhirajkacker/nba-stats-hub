@@ -40,7 +40,8 @@ interface GameData {
   header: {
     competitions: Array<{
       competitors: Array<{
-        team: TeamStats & { score: string; record: string };
+        team: TeamStats & { record: string };
+        score: string;
         homeAway: string;
         winner?: boolean;
       }>;
@@ -133,6 +134,10 @@ export default function GamePage() {
   const isFinished = status.type.completed;
   const isLive = status.type.state === 'in';
 
+  // Check for overtime
+  const isOT = status.type.detail.includes('OT') || status.period > 4;
+  const otText = isOT ? status.type.detail.replace('Final/', '') : '';
+
   if (!awayTeam || !homeTeam) {
     return null;
   }
@@ -208,16 +213,23 @@ export default function GamePage() {
                 awayTeam.winner ? 'text-orange-600' : 'text-gray-800'
               }`}
             >
-              {awayTeam.team.score}
+              {awayTeam.score}
             </div>
           </div>
 
           {/* Divider */}
           <div className="bg-gray-100 py-3 px-8 flex items-center justify-center gap-4">
             <div className="h-px flex-1 bg-gray-300"></div>
-            <span className="text-gray-500 font-bold">
-              {status.type.detail}
-            </span>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-gray-500 font-bold">
+                {status.type.detail}
+              </span>
+              {isOT && (
+                <span className="text-orange-600 font-black text-sm bg-orange-100 px-3 py-1 rounded-full">
+                  {otText}
+                </span>
+              )}
+            </div>
             <div className="h-px flex-1 bg-gray-300"></div>
           </div>
 
@@ -251,7 +263,7 @@ export default function GamePage() {
                 homeTeam.winner ? 'text-orange-600' : 'text-gray-800'
               }`}
             >
-              {homeTeam.team.score}
+              {homeTeam.score}
             </div>
           </div>
         </div>
