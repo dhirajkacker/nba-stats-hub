@@ -67,13 +67,13 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
       return typeof value === 'string' ? parseFloat(value) : value;
     };
 
-    const gamesPlayed = getStat('gamesPlayed');
+    const ppg = getStat('avgPoints');
 
-    console.log(`Player ${playerId} (${athlete.displayName}): ${gamesPlayed} games, ${getStat('avgPoints')} PPG`);
+    console.log(`Player ${playerId} (${athlete.displayName}): ${ppg} PPG`);
 
-    // Skip players who haven't played
-    if (gamesPlayed === 0) {
-      console.log(`Skipping ${athlete.displayName} - 0 games played`);
+    // Skip players who don't have PPG stats (injured/inactive)
+    if (!ppg || ppg === 0) {
+      console.log(`Skipping ${athlete.displayName} - no PPG data`);
       return null;
     }
 
@@ -88,7 +88,7 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
       height: athlete.height,
       weight: athlete.weight,
       stats: {
-        gamesPlayed,
+        gamesPlayed: 0, // ESPN doesn't provide this in statsSummary
         ppg: getStat('avgPoints'),
         rpg: getStat('avgRebounds'),
         apg: getStat('avgAssists'),
