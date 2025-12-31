@@ -98,13 +98,52 @@ export async function getTeamRoster(teamTricode: string): Promise<ESPNPlayer[]> 
 }
 
 /**
+ * Calculate similarity score for fuzzy matching
+ * Higher score = better match
+ */
+function calculateMatchScore(playerName: string, query: string): number {
+  const lowerName = playerName.toLowerCase();
+  const lowerQuery = query.toLowerCase().trim();
+
+  // Exact match - highest priority
+  if (lowerName === lowerQuery) return 1000;
+
+  // Starts with query - very high priority
+  if (lowerName.startsWith(lowerQuery)) return 500;
+
+  // Words in name start with query (e.g., "Dave" matches "David")
+  const nameWords = lowerName.split(/\s+/);
+  const queryWords = lowerQuery.split(/\s+/);
+
+  // Check if any name word starts with any query word
+  let wordMatchScore = 0;
+  for (const nameWord of nameWords) {
+    for (const queryWord of queryWords) {
+      if (nameWord.startsWith(queryWord)) {
+        wordMatchScore += 300;
+      } else if (nameWord.includes(queryWord)) {
+        wordMatchScore += 100;
+      }
+    }
+  }
+
+  if (wordMatchScore > 0) return wordMatchScore;
+
+  // Contains query - medium priority
+  if (lowerName.includes(lowerQuery)) return 50;
+
+  // No match
+  return 0;
+}
+
+/**
  * Search all NBA players across all teams
- * This fetches rosters from all teams and searches
+ * This fetches rosters from all teams and searches with fuzzy matching
  */
 export async function searchAllPlayers(query: string): Promise<ESPNPlayer[]> {
   if (!query || query.length < 2) return [];
 
-  const lowerQuery = query.toLowerCase();
+  const trimmedQuery = query.trim();
   const allPlayers: ESPNPlayer[] = [];
 
   // Fetch rosters from all teams in parallel
@@ -116,12 +155,25 @@ export async function searchAllPlayers(query: string): Promise<ESPNPlayer[]> {
     allPlayers.push(...roster);
   });
 
-  // Search by player name
-  return allPlayers.filter(player =>
-    player.displayName.toLowerCase().includes(lowerQuery) ||
-    player.firstName.toLowerCase().includes(lowerQuery) ||
-    player.lastName.toLowerCase().includes(lowerQuery)
-  ).slice(0, 50); // Limit to 50 results
+  // Score each player and filter matches
+  const scoredPlayers = allPlayers
+    .map(player => {
+      // Calculate scores for different name fields
+      const displayNameScore = calculateMatchScore(player.displayName, trimmedQuery);
+      const firstNameScore = calculateMatchScore(player.firstName, trimmedQuery);
+      const lastNameScore = calculateMatchScore(player.lastName, trimmedQuery);
+
+      // Use the highest score
+      const maxScore = Math.max(displayNameScore, firstNameScore, lastNameScore);
+
+      return { player, score: maxScore };
+    })
+    .filter(item => item.score > 0) // Only include matches
+    .sort((a, b) => b.score - a.score) // Sort by score descending
+    .slice(0, 50) // Limit to 50 results
+    .map(item => item.player);
+
+  return scoredPlayers;
 }
 
 /**

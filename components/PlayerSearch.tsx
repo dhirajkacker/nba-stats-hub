@@ -32,14 +32,17 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
   const handleSearch = async (searchQuery: string) => {
     setQuery(searchQuery);
 
-    if (searchQuery.length < 2) {
+    // Trim whitespace from the query
+    const trimmedQuery = searchQuery.trim();
+
+    if (trimmedQuery.length < 2) {
       setResults([]);
       return;
     }
 
     setIsLoading(true);
     try {
-      const response = await fetch(`/api/players/search?q=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`/api/players/search?q=${encodeURIComponent(trimmedQuery)}`);
       if (response.ok) {
         const data = await response.json();
         setResults(data);
