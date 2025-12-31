@@ -280,7 +280,7 @@ export default function GamePage() {
                       alt={`${teamBox.team.displayName} logo`}
                       width={32}
                       height={32}
-                      className="object-contain brightness-0 invert"
+                      className="object-contain"
                     />
                     {teamBox.team.displayName} Box Score
                   </h2>
