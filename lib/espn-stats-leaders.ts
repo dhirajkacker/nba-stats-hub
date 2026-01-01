@@ -77,7 +77,7 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 
     // Add timeout and caching for Vercel
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout per player
+    const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout per player
 
     const response = await fetch(url, {
       signal: controller.signal,
@@ -182,15 +182,9 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
     console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000);
-
     const leadersResponse = await fetch(leadersUrl, {
-      signal: controller.signal,
       next: { revalidate: 3600 }, // Cache for 1 hour
     });
-
-    clearTimeout(timeoutId);
 
     if (!leadersResponse.ok) {
       console.error(`Failed to fetch leaders: ${leadersResponse.status} ${leadersResponse.statusText}`);
@@ -225,7 +219,7 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
 
     // Fetch detailed stats for each player in batches to avoid timeout
     const players: ESPNStatsLeader[] = [];
-    const batchSize = 10; // Process 10 players at a time
+    const batchSize = 15; // Process 15 players at a time (faster with good caching)
 
     for (let i = 0; i < athleteIds.length; i += batchSize) {
       const batch = athleteIds.slice(i, i + batchSize);
