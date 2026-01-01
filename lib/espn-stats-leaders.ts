@@ -41,9 +41,16 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 
     console.log(`Fetching player ${playerId}...`);
 
+    // Add timeout and caching for Vercel
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout per player
+
     const response = await fetch(url, {
-      cache: 'no-store', // Don't cache in API routes
+      signal: controller.signal,
+      next: { revalidate: 3600 }, // Cache for 1 hour
     });
+
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       console.log(`Failed to fetch player ${playerId}: ${response.status}`);
@@ -104,8 +111,12 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
         fta: getStat('avgFreeThrowsAttempted'),
       },
     };
-  } catch (error) {
-    console.error(`Error fetching player ${playerId}:`, error);
+  } catch (error: any) {
+    if (error.name === 'AbortError') {
+      console.error(`Timeout fetching player ${playerId}`);
+    } else {
+      console.error(`Error fetching player ${playerId}:`, error);
+    }
     return null;
   }
 }
@@ -136,10 +147,11 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
 
     const leadersResponse = await fetch(leadersUrl, {
-      cache: 'no-store',
+      next: { revalidate: 3600 }, // Cache for 1 hour
     });
 
     if (!leadersResponse.ok) {
+      console.error(`Failed to fetch leaders: ${leadersResponse.status} ${leadersResponse.statusText}`);
       throw new Error(`Failed to fetch leaders: ${leadersResponse.status}`);
     }
 
@@ -169,14 +181,21 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
 
     console.log(`Found ${athleteIds.length} top scorers from ESPN leaders API`);
 
-    // Fetch detailed stats for each player in parallel
+    // Fetch detailed stats for each player in batches to avoid timeout
     const players: ESPNStatsLeader[] = [];
-    const playerPromises = athleteIds.map(id => fetchPlayerById(id));
-    const results = await Promise.all(playerPromises);
+    const batchSize = 10; // Process 10 players at a time
 
-    for (const player of results) {
-      if (player) {
-        players.push(player);
+    for (let i = 0; i < athleteIds.length; i += batchSize) {
+      const batch = athleteIds.slice(i, i + batchSize);
+      console.log(`Fetching batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
+
+      const playerPromises = batch.map(id => fetchPlayerById(id));
+      const results = await Promise.all(playerPromises);
+
+      for (const player of results) {
+        if (player) {
+          players.push(player);
+        }
       }
     }
 

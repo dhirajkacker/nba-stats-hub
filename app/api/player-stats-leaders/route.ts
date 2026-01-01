@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getPlayerStatsFromLeaders } from '@/lib/nba-leaders';
 import { getTopPlayersByAllStats } from '@/lib/espn-stats-leaders';
 
+// Increase timeout for Vercel serverless function (max on hobby plan is 10s, but we can try)
+export const maxDuration = 10;
+// Cache the response for 1 hour
+export const revalidate = 3600;
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
@@ -12,7 +17,12 @@ export async function GET(request: NextRequest) {
     if (!playerIdParam) {
       const limit = limitParam ? parseInt(limitParam) : 50;
       const topPlayers = await getTopPlayersByAllStats(limit);
-      return NextResponse.json(topPlayers);
+
+      return NextResponse.json(topPlayers, {
+        headers: {
+          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
+        },
+      });
     }
 
     // If playerId specified, return that specific player's stats
