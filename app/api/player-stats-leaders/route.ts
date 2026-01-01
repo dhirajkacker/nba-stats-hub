@@ -23,12 +23,9 @@ export async function GET(request: NextRequest) {
 
       if (topPlayers.length === 0) {
         console.error('API: No players returned from getTopPlayersByAllStats');
-        return NextResponse.json(
-          { error: 'No player data available', players: [] },
-          { status: 200 } // Return 200 with empty array instead of error
-        );
       }
 
+      // Always return an array, even if empty
       return NextResponse.json(topPlayers, {
         headers: {
           'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
