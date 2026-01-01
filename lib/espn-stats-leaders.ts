@@ -81,7 +81,7 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 
     const response = await fetch(url, {
       signal: controller.signal,
-      next: { revalidate: 3600 }, // Cache for 1 hour
+      cache: 'force-cache', // Use standard cache for better Vercel compatibility
     });
 
     clearTimeout(timeoutId);
@@ -184,7 +184,7 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     console.log(`URL: ${leadersUrl}`);
 
     const leadersResponse = await fetch(leadersUrl, {
-      next: { revalidate: 3600 }, // Cache for 1 hour
+      cache: 'force-cache', // Use standard cache option for better Vercel compatibility
     });
 
     console.log(`Leaders API response status: ${leadersResponse.status}`);
