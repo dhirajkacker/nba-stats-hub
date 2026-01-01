@@ -1,6 +1,5 @@
 import { getPlayerDetails, getPlayerStats, getPlayerGameLog } from '@/lib/espn-players';
 import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
-import { POPULAR_PLAYERS, PlayerInfo } from '@/lib/player-data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -16,10 +15,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
 
   console.log(`Player page loading for ID: ${playerId}`);
 
-  // Check if player is in POPULAR_PLAYERS (has complete stats)
-  const popularPlayer = POPULAR_PLAYERS.find(p => p.id === parseInt(playerId));
-
-  // Fetch player data from ESPN
+  // Fetch player data from ESPN (always use real-time data)
   const [player, stats, gameLogs] = await Promise.all([
     getPlayerDetails(playerId),
     getPlayerStats(playerId),
@@ -43,18 +39,8 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
   // Log available stats for debugging
   console.log(`Available stats for ${player.displayName}:`, currentSeasonStats.map((s: any) => s.name).join(', '));
 
-  // Helper function to get stat value (prefers POPULAR_PLAYERS data, falls back to ESPN)
-  const getStatValue = (name: string, popularKey?: keyof PlayerInfo) => {
-    // First try to get from popular players (has complete stats)
-    if (popularPlayer && popularKey && popularPlayer[popularKey] !== undefined) {
-      const value = popularPlayer[popularKey];
-      if (typeof value === 'number') {
-        return value.toFixed(1);
-      }
-      return value as string;
-    }
-
-    // Fall back to ESPN API
+  // Helper function to get stat value from ESPN API (always use real-time data)
+  const getStatValue = (name: string) => {
     const stat = currentSeasonStats.find((s: any) => s.name === name);
     const value = stat?.displayValue || stat?.value;
     if (!value) {
@@ -144,23 +130,23 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{ borderLeftColor: teamColor }}>
             <p className="text-gray-600 text-sm font-medium mb-1">Height</p>
-            <p className="text-2xl font-black text-gray-900">{popularPlayer?.height || player.height || 'N/A'}</p>
+            <p className="text-2xl font-black text-gray-900">{player.height || 'N/A'}</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
             <p className="text-gray-600 text-sm font-medium mb-1">Weight</p>
-            <p className="text-2xl font-black text-gray-900">{popularPlayer?.weight ? `${popularPlayer.weight} lbs` : player.weight ? `${player.weight} lbs` : 'N/A'}</p>
+            <p className="text-2xl font-black text-gray-900">{player.weight ? `${player.weight} lbs` : 'N/A'}</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
             <p className="text-gray-600 text-sm font-medium mb-1">PPG</p>
-            <p className="text-2xl font-black text-gray-900">{getStatValue('avgPoints', 'ppg') || 'N/A'}</p>
+            <p className="text-2xl font-black text-gray-900">{getStatValue('avgPoints') || 'N/A'}</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
             <p className="text-gray-600 text-sm font-medium mb-1">RPG</p>
-            <p className="text-2xl font-black text-gray-900">{getStatValue('avgRebounds', 'rpg') || 'N/A'}</p>
+            <p className="text-2xl font-black text-gray-900">{getStatValue('avgRebounds') || 'N/A'}</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
             <p className="text-gray-600 text-sm font-medium mb-1">APG</p>
-            <p className="text-2xl font-black text-gray-900">{getStatValue('avgAssists', 'apg') || 'N/A'}</p>
+            <p className="text-2xl font-black text-gray-900">{getStatValue('avgAssists') || 'N/A'}</p>
           </div>
         </div>
 
@@ -198,11 +184,11 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
             <div className="space-y-3">
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <span className="text-gray-600">Height</span>
-                <span className="font-bold text-gray-900">{popularPlayer?.height || player.height || 'N/A'}</span>
+                <span className="font-bold text-gray-900">{player.height || 'N/A'}</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <span className="text-gray-600">Weight</span>
-                <span className="font-bold text-gray-900">{popularPlayer?.weight ? `${popularPlayer.weight} lbs` : player.weight ? `${player.weight} lbs` : 'N/A'}</span>
+                <span className="font-bold text-gray-900">{player.weight ? `${player.weight} lbs` : 'N/A'}</span>
               </div>
               {player.team?.abbreviation && (
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
@@ -245,27 +231,27 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
               <p className="text-xs text-blue-600 font-medium uppercase tracking-wide mb-1">PPG</p>
-              <p className="text-3xl font-black text-blue-900">{getStatValue('avgPoints', 'ppg') || 'N/A'}</p>
+              <p className="text-3xl font-black text-blue-900">{getStatValue('avgPoints') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
               <p className="text-xs text-green-600 font-medium uppercase tracking-wide mb-1">RPG</p>
-              <p className="text-3xl font-black text-green-900">{getStatValue('avgRebounds', 'rpg') || 'N/A'}</p>
+              <p className="text-3xl font-black text-green-900">{getStatValue('avgRebounds') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
               <p className="text-xs text-purple-600 font-medium uppercase tracking-wide mb-1">APG</p>
-              <p className="text-3xl font-black text-purple-900">{getStatValue('avgAssists', 'apg') || 'N/A'}</p>
+              <p className="text-3xl font-black text-purple-900">{getStatValue('avgAssists') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-red-50 to-red-100 rounded-xl">
               <p className="text-xs text-red-600 font-medium uppercase tracking-wide mb-1">FG%</p>
-              <p className="text-3xl font-black text-red-900">{getStatValue('fieldGoalPct', 'fgPct') || 'N/A'}</p>
+              <p className="text-3xl font-black text-red-900">{getStatValue('fieldGoalPct') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl">
               <p className="text-xs text-yellow-600 font-medium uppercase tracking-wide mb-1">3P%</p>
-              <p className="text-3xl font-black text-yellow-900">{getStatValue('threePointFieldGoalPct', 'fg3Pct') || getStatValue('threePointPct', 'fg3Pct') || 'N/A'}</p>
+              <p className="text-3xl font-black text-yellow-900">{getStatValue('threePointFieldGoalPct') || getStatValue('threePointPct') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl">
               <p className="text-xs text-orange-600 font-medium uppercase tracking-wide mb-1">FT%</p>
-              <p className="text-3xl font-black text-orange-900">{getStatValue('freeThrowPct', 'ftPct') || 'N/A'}</p>
+              <p className="text-3xl font-black text-orange-900">{getStatValue('freeThrowPct') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl">
               <p className="text-xs text-indigo-600 font-medium uppercase tracking-wide mb-1">SPG</p>
@@ -277,7 +263,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl">
               <p className="text-xs text-teal-600 font-medium uppercase tracking-wide mb-1">MPG</p>
-              <p className="text-3xl font-black text-teal-900">{getStatValue('avgMinutes', 'mpg') || 'N/A'}</p>
+              <p className="text-3xl font-black text-teal-900">{getStatValue('avgMinutes') || 'N/A'}</p>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl">
               <p className="text-xs text-cyan-600 font-medium uppercase tracking-wide mb-1">TOV</p>
