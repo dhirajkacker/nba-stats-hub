@@ -248,13 +248,42 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     console.log(`Successfully fetched ${players.length} players with complete stats`);
     return players;
   } catch (error: any) {
-    console.error('❌ ERROR fetching top scorers from ESPN API:');
-    console.error('Error name:', error.name);
-    console.error('Error message:', error.message);
-    console.error('Error stack:', error.stack);
+    console.error('❌ ERROR fetching dynamic top scorers from ESPN leaders API');
+    console.error('Error:', error.message);
+    console.log('⚠️  Falling back to curated list of top players with real-time ESPN stats');
 
-    // Re-throw the error so we can see it in Vercel logs
-    throw error;
+    // ESPN's sports.core API is blocked on Vercel, use fallback list
+    athleteIds = FALLBACK_TOP_PLAYERS.slice(0, limit);
+  }
+
+  // Fallback: Use curated player list but fetch real-time stats from ESPN
+  try {
+    console.log(`Fetching ${athleteIds.length} top players using curated list...`);
+    const players: ESPNStatsLeader[] = [];
+    const batchSize = 15; // Same batch size as dynamic
+
+    for (let i = 0; i < athleteIds.length; i += batchSize) {
+      const batch = athleteIds.slice(i, i + batchSize);
+      console.log(`Batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
+
+      const playerPromises = batch.map(id => fetchPlayerById(id));
+      const results = await Promise.all(playerPromises);
+
+      for (const player of results) {
+        if (player) {
+          players.push(player);
+        }
+      }
+    }
+
+    // Sort by PPG descending to show actual leaders first
+    players.sort((a, b) => (b.stats?.ppg || 0) - (a.stats?.ppg || 0));
+
+    console.log(`✅ Successfully fetched ${players.length} players with real-time stats`);
+    return players;
+  } catch (fallbackError: any) {
+    console.error('❌ Fallback also failed:', fallbackError.message);
+    return [];
   }
 }
 
