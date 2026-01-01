@@ -53,10 +53,17 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(stats);
   } catch (error: any) {
-    console.error('Error in player-stats-leaders API route:', error);
+    console.error('❌ API Route Error:');
+    console.error('Error name:', error.name);
+    console.error('Error message:', error.message);
     console.error('Error stack:', error.stack);
+
     return NextResponse.json(
-      { error: 'Failed to fetch player stats', message: error.message },
+      {
+        error: 'Failed to fetch player stats',
+        message: error.message,
+        name: error.name
+      },
       { status: 500 }
     );
   }

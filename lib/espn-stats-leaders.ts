@@ -242,38 +242,13 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     console.log(`Successfully fetched ${players.length} players with complete stats`);
     return players;
   } catch (error: any) {
-    console.error('Error fetching top scorers from ESPN API:', error);
-    console.log('Falling back to hardcoded player list...');
+    console.error('❌ ERROR fetching top scorers from ESPN API:');
+    console.error('Error name:', error.name);
+    console.error('Error message:', error.message);
+    console.error('Error stack:', error.stack);
 
-    // Use fallback list if dynamic fetch fails
-    athleteIds = FALLBACK_TOP_PLAYERS.slice(0, limit);
-  }
-
-  // Fallback: Fetch using hardcoded player IDs
-  try {
-    console.log(`Using fallback list of ${athleteIds.length} players...`);
-    const players: ESPNStatsLeader[] = [];
-    const batchSize = 5; // Smaller batches for fallback to be safe
-
-    for (let i = 0; i < athleteIds.length; i += batchSize) {
-      const batch = athleteIds.slice(i, i + batchSize);
-      console.log(`Fetching fallback batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
-
-      const playerPromises = batch.map(id => fetchPlayerById(id));
-      const results = await Promise.all(playerPromises);
-
-      for (const player of results) {
-        if (player) {
-          players.push(player);
-        }
-      }
-    }
-
-    console.log(`Successfully fetched ${players.length} players using fallback`);
-    return players;
-  } catch (fallbackError) {
-    console.error('Fallback also failed:', fallbackError);
-    return [];
+    // Re-throw the error so we can see it in Vercel logs
+    throw error;
   }
 }
 
