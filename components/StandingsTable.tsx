@@ -93,6 +93,7 @@ export default function StandingsTable({ standings, conference }: StandingsTable
                         width={24}
                         height={24}
                         className="object-contain"
+                        unoptimized
                       />
                     </div>
                     <span className="font-semibold text-sm">

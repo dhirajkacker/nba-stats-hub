@@ -101,6 +101,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                   width={96}
                   height={96}
                   className="object-cover"
+                  unoptimized
                 />
               </div>
             ) : (
@@ -125,6 +126,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                           width={32}
                           height={32}
                           className="object-contain"
+                          unoptimized
                         />
                       </div>
                       <span>{teamAbbr}</span>
@@ -216,6 +218,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                         width={24}
                         height={24}
                         className="object-contain"
+                        unoptimized
                       />
                     </div>
                     {teamAbbr}

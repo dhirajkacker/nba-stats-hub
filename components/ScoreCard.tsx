@@ -102,6 +102,7 @@ export default function ScoreCard({ game }: ScoreCardProps) {
               width={48}
               height={48}
               className="object-contain"
+              unoptimized
             />
           </div>
           <div className="flex flex-col min-w-0">
@@ -141,6 +142,7 @@ export default function ScoreCard({ game }: ScoreCardProps) {
               width={48}
               height={48}
               className="object-contain"
+              unoptimized
             />
           </div>
           <div className="flex flex-col min-w-0">

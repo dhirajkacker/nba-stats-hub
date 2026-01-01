@@ -111,6 +111,7 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
                         width={48}
                         height={48}
                         className="object-contain"
+                        unoptimized
                       />
                     </div>
                   )}

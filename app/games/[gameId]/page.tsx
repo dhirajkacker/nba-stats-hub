@@ -213,6 +213,7 @@ export default function GamePage() {
                   width={96}
                   height={96}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
               <div>
@@ -263,6 +264,7 @@ export default function GamePage() {
                   width={96}
                   height={96}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
               <div>
@@ -297,6 +299,7 @@ export default function GamePage() {
                       width={32}
                       height={32}
                       className="object-contain"
+                      unoptimized
                     />
                     {teamBox.team.displayName} Box Score
                   </h2>

@@ -168,6 +168,7 @@ export default function PlayersPage() {
                               width={32}
                               height={32}
                               className="object-contain"
+                              unoptimized
                             />
                           </div>
                           <span className="font-semibold text-gray-700 text-sm">{player.teamTricode}</span>

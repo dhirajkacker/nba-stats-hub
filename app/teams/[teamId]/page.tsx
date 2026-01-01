@@ -92,6 +92,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                 width={128}
                 height={128}
                 className="object-contain"
+                unoptimized
               />
             </div>
             <div>
@@ -272,6 +273,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                           width={64}
                           height={64}
                           className="object-cover"
+                          unoptimized
                         />
                       </div>
                     ) : (
