@@ -181,10 +181,13 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     // Fetch stats leaders from ESPN API
     const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
     console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
+    console.log(`URL: ${leadersUrl}`);
 
     const leadersResponse = await fetch(leadersUrl, {
       next: { revalidate: 3600 }, // Cache for 1 hour
     });
+
+    console.log(`Leaders API response status: ${leadersResponse.status}`);
 
     if (!leadersResponse.ok) {
       console.error(`Failed to fetch leaders: ${leadersResponse.status} ${leadersResponse.statusText}`);
@@ -192,6 +195,7 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     }
 
     const leadersData = await leadersResponse.json();
+    console.log(`Leaders data categories count: ${leadersData.categories?.length || 0}`);
 
     // Find the PPG category
     const ppgCategory = leadersData.categories?.find(
