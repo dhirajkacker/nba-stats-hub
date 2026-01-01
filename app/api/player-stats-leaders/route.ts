@@ -16,7 +16,18 @@ export async function GET(request: NextRequest) {
     // If no playerId specified, return top players list
     if (!playerIdParam) {
       const limit = limitParam ? parseInt(limitParam) : 50;
+      console.log(`API: Fetching top ${limit} players...`);
+
       const topPlayers = await getTopPlayersByAllStats(limit);
+      console.log(`API: Successfully fetched ${topPlayers.length} players`);
+
+      if (topPlayers.length === 0) {
+        console.error('API: No players returned from getTopPlayersByAllStats');
+        return NextResponse.json(
+          { error: 'No player data available', players: [] },
+          { status: 200 } // Return 200 with empty array instead of error
+        );
+      }
 
       return NextResponse.json(topPlayers, {
         headers: {
@@ -44,10 +55,11 @@ export async function GET(request: NextRequest) {
     }
 
     return NextResponse.json(stats);
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error in player-stats-leaders API route:', error);
+    console.error('Error stack:', error.stack);
     return NextResponse.json(
-      { error: 'Failed to fetch player stats' },
+      { error: 'Failed to fetch player stats', message: error.message },
       { status: 500 }
     );
   }

@@ -1,6 +1,40 @@
 // Fetch NBA stats leaders from ESPN API
 // This provides real-time, accurate player data with current teams and stats
 
+// Fallback list of top player IDs (2024-25 season leaders)
+const FALLBACK_TOP_PLAYERS = [
+  '3059318', // Giannis Antetokounmpo
+  '4066648', // Shai Gilgeous-Alexander
+  '4277905', // Luka Doncic
+  '4395628', // Anthony Edwards
+  '6583',    // LeBron James
+  '3975',    // Kevin Durant
+  '4065648', // Jayson Tatum
+  '4066421', // Donovan Mitchell
+  '4278073', // Nikola Jokic
+  '4351851', // Trae Young
+  '2991043', // Anthony Davis
+  '3155535', // Damian Lillard
+  '4431678', // LaMelo Ball
+  '4066261', // De'Aaron Fox
+  '4397020', // Jalen Brunson
+  '3112335', // Nikola Vucevic
+  '6450',    // Stephen Curry
+  '3213',    // James Harden
+  '4065697', // Jaylen Brown
+  '3102529', // Julius Randle
+  '3064482', // Karl-Anthony Towns
+  '4066636', // Tyrese Maxey
+  '2991070', // Devin Booker
+  '4066378', // Bam Adebayo
+  '3136195', // Pascal Siakam
+  '4278104', // Darius Garland
+  '3907487', // Kawhi Leonard
+  '4066259', // Tyler Herro
+  '2991055', // Brandon Ingram
+  '4066372', // Jaren Jackson Jr.
+];
+
 export interface ESPNStatsLeader {
   id: string;
   displayName: string;
@@ -137,6 +171,8 @@ function extractAthleteId(refUrl: string): string | null {
  * Dynamically fetches the current top scorers instead of using a hardcoded list
  */
 export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader[]> {
+  let athleteIds: string[] = [];
+
   try {
     // Get current season year (ESPN uses 2026 for 2025-26 season)
     const currentYear = new Date().getFullYear();
@@ -146,9 +182,15 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
     console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
 
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
     const leadersResponse = await fetch(leadersUrl, {
+      signal: controller.signal,
       next: { revalidate: 3600 }, // Cache for 1 hour
     });
+
+    clearTimeout(timeoutId);
 
     if (!leadersResponse.ok) {
       console.error(`Failed to fetch leaders: ${leadersResponse.status} ${leadersResponse.statusText}`);
@@ -163,12 +205,12 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
     );
 
     if (!ppgCategory || !ppgCategory.leaders) {
+      console.error('PPG leaders data not found, using fallback list');
       throw new Error('PPG leaders data not found in ESPN API response');
     }
 
     // Extract athlete IDs from the top leaders
-    const topLeaders = ppgCategory.leaders.slice(0, limit);
-    const athleteIds: string[] = [];
+    const topLeaders = ppgCategory.leaders.slice(0, Math.min(limit, ppgCategory.leaders.length));
 
     for (const leader of topLeaders) {
       if (leader.athlete?.$ref) {
@@ -201,9 +243,38 @@ export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader
 
     console.log(`Successfully fetched ${players.length} players with complete stats`);
     return players;
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error fetching top scorers from ESPN API:', error);
-    // Return empty array on error
+    console.log('Falling back to hardcoded player list...');
+
+    // Use fallback list if dynamic fetch fails
+    athleteIds = FALLBACK_TOP_PLAYERS.slice(0, limit);
+  }
+
+  // Fallback: Fetch using hardcoded player IDs
+  try {
+    console.log(`Using fallback list of ${athleteIds.length} players...`);
+    const players: ESPNStatsLeader[] = [];
+    const batchSize = 5; // Smaller batches for fallback to be safe
+
+    for (let i = 0; i < athleteIds.length; i += batchSize) {
+      const batch = athleteIds.slice(i, i + batchSize);
+      console.log(`Fetching fallback batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
+
+      const playerPromises = batch.map(id => fetchPlayerById(id));
+      const results = await Promise.all(playerPromises);
+
+      for (const player of results) {
+        if (player) {
+          players.push(player);
+        }
+      }
+    }
+
+    console.log(`Successfully fetched ${players.length} players using fallback`);
+    return players;
+  } catch (fallbackError) {
+    console.error('Fallback also failed:', fallbackError);
     return [];
   }
 }
