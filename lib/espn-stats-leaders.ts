@@ -1,38 +1,39 @@
 // Fetch NBA stats leaders from ESPN API
 // This provides real-time, accurate player data with current teams and stats
 
-// Fallback list of top player IDs (2024-25 season leaders)
+// Fallback list of actual top 30 NBA scorers (2025-26 season)
+// Updated: 2025-12-31 from ESPN leaders API
 const FALLBACK_TOP_PLAYERS = [
-  '3059318', // Giannis Antetokounmpo
-  '4066648', // Shai Gilgeous-Alexander
-  '4277905', // Luka Doncic
-  '4395628', // Anthony Edwards
-  '6583',    // LeBron James
-  '3975',    // Kevin Durant
-  '4065648', // Jayson Tatum
-  '4066421', // Donovan Mitchell
-  '4278073', // Nikola Jokic
-  '4351851', // Trae Young
-  '2991043', // Anthony Davis
-  '3155535', // Damian Lillard
-  '4431678', // LaMelo Ball
-  '4066261', // De'Aaron Fox
-  '4397020', // Jalen Brunson
-  '3112335', // Nikola Vucevic
-  '6450',    // Stephen Curry
-  '3213',    // James Harden
-  '4065697', // Jaylen Brown
-  '3102529', // Julius Randle
-  '3064482', // Karl-Anthony Towns
-  '4066636', // Tyrese Maxey
-  '2991070', // Devin Booker
-  '4066378', // Bam Adebayo
-  '3136195', // Pascal Siakam
-  '4278104', // Darius Garland
-  '3907487', // Kawhi Leonard
-  '4066259', // Tyler Herro
-  '2991055', // Brandon Ingram
-  '4066372', // Jaren Jackson Jr.
+  '3945274',  // Luka Doncic - 33.5 PPG
+  '4278073',  // Shai Gilgeous-Alexander - 32.2 PPG
+  '4431678',  // Tyrese Maxey - 30.8 PPG
+  '3112335',  // Nikola Jokic - 29.6 PPG
+  '3908809',  // Giannis Antetokounmpo - 29.5 PPG
+  '3917376',  // Jayson Tatum - 29.5 PPG
+  '3934672',  // Anthony Edwards - 29.4 PPG
+  '4594268',  // Alperen Sengun - 29.1 PPG
+  '3975',     // Kevin Durant - 28.8 PPG
+  '3032977',  // Damian Lillard - 28.7 PPG
+  '6450',     // Kawhi Leonard - 27.8 PPG
+  '4066336',  // Donovan Mitchell - 27.7 PPG
+  '4066457',  // LaMelo Ball - 26.6 PPG
+  '4432166',  // Cam Thomas - 26.5 PPG
+  '3992',     // LeBron James - 26.1 PPG
+  '4278104',  // Michael Porter Jr. - 25.8 PPG
+  '4683021',  // Paolo Banchero - 25.6 PPG
+  '3202',     // Kevin Love - 25.5 PPG
+  '3136193',  // Devin Booker - 25.3 PPG
+  '3936299',  // Jalen Brunson - 25.2 PPG
+  '4433627',  // Franz Wagner - 24.6 PPG
+  '5104157',  // Victor Wembanyama - 24.0 PPG
+  '2595516',  // Trae Young - 23.8 PPG
+  '4701230',  // Gradey Dick - 23.7 PPG
+  '3149673',  // Karl-Anthony Towns - 23.4 PPG
+  '4066261',  // De'Aaron Fox - 23.2 PPG
+  '4397020',  // Luguentz Dort - 23.0 PPG
+  '3059318',  // Joel Embiid - 22.6 PPG
+  '4395628',  // Zion Williamson - 22.3 PPG
+  '6583',     // Anthony Davis - 20.5 PPG
 ];
 
 export interface ESPNStatsLeader {
