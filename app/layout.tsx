@@ -32,7 +32,11 @@ export const metadata: Metadata = {
     description: "Track live NBA games, standings, and player stats with real-time updates.",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
