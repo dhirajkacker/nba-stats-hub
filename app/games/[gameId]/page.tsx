@@ -15,6 +15,7 @@ interface TeamStats {
 
 interface PlayerStat {
   athlete: {
+    id: string;
     displayName: string;
     jersey: string;
     position: { abbreviation: string };
@@ -205,8 +206,8 @@ export default function GamePage() {
               awayTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <div className="flex items-center gap-6 flex-1">
-              <div className="relative w-24 h-24">
+            <Link href={`/teams/${awayTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-6 flex-1 group">
+              <div className="relative w-24 h-24 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(awayTeam.team.abbreviation, 'medium')}
                   alt={`${awayTeam.team.displayName} logo`}
@@ -217,14 +218,14 @@ export default function GamePage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-black text-gray-900 mb-1">
+                <h2 className="text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
                   {awayTeam.team.displayName}
                 </h2>
                 <p className="text-xs text-gray-500 font-medium">
                   {getRecord(awayTeam)}
                 </p>
               </div>
-            </div>
+            </Link>
             <div
               className={`text-7xl font-black ${
                 awayTeam.winner ? 'text-orange-600' : 'text-gray-800'
@@ -256,8 +257,8 @@ export default function GamePage() {
               homeTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <div className="flex items-center gap-6 flex-1">
-              <div className="relative w-24 h-24">
+            <Link href={`/teams/${homeTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-6 flex-1 group">
+              <div className="relative w-24 h-24 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(homeTeam.team.abbreviation, 'medium')}
                   alt={`${homeTeam.team.displayName} logo`}
@@ -268,14 +269,14 @@ export default function GamePage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-black text-gray-900 mb-1">
+                <h2 className="text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
                   {homeTeam.team.displayName}
                 </h2>
                 <p className="text-xs text-gray-500 font-medium">
                   {getRecord(homeTeam)}
                 </p>
               </div>
-            </div>
+            </Link>
             <div
               className={`text-7xl font-black ${
                 homeTeam.winner ? 'text-orange-600' : 'text-gray-800'
@@ -322,12 +323,17 @@ export default function GamePage() {
                     </thead>
                     <tbody className="divide-y divide-gray-100">
                       {teamBox.statistics[0]?.athletes.map((player, playerIdx) => (
-                        <tr key={playerIdx} className="hover:bg-gray-50">
-                          <td className="py-3 px-4 sticky left-0 bg-white">
-                            <div className="flex items-center gap-2">
+                        <tr key={playerIdx} className="hover:bg-orange-50 transition-colors group">
+                          <td className="py-3 px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
+                            <Link
+                              href={`/players/${player.athlete.id}`}
+                              className="flex items-center gap-2 hover:text-orange-600"
+                            >
                               <span className="w-6 text-gray-500 font-semibold">#{player.athlete.jersey}</span>
-                              <span className="font-semibold text-gray-900">{player.athlete.displayName}</span>
-                            </div>
+                              <span className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                                {player.athlete.displayName}
+                              </span>
+                            </Link>
                           </td>
                           <td className="text-center py-3 px-2 text-gray-600 font-medium">
                             {player.athlete.position?.abbreviation}

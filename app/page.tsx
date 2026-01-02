@@ -39,8 +39,19 @@ export default async function Home() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Standings at Top - Side by Side */}
+        {/* NBA Games */}
         <div className="mb-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+            <h2 className="text-3xl font-black text-gray-900">
+              NBA Games
+            </h2>
+          </div>
+          <LiveScores />
+        </div>
+
+        {/* Standings */}
+        <div className="mb-6">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
             <h2 className="text-3xl font-black text-gray-900">Standings</h2>
@@ -57,17 +68,6 @@ export default async function Home() {
               </p>
             </div>
           )}
-        </div>
-
-        {/* NBA Games Below */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
-            <h2 className="text-3xl font-black text-gray-900">
-              NBA Games
-            </h2>
-          </div>
-          <LiveScores />
         </div>
 
       </main>

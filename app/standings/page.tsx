@@ -18,7 +18,7 @@ export default async function StandingsPage() {
             ← Back to Home
           </Link>
           <h1 className="text-5xl font-black tracking-tight mb-2">
-            📊 NBA Standings
+            🏆 NBA Standings
           </h1>
           <p className="text-orange-200 font-medium">
             Current season standings and last season's final results

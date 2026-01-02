@@ -14,6 +14,9 @@ export function getTeamLogoUrl(teamTricode: string, size: 'small' | 'medium' | '
       'GS': 'GSW',
       'SA': 'SAS',
       'NY': 'NYK',
+      'NO': 'NOP',
+      'UTAH': 'UTA',  // ESPN uses "UTAH" instead of "UTA"
+      'WSH': 'WAS',
     };
     return normalized[code.toUpperCase()] || code.toUpperCase();
   };
@@ -80,6 +83,8 @@ export function getTeamColor(teamTricode: string): string {
       'NO': 'NOP',
       'SA': 'SAS',
       'NY': 'NYK',
+      'UTAH': 'UTA',  // ESPN uses "UTAH" instead of "UTA"
+      'WSH': 'WAS',
     };
     return normalized[code.toUpperCase()] || code.toUpperCase();
   };

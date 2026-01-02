@@ -62,7 +62,7 @@ export default function PlayersPage() {
             ← Back to Home
           </Link>
           <h1 className="text-4xl font-black tracking-tight">
-            🏀 Top NBA Scorers
+            ⛹️ Top NBA Scorers
           </h1>
           <p className="text-orange-200 mt-2 font-medium">
             Current season leaders by points per game
@@ -160,7 +160,10 @@ export default function PlayersPage() {
 
                       {/* Team Logo */}
                       <td className="py-4 px-4">
-                        <div className="flex items-center justify-center gap-2">
+                        <Link
+                          href={`/teams/${player.teamTricode.toLowerCase()}`}
+                          className="flex items-center justify-center gap-2 hover:opacity-80 transition-opacity"
+                        >
                           <div className="relative w-8 h-8">
                             <Image
                               src={getTeamLogoUrl(player.teamTricode, 'small')}
@@ -171,8 +174,8 @@ export default function PlayersPage() {
                               unoptimized
                             />
                           </div>
-                          <span className="font-semibold text-gray-700 text-sm">{player.teamTricode}</span>
-                        </div>
+                          <span className="font-semibold text-gray-700 text-sm hover:text-orange-600">{player.teamTricode}</span>
+                        </Link>
                       </td>
 
                       {/* Position */}

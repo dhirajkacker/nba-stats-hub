@@ -13,12 +13,12 @@ export default function Footer() {
                 Explore More Stats
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link
                 href="/teams"
                 className="group block p-6 border-2 border-gray-200 rounded-xl hover:border-orange-500 hover:shadow-lg transition-all duration-300 bg-white"
               >
-                <div className="text-3xl mb-3">📊</div>
+                <div className="text-3xl mb-3">🏀</div>
                 <h4 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                   Team Stats
                 </h4>
@@ -30,7 +30,7 @@ export default function Footer() {
                 href="/players"
                 className="group block p-6 border-2 border-gray-200 rounded-xl hover:border-orange-500 hover:shadow-lg transition-all duration-300 bg-white"
               >
-                <div className="text-3xl mb-3">⭐</div>
+                <div className="text-3xl mb-3">⛹️</div>
                 <h4 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                   Player Stats
                 </h4>
@@ -42,12 +42,24 @@ export default function Footer() {
                 href="/standings"
                 className="group block p-6 border-2 border-gray-200 rounded-xl hover:border-orange-500 hover:shadow-lg transition-all duration-300 bg-white"
               >
-                <div className="text-3xl mb-3">📊</div>
+                <div className="text-3xl mb-3">🏆</div>
                 <h4 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                   Full Standings
                 </h4>
                 <p className="text-sm text-gray-600">
                   View current and last season standings
+                </p>
+              </Link>
+              <Link
+                href="/history"
+                className="group block p-6 border-2 border-gray-200 rounded-xl hover:border-orange-500 hover:shadow-lg transition-all duration-300 bg-white"
+              >
+                <div className="text-3xl mb-3">👑</div>
+                <h4 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                  Champions History
+                </h4>
+                <p className="text-sm text-gray-600">
+                  NBA Finals and Conference champions through the years
                 </p>
               </Link>
             </div>
@@ -70,6 +82,9 @@ export default function Footer() {
             </p>
             <p className="text-gray-500 text-xs mt-4 border-t border-gray-700 pt-4">
               Made by Claude Code / Prompted by Dhiraj Kacker
+            </p>
+            <p className="text-gray-600 text-xs mt-2">
+              Version 1.1
             </p>
           </div>
         </div>

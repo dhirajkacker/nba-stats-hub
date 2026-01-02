@@ -84,7 +84,7 @@ export default function TeamsPage() {
             ← Back to Home
           </Link>
           <h1 className="text-4xl font-black tracking-tight">
-            📊 NBA Team Statistics
+            🏀 NBA Team Statistics
           </h1>
           <p className="text-orange-200 mt-2 font-medium">
             Complete statistics for all {allTeams.length} teams - Sorted by record
