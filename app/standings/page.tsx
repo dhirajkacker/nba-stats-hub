@@ -3,10 +3,11 @@ import StandingsTable from '@/components/StandingsTable';
 import Link from 'next/link';
 
 export default async function StandingsPage() {
-  // Fetch both current season and last season standings
-  const [currentStandings, lastSeasonStandings] = await Promise.all([
+  // Fetch current season and past seasons standings
+  const [currentStandings, lastSeasonStandings, season2023Standings] = await Promise.all([
     getESPNStandings(),
-    getESPNStandingsBySeason('2024-04-14') // End of 2023-24 regular season
+    getESPNStandingsBySeason('2024-04-14'), // End of 2023-24 regular season
+    getESPNStandingsBySeason('2023-04-09')  // End of 2022-23 regular season
   ]);
 
   return (
@@ -21,7 +22,7 @@ export default async function StandingsPage() {
             🏆 NBA Standings
           </h1>
           <p className="text-orange-200 font-medium">
-            Current season standings and last season's final results
+            Current season standings and historical results
           </p>
         </div>
       </header>
@@ -57,7 +58,7 @@ export default async function StandingsPage() {
           </div>
         </section>
 
-        {/* Last Season Final Standings */}
+        {/* 2023-24 Season Final Standings */}
         <section>
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
@@ -72,7 +73,7 @@ export default async function StandingsPage() {
               <StandingsTable standings={lastSeasonStandings.standings} conference="East" />
             ) : (
               <div className="bg-white rounded-lg shadow-md p-6">
-                <p className="text-gray-500 text-center">Last season Eastern Conference standings unavailable</p>
+                <p className="text-gray-500 text-center">2023-24 Eastern Conference standings unavailable</p>
               </div>
             )}
 
@@ -81,7 +82,37 @@ export default async function StandingsPage() {
               <StandingsTable standings={lastSeasonStandings.standings} conference="West" />
             ) : (
               <div className="bg-white rounded-lg shadow-md p-6">
-                <p className="text-gray-500 text-center">Last season Western Conference standings unavailable</p>
+                <p className="text-gray-500 text-center">2023-24 Western Conference standings unavailable</p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* 2022-23 Season Final Standings */}
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-1 w-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full"></div>
+            <h2 className="text-3xl font-black text-gray-900">
+              {season2023Standings?.season || '2022-23'} Season - Final Standings
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Eastern Conference */}
+            {season2023Standings && season2023Standings.standings ? (
+              <StandingsTable standings={season2023Standings.standings} conference="East" />
+            ) : (
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-gray-500 text-center">2022-23 Eastern Conference standings unavailable</p>
+              </div>
+            )}
+
+            {/* Western Conference */}
+            {season2023Standings && season2023Standings.standings ? (
+              <StandingsTable standings={season2023Standings.standings} conference="West" />
+            ) : (
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-gray-500 text-center">2022-23 Western Conference standings unavailable</p>
               </div>
             )}
           </div>
