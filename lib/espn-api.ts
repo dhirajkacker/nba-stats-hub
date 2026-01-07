@@ -6,6 +6,26 @@ import { Scoreboard, Standings, Game, Standing } from './types';
 const ESPN_BASE_URL = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba';
 
 /**
+ * Determine NBA season string based on a date
+ * NBA season spans two calendar years: starts in October, ends in June
+ * e.g., October 2025 - June 2026 = "2025-26" season
+ */
+function getNBASeasonFromDate(date: Date): string {
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1; // 1-12
+
+  // If October-December, season is currentYear to currentYear+1
+  // If January-September, season is previousYear to currentYear
+  if (month >= 10) {
+    // October-December: new season has started
+    return `${year}-${(year + 1).toString().slice(-2)}`;
+  } else {
+    // January-September: still in previous year's season
+    return `${year - 1}-${year.toString().slice(-2)}`;
+  }
+}
+
+/**
  * Fetch scoreboard from ESPN for a specific date
  * @param date - Date string in YYYY-MM-DD format (REQUIRED for correct timezone handling)
  */
@@ -285,8 +305,7 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
     console.log('Processed standings for', finalStandings.length, 'teams (East:', eastStandings.length, 'West:', westStandings.length, ')');
 
     // Determine season based on date
-    const seasonYear = seasonEndDate ? new Date(seasonEndDate).getFullYear() : new Date().getFullYear();
-    const season = seasonEndDate ? `${seasonYear - 1}-${seasonYear.toString().slice(-2)}` : `${seasonYear}-${(seasonYear + 1).toString().slice(-2)}`;
+    const season = getNBASeasonFromDate(seasonEndDate ? new Date(seasonEndDate) : new Date());
 
     return {
       season,
@@ -384,8 +403,7 @@ export async function getESPNStandings(): Promise<Standings | null> {
 
     console.log('Fetched full standings for', allStandings.length, 'teams with home/away splits');
 
-    const seasonYear = new Date().getFullYear();
-    const season = `${seasonYear}-${(seasonYear + 1).toString().slice(-2)}`;
+    const season = getNBASeasonFromDate(new Date());
 
     return {
       season,
