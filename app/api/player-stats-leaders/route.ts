@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPlayerStatsFromLeaders } from '@/lib/nba-leaders';
-import { getTopPlayersByAllStats } from '@/lib/espn-stats-leaders';
+import { getTopPlayersByAllStats, getLastFetchStatus } from '@/lib/espn-stats-leaders';
 
-// Increase timeout for Vercel serverless function (max on hobby plan is 10s, but we can try)
-export const maxDuration = 10;
+// Increase timeout for Vercel serverless function
+export const maxDuration = 30;
 // Cache the response for 1 hour
 export const revalidate = 3600;
 
@@ -12,17 +12,48 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const playerIdParam = searchParams.get('playerId');
     const limitParam = searchParams.get('limit');
+    const includeStatus = searchParams.get('includeStatus') === 'true';
 
     // If no playerId specified, return top players list
     if (!playerIdParam) {
-      const limit = limitParam ? parseInt(limitParam) : 50;
+      const limit = limitParam ? parseInt(limitParam) : 30;
       console.log(`API: Fetching top ${limit} players...`);
 
+      const startTime = Date.now();
       const topPlayers = await getTopPlayersByAllStats(limit);
-      console.log(`API: Successfully fetched ${topPlayers.length} players`);
+      const fetchTime = Date.now() - startTime;
+
+      const status = getLastFetchStatus();
+      console.log(`API: Fetched ${topPlayers.length} players from ${status.source} in ${fetchTime}ms`);
 
       if (topPlayers.length === 0) {
-        console.error('API: No players returned from getTopPlayersByAllStats');
+        console.error('API: No players returned - all data sources failed');
+        console.error('API: Errors:', status.errors);
+        return NextResponse.json(
+          {
+            error: 'Unable to fetch player data',
+            errors: status.errors,
+            message: 'All ESPN data sources are currently unavailable. Please try again later.',
+          },
+          { status: 503 }
+        );
+      }
+
+      // Return with metadata if requested
+      if (includeStatus) {
+        return NextResponse.json({
+          players: topPlayers,
+          meta: {
+            source: status.source,
+            count: topPlayers.length,
+            fetchTimeMs: fetchTime,
+            errors: status.errors.length > 0 ? status.errors : undefined,
+          },
+        }, {
+          headers: {
+            'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
+          },
+        });
       }
 
       // Always return an array, even if empty

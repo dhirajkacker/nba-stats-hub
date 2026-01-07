@@ -1,40 +1,9 @@
 // Fetch NBA stats leaders from ESPN API
 // This provides real-time, accurate player data with current teams and stats
 
-// Fallback list of actual top 30 NBA scorers (2025-26 season)
-// Updated: 2025-12-31 from ESPN leaders API
-const FALLBACK_TOP_PLAYERS = [
-  '3945274',  // Luka Doncic - 33.5 PPG
-  '4278073',  // Shai Gilgeous-Alexander - 32.2 PPG
-  '4431678',  // Tyrese Maxey - 30.8 PPG
-  '3112335',  // Nikola Jokic - 29.6 PPG
-  '3908809',  // Giannis Antetokounmpo - 29.5 PPG
-  '3917376',  // Jayson Tatum - 29.5 PPG
-  '3934672',  // Anthony Edwards - 29.4 PPG
-  '4594268',  // Alperen Sengun - 29.1 PPG
-  '3975',     // Kevin Durant - 28.8 PPG
-  '3032977',  // Damian Lillard - 28.7 PPG
-  '6450',     // Kawhi Leonard - 27.8 PPG
-  '4066336',  // Donovan Mitchell - 27.7 PPG
-  '4066457',  // LaMelo Ball - 26.6 PPG
-  '4432166',  // Cam Thomas - 26.5 PPG
-  '3992',     // LeBron James - 26.1 PPG
-  '4278104',  // Michael Porter Jr. - 25.8 PPG
-  '4683021',  // Paolo Banchero - 25.6 PPG
-  '3202',     // Kevin Love - 25.5 PPG
-  '3136193',  // Devin Booker - 25.3 PPG
-  '3936299',  // Jalen Brunson - 25.2 PPG
-  '4433627',  // Franz Wagner - 24.6 PPG
-  '5104157',  // Victor Wembanyama - 24.0 PPG
-  '2595516',  // Trae Young - 23.8 PPG
-  '4701230',  // Gradey Dick - 23.7 PPG
-  '3149673',  // Karl-Anthony Towns - 23.4 PPG
-  '4066261',  // De'Aaron Fox - 23.2 PPG
-  '4397020',  // Luguentz Dort - 23.0 PPG
-  '3059318',  // Joel Embiid - 22.6 PPG
-  '4395628',  // Zion Williamson - 22.3 PPG
-  '6583',     // Anthony Davis - 20.5 PPG
-];
+// Minimum PPG threshold for a player to be in the "top scorers" list
+// This ensures data quality - if a player has lower PPG, they shouldn't be shown
+const MIN_PPG_FOR_TOP_SCORERS = 18.0;
 
 export interface ESPNStatsLeader {
   id: string;
@@ -66,45 +35,101 @@ export interface ESPNStatsLeader {
   };
 }
 
+export interface FetchStatus {
+  source: 'espn-leaders' | 'espn-teams' | 'none';
+  playersFound: number;
+  errors: string[];
+  retryAttempts: number;
+}
+
+// Track fetch status for debugging and user feedback
+let lastFetchStatus: FetchStatus = {
+  source: 'none',
+  playersFound: 0,
+  errors: [],
+  retryAttempts: 0,
+};
+
+export function getLastFetchStatus(): FetchStatus {
+  return { ...lastFetchStatus };
+}
+
 /**
- * Fetch top NBA players from individual player pages
- * Uses a curated list of top player IDs and fetches their current stats
+ * Fetch with retry logic and timeout
+ */
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit = {},
+  maxRetries: number = 3,
+  timeoutMs: number = 5000
+): Promise<Response> {
+  let lastError: Error | null = null;
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+      const response = await fetch(url, {
+        ...options,
+        signal: controller.signal,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'application/json',
+          ...options.headers,
+        },
+      });
+
+      clearTimeout(timeoutId);
+
+      if (response.ok) {
+        return response;
+      }
+
+      lastError = new Error(`HTTP ${response.status}: ${response.statusText}`);
+      console.log(`Attempt ${attempt}/${maxRetries} failed: ${lastError.message}`);
+    } catch (error: any) {
+      lastError = error;
+      if (error.name === 'AbortError') {
+        console.log(`Attempt ${attempt}/${maxRetries} timed out after ${timeoutMs}ms`);
+      } else {
+        console.log(`Attempt ${attempt}/${maxRetries} failed: ${error.message}`);
+      }
+    }
+
+    // Wait before retrying (exponential backoff)
+    if (attempt < maxRetries) {
+      const delay = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+
+  throw lastError || new Error('All retry attempts failed');
+}
+
+/**
+ * Extract athlete ID from ESPN API $ref URL
+ */
+function extractAthleteId(refUrl: string): string | null {
+  const match = refUrl.match(/athletes\/(\d+)/);
+  return match ? match[1] : null;
+}
+
+/**
+ * Fetch player details from ESPN athlete API
  */
 async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null> {
   try {
     const url = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}`;
-
-    console.log(`Fetching player ${playerId}...`);
-
-    // Add timeout and caching for Vercel
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout per player
-
-    const response = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'application/json',
-      }
-    });
-
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      console.log(`Failed to fetch player ${playerId}: ${response.status}`);
-      return null;
-    }
-
+    const response = await fetchWithRetry(url, {}, 2, 3000);
     const data = await response.json();
     const athlete = data.athlete;
 
     if (!athlete) {
-      console.log(`No athlete data for player ${playerId}`);
       return null;
     }
 
     const stats = athlete.statsSummary?.statistics || [];
-
     const getStat = (name: string): number => {
       const stat = stats.find((s: any) => s.name === name);
       const value = stat?.value || stat?.displayValue;
@@ -113,27 +138,20 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
     };
 
     const ppg = getStat('avgPoints');
-
-    console.log(`Player ${playerId} (${athlete.displayName}): ${ppg} PPG`);
-
-    // Skip players who don't have PPG stats (injured/inactive)
     if (!ppg || ppg === 0) {
-      console.log(`Skipping ${athlete.displayName} - no PPG data`);
       return null;
     }
 
     return {
       id: athlete.id,
       displayName: athlete.displayName,
-      team: {
-        abbreviation: athlete.team?.abbreviation || 'NBA',
-      },
+      team: { abbreviation: athlete.team?.abbreviation || 'NBA' },
       position: athlete.position,
       jersey: athlete.jersey,
       height: athlete.height,
       weight: athlete.weight,
       stats: {
-        gamesPlayed: 0, // ESPN doesn't provide this in statsSummary
+        gamesPlayed: 0,
         ppg: getStat('avgPoints'),
         rpg: getStat('avgRebounds'),
         apg: getStat('avgAssists'),
@@ -150,149 +168,234 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
       },
     };
   } catch (error: any) {
-    if (error.name === 'AbortError') {
-      console.error(`Timeout fetching player ${playerId}`);
-    } else {
-      console.error(`Error fetching player ${playerId}:`, error);
-    }
+    console.error(`Error fetching player ${playerId}:`, error.message);
     return null;
   }
 }
 
 /**
- * Extract athlete ID from ESPN API $ref URL
- * Example: "http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2026/athletes/3945274?lang=en&region=us"
- * Returns: "3945274"
+ * Get ESPN season year (ESPN uses next calendar year for current season)
+ * e.g., 2025-26 season = 2026 in ESPN API
  */
-function extractAthleteId(refUrl: string): string | null {
-  const match = refUrl.match(/athletes\/(\d+)/);
-  return match ? match[1] : null;
+function getESPNSeasonYear(): number {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  // If Oct-Dec, use next year; if Jan-Sep, use current year
+  return month >= 10 ? year + 1 : year;
 }
 
 /**
- * Fetch top NBA players by points per game from ESPN Stats Leaders API
- * This provides real-time data with correct teams and current stats
- * Dynamically fetches the current top scorers instead of using a hardcoded list
+ * PRIMARY SOURCE: Fetch top scorers from ESPN Leaders API
+ * This API returns the actual statistical leaders
  */
-export async function getTopScorers(limit: number = 50): Promise<ESPNStatsLeader[]> {
-  let athleteIds: string[] = [];
+async function fetchFromLeadersAPI(limit: number): Promise<ESPNStatsLeader[]> {
+  const seasonYear = getESPNSeasonYear();
+  const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
 
-  try {
-    // Get current season year (ESPN uses 2026 for 2025-26 season)
-    const currentYear = new Date().getFullYear();
-    const seasonYear = currentYear + 1; // ESPN uses next year for current season
+  console.log(`[Leaders API] Fetching from ESPN (season ${seasonYear})...`);
 
-    // Fetch stats leaders from ESPN API
-    const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
-    console.log(`Fetching top scorers from ESPN leaders API (season ${seasonYear})...`);
-    console.log(`URL: ${leadersUrl}`);
+  const response = await fetchWithRetry(leadersUrl, {}, 3, 8000);
+  const data = await response.json();
 
-    const leadersResponse = await fetch(leadersUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'application/json',
-      }
-    });
-
-    console.log(`Leaders API response status: ${leadersResponse.status}`);
-
-    if (!leadersResponse.ok) {
-      console.error(`Failed to fetch leaders: ${leadersResponse.status} ${leadersResponse.statusText}`);
-      throw new Error(`Failed to fetch leaders: ${leadersResponse.status}`);
-    }
-
-    const leadersData = await leadersResponse.json();
-    console.log(`Leaders data categories count: ${leadersData.categories?.length || 0}`);
-
-    // Find the PPG category
-    const ppgCategory = leadersData.categories?.find(
-      (cat: any) => cat.abbreviation === 'PTS' || cat.name === 'pointsPerGame'
-    );
-
-    if (!ppgCategory || !ppgCategory.leaders) {
-      console.error('PPG leaders data not found, using fallback list');
-      throw new Error('PPG leaders data not found in ESPN API response');
-    }
-
-    // Extract athlete IDs from the top leaders
-    const topLeaders = ppgCategory.leaders.slice(0, Math.min(limit, ppgCategory.leaders.length));
-
-    for (const leader of topLeaders) {
-      if (leader.athlete?.$ref) {
-        const athleteId = extractAthleteId(leader.athlete.$ref);
-        if (athleteId) {
-          athleteIds.push(athleteId);
-        }
-      }
-    }
-
-    console.log(`Found ${athleteIds.length} top scorers from ESPN leaders API`);
-
-    // Fetch detailed stats for each player in batches to avoid timeout
-    const players: ESPNStatsLeader[] = [];
-    const batchSize = 15; // Process 15 players at a time (faster with good caching)
-
-    for (let i = 0; i < athleteIds.length; i += batchSize) {
-      const batch = athleteIds.slice(i, i + batchSize);
-      console.log(`Fetching batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
-
-      const playerPromises = batch.map(id => fetchPlayerById(id));
-      const results = await Promise.all(playerPromises);
-
-      for (const player of results) {
-        if (player) {
-          players.push(player);
-        }
-      }
-    }
-
-    console.log(`Successfully fetched ${players.length} players with complete stats`);
-    return players;
-  } catch (error: any) {
-    console.error('❌ ERROR fetching dynamic top scorers from ESPN leaders API');
-    console.error('Error:', error.message);
-    console.log('⚠️  Falling back to curated list of top players with real-time ESPN stats');
-
-    // ESPN's sports.core API is blocked on Vercel, use fallback list
-    athleteIds = FALLBACK_TOP_PLAYERS.slice(0, limit);
+  if (!data.categories?.length) {
+    throw new Error('No categories in leaders response');
   }
 
-  // Fallback: Use curated player list but fetch real-time stats from ESPN
-  try {
-    console.log(`Fetching ${athleteIds.length} top players using curated list...`);
-    const players: ESPNStatsLeader[] = [];
-    const batchSize = 15; // Same batch size as dynamic
+  // Find PPG category
+  const ppgCategory = data.categories.find(
+    (cat: any) => cat.abbreviation === 'PTS' || cat.name === 'pointsPerGame'
+  );
 
-    for (let i = 0; i < athleteIds.length; i += batchSize) {
-      const batch = athleteIds.slice(i, i + batchSize);
-      console.log(`Batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(athleteIds.length / batchSize)}...`);
+  if (!ppgCategory?.leaders?.length) {
+    throw new Error('PPG leaders category not found');
+  }
 
-      const playerPromises = batch.map(id => fetchPlayerById(id));
-      const results = await Promise.all(playerPromises);
+  console.log(`[Leaders API] Found ${ppgCategory.leaders.length} PPG leaders`);
 
-      for (const player of results) {
-        if (player) {
-          players.push(player);
+  // Extract athlete IDs
+  const athleteIds: string[] = [];
+  for (const leader of ppgCategory.leaders.slice(0, Math.min(limit + 10, ppgCategory.leaders.length))) {
+    if (leader.athlete?.$ref) {
+      const id = extractAthleteId(leader.athlete.$ref);
+      if (id) athleteIds.push(id);
+    }
+  }
+
+  console.log(`[Leaders API] Fetching details for ${athleteIds.length} players...`);
+
+  // Fetch player details in parallel batches
+  const players: ESPNStatsLeader[] = [];
+  const batchSize = 10;
+
+  for (let i = 0; i < athleteIds.length; i += batchSize) {
+    const batch = athleteIds.slice(i, i + batchSize);
+    const results = await Promise.all(batch.map(id => fetchPlayerById(id)));
+    players.push(...results.filter((p): p is ESPNStatsLeader => p !== null));
+  }
+
+  return players;
+}
+
+/**
+ * SECONDARY SOURCE: Fetch top scorers from all NBA teams
+ * Falls back to this if Leaders API fails
+ */
+async function fetchFromTeamsAPI(limit: number): Promise<ESPNStatsLeader[]> {
+  console.log('[Teams API] Fetching teams to gather player stats...');
+
+  const teamsUrl = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams';
+  const response = await fetchWithRetry(teamsUrl, {}, 3, 8000);
+  const data = await response.json();
+
+  const teams = data.sports?.[0]?.leagues?.[0]?.teams || [];
+  if (!teams.length) {
+    throw new Error('No teams found');
+  }
+
+  console.log(`[Teams API] Found ${teams.length} teams, fetching rosters...`);
+
+  const allPlayers: ESPNStatsLeader[] = [];
+  const processedTeams: string[] = [];
+
+  // Fetch players from each team
+  for (const teamEntry of teams) {
+    const team = teamEntry.team;
+    if (!team?.id) continue;
+
+    try {
+      const rosterUrl = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${team.id}/roster`;
+      const rosterResponse = await fetchWithRetry(rosterUrl, {}, 2, 5000);
+      const rosterData = await rosterResponse.json();
+
+      const athletes = rosterData.athletes || [];
+      for (const athlete of athletes) {
+        if (!athlete?.id) continue;
+
+        // Get stats from athlete summary
+        const stats = athlete.statsSummary?.statistics || [];
+        const ppgStat = stats.find((s: any) => s.name === 'avgPoints');
+        const ppg = ppgStat?.value || ppgStat?.displayValue;
+
+        if (ppg && parseFloat(ppg) >= MIN_PPG_FOR_TOP_SCORERS) {
+          const rpgStat = stats.find((s: any) => s.name === 'avgRebounds');
+          const apgStat = stats.find((s: any) => s.name === 'avgAssists');
+          const fgPctStat = stats.find((s: any) => s.name === 'fieldGoalPct');
+
+          allPlayers.push({
+            id: athlete.id,
+            displayName: athlete.displayName || athlete.fullName,
+            team: { abbreviation: team.abbreviation || 'NBA' },
+            position: athlete.position,
+            jersey: athlete.jersey,
+            height: athlete.height,
+            weight: athlete.weight,
+            stats: {
+              gamesPlayed: 0,
+              ppg: parseFloat(ppg),
+              rpg: rpgStat ? parseFloat(rpgStat.value || rpgStat.displayValue || 0) : 0,
+              apg: apgStat ? parseFloat(apgStat.value || apgStat.displayValue || 0) : 0,
+              fgPct: fgPctStat ? parseFloat(fgPctStat.value || fgPctStat.displayValue || 0) : 0,
+            },
+          });
         }
       }
+      processedTeams.push(team.abbreviation);
+    } catch (error: any) {
+      console.log(`[Teams API] Failed to fetch roster for ${team.abbreviation}: ${error.message}`);
     }
+  }
 
-    // Sort by PPG descending to show actual leaders first
-    players.sort((a, b) => (b.stats?.ppg || 0) - (a.stats?.ppg || 0));
+  console.log(`[Teams API] Processed ${processedTeams.length} teams, found ${allPlayers.length} qualifying players`);
+  return allPlayers;
+}
 
-    console.log(`✅ Successfully fetched ${players.length} players with real-time stats`);
-    return players;
-  } catch (fallbackError: any) {
-    console.error('❌ Fallback also failed:', fallbackError.message);
+/**
+ * Validate and filter players to ensure data quality
+ */
+function validateAndFilterPlayers(players: ESPNStatsLeader[], limit: number): ESPNStatsLeader[] {
+  // Filter out players below minimum PPG threshold
+  const validPlayers = players.filter(p => p.stats.ppg >= MIN_PPG_FOR_TOP_SCORERS);
+
+  // Sort by PPG descending
+  validPlayers.sort((a, b) => b.stats.ppg - a.stats.ppg);
+
+  // Log data quality info
+  const filtered = players.length - validPlayers.length;
+  if (filtered > 0) {
+    console.log(`[Validation] Filtered out ${filtered} players below ${MIN_PPG_FOR_TOP_SCORERS} PPG threshold`);
+  }
+
+  const result = validPlayers.slice(0, limit);
+
+  // Sanity check: the 30th player should have at least MIN_PPG_FOR_TOP_SCORERS
+  if (result.length > 0) {
+    const lastPlayer = result[result.length - 1];
+    console.log(`[Validation] Top ${result.length} scorers range: ${result[0].stats.ppg.toFixed(1)} - ${lastPlayer.stats.ppg.toFixed(1)} PPG`);
+
+    if (lastPlayer.stats.ppg < MIN_PPG_FOR_TOP_SCORERS) {
+      console.warn(`[Validation] WARNING: Last player ${lastPlayer.displayName} has only ${lastPlayer.stats.ppg.toFixed(1)} PPG`);
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Fetch top NBA players by points per game
+ * Tries multiple data sources with retry logic and validates results
+ */
+export async function getTopScorers(limit: number = 30): Promise<ESPNStatsLeader[]> {
+  lastFetchStatus = {
+    source: 'none',
+    playersFound: 0,
+    errors: [],
+    retryAttempts: 0,
+  };
+
+  let players: ESPNStatsLeader[] = [];
+
+  // Try primary source: ESPN Leaders API
+  try {
+    console.log('=== Attempting ESPN Leaders API ===');
+    players = await fetchFromLeadersAPI(limit + 10); // Fetch extra to account for filtering
+    lastFetchStatus.source = 'espn-leaders';
+    lastFetchStatus.playersFound = players.length;
+    console.log(`[Leaders API] SUCCESS: Got ${players.length} players`);
+  } catch (error: any) {
+    lastFetchStatus.errors.push(`Leaders API: ${error.message}`);
+    console.error(`[Leaders API] FAILED: ${error.message}`);
+
+    // Try secondary source: Teams API
+    try {
+      console.log('=== Falling back to ESPN Teams API ===');
+      players = await fetchFromTeamsAPI(limit + 10);
+      lastFetchStatus.source = 'espn-teams';
+      lastFetchStatus.playersFound = players.length;
+      console.log(`[Teams API] SUCCESS: Got ${players.length} players`);
+    } catch (teamsError: any) {
+      lastFetchStatus.errors.push(`Teams API: ${teamsError.message}`);
+      console.error(`[Teams API] FAILED: ${teamsError.message}`);
+    }
+  }
+
+  if (players.length === 0) {
+    console.error('=== ALL DATA SOURCES FAILED ===');
+    console.error('Errors:', lastFetchStatus.errors);
     return [];
   }
+
+  // Validate and filter results
+  const validatedPlayers = validateAndFilterPlayers(players, limit);
+  lastFetchStatus.playersFound = validatedPlayers.length;
+
+  console.log(`=== Final result: ${validatedPlayers.length} validated players ===`);
+  return validatedPlayers;
 }
 
 /**
  * Fetch players by multiple stat categories for comprehensive coverage
- * Returns top players across scoring, assists, rebounds, etc.
  */
-export async function getTopPlayersByAllStats(limit: number = 50): Promise<ESPNStatsLeader[]> {
-  // Just use getTopScorers which already has the comprehensive list
+export async function getTopPlayersByAllStats(limit: number = 30): Promise<ESPNStatsLeader[]> {
   return getTopScorers(limit);
 }
