@@ -7,9 +7,19 @@ import { PlayerInfo } from '@/lib/player-data';
 import { getTeamLogoUrl } from '@/lib/team-logos';
 import Image from 'next/image';
 
+type SortColumn = 'ppg' | 'rpg' | 'apg' | 'fgPct';
+
+const sortLabels: Record<SortColumn, string> = {
+  ppg: 'points per game',
+  rpg: 'rebounds per game',
+  apg: 'assists per game',
+  fgPct: 'field goal percentage',
+};
+
 export default function PlayersPage() {
   const [topPlayers, setTopPlayers] = useState<PlayerInfo[]>([]);
   const [isLoadingPlayers, setIsLoadingPlayers] = useState(true);
+  const [sortBy, setSortBy] = useState<SortColumn>('ppg');
 
   // Fetch real-time player data from ESPN API
   // ESPN only provides: PPG, RPG, APG, FG% (no MPG, 3PT%, FT%)
@@ -53,6 +63,13 @@ export default function PlayersPage() {
     loadTopPlayers();
   }, []);
 
+  // Sort players by selected column
+  const sortedPlayers = [...topPlayers].sort((a, b) => {
+    const aVal = a[sortBy] ?? 0;
+    const bVal = b[sortBy] ?? 0;
+    return bVal - aVal; // Descending order
+  });
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
       {/* Header */}
@@ -65,7 +82,7 @@ export default function PlayersPage() {
             NBA Player Leaders
           </h1>
           <p className="text-orange-200 mt-2 font-medium">
-            Current season top scorers
+            Current season leaders by {sortLabels[sortBy]}
           </p>
         </div>
       </header>
@@ -118,22 +135,42 @@ export default function PlayersPage() {
                     <th className="text-center py-4 px-4 font-bold text-gray-700 text-sm uppercase tracking-wide">
                       Pos
                     </th>
-                    <th className="text-center py-4 px-4 font-bold text-sm uppercase tracking-wide bg-blue-50 text-blue-700">
-                      PPG
+                    <th
+                      onClick={() => setSortBy('ppg')}
+                      className={`text-center py-4 px-4 font-bold text-sm uppercase tracking-wide cursor-pointer hover:bg-blue-100 transition-colors ${
+                        sortBy === 'ppg' ? 'bg-blue-200 text-blue-900' : 'bg-blue-50 text-blue-700'
+                      }`}
+                    >
+                      PPG {sortBy === 'ppg' && '▼'}
                     </th>
-                    <th className="text-center py-4 px-4 font-bold text-sm uppercase tracking-wide bg-green-50 text-green-700">
-                      RPG
+                    <th
+                      onClick={() => setSortBy('rpg')}
+                      className={`text-center py-4 px-4 font-bold text-sm uppercase tracking-wide cursor-pointer hover:bg-green-100 transition-colors ${
+                        sortBy === 'rpg' ? 'bg-green-200 text-green-900' : 'bg-green-50 text-green-700'
+                      }`}
+                    >
+                      RPG {sortBy === 'rpg' && '▼'}
                     </th>
-                    <th className="text-center py-4 px-4 font-bold text-sm uppercase tracking-wide bg-purple-50 text-purple-700">
-                      APG
+                    <th
+                      onClick={() => setSortBy('apg')}
+                      className={`text-center py-4 px-4 font-bold text-sm uppercase tracking-wide cursor-pointer hover:bg-purple-100 transition-colors ${
+                        sortBy === 'apg' ? 'bg-purple-200 text-purple-900' : 'bg-purple-50 text-purple-700'
+                      }`}
+                    >
+                      APG {sortBy === 'apg' && '▼'}
                     </th>
-                    <th className="text-center py-4 px-4 font-bold text-sm uppercase tracking-wide bg-orange-50 text-orange-700">
-                      FG%
+                    <th
+                      onClick={() => setSortBy('fgPct')}
+                      className={`text-center py-4 px-4 font-bold text-sm uppercase tracking-wide cursor-pointer hover:bg-orange-100 transition-colors ${
+                        sortBy === 'fgPct' ? 'bg-orange-200 text-orange-900' : 'bg-orange-50 text-orange-700'
+                      }`}
+                    >
+                      FG% {sortBy === 'fgPct' && '▼'}
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
-                  {topPlayers.map((player, index) => (
+                  {sortedPlayers.map((player, index) => (
                     <tr
                       key={player.id}
                       className="hover:bg-orange-50 transition-colors"
@@ -186,29 +223,29 @@ export default function PlayersPage() {
                       </td>
 
                       {/* PPG */}
-                      <td className="py-4 px-4 text-center bg-blue-50">
-                        <span className="font-black text-blue-900">
+                      <td className={`py-4 px-4 text-center ${sortBy === 'ppg' ? 'bg-blue-100' : 'bg-blue-50'}`}>
+                        <span className={`font-black text-blue-900 ${sortBy === 'ppg' ? 'text-lg' : ''}`}>
                           {player.ppg !== undefined ? player.ppg.toFixed(1) : '-'}
                         </span>
                       </td>
 
                       {/* RPG */}
-                      <td className="py-4 px-4 text-center bg-green-50">
-                        <span className="font-black text-green-900">
+                      <td className={`py-4 px-4 text-center ${sortBy === 'rpg' ? 'bg-green-100' : 'bg-green-50'}`}>
+                        <span className={`font-black text-green-900 ${sortBy === 'rpg' ? 'text-lg' : ''}`}>
                           {player.rpg !== undefined ? player.rpg.toFixed(1) : '-'}
                         </span>
                       </td>
 
                       {/* APG */}
-                      <td className="py-4 px-4 text-center bg-purple-50">
-                        <span className="font-black text-purple-900">
+                      <td className={`py-4 px-4 text-center ${sortBy === 'apg' ? 'bg-purple-100' : 'bg-purple-50'}`}>
+                        <span className={`font-black text-purple-900 ${sortBy === 'apg' ? 'text-lg' : ''}`}>
                           {player.apg !== undefined ? player.apg.toFixed(1) : '-'}
                         </span>
                       </td>
 
                       {/* FG% */}
-                      <td className="py-4 px-4 text-center bg-orange-50">
-                        <span className="font-black text-orange-900">
+                      <td className={`py-4 px-4 text-center ${sortBy === 'fgPct' ? 'bg-orange-100' : 'bg-orange-50'}`}>
+                        <span className={`font-black text-orange-900 ${sortBy === 'fgPct' ? 'text-lg' : ''}`}>
                           {player.fgPct !== undefined ? `${player.fgPct.toFixed(1)}%` : '-'}
                         </span>
                       </td>
