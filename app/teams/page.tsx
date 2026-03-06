@@ -154,7 +154,7 @@ export default function TeamsPage() {
                       <td className="py-3 px-4 sticky left-[60px] bg-white group-hover:bg-orange-50 z-[1]">
                         <Link
                           href={`/teams/${team.teamTricode.toLowerCase()}`}
-                          className="flex items-center gap-3 min-w-[200px]"
+                          className="flex items-center gap-3 min-w-[200px] text-gray-900"
                         >
                           <div className="relative w-10 h-10 flex-shrink-0">
                             <Image

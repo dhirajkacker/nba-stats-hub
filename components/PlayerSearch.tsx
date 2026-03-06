@@ -62,7 +62,7 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
           placeholder="Search by player name..."
           value={query}
           onChange={(e) => handleSearch(e.target.value)}
-          className="w-full px-6 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
+          className="w-full px-6 py-4 text-lg text-gray-900 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
         />
         <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
           🔍

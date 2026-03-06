@@ -189,7 +189,7 @@ export default function PlayersPage() {
 
                       {/* Player Name */}
                       <td className="py-4 px-4">
-                        <Link href={`/players/${player.id}`} className="hover:text-orange-600 transition-colors">
+                        <Link href={`/players/${player.id}`} className="text-gray-900 hover:text-orange-600 transition-colors">
                           <div className="font-bold text-gray-900">{player.name}</div>
                           <div className="text-xs text-gray-500">#{player.jerseyNumber}</div>
                         </Link>

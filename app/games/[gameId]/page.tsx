@@ -327,7 +327,7 @@ export default function GamePage() {
                           <td className="py-3 px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
                             <Link
                               href={`/players/${player.athlete.id}`}
-                              className="flex items-center gap-2 hover:text-orange-600"
+                              className="flex items-center gap-2 text-gray-900 hover:text-orange-600"
                             >
                               <span className="w-6 text-gray-500 font-semibold">#{player.athlete.jersey}</span>
                               <span className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
