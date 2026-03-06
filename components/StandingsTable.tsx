@@ -84,7 +84,7 @@ export default function StandingsTable({ standings, conference }: StandingsTable
                 <td className="px-2 py-2 whitespace-nowrap">
                   <Link
                     href={`/teams/${team.teamTricode.toLowerCase()}`}
-                    className="flex items-center gap-2 group-hover:text-orange-600 transition-colors"
+                    className="flex items-center gap-2 text-gray-900 group-hover:text-orange-600 transition-colors"
                   >
                     <div className="relative w-6 h-6 flex-shrink-0">
                       <Image
