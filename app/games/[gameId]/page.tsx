@@ -166,14 +166,14 @@ export default function GamePage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/" className="text-orange-200 hover:text-white mb-4 inline-block">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+          <Link href="/" className="text-orange-200 hover:text-white mb-2 sm:mb-4 inline-block text-sm sm:text-base">
             ← Back to Home
           </Link>
-          <h1 className="text-4xl font-black tracking-tight mb-2">
+          <h1 className="text-2xl sm:text-4xl font-black tracking-tight mb-1 sm:mb-2">
             Game Details
           </h1>
-          <p className="text-orange-200 font-medium">
+          <p className="text-orange-200 font-medium text-sm sm:text-base">
             {new Date(competition.date).toLocaleDateString('en-US', {
               weekday: 'long',
               month: 'long',
@@ -202,12 +202,12 @@ export default function GamePage() {
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 mb-8">
           {/* Away Team */}
           <div
-            className={`flex items-center justify-between p-8 ${
+            className={`flex items-center justify-between p-4 sm:p-8 ${
               awayTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <Link href={`/teams/${awayTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-6 flex-1 group">
-              <div className="relative w-24 h-24 transition-transform group-hover:scale-105">
+            <Link href={`/teams/${awayTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+              <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(awayTeam.team.abbreviation, 'medium')}
                   alt={`${awayTeam.team.displayName} logo`}
@@ -217,8 +217,8 @@ export default function GamePage() {
                   unoptimized
                 />
               </div>
-              <div>
-                <h2 className="text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
                   {awayTeam.team.displayName}
                 </h2>
                 <p className="text-xs text-gray-500 font-medium">
@@ -227,7 +227,7 @@ export default function GamePage() {
               </div>
             </Link>
             <div
-              className={`text-7xl font-black ${
+              className={`text-4xl sm:text-7xl font-black shrink-0 ml-2 ${
                 awayTeam.winner ? 'text-orange-600' : 'text-gray-800'
               }`}
             >
@@ -236,10 +236,10 @@ export default function GamePage() {
           </div>
 
           {/* Divider */}
-          <div className="bg-gray-100 py-3 px-8 flex items-center justify-center gap-4">
+          <div className="bg-gray-100 py-2 sm:py-3 px-4 sm:px-8 flex items-center justify-center gap-4">
             <div className="h-px flex-1 bg-gray-300"></div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-gray-500 font-bold">
+              <span className="text-gray-500 font-bold text-sm sm:text-base">
                 {status.type.detail}
               </span>
               {isOT && (
@@ -253,12 +253,12 @@ export default function GamePage() {
 
           {/* Home Team */}
           <div
-            className={`flex items-center justify-between p-8 ${
+            className={`flex items-center justify-between p-4 sm:p-8 ${
               homeTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <Link href={`/teams/${homeTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-6 flex-1 group">
-              <div className="relative w-24 h-24 transition-transform group-hover:scale-105">
+            <Link href={`/teams/${homeTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+              <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(homeTeam.team.abbreviation, 'medium')}
                   alt={`${homeTeam.team.displayName} logo`}
@@ -268,8 +268,8 @@ export default function GamePage() {
                   unoptimized
                 />
               </div>
-              <div>
-                <h2 className="text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
                   {homeTeam.team.displayName}
                 </h2>
                 <p className="text-xs text-gray-500 font-medium">
@@ -278,7 +278,7 @@ export default function GamePage() {
               </div>
             </Link>
             <div
-              className={`text-7xl font-black ${
+              className={`text-4xl sm:text-7xl font-black shrink-0 ml-2 ${
                 homeTeam.winner ? 'text-orange-600' : 'text-gray-800'
               }`}
             >
@@ -307,15 +307,15 @@ export default function GamePage() {
                 </div>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-xs sm:text-sm">
                     <thead className="bg-gray-50 border-b-2 border-gray-200">
                       <tr>
-                        <th className="text-left py-3 px-4 font-bold text-gray-700 sticky left-0 bg-gray-50 min-w-[180px]">
+                        <th className="text-left py-2 sm:py-3 px-2 sm:px-4 font-bold text-gray-700 sticky left-0 bg-gray-50 min-w-[120px] sm:min-w-[180px]">
                           Player
                         </th>
-                        <th className="text-center py-3 px-2 font-bold text-gray-700">POS</th>
+                        <th className="text-center py-2 sm:py-3 px-1 sm:px-2 font-bold text-gray-700 whitespace-nowrap">POS</th>
                         {displayOrder.map(col => (
-                          <th key={col} className="text-center py-3 px-2 font-bold text-gray-700">
+                          <th key={col} className="text-center py-2 sm:py-3 px-1 sm:px-2 font-bold text-gray-700 whitespace-nowrap">
                             {col}
                           </th>
                         ))}
@@ -324,22 +324,22 @@ export default function GamePage() {
                     <tbody className="divide-y divide-gray-100">
                       {teamBox.statistics[0]?.athletes.map((player, playerIdx) => (
                         <tr key={playerIdx} className="hover:bg-orange-50 transition-colors group">
-                          <td className="py-3 px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
+                          <td className="py-2 sm:py-3 px-2 sm:px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
                             <Link
                               href={`/players/${player.athlete.id}`}
-                              className="flex items-center gap-2 text-gray-900 hover:text-orange-600"
+                              className="flex items-center gap-1 sm:gap-2 text-gray-900 hover:text-orange-600"
                             >
-                              <span className="w-6 text-gray-500 font-semibold">#{player.athlete.jersey}</span>
-                              <span className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                              <span className="w-5 sm:w-6 text-gray-500 font-semibold text-xs">#{player.athlete.jersey}</span>
+                              <span className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors truncate max-w-[80px] sm:max-w-none">
                                 {player.athlete.displayName}
                               </span>
                             </Link>
                           </td>
-                          <td className="text-center py-3 px-2 text-gray-600 font-medium">
+                          <td className="text-center py-2 sm:py-3 px-1 sm:px-2 text-gray-600 font-medium whitespace-nowrap">
                             {player.athlete.position?.abbreviation}
                           </td>
                           {statIndices.map((espnIdx, displayIdx) => (
-                            <td key={displayIdx} className="text-center py-3 px-2 text-gray-900 font-medium">
+                            <td key={displayIdx} className="text-center py-2 sm:py-3 px-1 sm:px-2 text-gray-900 font-medium whitespace-nowrap">
                               {player.stats[espnIdx]}
                             </td>
                           ))}
