@@ -140,6 +140,17 @@ export default function GamePage() {
   const isFinished = status.type.completed;
   const isLive = status.type.state === 'in';
 
+  // Format status detail in user's local timezone for scheduled games
+  const statusDetail = (() => {
+    if (isFinished || isLive) return status.type.detail;
+    const d = new Date(competition.date);
+    if (isNaN(d.getTime())) return status.type.detail;
+    return d.toLocaleString(undefined, {
+      weekday: 'short', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
+    });
+  })();
+
   // Check for overtime
   const isOT = status.type.detail.includes('OT') || status.period > 4;
   const otText = isOT ? status.type.detail.replace('Final/', '') : '';
@@ -240,7 +251,7 @@ export default function GamePage() {
             <div className="h-px flex-1 bg-gray-300"></div>
             <div className="flex flex-col items-center gap-1">
               <span className="text-gray-500 font-bold text-sm sm:text-base">
-                {status.type.detail}
+                {statusDetail}
               </span>
               {isOT && (
                 <span className="text-orange-600 font-black text-sm bg-orange-100 px-3 py-1 rounded-full">
