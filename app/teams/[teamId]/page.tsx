@@ -5,11 +5,38 @@ import { resolveTeamIdentifier, normalizeTricode } from '@/lib/team-identifiers'
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 
 interface TeamPageProps {
   params: Promise<{
     teamId: string;
   }>;
+}
+
+export async function generateMetadata({ params }: TeamPageProps): Promise<Metadata> {
+  const { teamId } = await params;
+  const resolvedTricode = resolveTeamIdentifier(teamId);
+  if (!resolvedTricode) return { title: 'Team Not Found - NBA Stats Hub' };
+
+  const standings = await getStandings();
+  const team = standings?.standings.find(
+    (t) => normalizeTricode(t.teamTricode) === resolvedTricode
+  );
+  if (!team) return { title: 'Team Not Found - NBA Stats Hub' };
+
+  const fullName = `${team.teamCity} ${team.teamName}`;
+  const description = `${fullName} (${team.wins}-${team.losses}) - Roster, stats, schedule, and standings on NBA Stats Hub.`;
+  const logoUrl = getTeamLogoUrl(team.teamTricode, 'medium');
+
+  return {
+    title: `${fullName} - NBA Stats Hub`,
+    description,
+    openGraph: {
+      title: `${fullName} (${team.wins}-${team.losses})`,
+      description,
+      images: [{ url: logoUrl }],
+    },
+  };
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {

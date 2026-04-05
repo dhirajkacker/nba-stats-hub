@@ -1,5 +1,15 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'NBA Championship History - NBA Stats Hub',
+  description: 'Complete NBA Finals history from 1947 to today. Champions, Finals MVPs, series scores, and conference winners.',
+  openGraph: {
+    title: 'NBA Championship History - NBA Stats Hub',
+    description: 'Complete NBA Finals history from 1947 to today. Champions, Finals MVPs, series scores, and conference winners.',
+  },
+};
 
 // Complete NBA Championship History (1947-2024)
 const NBA_CHAMPIONS = [

@@ -3,11 +3,35 @@ import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 
 interface PlayerPageProps {
   params: Promise<{
     playerId: string;
   }>;
+}
+
+export async function generateMetadata({ params }: PlayerPageProps): Promise<Metadata> {
+  const { playerId } = await params;
+  const player = await getPlayerDetails(playerId);
+
+  if (!player) {
+    return { title: 'Player Not Found - NBA Stats Hub' };
+  }
+
+  const teamAbbr = player.team?.abbreviation || '';
+  const position = player.position?.abbreviation || '';
+  const description = `${player.displayName}${position ? ` (${position})` : ''}${teamAbbr ? ` - ${teamAbbr}` : ''} stats, game log, and career info on NBA Stats Hub.`;
+
+  return {
+    title: `${player.displayName} Stats - NBA Stats Hub`,
+    description,
+    openGraph: {
+      title: `${player.displayName} - NBA Stats Hub`,
+      description,
+      ...(player.headshot?.href && { images: [{ url: player.headshot.href }] }),
+    },
+  };
 }
 
 export default async function PlayerPage({ params }: PlayerPageProps) {

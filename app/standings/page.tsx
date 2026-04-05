@@ -1,6 +1,16 @@
 import { getESPNStandings, getESPNStandingsBySeason } from '@/lib/espn-api';
 import StandingsTable from '@/components/StandingsTable';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'NBA Standings - NBA Stats Hub',
+  description: 'Current NBA standings for Eastern and Western conferences. Track team records, win percentages, and playoff seedings in real time.',
+  openGraph: {
+    title: 'NBA Standings - NBA Stats Hub',
+    description: 'Current NBA standings for Eastern and Western conferences. Track team records, win percentages, and playoff seedings in real time.',
+  },
+};
 
 export default async function StandingsPage() {
   // Fetch current season and past seasons standings
