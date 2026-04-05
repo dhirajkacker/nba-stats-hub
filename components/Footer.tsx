@@ -84,7 +84,7 @@ export default function Footer() {
               Made by Claude Code / Prompted by Dhiraj Kacker
             </p>
             <p className="text-gray-600 text-xs mt-2">
-              Version 1.1
+              Version 1.2
             </p>
           </div>
         </div>
