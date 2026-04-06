@@ -8,13 +8,7 @@ interface LiveScoresProps {
   initialScoreboard?: Scoreboard | null;
 }
 
-// Helper to format date as YYYY-MM-DD in US Eastern time (ESPN uses ET)
-function formatDateET(date: Date): string {
-  const parts = date.toLocaleDateString('en-CA', { timeZone: 'America/New_York' }).split('-');
-  return parts.join('-');
-}
-
-// Helper to get today's date in the user's local timezone as YYYY-MM-DD
+// Helper to format date as YYYY-MM-DD in the user's local timezone
 function formatDateLocal(date: Date): string {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -22,25 +16,25 @@ function formatDateLocal(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
-// Helper to get date display string
+// Convert a user's local date to the corresponding ET date for ESPN API
+// When it's April 6 in India (IST), it's still April 5 in ET
+function localDateToETDate(localDateStr: string): string {
+  // Create a Date at midnight of the local date, then format in ET
+  const d = new Date(localDateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+}
+
+// Helper to get date display string (always relative to user's local date)
 function getDateDisplay(dateString: string): string {
+  const today = formatDateLocal(new Date());
+  const yesterday = (() => { const d = new Date(); d.setDate(d.getDate() - 1); return formatDateLocal(d); })();
+  const tomorrow = (() => { const d = new Date(); d.setDate(d.getDate() + 1); return formatDateLocal(d); })();
+
+  if (dateString === today) return "Today's Games";
+  if (dateString === yesterday) return 'Yesterday';
+  if (dateString === tomorrow) return 'Tomorrow';
+
   const date = new Date(dateString + 'T00:00:00');
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const targetDate = new Date(date);
-  targetDate.setHours(0, 0, 0, 0);
-
-  const diffTime = targetDate.getTime() - today.getTime();
-  const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
-
-  // Also check against ET "today" so the label stays intuitive
-  const etToday = formatDateET(new Date());
-  if (dateString === etToday) return "Today's Games";
-
-  if (diffDays === 0) return 'Today';
-  if (diffDays === -1) return 'Yesterday';
-  if (diffDays === 1) return 'Tomorrow';
-
   return date.toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
@@ -49,17 +43,20 @@ function getDateDisplay(dateString: string): string {
 }
 
 export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
-  const [selectedDate, setSelectedDate] = useState<string>(formatDateET(new Date()));
+  const [selectedDate, setSelectedDate] = useState<string>(formatDateLocal(new Date()));
   const [scoreboard, setScoreboard] = useState<Scoreboard | null>(initialScoreboard || null);
   const [isLoading, setIsLoading] = useState(!initialScoreboard);
   const [error, setError] = useState<string | null>(null);
+
+  // Convert selectedDate (local) to ET for ESPN API
+  const espnDate = localDateToETDate(selectedDate);
 
   // Fetch scoreboard when date changes
   useEffect(() => {
     async function fetchScoreboard() {
       try {
         setIsLoading(true);
-        const response = await fetch(`/api/scores?date=${selectedDate}`);
+        const response = await fetch(`/api/scores?date=${espnDate}`);
 
         if (!response.ok) {
           throw new Error('Failed to fetch scores');
@@ -77,7 +74,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
     }
 
     fetchScoreboard();
-  }, [selectedDate]);
+  }, [espnDate]);
 
   // Auto-refresh for live games
   useEffect(() => {
@@ -89,7 +86,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
 
     const interval = setInterval(async () => {
       try {
-        const response = await fetch(`/api/scores?date=${selectedDate}`);
+        const response = await fetch(`/api/scores?date=${espnDate}`);
         if (response.ok) {
           const data = await response.json();
           setScoreboard(data);
@@ -100,13 +97,13 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
     }, 30000); // 30 seconds
 
     return () => clearInterval(interval);
-  }, [scoreboard, selectedDate]);
+  }, [scoreboard, espnDate]);
 
   // Date navigation handlers
   const handlePreviousDay = () => {
     const currentDate = new Date(selectedDate + 'T00:00:00');
-    const todayET = formatDateET(new Date());
-    const todayDate = new Date(todayET + 'T00:00:00');
+    const todayLocal = formatDateLocal(new Date());
+    const todayDate = new Date(todayLocal + 'T00:00:00');
 
     const minDate = new Date(todayDate);
     minDate.setDate(minDate.getDate() - 3);
@@ -119,8 +116,8 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
 
   const handleNextDay = () => {
     const currentDate = new Date(selectedDate + 'T00:00:00');
-    const todayET = formatDateET(new Date());
-    const todayDate = new Date(todayET + 'T00:00:00');
+    const todayLocal = formatDateLocal(new Date());
+    const todayDate = new Date(todayLocal + 'T00:00:00');
 
     const maxDate = new Date(todayDate);
     maxDate.setDate(maxDate.getDate() + 3);
@@ -132,13 +129,13 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
   };
 
   const handleToday = () => {
-    setSelectedDate(formatDateET(new Date()));
+    setSelectedDate(formatDateLocal(new Date()));
   };
 
   // Check if navigation buttons should be disabled
   const isPreviousDisabled = () => {
     const currentDate = new Date(selectedDate + 'T00:00:00');
-    const todayDate = new Date(formatDateET(new Date()) + 'T00:00:00');
+    const todayDate = new Date(formatDateLocal(new Date()) + 'T00:00:00');
     const minDate = new Date(todayDate);
     minDate.setDate(minDate.getDate() - 3);
     return currentDate <= minDate;
@@ -146,7 +143,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
 
   const isNextDisabled = () => {
     const currentDate = new Date(selectedDate + 'T00:00:00');
-    const todayDate = new Date(formatDateET(new Date()) + 'T00:00:00');
+    const todayDate = new Date(formatDateLocal(new Date()) + 'T00:00:00');
     const maxDate = new Date(todayDate);
     maxDate.setDate(maxDate.getDate() + 3);
     return currentDate >= maxDate;
