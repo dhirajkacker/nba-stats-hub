@@ -157,20 +157,10 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
     );
   }
 
-  if (!scoreboard || scoreboard.games.length === 0) {
-    return (
-      <div className="bg-gray-50 rounded-lg p-8 text-center">
-        <p className="text-gray-500 text-lg">No games scheduled for today</p>
-        <p className="text-gray-400 text-sm mt-2">
-          Check back during the NBA season for live scores and updates
-        </p>
-      </div>
-    );
-  }
-
-  const liveGames = scoreboard.games.filter((game) => game.gameStatus.status === 2);
-  const finishedGames = scoreboard.games.filter((game) => game.gameStatus.status === 3);
-  const upcomingGames = scoreboard.games.filter((game) => game.gameStatus.status === 1);
+  const games = scoreboard?.games ?? [];
+  const liveGames = games.filter((game) => game.gameStatus.status === 2);
+  const finishedGames = games.filter((game) => game.gameStatus.status === 3);
+  const upcomingGames = games.filter((game) => game.gameStatus.status === 1);
 
   return (
     <div className="space-y-6">
@@ -212,6 +202,15 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
       {isLoading && (
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-2 text-center">
           <p className="text-blue-600 text-sm">Loading games...</p>
+        </div>
+      )}
+
+      {!isLoading && games.length === 0 && (
+        <div className="bg-gray-50 rounded-lg p-8 text-center">
+          <p className="text-gray-500 text-lg">No games scheduled for {getDateDisplay(selectedDate).toLowerCase().replace("'s games", '')}</p>
+          <p className="text-gray-400 text-sm mt-2">
+            Use the navigation above to check other days
+          </p>
         </div>
       )}
 
