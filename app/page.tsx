@@ -1,4 +1,5 @@
 import { getStandings } from '@/lib/nba-api';
+import Link from 'next/link';
 import LiveScores from '@/components/LiveScores';
 import StandingsTable from '@/components/StandingsTable';
 import ClientDate from '@/components/ClientDate';
@@ -29,10 +30,13 @@ export default async function Home() {
               <ClientDate />
             </div>
             <div className="hidden md:flex items-center gap-4">
-              <div className="bg-orange-500 bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-400">
-                <p className="text-xs text-orange-200 uppercase tracking-wide">Live Updates</p>
-                <p className="text-sm font-bold">Real-time Scores</p>
-              </div>
+              <Link
+                href="/players"
+                className="bg-orange-500 bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-400 transition-colors"
+              >
+                <p className="text-xs text-orange-200 uppercase tracking-wide">Browse</p>
+                <p className="text-sm font-bold">Player Stats →</p>
+              </Link>
             </div>
           </div>
         </div>
