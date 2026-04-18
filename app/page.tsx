@@ -1,7 +1,10 @@
 import { getStandings } from '@/lib/nba-api';
+import { getPlayoffsData } from '@/lib/playoffs-api';
 import Link from 'next/link';
 import LiveScores from '@/components/LiveScores';
 import StandingsTable from '@/components/StandingsTable';
+import PlayInBracket from '@/components/PlayInBracket';
+import PlayoffBracket from '@/components/PlayoffBracket';
 import ClientDate from '@/components/ClientDate';
 
 export default async function Home() {
@@ -9,10 +12,18 @@ export default async function Home() {
   console.log('Home page rendering, fetching data...');
 
   let standings = null;
+  let playoffs: Awaited<ReturnType<typeof getPlayoffsData>> = { playIn: null, series: [] };
 
   try {
-    standings = await getStandings();
+    [standings, playoffs] = await Promise.all([
+      getStandings(),
+      getPlayoffsData().catch((err) => {
+        console.error('Error fetching playoffs data:', err);
+        return { playIn: null, series: [] };
+      }),
+    ]);
     console.log('Data fetched - Standings:', standings ? `${standings.standings.length} teams` : 'null');
+    console.log('Playoffs - play-in:', !!playoffs.playIn, 'series:', playoffs.series.length);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
@@ -54,11 +65,33 @@ export default async function Home() {
           <LiveScores />
         </div>
 
+        {/* Play-In Tournament */}
+        {playoffs.playIn && (
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+              <h2 className="text-3xl font-black text-gray-900">Play-In Tournament</h2>
+            </div>
+            <PlayInBracket data={playoffs.playIn} />
+          </div>
+        )}
+
+        {/* Playoff Bracket */}
+        {playoffs.series.length > 0 && (
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+              <h2 className="text-3xl font-black text-gray-900">Playoff Bracket</h2>
+            </div>
+            <PlayoffBracket series={playoffs.series} />
+          </div>
+        )}
+
         {/* Standings */}
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
-            <h2 className="text-3xl font-black text-gray-900">Standings</h2>
+            <h2 className="text-3xl font-black text-gray-900">Regular Season Standings</h2>
           </div>
           {standings && standings.standings.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
