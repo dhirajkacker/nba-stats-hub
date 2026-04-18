@@ -40,7 +40,7 @@ export default async function Home() {
               </h1>
               <ClientDate />
             </div>
-            <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center gap-4">
               <Link
                 href="/players"
                 className="bg-orange-500 bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-400 transition-colors"
