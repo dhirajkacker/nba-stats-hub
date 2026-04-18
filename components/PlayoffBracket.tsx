@@ -8,9 +8,29 @@ import { getTeamLogoUrl } from '@/lib/team-logos';
 
 interface Props {
   series: PlayoffSeries[];
+  seeds?: Record<string, number>;
 }
 
 const ROUND_ORDER: PlayoffRound[] = ['1st Round', 'Conference Semis', 'Conference Finals', 'NBA Finals'];
+
+// Normalize tricode to match across ESPN short forms and NBA.com long forms
+const TRICODE_ALIASES: Record<string, string[]> = {
+  NYK: ['NY'], NY: ['NYK'],
+  GSW: ['GS'], GS: ['GSW'],
+  SAS: ['SA'], SA: ['SAS'],
+  NOP: ['NO'], NO: ['NOP'],
+  WAS: ['WSH'], WSH: ['WAS'],
+  UTA: ['UTAH'], UTAH: ['UTA'],
+};
+
+function lookupSeed(seeds: Record<string, number> | undefined, abbrev: string): number | undefined {
+  if (!seeds) return undefined;
+  if (seeds[abbrev] != null) return seeds[abbrev];
+  for (const alias of TRICODE_ALIASES[abbrev] ?? []) {
+    if (seeds[alias] != null) return seeds[alias];
+  }
+  return undefined;
+}
 
 function formatGameDate(iso: string): string {
   const d = new Date(iso);
@@ -59,17 +79,20 @@ function GameRow({ game, teamAAbbrev }: { game: PlayoffGame; teamAAbbrev: string
   );
 }
 
-function SeriesCard({ s }: { s: PlayoffSeries }) {
+function SeriesCard({ s, seeds }: { s: PlayoffSeries; seeds?: Record<string, number> }) {
   const [open, setOpen] = useState(false);
   const aLeads = s.winsA > s.winsB;
   const bLeads = s.winsB > s.winsA;
   const aWon = s.completed && s.winsA === 4;
   const bWon = s.completed && s.winsB === 4;
 
-  const teamRow = (team: typeof s.teamA, wins: number, isWinner: boolean, isLeading: boolean) => (
+  const seedA = lookupSeed(seeds, s.teamA.abbrev) ?? s.teamA.seed;
+  const seedB = lookupSeed(seeds, s.teamB.abbrev) ?? s.teamB.seed;
+
+  const teamRow = (team: typeof s.teamA, seed: number | undefined, wins: number, isWinner: boolean, isLeading: boolean) => (
     <div className={`flex items-center justify-between gap-2 px-3 py-2 rounded-lg ${isWinner ? 'bg-orange-100 border-l-4 border-orange-500' : isLeading ? 'bg-orange-50' : ''}`}>
       <div className="flex items-center gap-2 min-w-0">
-        {team.seed && <span className="text-xs font-bold text-gray-500 w-5 flex-shrink-0">#{team.seed}</span>}
+        {seed && <span className="text-xs font-bold text-gray-500 w-5 flex-shrink-0">#{seed}</span>}
         <Image
           src={getTeamLogoUrl(team.abbrev, 'small')}
           alt={team.abbrev}
@@ -93,8 +116,8 @@ function SeriesCard({ s }: { s: PlayoffSeries }) {
         className="w-full text-left"
       >
         <div className="p-2 space-y-1">
-          {teamRow(s.teamA, s.winsA, aWon, aLeads && !s.completed)}
-          {teamRow(s.teamB, s.winsB, bWon, bLeads && !s.completed)}
+          {teamRow(s.teamA, seedA, s.winsA, aWon, aLeads && !s.completed)}
+          {teamRow(s.teamB, seedB, s.winsB, bWon, bLeads && !s.completed)}
         </div>
         <div className="px-3 py-1.5 bg-gray-50 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-600">
           <span className="font-medium">{s.summary || 'Series not started'}</span>
@@ -114,7 +137,7 @@ function SeriesCard({ s }: { s: PlayoffSeries }) {
   );
 }
 
-export default function PlayoffBracket({ series }: Props) {
+export default function PlayoffBracket({ series, seeds }: Props) {
   if (series.length === 0) return null;
 
   // Group by round for rendering
@@ -145,20 +168,20 @@ export default function PlayoffBracket({ series }: Props) {
             </div>
             {round === 'NBA Finals' ? (
               <div className="max-w-md mx-auto">
-                {finals.map((s) => <SeriesCard key={s.key} s={s} />)}
+                {finals.map((s) => <SeriesCard key={s.key} s={s} seeds={seeds} />)}
               </div>
             ) : (
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-blue-600">East</p>
                   <div className="grid gap-3 sm:grid-cols-2">
-                    {east.map((s) => <SeriesCard key={s.key} s={s} />)}
+                    {east.map((s) => <SeriesCard key={s.key} s={s} seeds={seeds} />)}
                   </div>
                 </div>
                 <div className="space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-red-600">West</p>
                   <div className="grid gap-3 sm:grid-cols-2">
-                    {west.map((s) => <SeriesCard key={s.key} s={s} />)}
+                    {west.map((s) => <SeriesCard key={s.key} s={s} seeds={seeds} />)}
                   </div>
                 </div>
               </div>

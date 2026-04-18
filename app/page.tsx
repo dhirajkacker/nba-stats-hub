@@ -65,6 +65,20 @@ export default async function Home() {
           <LiveScores />
         </div>
 
+        {/* Playoff Bracket */}
+        {playoffs.series.length > 0 && (
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+              <h2 className="text-3xl font-black text-gray-900">Playoff Bracket</h2>
+            </div>
+            <PlayoffBracket
+              series={playoffs.series}
+              seeds={Object.fromEntries((standings?.standings ?? []).map((s) => [s.teamTricode, s.confRank]))}
+            />
+          </div>
+        )}
+
         {/* Play-In Tournament */}
         {playoffs.playIn && (
           <div className="mb-8">
@@ -73,17 +87,6 @@ export default async function Home() {
               <h2 className="text-3xl font-black text-gray-900">Play-In Tournament</h2>
             </div>
             <PlayInBracket data={playoffs.playIn} />
-          </div>
-        )}
-
-        {/* Playoff Bracket */}
-        {playoffs.series.length > 0 && (
-          <div className="mb-8">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
-              <h2 className="text-3xl font-black text-gray-900">Playoff Bracket</h2>
-            </div>
-            <PlayoffBracket series={playoffs.series} />
           </div>
         )}
 
