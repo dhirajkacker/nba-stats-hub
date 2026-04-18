@@ -5,13 +5,33 @@ import { getTeamLogoUrl } from '@/lib/team-logos';
 
 interface Props {
   data: PlayInData;
+  seeds?: Record<string, number>;
 }
 
-const SEED_FOR_SLOT = {
-  '7v8': { away: 7, home: 8 },
-  '9v10': { away: 9, home: 10 },
-  '8seed': { away: null, home: null },
-} as const;
+// Normalize tricode aliases across ESPN short forms and NBA.com long forms
+const TRICODE_ALIASES: Record<string, string[]> = {
+  NYK: ['NY'], NY: ['NYK'],
+  GSW: ['GS'], GS: ['GSW'],
+  SAS: ['SA'], SA: ['SAS'],
+  NOP: ['NO'], NO: ['NOP'],
+  WAS: ['WSH'], WSH: ['WAS'],
+  UTA: ['UTAH'], UTAH: ['UTA'],
+};
+
+function lookupSeed(seeds: Record<string, number> | undefined, abbrev: string): number | undefined {
+  if (!seeds) return undefined;
+  if (seeds[abbrev] != null) return seeds[abbrev];
+  for (const alias of TRICODE_ALIASES[abbrev] ?? []) {
+    if (seeds[alias] != null) return seeds[alias];
+  }
+  return undefined;
+}
+
+const SLOT_LABEL: Record<string, string> = {
+  '7v8': '7th Place Game',
+  '9v10': '9th/10th Place Game',
+  '8seed': '8th Seed Game',
+};
 
 const ANNOTATION: Record<string, { winner: string; loser: string }> = {
   '7v8': { winner: 'Winner → #7 seed', loser: 'Loser → 8th seed game' },
@@ -24,14 +44,14 @@ function formatGameTime(iso: string): string {
   return d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 }
 
-function GameBox({ game, slot }: { game: PlayInGame | undefined; slot: keyof typeof SEED_FOR_SLOT }) {
+function GameBox({ game, slot, seeds }: { game: PlayInGame | undefined; slot: '7v8' | '9v10' | '8seed'; seeds?: Record<string, number> }) {
   const annotation = ANNOTATION[slot];
 
   if (!game) {
     return (
       <div className="rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-center">
         <p className="text-xs font-bold uppercase tracking-wide text-gray-500">
-          {slot === '7v8' ? '#7 vs #8' : slot === '9v10' ? '#9 vs #10' : '#8 Seed Game'}
+          {SLOT_LABEL[slot]}
         </p>
         <p className="text-sm text-gray-400 mt-2">TBD</p>
       </div>
@@ -42,12 +62,13 @@ function GameBox({ game, slot }: { game: PlayInGame | undefined; slot: keyof typ
   const isLive = game.status === 'live';
   const awayWon = isFinal && game.away.score > game.home.score;
   const homeWon = isFinal && game.home.score > game.away.score;
-  const seeds = SEED_FOR_SLOT[slot];
+  const awaySeed = lookupSeed(seeds, game.away.abbrev);
+  const homeSeed = lookupSeed(seeds, game.home.abbrev);
 
-  const teamRow = (team: PlayInGame['away'], seed: number | null, won: boolean) => (
+  const teamRow = (team: PlayInGame['away'], seed: number | undefined, won: boolean) => (
     <div className={`flex items-center justify-between gap-2 px-3 py-2 rounded-lg ${won ? 'bg-orange-50 border-l-4 border-orange-500' : ''}`}>
       <div className="flex items-center gap-2 min-w-0">
-        {seed && <span className="text-xs font-bold text-gray-500 w-5">#{seed}</span>}
+        {seed != null && <span className="text-xs font-bold text-gray-500 w-5">#{seed}</span>}
         <Image
           src={getTeamLogoUrl(team.abbrev, 'small')}
           alt={team.abbrev}
@@ -77,13 +98,13 @@ function GameBox({ game, slot }: { game: PlayInGame | undefined; slot: keyof typ
     >
       <div className="flex items-center justify-between px-3 py-1.5 bg-gray-50 border-b border-gray-100">
         <p className="text-[10px] font-bold uppercase tracking-wider text-gray-600">
-          {slot === '7v8' ? '#7 vs #8' : slot === '9v10' ? '#9 vs #10' : '#8 Seed Game'}
+          {SLOT_LABEL[slot]}
         </p>
         <p className="text-[10px]">{statusLabel}</p>
       </div>
       <div className="p-2 space-y-1">
-        {teamRow(game.away, seeds.away, awayWon)}
-        {teamRow(game.home, seeds.home, homeWon)}
+        {teamRow(game.away, awaySeed, awayWon)}
+        {teamRow(game.home, homeSeed, homeWon)}
       </div>
       <div className="px-3 py-1.5 bg-gray-50 border-t border-gray-100 flex justify-between text-[10px] text-gray-500 font-medium">
         <span>{annotation.winner}</span>
@@ -93,25 +114,25 @@ function GameBox({ game, slot }: { game: PlayInGame | undefined; slot: keyof typ
   );
 }
 
-function ConferenceColumn({ label, games }: { label: Conference; games: PlayInData['east'] | PlayInData['west'] }) {
+function ConferenceColumn({ label, games, seeds }: { label: Conference; games: PlayInData['east'] | PlayInData['west']; seeds?: Record<string, number> }) {
   return (
     <div className="space-y-2">
       <h3 className="text-lg font-black text-gray-900 tracking-tight">
         <span className={`inline-block w-2 h-2 rounded-full mr-2 ${label === 'East' ? 'bg-blue-500' : 'bg-red-500'}`} />
         {label}
       </h3>
-      <GameBox game={games['7v8']} slot="7v8" />
-      <GameBox game={games['9v10']} slot="9v10" />
-      <GameBox game={games['8seed']} slot="8seed" />
+      <GameBox game={games['7v8']} slot="7v8" seeds={seeds} />
+      <GameBox game={games['9v10']} slot="9v10" seeds={seeds} />
+      <GameBox game={games['8seed']} slot="8seed" seeds={seeds} />
     </div>
   );
 }
 
-export default function PlayInBracket({ data }: Props) {
+export default function PlayInBracket({ data, seeds }: Props) {
   return (
     <div className="grid gap-4 md:grid-cols-2">
-      <ConferenceColumn label="East" games={data.east} />
-      <ConferenceColumn label="West" games={data.west} />
+      <ConferenceColumn label="East" games={data.east} seeds={seeds} />
+      <ConferenceColumn label="West" games={data.west} seeds={seeds} />
     </div>
   );
 }
