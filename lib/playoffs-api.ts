@@ -226,16 +226,11 @@ export async function getPlayoffsData(daysBack = 10, daysForward = 14): Promise<
     // Prefer structured series data from ESPN when available
     const espnSeries = comp.series;
     if (espnSeries?.competitors?.length === 2) {
-      // competitors are listed in same order as competition.competitors (usually away first)
-      const [c0, c1] = espnSeries.competitors;
-      const c0Abbrev = awayC.team?.abbreviation;
-      if (c0Abbrev === series.teamA.abbrev) {
-        series.winsA = Math.max(series.winsA, parseInt(c0.wins) || 0);
-        series.winsB = Math.max(series.winsB, parseInt(c1.wins) || 0);
-      } else {
-        series.winsA = Math.max(series.winsA, parseInt(c1.wins) || 0);
-        series.winsB = Math.max(series.winsB, parseInt(c0.wins) || 0);
-      }
+      // Match series competitors to our teamA/teamB by team ID (ESPN orders by ID, not home/away)
+      const scA = espnSeries.competitors.find((c: any) => String(c.id) === series.teamA.id);
+      const scB = espnSeries.competitors.find((c: any) => String(c.id) === series.teamB.id);
+      if (scA) series.winsA = Math.max(series.winsA, parseInt(scA.wins) || 0);
+      if (scB) series.winsB = Math.max(series.winsB, parseInt(scB.wins) || 0);
       series.completed = !!espnSeries.completed || series.completed;
       if (espnSeries.summary) series.summary = espnSeries.summary;
     }
