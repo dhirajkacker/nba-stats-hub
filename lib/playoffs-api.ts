@@ -95,24 +95,28 @@ function parsePlayInSlot(headline: string): { conference: Conference; slot: Play
 }
 
 function parsePlayoffHeadline(headline: string): { conference: Conference | 'Finals'; round: PlayoffRound; gameNumber?: number } | null {
-  // "East 1st Round - Game 3", "West Conference Finals - Game 5", "NBA Finals - Game 2"
+  // ESPN actual formats observed:
+  //   "East 1st Round - Game 2", "West 1st Round - Game 6"
+  //   "East Semifinals - Game 1", "West Semifinals - Game 4"
+  //   "East Finals - Game 3", "West Finals - Game 4"
+  //   "NBA Finals - Game 2"
   const gameMatch = headline.match(/Game\s+(\d+)/i);
   const gameNumber = gameMatch ? parseInt(gameMatch[1]) : undefined;
 
   if (/NBA Finals/i.test(headline)) {
     return { conference: 'Finals', round: 'NBA Finals', gameNumber };
   }
-  const conf: Conference | null = /\bEast\b/i.test(headline)
+  const conf: Conference | null = /\b(?:East|Eastern)\b/i.test(headline)
     ? 'East'
-    : /\bWest\b/i.test(headline)
+    : /\b(?:West|Western)\b/i.test(headline)
       ? 'West'
       : null;
   if (!conf) return null;
 
   let round: PlayoffRound | null = null;
   if (/1st Round|First Round/i.test(headline)) round = '1st Round';
-  else if (/Conference Semis|Conference Semifinals|Semifinals/i.test(headline)) round = 'Conference Semis';
-  else if (/Conference Finals/i.test(headline)) round = 'Conference Finals';
+  else if (/Semis|Semifinals/i.test(headline)) round = 'Conference Semis';
+  else if (/Finals/i.test(headline)) round = 'Conference Finals';
 
   if (!round) return null;
   return { conference: conf, round, gameNumber };
@@ -134,7 +138,7 @@ async function fetchDay(dateStr: string): Promise<any[]> {
   }
 }
 
-export async function getPlayoffsData(daysBack = 10, daysForward = 14): Promise<PlayoffsData> {
+export async function getPlayoffsData(daysBack = 70, daysForward = 30): Promise<PlayoffsData> {
   const today = new Date();
   today.setUTCHours(12, 0, 0, 0);
   const dates: string[] = [];

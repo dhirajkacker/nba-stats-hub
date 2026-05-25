@@ -37,8 +37,17 @@ interface BoxScore {
   }[];
 }
 
+interface PlayoffSeriesInfo {
+  type: string; // 'playoff' | 'season' | ...
+  title?: string;
+  description?: string;
+  summary?: string;
+  completed?: boolean;
+}
+
 interface GameData {
   header: {
+    gameNote?: string;
     competitions: Array<{
       competitors: Array<{
         team: TeamStats;
@@ -61,7 +70,9 @@ interface GameData {
         period: number;
       };
       date: string;
+      series?: PlayoffSeriesInfo[] | PlayoffSeriesInfo;
     }>;
+    season?: { type?: number };
   };
   boxscore?: BoxScore;
 }
@@ -155,6 +166,13 @@ export default function GamePage() {
   const isOT = status.type.detail.includes('OT') || status.period > 4;
   const otText = isOT ? status.type.detail.replace('Final/', '') : '';
 
+  // Playoff series context (only present for postseason games)
+  const seriesField = competition.series;
+  const seriesList = Array.isArray(seriesField) ? seriesField : seriesField ? [seriesField] : [];
+  const playoffSeries = seriesList.find(s => s?.type === 'playoff');
+  const gameNote = gameData.header.gameNote;
+  const isPlayoff = gameData.header.season?.type === 3 && (!!playoffSeries || !!gameNote);
+
   if (!awayTeam || !homeTeam) {
     return null;
   }
@@ -206,6 +224,22 @@ export default function GamePage() {
             <span className="text-xl font-black">
               LIVE - Q{status.period} {status.displayClock}
             </span>
+          </div>
+        )}
+
+        {/* Playoff Series Banner */}
+        {isPlayoff && (
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl shadow-lg px-4 sm:px-6 py-3 sm:py-4 mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
+            {gameNote && (
+              <span className="text-sm sm:text-lg font-black uppercase tracking-wider">
+                {gameNote}
+              </span>
+            )}
+            {playoffSeries?.summary && (
+              <span className="text-xs sm:text-sm font-bold bg-white/20 px-3 py-1 rounded-full self-start sm:self-auto">
+                {playoffSeries.summary}
+              </span>
+            )}
           </div>
         )}
 
