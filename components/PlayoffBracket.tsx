@@ -42,15 +42,15 @@ function formatGameTime(iso: string): string {
   return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
 }
 
-function GameRow({ game, teamAAbbrev }: { game: PlayoffGame; teamAAbbrev: string }) {
-  const aIsAway = game.away.abbrev === teamAAbbrev;
-  const teamA = aIsAway ? game.away : game.home;
-  const teamB = aIsAway ? game.home : game.away;
+function GameRow({ game }: { game: PlayoffGame }) {
+  // Convention: away team first, home team second (host listed last).
+  const away = game.away;
+  const home = game.home;
 
   const isFinal = game.status === 'final';
   const isLive = game.status === 'live';
-  const aWon = isFinal && teamA.score > teamB.score;
-  const bWon = isFinal && teamB.score > teamA.score;
+  const awayWon = isFinal && away.score > home.score;
+  const homeWon = isFinal && home.score > away.score;
 
   return (
     <Link
@@ -66,13 +66,13 @@ function GameRow({ game, teamAAbbrev }: { game: PlayoffGame; teamAAbbrev: string
         </span>
       </div>
       <div className="space-y-0.5">
-        <div className={`flex items-center justify-between text-sm ${aWon ? 'font-bold text-orange-700' : ''}`}>
-          <span>{teamA.abbrev}</span>
-          <span className="tabular-nums">{isFinal || isLive ? teamA.score : '—'}</span>
+        <div className={`flex items-center justify-between text-sm ${awayWon ? 'font-bold text-orange-700' : ''}`}>
+          <span>{away.abbrev}</span>
+          <span className="tabular-nums">{isFinal || isLive ? away.score : '—'}</span>
         </div>
-        <div className={`flex items-center justify-between text-sm ${bWon ? 'font-bold text-orange-700' : ''}`}>
-          <span>{teamB.abbrev}</span>
-          <span className="tabular-nums">{isFinal || isLive ? teamB.score : '—'}</span>
+        <div className={`flex items-center justify-between text-sm ${homeWon ? 'font-bold text-orange-700' : ''}`}>
+          <span>@ {home.abbrev}</span>
+          <span className="tabular-nums">{isFinal || isLive ? home.score : '—'}</span>
         </div>
       </div>
     </Link>
@@ -129,7 +129,7 @@ function SeriesCard({ s, seeds }: { s: PlayoffSeries; seeds?: Record<string, num
           {s.games.length === 0 ? (
             <p className="text-xs text-gray-500 text-center py-2">No games scheduled yet</p>
           ) : (
-            s.games.map((g) => <GameRow key={g.id} game={g} teamAAbbrev={s.teamA.abbrev} />)
+            s.games.map((g) => <GameRow key={g.id} game={g} />)
           )}
         </div>
       )}
