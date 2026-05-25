@@ -159,30 +159,38 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
  */
 export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<Standings | null> {
   try {
-    // Fetch standings from the last few days to ensure we get all 30 teams
+    // Fetch scoreboard data in parallel batches walking backwards from baseDate
+    // until we've collected all 30 teams' regular-season records. Filtering
+    // strictly to season.type === 2 (regular season) means the snapshot is
+    // naturally frozen once the play-in / playoffs start — postseason wins
+    // and losses don't leak into the table.
     const teamMap = new Map<number, Standing>();
     const baseDate = seasonEndDate ? new Date(seasonEndDate) : new Date();
+    const MAX_DAYS_BACK = 60;
+    const BATCH_SIZE = 7;
 
-    // Try fetching from base date and previous 7 days to gather all teams
-    for (let daysAgo = 0; daysAgo <= 7 && teamMap.size < 30; daysAgo++) {
-      const date = new Date(baseDate);
-      date.setDate(date.getDate() - daysAgo);
-      const dateString = date.toISOString().split('T')[0].replace(/-/g, '');
+    for (let batchStart = 0; batchStart < MAX_DAYS_BACK && teamMap.size < 30; batchStart += BATCH_SIZE) {
+      const batchPromises: Promise<any>[] = [];
+      for (let i = 0; i < BATCH_SIZE; i++) {
+        const daysAgo = batchStart + i;
+        const date = new Date(baseDate);
+        date.setDate(date.getDate() - daysAgo);
+        const dateString = date.toISOString().split('T')[0].replace(/-/g, '');
+        const url = `${ESPN_BASE_URL}/scoreboard?dates=${dateString}`;
+        batchPromises.push(
+          fetch(url, { next: { revalidate: 600 } })
+            .then(r => (r.ok ? r.json() : null))
+            .catch(() => null)
+        );
+      }
+      const batch = await Promise.all(batchPromises);
 
-      const url = `${ESPN_BASE_URL}/scoreboard?dates=${dateString}`;
-      console.log(`Fetching standings from ESPN (${daysAgo} days ago):`, dateString);
-
-      try {
-        const response = await fetch(url, {
-          next: { revalidate: 600 },
-        });
-
-        if (!response.ok) continue;
-
-        const data = await response.json();
-
-        // Extract team records from events
+      for (const data of batch) {
+        if (!data) continue;
         data.events?.forEach((event: any) => {
+          // Only count regular-season games (type 2). This freezes the
+          // standings to the last regular-season record once postseason begins.
+          if (event.season?.type !== 2) return;
           const competition = event.competitions[0];
 
           competition.competitors?.forEach((competitor: any) => {
@@ -264,9 +272,6 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
             teamMap.set(teamId, standing);
           });
         });
-      } catch (error) {
-        console.log('Error fetching date', dateString, ':', error);
-        continue;
       }
     }
 
@@ -323,7 +328,9 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
  */
 export async function getESPNStandings(): Promise<Standings | null> {
   try {
-    // Use ESPN's standings endpoint which has full details
+    // ESPN's site standings endpoint stopped returning entries; rely on the
+    // scoreboard-walk path which assembles a 30-team snapshot from the last
+    // regular-season window.
     const url = `${ESPN_BASE_URL}/standings`;
     console.log('Fetching full standings from ESPN:', url);
 
@@ -338,8 +345,8 @@ export async function getESPNStandings(): Promise<Standings | null> {
 
     const data = await response.json();
 
-    if (!data.children) {
-      console.log('No standings children in ESPN response');
+    if (!data.children || !data.children.some((c: any) => (c.standings?.entries?.length ?? 0) > 0)) {
+      console.log('ESPN standings endpoint returned no entries; falling back to scoreboard walk');
       return getESPNStandingsBySeason();
     }
 
