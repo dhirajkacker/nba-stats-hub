@@ -177,12 +177,20 @@ export default function PlayoffBracket({ series, seeds }: Props) {
                 <div className="space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-blue-600">East</p>
                   <div className="grid gap-3 sm:grid-cols-2">
-                    {east.map((s) => <SeriesCard key={s.key} s={s} seeds={seeds} />)}
+                    {east.map((s) => (
+                      // For a single-series round (Conference Finals), put the East
+                      // card in the right cell so it sits next to the page center.
+                      <div key={s.key} className={east.length === 1 ? 'sm:col-start-2' : ''}>
+                        <SeriesCard s={s} seeds={seeds} />
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="space-y-3">
                   <p className="text-xs font-bold uppercase tracking-wider text-red-600">West</p>
                   <div className="grid gap-3 sm:grid-cols-2">
+                    {/* West single-series sits in the default (left) cell, which
+                        is already adjacent to the page center. */}
                     {west.map((s) => <SeriesCard key={s.key} s={s} seeds={seeds} />)}
                   </div>
                 </div>
