@@ -1,9 +1,13 @@
-import { NextResponse } from 'next/server';
-import { getStandings } from '@/lib/nba-api';
+import { NextRequest, NextResponse } from 'next/server';
+import { getSeasonStandings } from '@/lib/season-context';
+import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
-    const standings = await getStandings();
+    const seasonParam = request.nextUrl.searchParams.get('season');
+    const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
+
+    const standings = await getSeasonStandings(season);
 
     if (!standings) {
       return NextResponse.json(
@@ -22,5 +26,4 @@ export async function GET() {
   }
 }
 
-// Revalidate every 10 minutes
 export const revalidate = 600;

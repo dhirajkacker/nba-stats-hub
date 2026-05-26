@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPlayerStatsFromLeaders } from '@/lib/nba-leaders';
-import { getTopPlayersByAllStats, getLastFetchStatus } from '@/lib/espn-stats-leaders';
+import { getLastFetchStatus } from '@/lib/espn-stats-leaders';
+import { getSeasonLeaders } from '@/lib/season-context';
+import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
 
 // Increase timeout for Vercel serverless function
 export const maxDuration = 30;
@@ -13,14 +15,16 @@ export async function GET(request: NextRequest) {
     const playerIdParam = searchParams.get('playerId');
     const limitParam = searchParams.get('limit');
     const includeStatus = searchParams.get('includeStatus') === 'true';
+    const seasonParam = searchParams.get('season');
+    const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
 
     // If no playerId specified, return top players list
     if (!playerIdParam) {
       const limit = limitParam ? parseInt(limitParam) : 30;
-      console.log(`API: Fetching top ${limit} players...`);
+      console.log(`API: Fetching top ${limit} players for season ${season}...`);
 
       const startTime = Date.now();
-      const topPlayers = await getTopPlayersByAllStats(limit);
+      const topPlayers = await getSeasonLeaders(season, limit);
       const fetchTime = Date.now() - startTime;
 
       const status = getLastFetchStatus();

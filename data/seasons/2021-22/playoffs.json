@@ -1,0 +1,2344 @@
+{
+  "playIn": {
+    "east": {
+      "7v8": {
+        "id": "401428070",
+        "dateUTC": "2022-04-12T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "5",
+          "abbrev": "CLE",
+          "displayName": "Cleveland Cavaliers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+          "score": 108
+        },
+        "home": {
+          "id": "17",
+          "abbrev": "BKN",
+          "displayName": "Brooklyn Nets",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+          "score": 115
+        },
+        "conference": "East",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401428072",
+        "dateUTC": "2022-04-13T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "30",
+          "abbrev": "CHA",
+          "displayName": "Charlotte Hornets",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+          "score": 103
+        },
+        "home": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 132
+        },
+        "conference": "East",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401428074",
+        "dateUTC": "2022-04-15T23:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 107
+        },
+        "home": {
+          "id": "5",
+          "abbrev": "CLE",
+          "displayName": "Cleveland Cavaliers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+          "score": 101
+        },
+        "conference": "East",
+        "slot": "8seed"
+      }
+    },
+    "west": {
+      "7v8": {
+        "id": "401428071",
+        "dateUTC": "2022-04-13T01:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "12",
+          "abbrev": "LAC",
+          "displayName": "LA Clippers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+          "score": 104
+        },
+        "home": {
+          "id": "16",
+          "abbrev": "MIN",
+          "displayName": "Minnesota Timberwolves",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+          "score": 109
+        },
+        "conference": "West",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401428073",
+        "dateUTC": "2022-04-14T01:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "24",
+          "abbrev": "SA",
+          "displayName": "San Antonio Spurs",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+          "score": 103
+        },
+        "home": {
+          "id": "3",
+          "abbrev": "NO",
+          "displayName": "New Orleans Pelicans",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+          "score": 113
+        },
+        "conference": "West",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401428075",
+        "dateUTC": "2022-04-16T02:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "3",
+          "abbrev": "NO",
+          "displayName": "New Orleans Pelicans",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+          "score": 105
+        },
+        "home": {
+          "id": "12",
+          "abbrev": "LAC",
+          "displayName": "LA Clippers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+          "score": 101
+        },
+        "conference": "West",
+        "slot": "8seed"
+      }
+    }
+  },
+  "series": [
+    {
+      "key": "1st Round:ATL-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "401429891",
+          "dateUTC": "2022-04-17T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 91
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430216",
+          "dateUTC": "2022-04-19T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 105
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430217",
+          "dateUTC": "2022-04-22T23:55Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 110
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430218",
+          "dateUTC": "2022-04-24T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 110
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 86
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430219",
+          "dateUTC": "2022-04-26T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 94
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 97
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:BKN-BOS",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "17",
+        "abbrev": "BKN",
+        "displayName": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "BOS wins series 4-0",
+      "games": [
+        {
+          "id": "401429890",
+          "dateUTC": "2022-04-17T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 114
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 115
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430210",
+          "dateUTC": "2022-04-20T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 107
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430211",
+          "dateUTC": "2022-04-23T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430212",
+          "dateUTC": "2022-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 116
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 112
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CHI-MIL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "4",
+        "abbrev": "CHI",
+        "displayName": "Chicago Bulls",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIL wins series 4-1",
+      "games": [
+        {
+          "id": "401429892",
+          "dateUTC": "2022-04-17T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 86
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430246",
+          "dateUTC": "2022-04-21T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 114
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430248",
+          "dateUTC": "2022-04-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 111
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 81
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430249",
+          "dateUTC": "2022-04-24T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 119
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 95
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430251",
+          "dateUTC": "2022-04-27T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 100
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 116
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:PHI-TOR",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "PHI wins series 4-2",
+      "games": [
+        {
+          "id": "401429874",
+          "dateUTC": "2022-04-16T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 111
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 131
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430233",
+          "dateUTC": "2022-04-18T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 97
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 112
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430236",
+          "dateUTC": "2022-04-21T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 104
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 101
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430240",
+          "dateUTC": "2022-04-23T18:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 102
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 110
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430243",
+          "dateUTC": "2022-04-26T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 103
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 88
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401430244",
+          "dateUTC": "2022-04-28T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 132
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 97
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-UTAH",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "26",
+        "abbrev": "UTAH",
+        "displayName": "Utah Jazz",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "DAL wins series 4-2",
+      "games": [
+        {
+          "id": "401429872",
+          "dateUTC": "2022-04-16T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 99
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430232",
+          "dateUTC": "2022-04-19T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 104
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430235",
+          "dateUTC": "2022-04-22T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 126
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 118
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430237",
+          "dateUTC": "2022-04-23T20:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 99
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430239",
+          "dateUTC": "2022-04-26T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 77
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 102
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401430241",
+          "dateUTC": "2022-04-29T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 98
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 96
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-GS",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "401429875",
+          "dateUTC": "2022-04-17T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 107
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 123
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430247",
+          "dateUTC": "2022-04-19T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 106
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 126
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430250",
+          "dateUTC": "2022-04-22T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 118
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 113
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430253",
+          "dateUTC": "2022-04-24T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 121
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 126
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430255",
+          "dateUTC": "2022-04-28T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 98
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 102
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MEM-MIN",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "MEM wins series 4-2",
+      "games": [
+        {
+          "id": "401429873",
+          "dateUTC": "2022-04-16T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 130
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 117
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430223",
+          "dateUTC": "2022-04-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 96
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 124
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430227",
+          "dateUTC": "2022-04-21T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 104
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 95
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430230",
+          "dateUTC": "2022-04-24T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 118
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 119
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430231",
+          "dateUTC": "2022-04-26T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 109
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 111
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401430234",
+          "dateUTC": "2022-04-30T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 114
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 106
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:NO-PHX",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "3",
+        "abbrev": "NO",
+        "displayName": "New Orleans Pelicans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "21",
+        "abbrev": "PHX",
+        "displayName": "Phoenix Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "PHX wins series 4-2",
+      "games": [
+        {
+          "id": "401429893",
+          "dateUTC": "2022-04-18T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 99
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401430222",
+          "dateUTC": "2022-04-20T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 125
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401430224",
+          "dateUTC": "2022-04-23T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 114
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401430225",
+          "dateUTC": "2022-04-25T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 103
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 118
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401430226",
+          "dateUTC": "2022-04-27T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 97
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401430228",
+          "dateUTC": "2022-04-28T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 115
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 109
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-MIL",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "401433610",
+          "dateUTC": "2022-05-01T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 101
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 89
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401433611",
+          "dateUTC": "2022-05-03T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 86
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401433612",
+          "dateUTC": "2022-05-07T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401433613",
+          "dateUTC": "2022-05-09T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 116
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 108
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401433614",
+          "dateUTC": "2022-05-11T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 110
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401433615",
+          "dateUTC": "2022-05-13T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 108
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 95
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401433616",
+          "dateUTC": "2022-05-15T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 81
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:MIA-PHI",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "MIA wins series 4-2",
+      "games": [
+        {
+          "id": "401434050",
+          "dateUTC": "2022-05-02T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 92
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 106
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401434051",
+          "dateUTC": "2022-05-04T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 103
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 119
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401434052",
+          "dateUTC": "2022-05-06T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 79
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401434053",
+          "dateUTC": "2022-05-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 108
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 116
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401434054",
+          "dateUTC": "2022-05-10T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 85
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 120
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401434055",
+          "dateUTC": "2022-05-12T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 99
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 90
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DAL-PHX",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "21",
+        "abbrev": "PHX",
+        "displayName": "Phoenix Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "DAL wins series 4-3",
+      "games": [
+        {
+          "id": "401434070",
+          "dateUTC": "2022-05-03T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 114
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 121
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401434110",
+          "dateUTC": "2022-05-05T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 109
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 129
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401434111",
+          "dateUTC": "2022-05-07T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 94
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401434112",
+          "dateUTC": "2022-05-08T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 101
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 111
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401434113",
+          "dateUTC": "2022-05-11T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 80
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 110
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401434114",
+          "dateUTC": "2022-05-13T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 86
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 113
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401434115",
+          "dateUTC": "2022-05-16T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 123
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 90
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:GS-MEM",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "GS wins series 4-2",
+      "games": [
+        {
+          "id": "401434770",
+          "dateUTC": "2022-05-01T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 117
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 116
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401434771",
+          "dateUTC": "2022-05-04T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 106
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401434772",
+          "dateUTC": "2022-05-08T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 112
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 142
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401434773",
+          "dateUTC": "2022-05-10T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 98
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401434774",
+          "dateUTC": "2022-05-12T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 95
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 134
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401434775",
+          "dateUTC": "2022-05-14T02:20Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 96
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-MIA",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "401438130",
+          "dateUTC": "2022-05-18T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 118
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401438131",
+          "dateUTC": "2022-05-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 127
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401438132",
+          "dateUTC": "2022-05-22T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 109
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401438133",
+          "dateUTC": "2022-05-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 82
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401438134",
+          "dateUTC": "2022-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 93
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 80
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401438135",
+          "dateUTC": "2022-05-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 111
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 103
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401438136",
+          "dateUTC": "2022-05-30T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 100
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 96
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:DAL-GS",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "401438944",
+          "dateUTC": "2022-05-19T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 87
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401438945",
+          "dateUTC": "2022-05-21T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 117
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 126
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401438946",
+          "dateUTC": "2022-05-23T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 109
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 100
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401438947",
+          "dateUTC": "2022-05-25T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 109
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 119
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401438948",
+          "dateUTC": "2022-05-27T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 110
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 120
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:BOS-GS",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "GS wins series 4-2",
+      "games": [
+        {
+          "id": "401442530",
+          "dateUTC": "2022-06-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 120
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 108
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401442531",
+          "dateUTC": "2022-06-06T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 88
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 107
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401442532",
+          "dateUTC": "2022-06-09T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 100
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401442533",
+          "dateUTC": "2022-06-11T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 107
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 97
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401442534",
+          "dateUTC": "2022-06-14T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 94
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 104
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401442535",
+          "dateUTC": "2022-06-17T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 103
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 90
+          },
+          "gameNumber": 6
+        }
+      ]
+    }
+  ]
+}

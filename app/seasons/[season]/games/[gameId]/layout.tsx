@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 interface Props {
-  params: Promise<{ gameId: string }>;
+  params: Promise<{ season: string; gameId: string }>;
   children: React.ReactNode;
 }
 

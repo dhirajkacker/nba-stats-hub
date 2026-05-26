@@ -1,4 +1,4 @@
-import { getStandings } from '@/lib/nba-api';
+import { getSeasonStandings } from '@/lib/season-context';
 import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
 import { getTeamStats, getTeamGameLog, getTeamRosterWithStats } from '@/lib/espn-team-stats';
 import { resolveTeamIdentifier, normalizeTricode } from '@/lib/team-identifiers';
@@ -9,16 +9,17 @@ import type { Metadata } from 'next';
 
 interface TeamPageProps {
   params: Promise<{
+    season: string;
     teamId: string;
   }>;
 }
 
 export async function generateMetadata({ params }: TeamPageProps): Promise<Metadata> {
-  const { teamId } = await params;
+  const { season, teamId } = await params;
   const resolvedTricode = resolveTeamIdentifier(teamId);
   if (!resolvedTricode) return { title: 'Team Not Found - NBA Stats Hub' };
 
-  const standings = await getStandings();
+  const standings = await getSeasonStandings(season);
   const team = standings?.standings.find(
     (t) => normalizeTricode(t.teamTricode) === resolvedTricode
   );
@@ -40,18 +41,15 @@ export async function generateMetadata({ params }: TeamPageProps): Promise<Metad
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {
-  const { teamId } = await params;
+  const { season, teamId } = await params;
 
-  // Resolve the URL identifier to a standard tricode
-  // This handles various inputs: "utah" -> "UTA", "jazz" -> "UTA", "uta" -> "UTA"
   const resolvedTricode = resolveTeamIdentifier(teamId);
 
   if (!resolvedTricode) {
     notFound();
   }
 
-  // Fetch standings to get team data
-  const standings = await getStandings();
+  const standings = await getSeasonStandings(season);
   const team = standings?.standings.find(
     (t) => normalizeTricode(t.teamTricode) === resolvedTricode
   );
@@ -60,7 +58,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
     notFound();
   }
 
-  // Fetch advanced stats, game log, and roster in parallel
   const [teamStats, gameLogs, roster] = await Promise.all([
     getTeamStats(team.teamTricode),
     getTeamGameLog(team.teamTricode, 10),
@@ -69,11 +66,9 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
   const teamColor = getTeamColor(team.teamTricode);
 
-  // Calculate additional stats
   const winPctDisplay = (team.winPct * 100).toFixed(1);
   const totalGames = team.wins + team.losses;
 
-  // Extract team stats from all categories (general, offensive, defensive)
   const allCategories = teamStats?.results?.stats?.categories || [];
   const allStats: any[] = [];
   allCategories.forEach((cat: any) => {
@@ -84,31 +79,17 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
   const getStat = (name: string): string => {
     const stat = allStats.find((s: any) => s.name === name);
-
-    if (!stat) {
-      return '0';
-    }
-
-    // Try displayValue first (string), then value (number)
+    if (!stat) return '0';
     let result = stat.displayValue ?? stat.value;
-
-    // Ensure we're not returning an object
     if (typeof result === 'object' && result !== null) {
-      console.warn(`Stat ${name} is an object, extracting value:`, result);
       return String(result.displayValue || result.value || '0');
     }
-
-    // Convert to string and return
-    if (result === undefined || result === null) {
-      return '0';
-    }
-
+    if (result === undefined || result === null) return '0';
     return String(result);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
-      {/* Header with team colors */}
       <header
         className="text-white shadow-2xl border-b-4"
         style={{
@@ -117,7 +98,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/teams" className="text-gray-200 hover:text-white mb-4 inline-block">
+          <Link href={`/seasons/${season}/teams`} className="text-gray-200 hover:text-white mb-4 inline-block">
             ← Back to All Teams
           </Link>
           <div className="flex items-center gap-6">
@@ -148,7 +129,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Quick Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{ borderLeftColor: teamColor }}>
             <p className="text-gray-600 text-sm font-medium mb-1">Record</p>
@@ -170,7 +150,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
           </div>
         </div>
 
-        {/* Season Statistics */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-gray-100">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
@@ -178,7 +157,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Overall Record */}
             <div>
               <h3 className="text-lg font-bold text-gray-800 mb-4">Overall Performance</h3>
               <div className="space-y-3">
@@ -201,7 +179,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
               </div>
             </div>
 
-            {/* Conference Standings */}
             <div>
               <h3 className="text-lg font-bold text-gray-800 mb-4">Conference Standing</h3>
               <div className="space-y-3">
@@ -224,7 +201,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
           </div>
         </div>
 
-        {/* Advanced Team Stats */}
         {allStats.length > 0 && (
           <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
@@ -285,7 +261,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
           </div>
         )}
 
-        {/* Team Roster */}
         {roster.length > 0 && (
           <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
@@ -302,10 +277,9 @@ export default async function TeamPage({ params }: TeamPageProps) {
               {roster.map((player: any) => (
                 <Link
                   key={player.id}
-                  href={`/players/${player.id}`}
+                  href={`/seasons/${season}/players/${player.id}`}
                   className="group bg-gradient-to-br from-white to-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 hover:border-orange-500 hover:shadow-xl transition-all"
                 >
-                  {/* Player Header */}
                   <div className="p-4 flex items-center gap-4">
                     {player.headshot ? (
                       <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 ring-3 ring-gray-200 group-hover:ring-orange-400 transition-all shadow-md">
@@ -342,7 +316,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
                           </span>
                         )}
                       </div>
-                      {/* Height & Weight */}
                       <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
                         {player.stats?.height && player.stats.height !== '-' && (
                           <span className="flex items-center gap-1">
@@ -364,7 +337,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
                     </div>
                   </div>
 
-                  {/* Player Stats */}
                   <div className="grid grid-cols-4 divide-x divide-gray-100 border-t border-gray-100">
                     <div className="p-3 text-center bg-gradient-to-b from-blue-50 to-blue-100 group-hover:from-blue-100 group-hover:to-blue-150 transition-colors">
                       <p className="text-[10px] font-bold text-blue-600 uppercase tracking-wide">PPG</p>
@@ -389,7 +361,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
           </div>
         )}
 
-        {/* Recent Games / Game Log */}
         {gameLogs.length > 0 && (
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
@@ -412,10 +383,8 @@ export default async function TeamPage({ params }: TeamPageProps) {
                 const won = teamData?.winner;
                 const gameDate = new Date(game.date);
 
-                // Safely extract opponent name
                 const opponentName = String(opponentData?.team?.displayName || opponentData?.team?.abbreviation || 'Unknown');
 
-                // Safely extract scores - handle if they're objects with displayValue
                 const extractScore = (scoreData: any): string => {
                   if (scoreData === undefined || scoreData === null) return '-';
                   if (typeof scoreData === 'object') {
@@ -426,8 +395,6 @@ export default async function TeamPage({ params }: TeamPageProps) {
 
                 const teamScore = extractScore(teamData?.score);
                 const opponentScore = extractScore(opponentData?.score);
-
-                // Safely extract status
                 const statusDetail = String(competition?.status?.type?.detail || 'Final');
 
                 return (

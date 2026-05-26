@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface ScoreCardProps {
   game: Game;
+  season: string;
 }
 
 // Helper function to format game clock from ISO 8601 duration format (PT08M33.00S) to readable format (8:33)
@@ -26,7 +27,7 @@ function formatGameClock(clock: string): string {
   return clock;
 }
 
-export default function ScoreCard({ game }: ScoreCardProps) {
+export default function ScoreCard({ game, season }: ScoreCardProps) {
   const isLive = game.gameStatus.status === 2;
   const isFinished = game.gameStatus.status === 3;
   const isUpcoming = game.gameStatus.status === 1;
@@ -76,7 +77,7 @@ export default function ScoreCard({ game }: ScoreCardProps) {
 
   return (
     <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
-      <Link href={`/games/${game.gameId}`} className="block p-5">
+      <Link href={`/seasons/${season}/games/${game.gameId}`} className="block p-5">
         <div className="flex justify-between items-center mb-4">
           <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">
             {new Date(game.gameTimeUTC).toLocaleDateString('en-US', {

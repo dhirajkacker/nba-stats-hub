@@ -1,0 +1,2239 @@
+{
+  "playIn": {
+    "east": {
+      "7v8": {
+        "id": "401654659",
+        "dateUTC": "2024-04-17T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 104
+        },
+        "home": {
+          "id": "20",
+          "abbrev": "PHI",
+          "displayName": "Philadelphia 76ers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+          "score": 105
+        },
+        "conference": "East",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401654658",
+        "dateUTC": "2024-04-18T01:48Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 116
+        },
+        "home": {
+          "id": "4",
+          "abbrev": "CHI",
+          "displayName": "Chicago Bulls",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+          "score": 131
+        },
+        "conference": "East",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401654660",
+        "dateUTC": "2024-04-19T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "4",
+          "abbrev": "CHI",
+          "displayName": "Chicago Bulls",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+          "score": 91
+        },
+        "home": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 112
+        },
+        "conference": "East",
+        "slot": "8seed"
+      }
+    },
+    "west": {
+      "7v8": {
+        "id": "401654655",
+        "dateUTC": "2024-04-16T23:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "13",
+          "abbrev": "LAL",
+          "displayName": "Los Angeles Lakers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+          "score": 110
+        },
+        "home": {
+          "id": "3",
+          "abbrev": "NO",
+          "displayName": "New Orleans Pelicans",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+          "score": 106
+        },
+        "conference": "West",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401654656",
+        "dateUTC": "2024-04-17T02:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "9",
+          "abbrev": "GS",
+          "displayName": "Golden State Warriors",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+          "score": 94
+        },
+        "home": {
+          "id": "23",
+          "abbrev": "SAC",
+          "displayName": "Sacramento Kings",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+          "score": 118
+        },
+        "conference": "West",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401654661",
+        "dateUTC": "2024-04-20T01:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "23",
+          "abbrev": "SAC",
+          "displayName": "Sacramento Kings",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+          "score": 98
+        },
+        "home": {
+          "id": "3",
+          "abbrev": "NO",
+          "displayName": "New Orleans Pelicans",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+          "score": 105
+        },
+        "conference": "West",
+        "slot": "8seed"
+      }
+    }
+  },
+  "series": [
+    {
+      "key": "1st Round:BOS-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "BOS wins series 4-1",
+      "games": [
+        {
+          "id": "401654760",
+          "dateUTC": "2024-04-21T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 94
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655100",
+          "dateUTC": "2024-04-24T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 111
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655101",
+          "dateUTC": "2024-04-27T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 104
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 84
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655102",
+          "dateUTC": "2024-04-29T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 88
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655103",
+          "dateUTC": "2024-05-01T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 84
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 118
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CLE-ORL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "19",
+        "abbrev": "ORL",
+        "displayName": "Orlando Magic",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "CLE wins series 4-3",
+      "games": [
+        {
+          "id": "401654757",
+          "dateUTC": "2024-04-20T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 83
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 97
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655118",
+          "dateUTC": "2024-04-22T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 86
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 96
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655119",
+          "dateUTC": "2024-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 83
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 121
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655120",
+          "dateUTC": "2024-04-27T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 89
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 112
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655121",
+          "dateUTC": "2024-05-01T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 103
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 104
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401655122",
+          "dateUTC": "2024-05-03T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 96
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 103
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401655123",
+          "dateUTC": "2024-05-05T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 94
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 106
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:IND-MIL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "IND wins series 4-2",
+      "games": [
+        {
+          "id": "401654761",
+          "dateUTC": "2024-04-21T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 94
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 109
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655112",
+          "dateUTC": "2024-04-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 125
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655113",
+          "dateUTC": "2024-04-26T21:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 118
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 121
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655114",
+          "dateUTC": "2024-04-28T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 113
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 126
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655115",
+          "dateUTC": "2024-05-01T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 92
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 115
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401655116",
+          "dateUTC": "2024-05-02T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 98
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 120
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:NY-PHI",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "NY wins series 4-2",
+      "games": [
+        {
+          "id": "401654756",
+          "dateUTC": "2024-04-20T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 104
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 111
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655106",
+          "dateUTC": "2024-04-22T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 101
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 104
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655107",
+          "dateUTC": "2024-04-25T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 114
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 125
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655108",
+          "dateUTC": "2024-04-28T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 97
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 92
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655109",
+          "dateUTC": "2024-04-30T23:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 112
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 106
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401655110",
+          "dateUTC": "2024-05-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 118
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 115
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-LAC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "DAL wins series 4-2",
+      "games": [
+        {
+          "id": "401654763",
+          "dateUTC": "2024-04-21T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 97
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 109
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655094",
+          "dateUTC": "2024-04-24T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 96
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 93
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655095",
+          "dateUTC": "2024-04-27T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 90
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 101
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655096",
+          "dateUTC": "2024-04-28T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 116
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 111
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655097",
+          "dateUTC": "2024-05-02T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 123
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 93
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401655098",
+          "dateUTC": "2024-05-04T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 114
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-LAL",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "DEN wins series 4-1",
+      "games": [
+        {
+          "id": "401654758",
+          "dateUTC": "2024-04-21T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 103
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 114
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655082",
+          "dateUTC": "2024-04-23T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 99
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655083",
+          "dateUTC": "2024-04-26T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 112
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 105
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655084",
+          "dateUTC": "2024-04-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 119
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401655085",
+          "dateUTC": "2024-04-30T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 106
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MIN-PHX",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "21",
+        "abbrev": "PHX",
+        "displayName": "Phoenix Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "MIN wins series 4-0",
+      "games": [
+        {
+          "id": "401654759",
+          "dateUTC": "2024-04-20T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 95
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 120
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655088",
+          "dateUTC": "2024-04-23T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 93
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655089",
+          "dateUTC": "2024-04-27T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 126
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 109
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655090",
+          "dateUTC": "2024-04-29T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 122
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 116
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:NO-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "3",
+        "abbrev": "NO",
+        "displayName": "New Orleans Pelicans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-0",
+      "games": [
+        {
+          "id": "401654762",
+          "dateUTC": "2024-04-22T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 92
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 94
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401655076",
+          "dateUTC": "2024-04-25T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 92
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 124
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401655077",
+          "dateUTC": "2024-04-27T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 106
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 85
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401655078",
+          "dateUTC": "2024-04-30T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 97
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-CLE",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "BOS wins series 4-1",
+      "games": [
+        {
+          "id": "401658224",
+          "dateUTC": "2024-05-07T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 95
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 120
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401658225",
+          "dateUTC": "2024-05-09T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 118
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 94
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401658226",
+          "dateUTC": "2024-05-12T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 106
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 93
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401658227",
+          "dateUTC": "2024-05-13T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401658228",
+          "dateUTC": "2024-05-15T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 98
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 113
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:IND-NY",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "IND wins series 4-3",
+      "games": [
+        {
+          "id": "401657420",
+          "dateUTC": "2024-05-06T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 117
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 121
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401657421",
+          "dateUTC": "2024-05-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 121
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 130
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401657422",
+          "dateUTC": "2024-05-10T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 106
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401657423",
+          "dateUTC": "2024-05-12T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 89
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 121
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401658196",
+          "dateUTC": "2024-05-15T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 91
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 121
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401658197",
+          "dateUTC": "2024-05-18T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 103
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 116
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401658198",
+          "dateUTC": "2024-05-19T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 130
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 109
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DAL-OKC",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "DAL wins series 4-2",
+      "games": [
+        {
+          "id": "401657231",
+          "dateUTC": "2024-05-08T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 95
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 117
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401658188",
+          "dateUTC": "2024-05-10T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 119
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401658190",
+          "dateUTC": "2024-05-11T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 101
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 105
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401658191",
+          "dateUTC": "2024-05-14T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 100
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 96
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401658192",
+          "dateUTC": "2024-05-16T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 104
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 92
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401658194",
+          "dateUTC": "2024-05-19T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 116
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 117
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DEN-MIN",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIN wins series 4-3",
+      "games": [
+        {
+          "id": "401657182",
+          "dateUTC": "2024-05-04T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 106
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 99
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401657183",
+          "dateUTC": "2024-05-07T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 106
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 80
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401657184",
+          "dateUTC": "2024-05-11T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 117
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 90
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401657185",
+          "dateUTC": "2024-05-13T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 115
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 107
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401657186",
+          "dateUTC": "2024-05-15T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 97
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401657187",
+          "dateUTC": "2024-05-17T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 70
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 115
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401657188",
+          "dateUTC": "2024-05-20T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 98
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 90
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-IND",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "BOS wins series 4-0",
+      "games": [
+        {
+          "id": "401671998",
+          "dateUTC": "2024-05-22T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 128
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 133
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401671999",
+          "dateUTC": "2024-05-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 110
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 126
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401672000",
+          "dateUTC": "2024-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401672001",
+          "dateUTC": "2024-05-28T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 105
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:DAL-MIN",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "DAL wins series 4-1",
+      "games": [
+        {
+          "id": "401672976",
+          "dateUTC": "2024-05-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 108
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 105
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401672977",
+          "dateUTC": "2024-05-25T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 109
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401672978",
+          "dateUTC": "2024-05-27T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 107
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401672979",
+          "dateUTC": "2024-05-29T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 105
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401672980",
+          "dateUTC": "2024-05-31T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 124
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 103
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:BOS-DAL",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "BOS wins series 4-1",
+      "games": [
+        {
+          "id": "401656359",
+          "dateUTC": "2024-06-07T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 89
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401656360",
+          "dateUTC": "2024-06-10T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 98
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401656361",
+          "dateUTC": "2024-06-13T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 106
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401656362",
+          "dateUTC": "2024-06-15T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 84
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 122
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401656363",
+          "dateUTC": "2024-06-18T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 88
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 106
+          },
+          "gameNumber": 5
+        }
+      ]
+    }
+  ]
+}

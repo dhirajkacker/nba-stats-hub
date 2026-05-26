@@ -1,0 +1,2281 @@
+{
+  "playIn": {
+    "east": {
+      "7v8": {
+        "id": "401766458",
+        "dateUTC": "2025-04-15T23:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 95
+        },
+        "home": {
+          "id": "19",
+          "abbrev": "ORL",
+          "displayName": "Orlando Magic",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+          "score": 120
+        },
+        "conference": "East",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401766460",
+        "dateUTC": "2025-04-16T23:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 109
+        },
+        "home": {
+          "id": "4",
+          "abbrev": "CHI",
+          "displayName": "Chicago Bulls",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+          "score": 90
+        },
+        "conference": "East",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401766462",
+        "dateUTC": "2025-04-18T23:00Z",
+        "status": "final",
+        "statusDetail": "Final/OT",
+        "away": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 123
+        },
+        "home": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 114
+        },
+        "conference": "East",
+        "slot": "8seed"
+      }
+    },
+    "west": {
+      "7v8": {
+        "id": "401766459",
+        "dateUTC": "2025-04-16T02:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "29",
+          "abbrev": "MEM",
+          "displayName": "Memphis Grizzlies",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+          "score": 116
+        },
+        "home": {
+          "id": "9",
+          "abbrev": "GS",
+          "displayName": "Golden State Warriors",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+          "score": 121
+        },
+        "conference": "West",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401766461",
+        "dateUTC": "2025-04-17T02:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "6",
+          "abbrev": "DAL",
+          "displayName": "Dallas Mavericks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+          "score": 120
+        },
+        "home": {
+          "id": "23",
+          "abbrev": "SAC",
+          "displayName": "Sacramento Kings",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+          "score": 106
+        },
+        "conference": "West",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401766463",
+        "dateUTC": "2025-04-19T01:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "6",
+          "abbrev": "DAL",
+          "displayName": "Dallas Mavericks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+          "score": 106
+        },
+        "home": {
+          "id": "29",
+          "abbrev": "MEM",
+          "displayName": "Memphis Grizzlies",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+          "score": 120
+        },
+        "conference": "West",
+        "slot": "8seed"
+      }
+    }
+  },
+  "series": [
+    {
+      "key": "1st Round:BOS-ORL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "19",
+        "abbrev": "ORL",
+        "displayName": "Orlando Magic",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "BOS wins series 4-1",
+      "games": [
+        {
+          "id": "401767822",
+          "dateUTC": "2025-04-20T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 86
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 103
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401768029",
+          "dateUTC": "2025-04-23T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 100
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768030",
+          "dateUTC": "2025-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 93
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 95
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768031",
+          "dateUTC": "2025-04-27T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 98
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401768032",
+          "dateUTC": "2025-04-30T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 89
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 120
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CLE-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "CLE wins series 4-0",
+      "games": [
+        {
+          "id": "401767816",
+          "dateUTC": "2025-04-20T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 100
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 121
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401768035",
+          "dateUTC": "2025-04-23T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 112
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 121
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768036",
+          "dateUTC": "2025-04-26T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 124
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 87
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768037",
+          "dateUTC": "2025-04-28T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 138
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 83
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DET-NY",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "8",
+        "abbrev": "DET",
+        "displayName": "Detroit Pistons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "NY wins series 4-2",
+      "games": [
+        {
+          "id": "401767820",
+          "dateUTC": "2025-04-19T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 112
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 123
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401768041",
+          "dateUTC": "2025-04-21T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 100
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 94
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768042",
+          "dateUTC": "2025-04-24T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 118
+          },
+          "home": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768043",
+          "dateUTC": "2025-04-27T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 94
+          },
+          "home": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 93
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401768044",
+          "dateUTC": "2025-04-29T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 106
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 103
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401768045",
+          "dateUTC": "2025-05-01T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 116
+          },
+          "home": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 113
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:IND-MIL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "IND wins series 4-1",
+      "games": [
+        {
+          "id": "401767817",
+          "dateUTC": "2025-04-19T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 98
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 117
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401768047",
+          "dateUTC": "2025-04-22T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 115
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 123
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768048",
+          "dateUTC": "2025-04-26T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 117
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768049",
+          "dateUTC": "2025-04-28T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 129
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 103
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401768050",
+          "dateUTC": "2025-04-29T22:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 118
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 119
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-LAC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "DEN wins series 4-3",
+      "games": [
+        {
+          "id": "401767819",
+          "dateUTC": "2025-04-19T19:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 110
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401768061",
+          "dateUTC": "2025-04-22T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 105
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768062",
+          "dateUTC": "2025-04-25T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 83
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 117
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768063",
+          "dateUTC": "2025-04-26T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 101
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401768064",
+          "dateUTC": "2025-04-30T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 115
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 131
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401768065",
+          "dateUTC": "2025-05-02T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 105
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 111
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401768066",
+          "dateUTC": "2025-05-03T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 120
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:GS-HOU",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "GS wins series 4-3",
+      "games": [
+        {
+          "id": "401767823",
+          "dateUTC": "2025-04-21T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 95
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 85
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401767909",
+          "dateUTC": "2025-04-24T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 94
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 109
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401767910",
+          "dateUTC": "2025-04-27T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 93
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 104
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401767911",
+          "dateUTC": "2025-04-29T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 106
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 109
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401767912",
+          "dateUTC": "2025-04-30T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 116
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 131
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401767913",
+          "dateUTC": "2025-05-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 115
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 107
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401767914",
+          "dateUTC": "2025-05-05T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 103
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 89
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAL-MIN",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIN wins series 4-1",
+      "games": [
+        {
+          "id": "401767821",
+          "dateUTC": "2025-04-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 117
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 95
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401767915",
+          "dateUTC": "2025-04-23T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 85
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 94
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401768056",
+          "dateUTC": "2025-04-26T01:53Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 104
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401768057",
+          "dateUTC": "2025-04-27T19:50Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 113
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 116
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401768058",
+          "dateUTC": "2025-05-01T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 103
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 96
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MEM-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-0",
+      "games": [
+        {
+          "id": "401767818",
+          "dateUTC": "2025-04-20T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 80
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 131
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401767903",
+          "dateUTC": "2025-04-22T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 99
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 118
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401767904",
+          "dateUTC": "2025-04-25T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 114
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 108
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401767905",
+          "dateUTC": "2025-04-26T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 117
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 115
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-NY",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "NY wins series 4-2",
+      "games": [
+        {
+          "id": "401769746",
+          "dateUTC": "2025-05-05T23:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 108
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 105
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401769747",
+          "dateUTC": "2025-05-07T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 91
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 90
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401769748",
+          "dateUTC": "2025-05-10T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 115
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 93
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401769749",
+          "dateUTC": "2025-05-12T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 113
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 121
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401769750",
+          "dateUTC": "2025-05-14T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 102
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 127
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401769751",
+          "dateUTC": "2025-05-17T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 81
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 119
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:CLE-IND",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "IND wins series 4-1",
+      "games": [
+        {
+          "id": "401769689",
+          "dateUTC": "2025-05-04T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 121
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401769740",
+          "dateUTC": "2025-05-06T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 120
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 119
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401769741",
+          "dateUTC": "2025-05-09T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 126
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 104
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401769742",
+          "dateUTC": "2025-05-12T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 109
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 129
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401769743",
+          "dateUTC": "2025-05-13T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 114
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 105
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DEN-OKC",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-3",
+      "games": [
+        {
+          "id": "401769820",
+          "dateUTC": "2025-05-06T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 121
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 119
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401769821",
+          "dateUTC": "2025-05-08T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 106
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 149
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401769822",
+          "dateUTC": "2025-05-10T02:25Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 104
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 113
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401769823",
+          "dateUTC": "2025-05-11T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 92
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 87
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401769990",
+          "dateUTC": "2025-05-14T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 105
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401769991",
+          "dateUTC": "2025-05-16T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 107
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 119
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401769992",
+          "dateUTC": "2025-05-18T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 93
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 125
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:GS-MIN",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIN wins series 4-1",
+      "games": [
+        {
+          "id": "401769837",
+          "dateUTC": "2025-05-07T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 99
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 88
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401769838",
+          "dateUTC": "2025-05-09T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 93
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 117
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401769839",
+          "dateUTC": "2025-05-11T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 102
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 97
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401769840",
+          "dateUTC": "2025-05-13T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 117
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401769987",
+          "dateUTC": "2025-05-15T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 121
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:IND-NY",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "IND wins series 4-2",
+      "games": [
+        {
+          "id": "401772989",
+          "dateUTC": "2025-05-22T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 138
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 135
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401772990",
+          "dateUTC": "2025-05-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 114
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 109
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401772991",
+          "dateUTC": "2025-05-26T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 106
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 100
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401772992",
+          "dateUTC": "2025-05-28T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 121
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 130
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401772993",
+          "dateUTC": "2025-05-30T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 94
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 111
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401772994",
+          "dateUTC": "2025-06-01T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 108
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 125
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:MIN-OKC",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-1",
+      "games": [
+        {
+          "id": "401773148",
+          "dateUTC": "2025-05-21T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 88
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 114
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401773149",
+          "dateUTC": "2025-05-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 103
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 118
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401773150",
+          "dateUTC": "2025-05-25T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 101
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 143
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401773151",
+          "dateUTC": "2025-05-27T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 128
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 126
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401773152",
+          "dateUTC": "2025-05-29T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 94
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 124
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:IND-OKC",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-3",
+      "games": [
+        {
+          "id": "401766122",
+          "dateUTC": "2025-06-06T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 111
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401766123",
+          "dateUTC": "2025-06-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 107
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 123
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401766124",
+          "dateUTC": "2025-06-12T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 107
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401766125",
+          "dateUTC": "2025-06-14T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 111
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 104
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401766126",
+          "dateUTC": "2025-06-17T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 109
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 120
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401766127",
+          "dateUTC": "2025-06-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 91
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 108
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401766128",
+          "dateUTC": "2025-06-23T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 91
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 103
+          },
+          "gameNumber": 7
+        }
+      ]
+    }
+  ]
+}

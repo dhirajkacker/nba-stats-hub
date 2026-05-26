@@ -1,0 +1,17 @@
+{
+  "season": "2023-24",
+  "champion": {
+    "tricode": "BOS",
+    "city": "Boston",
+    "name": "Celtics"
+  },
+  "runnerUp": {
+    "tricode": "DAL",
+    "city": "Dallas",
+    "name": "Mavericks"
+  },
+  "finalsMVP": "Jaylen Brown",
+  "finalsScore": "4-1",
+  "frozen": true,
+  "frozenAt": "2026-05-26T03:06:50.676Z"
+}

@@ -38,7 +38,7 @@ interface BoxScore {
 }
 
 interface PlayoffSeriesInfo {
-  type: string; // 'playoff' | 'season' | ...
+  type: string;
   title?: string;
   description?: string;
   summary?: string;
@@ -78,8 +78,9 @@ interface GameData {
 }
 
 export default function GamePage() {
-  const params = useParams();
-  const gameId = params?.gameId as string;
+  const params = useParams<{ season: string; gameId: string }>();
+  const season = params?.season;
+  const gameId = params?.gameId;
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -126,7 +127,7 @@ export default function GamePage() {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
         <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <Link href="/" className="text-orange-200 hover:text-white mb-4 inline-block">
+            <Link href={`/seasons/${season}`} className="text-orange-200 hover:text-white mb-4 inline-block">
               ← Back to Home
             </Link>
             <h1 className="text-4xl font-black tracking-tight">Game Not Found</h1>
@@ -135,7 +136,7 @@ export default function GamePage() {
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="bg-white rounded-xl shadow-lg p-8 text-center">
             <p className="text-gray-600 text-lg">{error || 'Game data unavailable'}</p>
-            <Link href="/" className="mt-4 inline-block bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700">
+            <Link href={`/seasons/${season}`} className="mt-4 inline-block bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700">
               Go Home
             </Link>
           </div>
@@ -151,7 +152,6 @@ export default function GamePage() {
   const isFinished = status.type.completed;
   const isLive = status.type.state === 'in';
 
-  // Format status detail in user's local timezone for scheduled games
   const statusDetail = (() => {
     if (isFinished || isLive) return status.type.detail;
     const d = new Date(competition.date);
@@ -162,11 +162,9 @@ export default function GamePage() {
     });
   })();
 
-  // Check for overtime
   const isOT = status.type.detail.includes('OT') || status.period > 4;
   const otText = isOT ? status.type.detail.replace('Final/', '') : '';
 
-  // Playoff series context (only present for postseason games)
   const seriesField = competition.series;
   const seriesList = Array.isArray(seriesField) ? seriesField : seriesField ? [seriesField] : [];
   const playoffSeries = seriesList.find(s => s?.type === 'playoff');
@@ -177,26 +175,20 @@ export default function GamePage() {
     return null;
   }
 
-  // Helper to get total record from record array
   const getRecord = (competitor: typeof awayTeam) => {
     const totalRecord = competitor.record?.find(r => r.type === 'total');
     return totalRecord?.displayValue || '';
   };
 
-  // Define which stats to show and in what order (PTS first as requested)
-  // ESPN's actual order: ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-']
   const displayOrder = ['PTS', 'MIN', 'FG', '3PT', 'FT', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', '+/-'];
-
-  // Map from ESPN's stat order to our display order
   const espnStatOrder = ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-'];
   const statIndices = displayOrder.map(stat => espnStatOrder.indexOf(stat));
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
-      {/* Header */}
       <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
-          <Link href="/" className="text-orange-200 hover:text-white mb-2 sm:mb-4 inline-block text-sm sm:text-base">
+          <Link href={`/seasons/${season}`} className="text-orange-200 hover:text-white mb-2 sm:mb-4 inline-block text-sm sm:text-base">
             ← Back to Home
           </Link>
           <h1 className="text-2xl sm:text-4xl font-black tracking-tight mb-1 sm:mb-2">
@@ -214,7 +206,6 @@ export default function GamePage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Live Banner */}
         {isLive && (
           <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl shadow-lg p-4 mb-8 flex items-center justify-center gap-3">
             <span className="relative flex h-4 w-4">
@@ -227,7 +218,6 @@ export default function GamePage() {
           </div>
         )}
 
-        {/* Playoff Series Banner */}
         {isPlayoff && (
           <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl shadow-lg px-4 sm:px-6 py-3 sm:py-4 mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
             {gameNote && (
@@ -243,15 +233,13 @@ export default function GamePage() {
           </div>
         )}
 
-        {/* Score Card */}
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 mb-8">
-          {/* Away Team */}
           <div
             className={`flex items-center justify-between p-4 sm:p-8 ${
               awayTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <Link href={`/teams/${awayTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+            <Link href={`/seasons/${season}/teams/${awayTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
               <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(awayTeam.team.abbreviation, 'medium')}
@@ -280,7 +268,6 @@ export default function GamePage() {
             </div>
           </div>
 
-          {/* Divider */}
           <div className="bg-gray-100 py-2 sm:py-3 px-4 sm:px-8 flex items-center justify-center gap-4">
             <div className="h-px flex-1 bg-gray-300"></div>
             <div className="flex flex-col items-center gap-1">
@@ -296,13 +283,12 @@ export default function GamePage() {
             <div className="h-px flex-1 bg-gray-300"></div>
           </div>
 
-          {/* Home Team */}
           <div
             className={`flex items-center justify-between p-4 sm:p-8 ${
               homeTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
             }`}
           >
-            <Link href={`/teams/${homeTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+            <Link href={`/seasons/${season}/teams/${homeTeam.team.abbreviation.toLowerCase()}`} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
               <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
                 <Image
                   src={getTeamLogoUrl(homeTeam.team.abbreviation, 'medium')}
@@ -332,7 +318,6 @@ export default function GamePage() {
           </div>
         </div>
 
-        {/* Box Score */}
         {gameData.boxscore && gameData.boxscore.players && (
           <div className="space-y-8">
             {gameData.boxscore.players.map((teamBox, idx) => (
@@ -371,7 +356,7 @@ export default function GamePage() {
                         <tr key={playerIdx} className="hover:bg-orange-50 transition-colors group">
                           <td className="py-2 sm:py-3 px-2 sm:px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
                             <Link
-                              href={`/players/${player.athlete.id}`}
+                              href={`/seasons/${season}/players/${player.athlete.id}`}
                               className="flex items-center gap-1 sm:gap-2 text-gray-900 hover:text-orange-600"
                             >
                               <span className="w-5 sm:w-6 text-gray-500 font-semibold text-xs">#{player.athlete.jersey}</span>

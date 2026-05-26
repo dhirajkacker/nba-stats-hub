@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPlayerStats } from '@/lib/nba-api';
+import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
     const playerIdParam = searchParams.get('playerId');
+    const seasonParam = searchParams.get('season');
+    const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
 
     if (!playerIdParam) {
       return NextResponse.json(
@@ -21,7 +24,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const stats = await getPlayerStats(playerId);
+    const stats = await getPlayerStats(playerId, season);
 
     if (!stats) {
       return NextResponse.json(

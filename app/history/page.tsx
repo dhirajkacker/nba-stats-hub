@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { CURRENT_SEASON } from '@/lib/seasons';
 
 export const metadata: Metadata = {
   title: 'NBA Championship History - NBA Stats Hub',
@@ -112,7 +113,7 @@ export default function HistoryPage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/" className="text-orange-200 hover:text-white mb-4 inline-block">
+          <Link href={`/seasons/${CURRENT_SEASON}`} className="text-orange-200 hover:text-white mb-4 inline-block">
             ← Back to Home
           </Link>
           <div className="flex items-center gap-4">

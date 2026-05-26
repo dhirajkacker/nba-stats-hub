@@ -138,12 +138,19 @@ async function fetchDay(dateStr: string): Promise<any[]> {
   }
 }
 
-export async function getPlayoffsData(daysBack = 70, daysForward = 30): Promise<PlayoffsData> {
-  const today = new Date();
-  today.setUTCHours(12, 0, 0, 0);
+export interface PlayoffsFetchOpts {
+  anchorDate?: string; // ISO YYYY-MM-DD; defaults to today.
+  daysBack?: number;
+  daysForward?: number;
+}
+
+export async function getPlayoffsData(opts: PlayoffsFetchOpts = {}): Promise<PlayoffsData> {
+  const { anchorDate, daysBack = 70, daysForward = 30 } = opts;
+  const anchor = anchorDate ? new Date(`${anchorDate}T12:00:00Z`) : new Date();
+  anchor.setUTCHours(12, 0, 0, 0);
   const dates: string[] = [];
   for (let i = -daysBack; i <= daysForward; i++) {
-    const d = new Date(today);
+    const d = new Date(anchor);
     d.setUTCDate(d.getUTCDate() + i);
     dates.push(toYYYYMMDD(d));
   }

@@ -1,0 +1,2281 @@
+{
+  "playIn": {
+    "east": {
+      "7v8": {
+        "id": "401539671",
+        "dateUTC": "2023-04-11T23:30Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "1",
+          "abbrev": "ATL",
+          "displayName": "Atlanta Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+          "score": 116
+        },
+        "home": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 105
+        },
+        "conference": "East",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401539673",
+        "dateUTC": "2023-04-12T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "4",
+          "abbrev": "CHI",
+          "displayName": "Chicago Bulls",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+          "score": 109
+        },
+        "home": {
+          "id": "28",
+          "abbrev": "TOR",
+          "displayName": "Toronto Raptors",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+          "score": 105
+        },
+        "conference": "East",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401539675",
+        "dateUTC": "2023-04-14T23:00Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "4",
+          "abbrev": "CHI",
+          "displayName": "Chicago Bulls",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+          "score": 91
+        },
+        "home": {
+          "id": "14",
+          "abbrev": "MIA",
+          "displayName": "Miami Heat",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+          "score": 102
+        },
+        "conference": "East",
+        "slot": "8seed"
+      }
+    },
+    "west": {
+      "7v8": {
+        "id": "401539672",
+        "dateUTC": "2023-04-12T02:00Z",
+        "status": "final",
+        "statusDetail": "Final/OT",
+        "away": {
+          "id": "16",
+          "abbrev": "MIN",
+          "displayName": "Minnesota Timberwolves",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+          "score": 102
+        },
+        "home": {
+          "id": "13",
+          "abbrev": "LAL",
+          "displayName": "Los Angeles Lakers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+          "score": 108
+        },
+        "conference": "West",
+        "slot": "7v8"
+      },
+      "9v10": {
+        "id": "401539674",
+        "dateUTC": "2023-04-13T01:50Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "25",
+          "abbrev": "OKC",
+          "displayName": "Oklahoma City Thunder",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+          "score": 123
+        },
+        "home": {
+          "id": "3",
+          "abbrev": "NO",
+          "displayName": "New Orleans Pelicans",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+          "score": 118
+        },
+        "conference": "West",
+        "slot": "9v10"
+      },
+      "8seed": {
+        "id": "401539676",
+        "dateUTC": "2023-04-15T01:50Z",
+        "status": "final",
+        "statusDetail": "Final",
+        "away": {
+          "id": "25",
+          "abbrev": "OKC",
+          "displayName": "Oklahoma City Thunder",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+          "score": 95
+        },
+        "home": {
+          "id": "16",
+          "abbrev": "MIN",
+          "displayName": "Minnesota Timberwolves",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+          "score": 120
+        },
+        "conference": "West",
+        "slot": "8seed"
+      }
+    }
+  },
+  "series": [
+    {
+      "key": "1st Round:ATL-BOS",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "BOS wins series 4-2",
+      "games": [
+        {
+          "id": "401540751",
+          "dateUTC": "2023-04-15T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 99
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541172",
+          "dateUTC": "2023-04-18T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 106
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 119
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541180",
+          "dateUTC": "2023-04-21T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 122
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 130
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541188",
+          "dateUTC": "2023-04-23T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 129
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 121
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541243",
+          "dateUTC": "2023-04-25T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 119
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 117
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401541244",
+          "dateUTC": "2023-04-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 128
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 120
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:BKN-PHI",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "17",
+        "abbrev": "BKN",
+        "displayName": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "PHI wins series 4-0",
+      "games": [
+        {
+          "id": "401540750",
+          "dateUTC": "2023-04-15T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 101
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 121
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541173",
+          "dateUTC": "2023-04-17T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 84
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 96
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541181",
+          "dateUTC": "2023-04-20T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 102
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 97
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541189",
+          "dateUTC": "2023-04-22T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 96
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 88
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CLE-NY",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "NY wins series 4-1",
+      "games": [
+        {
+          "id": "401540752",
+          "dateUTC": "2023-04-15T22:10Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 101
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 97
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541174",
+          "dateUTC": "2023-04-18T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 90
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 107
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541182",
+          "dateUTC": "2023-04-22T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 79
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541190",
+          "dateUTC": "2023-04-23T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 93
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541249",
+          "dateUTC": "2023-04-26T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 106
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 95
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MIA-MIL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "401540754",
+          "dateUTC": "2023-04-16T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 130
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 117
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541171",
+          "dateUTC": "2023-04-20T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 122
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 138
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541179",
+          "dateUTC": "2023-04-22T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 99
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 121
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541187",
+          "dateUTC": "2023-04-24T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 114
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 119
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541240",
+          "dateUTC": "2023-04-27T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 128
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 126
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-MIN",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "DEN wins series 4-1",
+      "games": [
+        {
+          "id": "401540755",
+          "dateUTC": "2023-04-17T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 80
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 109
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541167",
+          "dateUTC": "2023-04-20T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 113
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 122
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541175",
+          "dateUTC": "2023-04-22T01:43Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 120
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541183",
+          "dateUTC": "2023-04-24T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 114
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541196",
+          "dateUTC": "2023-04-26T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 109
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:GS-SAC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "23",
+        "abbrev": "SAC",
+        "displayName": "Sacramento Kings",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "GS wins series 4-3",
+      "games": [
+        {
+          "id": "401540753",
+          "dateUTC": "2023-04-16T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 123
+          },
+          "home": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 126
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541169",
+          "dateUTC": "2023-04-18T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 106
+          },
+          "home": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541177",
+          "dateUTC": "2023-04-21T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 97
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 114
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541185",
+          "dateUTC": "2023-04-23T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 125
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 126
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541234",
+          "dateUTC": "2023-04-27T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 123
+          },
+          "home": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 116
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401541235",
+          "dateUTC": "2023-04-29T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 118
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 99
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401541236",
+          "dateUTC": "2023-04-30T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 120
+          },
+          "home": {
+            "id": "23",
+            "abbrev": "SAC",
+            "displayName": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+            "score": 100
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAC-PHX",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "21",
+        "abbrev": "PHX",
+        "displayName": "Phoenix Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "PHX wins series 4-1",
+      "games": [
+        {
+          "id": "401540757",
+          "dateUTC": "2023-04-17T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 115
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541170",
+          "dateUTC": "2023-04-19T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 109
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 123
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541178",
+          "dateUTC": "2023-04-21T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 129
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 124
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541186",
+          "dateUTC": "2023-04-22T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 112
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541237",
+          "dateUTC": "2023-04-26T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 130
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 136
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAL-MEM",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "LAL win series 4-2",
+      "games": [
+        {
+          "id": "401540756",
+          "dateUTC": "2023-04-16T19:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 128
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401541168",
+          "dateUTC": "2023-04-19T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 93
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 103
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401541176",
+          "dateUTC": "2023-04-23T02:10Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 101
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401541184",
+          "dateUTC": "2023-04-25T02:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 111
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 117
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401541231",
+          "dateUTC": "2023-04-26T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 99
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 116
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401541232",
+          "dateUTC": "2023-04-29T02:50Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 85
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 125
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-PHI",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "401545111",
+          "dateUTC": "2023-05-01T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 119
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 115
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401545112",
+          "dateUTC": "2023-05-04T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 87
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 121
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401545113",
+          "dateUTC": "2023-05-05T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401545114",
+          "dateUTC": "2023-05-07T19:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 115
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 116
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401545115",
+          "dateUTC": "2023-05-09T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 115
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 103
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401545116",
+          "dateUTC": "2023-05-11T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 95
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 86
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401545117",
+          "dateUTC": "2023-05-14T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 88
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 112
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:MIA-NY",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "MIA wins series 4-2",
+      "games": [
+        {
+          "id": "401544973",
+          "dateUTC": "2023-04-30T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 108
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 101
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401544974",
+          "dateUTC": "2023-05-02T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 105
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 111
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401544975",
+          "dateUTC": "2023-05-06T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 86
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 105
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401544976",
+          "dateUTC": "2023-05-08T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 101
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 109
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401544977",
+          "dateUTC": "2023-05-10T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401544978",
+          "dateUTC": "2023-05-12T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 92
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 96
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DEN-PHX",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "21",
+        "abbrev": "PHX",
+        "displayName": "Phoenix Suns",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "DEN wins series 4-2",
+      "games": [
+        {
+          "id": "401544334",
+          "dateUTC": "2023-04-30T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 107
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 125
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401544335",
+          "dateUTC": "2023-05-02T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 87
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 97
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401544336",
+          "dateUTC": "2023-05-06T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 114
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 121
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401544337",
+          "dateUTC": "2023-05-08T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 124
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 129
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401544338",
+          "dateUTC": "2023-05-10T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 102
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 118
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401544339",
+          "dateUTC": "2023-05-12T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 125
+          },
+          "home": {
+            "id": "21",
+            "abbrev": "PHX",
+            "displayName": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "score": 100
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:GS-LAL",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAL win series 4-2",
+      "games": [
+        {
+          "id": "401545231",
+          "dateUTC": "2023-05-03T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 117
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401545232",
+          "dateUTC": "2023-05-05T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 100
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 127
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401545233",
+          "dateUTC": "2023-05-07T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 97
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 127
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401545234",
+          "dateUTC": "2023-05-09T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 104
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401545235",
+          "dateUTC": "2023-05-11T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 106
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 121
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401545236",
+          "dateUTC": "2023-05-13T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 122
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-MIA",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-3",
+      "games": [
+        {
+          "id": "401547671",
+          "dateUTC": "2023-05-18T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 123
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 116
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401547672",
+          "dateUTC": "2023-05-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 111
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401547673",
+          "dateUTC": "2023-05-22T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 128
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401547674",
+          "dateUTC": "2023-05-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 116
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401547675",
+          "dateUTC": "2023-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 97
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 110
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401547676",
+          "dateUTC": "2023-05-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 104
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401547678",
+          "dateUTC": "2023-05-30T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 84
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:DEN-LAL",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "DEN wins series 4-0",
+      "games": [
+        {
+          "id": "401547679",
+          "dateUTC": "2023-05-17T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 126
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 132
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401547682",
+          "dateUTC": "2023-05-19T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 103
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401547683",
+          "dateUTC": "2023-05-21T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 119
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 108
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401547684",
+          "dateUTC": "2023-05-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 113
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 111
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:DEN-MIA",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "DEN wins series 4-1",
+      "games": [
+        {
+          "id": "401544846",
+          "dateUTC": "2023-06-02T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 93
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401544847",
+          "dateUTC": "2023-06-05T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 111
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401544848",
+          "dateUTC": "2023-06-08T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 109
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 94
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401544849",
+          "dateUTC": "2023-06-10T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 95
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401544850",
+          "dateUTC": "2023-06-13T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 89
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 94
+          },
+          "gameNumber": 5
+        }
+      ]
+    }
+  ]
+}

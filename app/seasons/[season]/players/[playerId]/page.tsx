@@ -1,5 +1,6 @@
 import { getPlayerDetails, getPlayerStats, getPlayerGameLog } from '@/lib/espn-players';
 import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
+import { seasonLabel } from '@/lib/seasons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -7,6 +8,7 @@ import type { Metadata } from 'next';
 
 interface PlayerPageProps {
   params: Promise<{
+    season: string;
     playerId: string;
   }>;
 }
@@ -35,18 +37,16 @@ export async function generateMetadata({ params }: PlayerPageProps): Promise<Met
 }
 
 export default async function PlayerPage({ params }: PlayerPageProps) {
-  const { playerId } = await params;
+  const { season, playerId } = await params;
 
-  console.log(`Player page loading for ID: ${playerId}`);
+  console.log(`Player page loading for ID: ${playerId} (season ${season})`);
 
-  // Fetch player data from ESPN (always use real-time data)
   const [player, stats, gameLogs] = await Promise.all([
     getPlayerDetails(playerId),
     getPlayerStats(playerId),
     getPlayerGameLog(playerId, 10)
   ]);
 
-  // If player details not found, show 404
   if (!player) {
     console.log(`Player not found for ID: ${playerId}, showing 404 page`);
     notFound();
@@ -57,23 +57,13 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
   const teamAbbr = player.team?.abbreviation || 'NBA';
   const teamColor = getTeamColor(teamAbbr);
 
-  // Extract current season stats from statsSummary or use POPULAR_PLAYERS data
   const currentSeasonStats = stats?.statistics || [];
 
-  // Log available stats for debugging
-  console.log(`Available stats for ${player.displayName}:`, currentSeasonStats.map((s: any) => s.name).join(', '));
-
-  // Helper function to get stat value from ESPN API (always use real-time data)
   const getStatValue = (name: string) => {
     const stat = currentSeasonStats.find((s: any) => s.name === name);
     const value = stat?.displayValue || stat?.value;
-    if (!value) {
-      console.log(`Stat ${name}: not available`);
-      return null;
-    }
-    console.log(`Stat ${name}: ${value}`);
+    if (!value) return null;
 
-    // Format numeric values to 1 decimal place
     const numValue = typeof value === 'string' ? parseFloat(value) : value;
     if (typeof numValue === 'number' && !isNaN(numValue)) {
       return numValue.toFixed(1);
@@ -82,15 +72,8 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
     return value;
   };
 
-  // Career stats - for now use the same as current season
-  // ESPN API doesn't provide career stats in a simple endpoint
-  const getCareerStat = (name: string) => {
-    return getStatValue(name);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
-      {/* Header with team colors */}
       <header
         className="text-white shadow-2xl border-b-4"
         style={{
@@ -99,7 +82,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/players" className="text-gray-200 hover:text-white mb-4 inline-block">
+          <Link href={`/seasons/${season}/players`} className="text-gray-200 hover:text-white mb-4 inline-block">
             ← Back to Players
           </Link>
           <div className="flex items-center gap-6">
@@ -129,7 +112,7 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                   <>
                     <span className="text-gray-300">•</span>
                     <Link
-                      href={`/teams/${teamAbbr.toLowerCase()}`}
+                      href={`/seasons/${season}/teams/${teamAbbr.toLowerCase()}`}
                       className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                     >
                       <div className="relative w-8 h-8">
@@ -153,7 +136,6 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Player Bio Cards */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
           <div className="bg-white rounded-xl shadow-lg p-5 border-l-4" style={{ borderLeftColor: teamColor }}>
             <p className="text-gray-500 text-xs font-medium uppercase tracking-wide mb-1">Height</p>
@@ -183,15 +165,13 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
           )}
         </div>
 
-        {/* Season Statistics */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border border-gray-100">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
-            <h2 className="text-2xl font-black text-gray-900">2025-26 Season Stats</h2>
+            <h2 className="text-2xl font-black text-gray-900">{seasonLabel(season)} Stats</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {/* Primary Stats - Larger */}
             <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-sm">
               <p className="text-xs text-blue-600 font-bold uppercase tracking-wide mb-1">PPG</p>
               <p className="text-3xl font-black text-blue-900">{getStatValue('avgPoints') || '-'}</p>
@@ -217,7 +197,6 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
               <p className="text-3xl font-black text-orange-900">{getStatValue('freeThrowPct') || '-'}</p>
             </div>
 
-            {/* Secondary Stats */}
             <div className="text-center p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl shadow-sm">
               <p className="text-xs text-indigo-600 font-bold uppercase tracking-wide mb-1">SPG</p>
               <p className="text-3xl font-black text-indigo-900">{getStatValue('avgSteals') || '-'}</p>
@@ -237,7 +216,6 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
           </div>
         </div>
 
-        {/* Recent Games */}
         {gameLogs.length > 0 && (
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
@@ -261,7 +239,6 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                   <div key={index} className={`rounded-xl border-2 overflow-hidden transition-all hover:shadow-md ${
                     won ? 'bg-gradient-to-r from-green-50 to-white border-green-200' : 'bg-gradient-to-r from-red-50 to-white border-red-200'
                   }`}>
-                    {/* Game Header */}
                     <div className="p-4 flex items-center justify-between">
                       <div className="flex items-center gap-4">
                         <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-black ${
@@ -286,10 +263,8 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                       </div>
                     </div>
 
-                    {/* Player Stats for this game */}
                     <div className="border-t border-gray-100 bg-gray-50 px-4 py-3">
                       <div className="grid grid-cols-5 md:grid-cols-9 gap-2 text-center">
-                        {/* Primary Stats */}
                         <div className="bg-blue-100 rounded-lg py-2 px-1">
                           <p className="text-[10px] font-bold text-blue-600 uppercase">PTS</p>
                           <p className="text-lg font-black text-blue-900">{stats.pts}</p>
@@ -310,7 +285,6 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
                           <p className="text-[10px] font-bold text-pink-600 uppercase">BLK</p>
                           <p className="text-lg font-black text-pink-900">{stats.blk}</p>
                         </div>
-                        {/* Secondary Stats - Hidden on mobile */}
                         <div className="hidden md:block bg-teal-100 rounded-lg py-2 px-1">
                           <p className="text-[10px] font-bold text-teal-600 uppercase">MIN</p>
                           <p className="text-lg font-black text-teal-900">{stats.min}</p>

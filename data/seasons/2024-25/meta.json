@@ -1,0 +1,17 @@
+{
+  "season": "2024-25",
+  "champion": {
+    "tricode": "OKC",
+    "city": "Oklahoma City",
+    "name": "Thunder"
+  },
+  "runnerUp": {
+    "tricode": "IND",
+    "city": "Indiana",
+    "name": "Pacers"
+  },
+  "finalsMVP": "Shai Gilgeous-Alexander",
+  "finalsScore": "4-3",
+  "frozen": true,
+  "frozenAt": "2026-05-26T02:26:48.085Z"
+}

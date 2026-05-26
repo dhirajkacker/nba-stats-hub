@@ -1,0 +1,17 @@
+{
+  "season": "2021-22",
+  "champion": {
+    "tricode": "GSW",
+    "city": "Golden State",
+    "name": "Warriors"
+  },
+  "runnerUp": {
+    "tricode": "BOS",
+    "city": "Boston",
+    "name": "Celtics"
+  },
+  "finalsMVP": "Stephen Curry",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-26T03:07:13.885Z"
+}

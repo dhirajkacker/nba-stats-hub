@@ -6,6 +6,7 @@ import { getTeamLogoUrl } from '@/lib/team-logos';
 interface Props {
   data: PlayInData;
   seeds?: Record<string, number>;
+  season: string;
 }
 
 // Normalize tricode aliases across ESPN short forms and NBA.com long forms
@@ -44,7 +45,7 @@ function formatGameTime(iso: string): string {
   return d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 }
 
-function GameBox({ game, slot, seeds }: { game: PlayInGame | undefined; slot: '7v8' | '9v10' | '8seed'; seeds?: Record<string, number> }) {
+function GameBox({ game, slot, seeds, season }: { game: PlayInGame | undefined; slot: '7v8' | '9v10' | '8seed'; seeds?: Record<string, number>; season: string }) {
   const annotation = ANNOTATION[slot];
 
   if (!game) {
@@ -93,7 +94,7 @@ function GameBox({ game, slot, seeds }: { game: PlayInGame | undefined; slot: '7
 
   return (
     <Link
-      href={`/games/${game.id}`}
+      href={`/seasons/${season}/games/${game.id}`}
       className="block rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden"
     >
       <div className="flex items-center justify-between px-3 py-1.5 bg-gray-50 border-b border-gray-100">
@@ -114,25 +115,25 @@ function GameBox({ game, slot, seeds }: { game: PlayInGame | undefined; slot: '7
   );
 }
 
-function ConferenceColumn({ label, games, seeds }: { label: Conference; games: PlayInData['east'] | PlayInData['west']; seeds?: Record<string, number> }) {
+function ConferenceColumn({ label, games, seeds, season }: { label: Conference; games: PlayInData['east'] | PlayInData['west']; seeds?: Record<string, number>; season: string }) {
   return (
     <div className="space-y-2">
       <h3 className="text-lg font-black text-gray-900 tracking-tight">
         <span className={`inline-block w-2 h-2 rounded-full mr-2 ${label === 'East' ? 'bg-blue-500' : 'bg-red-500'}`} />
         {label}
       </h3>
-      <GameBox game={games['7v8']} slot="7v8" seeds={seeds} />
-      <GameBox game={games['9v10']} slot="9v10" seeds={seeds} />
-      <GameBox game={games['8seed']} slot="8seed" seeds={seeds} />
+      <GameBox game={games['7v8']} slot="7v8" seeds={seeds} season={season} />
+      <GameBox game={games['9v10']} slot="9v10" seeds={seeds} season={season} />
+      <GameBox game={games['8seed']} slot="8seed" seeds={seeds} season={season} />
     </div>
   );
 }
 
-export default function PlayInBracket({ data, seeds }: Props) {
+export default function PlayInBracket({ data, seeds, season }: Props) {
   return (
     <div className="grid gap-4 md:grid-cols-2">
-      <ConferenceColumn label="East" games={data.east} seeds={seeds} />
-      <ConferenceColumn label="West" games={data.west} seeds={seeds} />
+      <ConferenceColumn label="East" games={data.east} seeds={seeds} season={season} />
+      <ConferenceColumn label="West" games={data.west} seeds={seeds} season={season} />
     </div>
   );
 }

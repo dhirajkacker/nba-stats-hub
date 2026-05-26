@@ -6,9 +6,10 @@ import Link from 'next/link';
 interface StandingsTableProps {
   standings: Standing[];
   conference: 'East' | 'West';
+  season: string;
 }
 
-export default function StandingsTable({ standings, conference }: StandingsTableProps) {
+export default function StandingsTable({ standings, conference, season }: StandingsTableProps) {
   const conferenceStandings = standings
     .filter((team) => team.conference === conference)
     .sort((a, b) => a.confRank - b.confRank);
@@ -83,7 +84,7 @@ export default function StandingsTable({ standings, conference }: StandingsTable
                   </td>
                 <td className="px-2 py-2 whitespace-nowrap">
                   <Link
-                    href={`/teams/${team.teamTricode.toLowerCase()}`}
+                    href={`/seasons/${season}/teams/${team.teamTricode.toLowerCase()}`}
                     className="flex items-center gap-2 text-gray-900 group-hover:text-orange-600 transition-colors"
                   >
                     <div className="relative w-6 h-6 flex-shrink-0">

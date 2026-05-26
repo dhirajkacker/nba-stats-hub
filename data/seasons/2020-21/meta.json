@@ -1,0 +1,17 @@
+{
+  "season": "2020-21",
+  "champion": {
+    "tricode": "MIL",
+    "city": "Milwaukee",
+    "name": "Bucks"
+  },
+  "runnerUp": {
+    "tricode": "PHX",
+    "city": "Phoenix",
+    "name": "Suns"
+  },
+  "finalsMVP": "Giannis Antetokounmpo",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-26T03:08:18.546Z"
+}

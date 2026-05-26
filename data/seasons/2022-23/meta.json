@@ -1,0 +1,17 @@
+{
+  "season": "2022-23",
+  "champion": {
+    "tricode": "DEN",
+    "city": "Denver",
+    "name": "Nuggets"
+  },
+  "runnerUp": {
+    "tricode": "MIA",
+    "city": "Miami",
+    "name": "Heat"
+  },
+  "finalsMVP": "Nikola Jokic",
+  "finalsScore": "4-1",
+  "frozen": true,
+  "frozenAt": "2026-05-26T03:07:03.711Z"
+}

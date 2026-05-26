@@ -174,14 +174,17 @@ async function fetchPlayerById(playerId: string): Promise<ESPNStatsLeader | null
 }
 
 /**
- * Get ESPN season year (ESPN uses next calendar year for current season)
+ * Get ESPN season year (ESPN uses the end-year of the NBA season)
  * e.g., 2025-26 season = 2026 in ESPN API
  */
-function getESPNSeasonYear(): number {
+function getESPNSeasonYear(season?: string): number {
+  if (season) {
+    const [start] = season.split('-');
+    return parseInt(start) + 1;
+  }
   const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
-  // If Oct-Dec, use next year; if Jan-Sep, use current year
   return month >= 10 ? year + 1 : year;
 }
 
@@ -189,11 +192,11 @@ function getESPNSeasonYear(): number {
  * PRIMARY SOURCE: Fetch top scorers from ESPN Leaders API
  * This API returns the actual statistical leaders
  */
-async function fetchFromLeadersAPI(limit: number): Promise<ESPNStatsLeader[]> {
-  const seasonYear = getESPNSeasonYear();
+async function fetchFromLeadersAPI(limit: number, season?: string): Promise<ESPNStatsLeader[]> {
+  const seasonYear = getESPNSeasonYear(season);
   const leadersUrl = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${seasonYear}/types/2/leaders?lang=en&region=us`;
 
-  console.log(`[Leaders API] Fetching from ESPN (season ${seasonYear})...`);
+  console.log(`[Leaders API] Fetching from ESPN (season year ${seasonYear})...`);
 
   const response = await fetchWithRetry(leadersUrl, {}, 3, 8000);
   const data = await response.json();
@@ -202,18 +205,51 @@ async function fetchFromLeadersAPI(limit: number): Promise<ESPNStatsLeader[]> {
     throw new Error('No categories in leaders response');
   }
 
-  // Find PPG category
+  // Build a per-season stat index from all categories so we can map per-athlete
+  // values without doing a per-athlete fetch (which would return current-season stats).
+  //
+  // Only match by category NAME, not abbreviation: the ESPN leaders endpoint exposes
+  // both a per-game category and a season-total category that share the same
+  // abbreviation (e.g. `pointsPerGame` and `points` both abbreviate to `PTS`).
+  // Matching by abbreviation overwrites the per-game value with the season total.
+  const CATEGORY_TO_KEY: Record<string, keyof ESPNStatsLeader['stats']> = {
+    pointsPerGame: 'ppg', avgPoints: 'ppg',
+    reboundsPerGame: 'rpg', avgRebounds: 'rpg',
+    assistsPerGame: 'apg', avgAssists: 'apg',
+    fieldGoalPercentage: 'fgPct', fieldGoalPct: 'fgPct',
+    '3PointPct': 'fg3Pct', threePointFieldGoalPct: 'fg3Pct',
+    FreeThrowPct: 'ftPct', freeThrowPct: 'ftPct',
+    minutesPerGame: 'mpg', avgMinutes: 'mpg',
+  };
+
+  const seasonStats = new Map<string, Partial<ESPNStatsLeader['stats']>>();
+  for (const cat of data.categories) {
+    const key = CATEGORY_TO_KEY[cat.name];
+    if (!key) continue;
+    for (const leader of cat.leaders ?? []) {
+      const id = leader.athlete?.$ref ? extractAthleteId(leader.athlete.$ref) : null;
+      if (!id) continue;
+      const value = typeof leader.value === 'number'
+        ? leader.value
+        : parseFloat(leader.displayValue ?? '0') || 0;
+      const entry = seasonStats.get(id) ?? {};
+      entry[key] = value;
+      seasonStats.set(id, entry);
+    }
+  }
+
+  // Find PPG category for the top-N ordering (strict name match — see comment above)
   const ppgCategory = data.categories.find(
-    (cat: any) => cat.abbreviation === 'PTS' || cat.name === 'pointsPerGame'
+    (cat: any) => cat.name === 'pointsPerGame' || cat.name === 'avgPoints'
   );
 
   if (!ppgCategory?.leaders?.length) {
     throw new Error('PPG leaders category not found');
   }
 
-  console.log(`[Leaders API] Found ${ppgCategory.leaders.length} PPG leaders`);
+  console.log(`[Leaders API] Found ${ppgCategory.leaders.length} PPG leaders, ${seasonStats.size} players across all categories`);
 
-  // Extract athlete IDs
+  // Extract athlete IDs in PPG order
   const athleteIds: string[] = [];
   for (const leader of ppgCategory.leaders.slice(0, Math.min(limit + 10, ppgCategory.leaders.length))) {
     if (leader.athlete?.$ref) {
@@ -222,16 +258,26 @@ async function fetchFromLeadersAPI(limit: number): Promise<ESPNStatsLeader[]> {
     }
   }
 
-  console.log(`[Leaders API] Fetching details for ${athleteIds.length} players...`);
+  console.log(`[Leaders API] Fetching metadata for ${athleteIds.length} players...`);
 
-  // Fetch player details in parallel batches
+  // Fetch per-athlete metadata (name/team/position/jersey/height/weight); override
+  // stats with the per-season values we already extracted above. The /athletes/{id}
+  // endpoint returns current-season stats, which would be wrong for past seasons —
+  // hence the override.
   const players: ESPNStatsLeader[] = [];
   const batchSize = 10;
 
   for (let i = 0; i < athleteIds.length; i += batchSize) {
     const batch = athleteIds.slice(i, i + batchSize);
     const results = await Promise.all(batch.map(id => fetchPlayerById(id)));
-    players.push(...results.filter((p): p is ESPNStatsLeader => p !== null));
+    for (const p of results) {
+      if (!p) continue;
+      const override = seasonStats.get(p.id);
+      if (override) {
+        p.stats = { ...p.stats, ...override };
+      }
+      players.push(p);
+    }
   }
 
   return players;
@@ -345,7 +391,7 @@ function validateAndFilterPlayers(players: ESPNStatsLeader[], limit: number): ES
  * Fetch top NBA players by points per game
  * Tries multiple data sources with retry logic and validates results
  */
-export async function getTopScorers(limit: number = 30): Promise<ESPNStatsLeader[]> {
+export async function getTopScorers(limit: number = 30, season?: string): Promise<ESPNStatsLeader[]> {
   lastFetchStatus = {
     source: 'none',
     playersFound: 0,
@@ -357,8 +403,8 @@ export async function getTopScorers(limit: number = 30): Promise<ESPNStatsLeader
 
   // Try primary source: ESPN Leaders API
   try {
-    console.log('=== Attempting ESPN Leaders API ===');
-    players = await fetchFromLeadersAPI(limit + 10); // Fetch extra to account for filtering
+    console.log(`=== Attempting ESPN Leaders API ${season ? `(season ${season})` : '(current season)'} ===`);
+    players = await fetchFromLeadersAPI(limit + 10, season); // Fetch extra to account for filtering
     lastFetchStatus.source = 'espn-leaders';
     lastFetchStatus.playersFound = players.length;
     console.log(`[Leaders API] SUCCESS: Got ${players.length} players`);
@@ -396,6 +442,6 @@ export async function getTopScorers(limit: number = 30): Promise<ESPNStatsLeader
 /**
  * Fetch players by multiple stat categories for comprehensive coverage
  */
-export async function getTopPlayersByAllStats(limit: number = 30): Promise<ESPNStatsLeader[]> {
-  return getTopScorers(limit);
+export async function getTopPlayersByAllStats(limit: number = 30, season?: string): Promise<ESPNStatsLeader[]> {
+  return getTopScorers(limit, season);
 }

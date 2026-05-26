@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { getTeamLogoUrl } from '@/lib/team-logos';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSeason } from './SeasonProvider';
 
 interface SearchResult {
   id: string;
@@ -25,6 +26,7 @@ interface PlayerSearchProps {
 }
 
 export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }: PlayerSearchProps = {}) {
+  const season = useSeason();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -101,7 +103,7 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
                   selected ? 'border-orange-500 bg-orange-50' : 'border-gray-200 hover:border-orange-500'
                 }`}
               >
-                <Link href={`/players/${player.id}`} className="block">
+                <Link href={`/seasons/${season}/players/${player.id}`} className="block">
                 <div className="flex items-center gap-4 mb-4">
                   {player.team?.abbreviation && (
                     <div className="relative w-12 h-12 flex-shrink-0">

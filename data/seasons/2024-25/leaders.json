@@ -1,0 +1,802 @@
+[
+  {
+    "id": "4278073",
+    "displayName": "Shai Gilgeous-Alexander",
+    "team": {
+      "abbreviation": "OKC"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "2",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 32.68421173095703,
+      "rpg": 4.2941175,
+      "apg": 6.3947367668151855,
+      "fgPct": 51.93199920654297,
+      "fg3Pct": 0,
+      "ftPct": 89.83599853515625,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3032977",
+    "displayName": "Giannis Antetokounmpo",
+    "team": {
+      "abbreviation": "MIL"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "34",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 30.388059616088867,
+      "rpg": 11.91044807434082,
+      "apg": 6.462686538696289,
+      "fgPct": 60.12099838256836,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3112335",
+    "displayName": "Nikola Jokic",
+    "team": {
+      "abbreviation": "DEN"
+    },
+    "position": {
+      "id": "9",
+      "name": "Center",
+      "displayName": "Center",
+      "abbreviation": "C",
+      "leaf": false,
+      "slug": "center"
+    },
+    "jersey": "15",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 29.58571434020996,
+      "rpg": 12.742856979370117,
+      "apg": 10.228571891784668,
+      "fgPct": 57.625,
+      "fg3Pct": 0.41691842675209045,
+      "ftPct": 0,
+      "mpg": 36.728572845458984,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3945274",
+    "displayName": "Luka Doncic",
+    "team": {
+      "abbreviation": "LAL"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "77",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 28.15999984741211,
+      "rpg": 7.734375,
+      "apg": 7.659999847412109,
+      "fgPct": 47.5629997253418,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.380001068115234,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4594268",
+    "displayName": "Anthony Edwards",
+    "team": {
+      "abbreviation": "MIN"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "5",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 27.556962966918945,
+      "rpg": 4.9508195,
+      "apg": 3.7049181,
+      "fgPct": 48.90299987792969,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 36.341773986816406,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4065648",
+    "displayName": "Jayson Tatum",
+    "team": {
+      "abbreviation": "BOS"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "0",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 26.83333396911621,
+      "rpg": 8.652777671813965,
+      "apg": 5.3125,
+      "fgPct": 41.1150016784668,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 36.44444274902344,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3202",
+    "displayName": "Kevin Durant",
+    "team": {
+      "abbreviation": "HOU"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "7",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 26.564516067504883,
+      "rpg": 5.4615383,
+      "apg": 4.769231,
+      "fgPct": 52.66899871826172,
+      "fg3Pct": 0.4301075339317322,
+      "ftPct": 0,
+      "mpg": 36.532257080078125,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4431678",
+    "displayName": "Tyrese Maxey",
+    "team": {
+      "abbreviation": "PHI"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "0",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 26.326923370361328,
+      "rpg": 4.142857,
+      "apg": 6.096153736114502,
+      "fgPct": 46.236000061035156,
+      "fg3Pct": 0,
+      "ftPct": 87.88899993896484,
+      "mpg": 37.69230651855469,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4432166",
+    "displayName": "Cade Cunningham",
+    "team": {
+      "abbreviation": "DET"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "2",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 26.14285659790039,
+      "rpg": 5.546875,
+      "apg": 9.114285469055176,
+      "fgPct": 46.0890007019043,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.02857208251953,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3934672",
+    "displayName": "Jalen Brunson",
+    "team": {
+      "abbreviation": "NY"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "11",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 26,
+      "rpg": 3.337838,
+      "apg": 7.307692527770996,
+      "fgPct": 46.71200180053711,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.400001525878906,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4432573",
+    "displayName": "Paolo Banchero",
+    "team": {
+      "abbreviation": "ORL"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "5",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 25.89130401611328,
+      "rpg": 8.388889,
+      "apg": 5.1805553,
+      "fgPct": 45.91999816894531,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3136193",
+    "displayName": "Devin Booker",
+    "team": {
+      "abbreviation": "PHX"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 25.639999389648438,
+      "rpg": 3.875,
+      "apg": 7.053333282470703,
+      "fgPct": 45.57600021362305,
+      "fg3Pct": 0,
+      "ftPct": 89.44100189208984,
+      "mpg": 37.266666412353516,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4432816",
+    "displayName": "LaMelo Ball",
+    "team": {
+      "abbreviation": "CHA"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 25.191490173339844,
+      "rpg": 4.8194447,
+      "apg": 7.361701965332031,
+      "fgPct": 40.67499923706055,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6606",
+    "displayName": "Damian Lillard",
+    "team": {
+      "abbreviation": "POR"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "0",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.94827651977539,
+      "rpg": 4.6896553,
+      "apg": 7.068965435028076,
+      "fgPct": 44.757999420166016,
+      "fg3Pct": 0,
+      "ftPct": 92.11199951171875,
+      "mpg": 36.08620834350586,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6583",
+    "displayName": "Anthony Davis",
+    "team": {
+      "abbreviation": "WSH"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "23",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.72549057006836,
+      "rpg": 11.56862735748291,
+      "apg": 2.8,
+      "fgPct": 51.64799880981445,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6442",
+    "displayName": "Kyrie Irving",
+    "team": {
+      "abbreviation": "DAL"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "11",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.68000030517578,
+      "rpg": 4.8,
+      "apg": 4.62,
+      "fgPct": 47.301998138427734,
+      "fg3Pct": 0,
+      "ftPct": 91.58899688720703,
+      "mpg": 36.08000183105469,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4395628",
+    "displayName": "Zion Williamson",
+    "team": {
+      "abbreviation": "NO"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.566667556762695,
+      "rpg": 5.693548,
+      "apg": 3.2096775,
+      "fgPct": 59.97499847412109,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3975",
+    "displayName": "Stephen Curry",
+    "team": {
+      "abbreviation": "GS"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "30",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.542856216430664,
+      "rpg": 3.5813954,
+      "apg": 4.72093,
+      "fgPct": 46.808998107910156,
+      "fg3Pct": 0,
+      "ftPct": 93.31099700927734,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3136195",
+    "displayName": "Karl-Anthony Towns",
+    "team": {
+      "abbreviation": "NY"
+    },
+    "position": {
+      "id": "9",
+      "name": "Center",
+      "displayName": "Center",
+      "abbreviation": "C",
+      "leaf": false,
+      "slug": "center"
+    },
+    "jersey": "32",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.43055534362793,
+      "rpg": 12.777777671813965,
+      "apg": 3.0133333,
+      "fgPct": 52.59299850463867,
+      "fg3Pct": 0.4201183319091797,
+      "ftPct": 0,
+      "mpg": 34.95833206176758,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "1966",
+    "displayName": "LeBron James",
+    "team": {
+      "abbreviation": "LAL"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "23",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.428571701049805,
+      "rpg": 6.0666666,
+      "apg": 8.214285850524902,
+      "fgPct": 51.46900177001953,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "5104157",
+    "displayName": "Victor Wembanyama",
+    "team": {
+      "abbreviation": "SA"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.2608699798584,
+      "rpg": 11,
+      "apg": 3.109375,
+      "fgPct": 51.20399856567383,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4277905",
+    "displayName": "Trae Young",
+    "team": {
+      "abbreviation": "WSH"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "3",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.223684310913086,
+      "rpg": 2,
+      "apg": 11.578947067260742,
+      "fgPct": 45.76300048828125,
+      "fg3Pct": 0,
+      "ftPct": 87.52200317382812,
+      "mpg": 36.03947448730469,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4566434",
+    "displayName": "Franz Wagner",
+    "team": {
+      "abbreviation": "ORL"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "22",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.149999618530273,
+      "rpg": 5.2058825,
+      "apg": 3.3235295,
+      "fgPct": 48.125999450683594,
+      "fg3Pct": 0,
+      "ftPct": 87.13800048828125,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4432174",
+    "displayName": "Cam Thomas",
+    "team": {
+      "abbreviation": "MIL"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "24",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 23.959999084472656,
+      "rpg": 2.4280155,
+      "apg": 2.1400778,
+      "fgPct": 43.505001068115234,
+      "fg3Pct": 0,
+      "ftPct": 88.0790023803711,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3908809",
+    "displayName": "Donovan Mitchell",
+    "team": {
+      "abbreviation": "CLE"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "45",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 23.957746505737305,
+      "rpg": 4.5142856,
+      "apg": 5.6857142,
+      "fgPct": 48.32500076293945,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  }
+]
