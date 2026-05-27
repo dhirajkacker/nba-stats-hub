@@ -1,0 +1,828 @@
+[
+  {
+    "id": "3468",
+    "displayName": "Russell Westbrook",
+    "team": {
+      "abbreviation": "SAC"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "18",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 28.149253845214844,
+      "rpg": 5.4375,
+      "apg": 8.567164421081543,
+      "fgPct": 42.66999816894531,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3992",
+    "displayName": "James Harden",
+    "team": {
+      "abbreviation": "CLE"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 27.370370864868164,
+      "rpg": 4.8,
+      "apg": 6.975308418273926,
+      "fgPct": 43.36600112915039,
+      "fg3Pct": 0,
+      "ftPct": 86.77200317382812,
+      "mpg": 36.802467346191406,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3202",
+    "displayName": "Kevin Durant",
+    "team": {
+      "abbreviation": "HOU"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "7",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 25.407407760620117,
+      "rpg": 5.4615383,
+      "apg": 4.769231,
+      "fgPct": 52.03499984741211,
+      "fg3Pct": 0,
+      "ftPct": 85.37999725341797,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "1966",
+    "displayName": "LeBron James",
+    "team": {
+      "abbreviation": "LAL"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "23",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 25.2608699798584,
+      "rpg": 6.0666666,
+      "apg": 7.405797004699707,
+      "fgPct": 51.46900177001953,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 36.130435943603516,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6583",
+    "displayName": "Anthony Davis",
+    "team": {
+      "abbreviation": "WSH"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "23",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.352941513061523,
+      "rpg": 10.235294342041016,
+      "apg": 2.8,
+      "fgPct": 53.54499816894531,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 36.10293960571289,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "1975",
+    "displayName": "Carmelo Anthony",
+    "team": {
+      "abbreviation": "LAL"
+    },
+    "position": {
+      "id": "6",
+      "name": "Power Forward",
+      "displayName": "Power Forward",
+      "abbreviation": "PF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "power-forward"
+    },
+    "jersey": "7",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.149999618530273,
+      "rpg": 6.1960316,
+      "apg": 2.715873,
+      "fgPct": 44.68899917602539,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.70000076293945,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4258",
+    "displayName": "DeMarcus Cousins",
+    "team": {
+      "abbreviation": "DEN"
+    },
+    "position": {
+      "id": "9",
+      "name": "Center",
+      "displayName": "Center",
+      "abbreviation": "C",
+      "leaf": false,
+      "slug": "center"
+    },
+    "jersey": "4",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 24.084745407104492,
+      "rpg": 12.661017417907715,
+      "apg": 3.0259938,
+      "fgPct": 45.96900177001953,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3975",
+    "displayName": "Stephen Curry",
+    "team": {
+      "abbreviation": "GS"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "30",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 23.75,
+      "rpg": 3.5813954,
+      "apg": 7.737500190734863,
+      "fgPct": 46.808998107910156,
+      "fg3Pct": 0.44272446632385254,
+      "ftPct": 91.3949966430664,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "2983",
+    "displayName": "LaMarcus Aldridge",
+    "team": {
+      "abbreviation": "BKN"
+    },
+    "position": {
+      "id": "9",
+      "name": "Center",
+      "displayName": "Center",
+      "abbreviation": "C",
+      "leaf": false,
+      "slug": "center"
+    },
+    "jersey": "21",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 23.394365310668945,
+      "rpg": 10.22535228729248,
+      "apg": 1.929368,
+      "fgPct": 49.25899887084961,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.38028335571289,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "110",
+    "displayName": "Kobe Bryant",
+    "team": {
+      "abbreviation": "LAL"
+    },
+    "position": {
+      "id": "5",
+      "name": "Small Forward",
+      "displayName": "Small Forward",
+      "abbreviation": "SF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "small-forward"
+    },
+    "jersey": "24",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 22.342857360839844,
+      "rpg": 5.2355127,
+      "apg": 5.628571510314941,
+      "fgPct": 44.729000091552734,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 34.485713958740234,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3989",
+    "displayName": "Blake Griffin",
+    "team": {
+      "abbreviation": "BOS"
+    },
+    "position": {
+      "id": "6",
+      "name": "Power Forward",
+      "displayName": "Power Forward",
+      "abbreviation": "PF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "power-forward"
+    },
+    "jersey": "91",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.925373077392578,
+      "rpg": 7.985621,
+      "apg": 3.993464,
+      "fgPct": 50.17499923706055,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.164180755615234,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6442",
+    "displayName": "Kyrie Irving",
+    "team": {
+      "abbreviation": "DAL"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "11",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.706666946411133,
+      "rpg": 4.8,
+      "apg": 4.62,
+      "fgPct": 47.301998138427734,
+      "fg3Pct": 0.41534391045570374,
+      "ftPct": 86.3010025024414,
+      "mpg": 36.400001525878906,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6475",
+    "displayName": "Klay Thompson",
+    "team": {
+      "abbreviation": "DAL"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "31",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.662338256835938,
+      "rpg": 2.0724638,
+      "apg": 1.3913044,
+      "fgPct": 39.2859992980957,
+      "fg3Pct": 0.43853211402893066,
+      "ftPct": 87.89099884033203,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "1987",
+    "displayName": "Dwyane Wade",
+    "team": {
+      "abbreviation": "MIA"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "3",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.467741012573242,
+      "rpg": 4.6802654,
+      "apg": 5.4089184,
+      "fgPct": 47.987998962402344,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "1977",
+    "displayName": "Chris Bosh",
+    "team": {
+      "abbreviation": "MIA"
+    },
+    "position": {
+      "id": "6",
+      "name": "Power Forward",
+      "displayName": "Power Forward",
+      "abbreviation": "PF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "power-forward"
+    },
+    "jersey": "1",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.090909957885742,
+      "rpg": 8.501679,
+      "apg": 2.0100784,
+      "fgPct": 49.35200119018555,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35.3636360168457,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3005",
+    "displayName": "Rudy Gay",
+    "team": {
+      "abbreviation": "GS"
+    },
+    "position": {
+      "id": "5",
+      "name": "Small Forward",
+      "displayName": "Small Forward",
+      "abbreviation": "SF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "small-forward"
+    },
+    "jersey": "33",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 21.058822631835938,
+      "rpg": 5.6098213,
+      "apg": 2.0357144,
+      "fgPct": 45.15299987792969,
+      "fg3Pct": 0,
+      "ftPct": 85.7509994506836,
+      "mpg": 35.411766052246094,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6606",
+    "displayName": "Damian Lillard",
+    "team": {
+      "abbreviation": "POR"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "0",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 20.975608825683594,
+      "rpg": 4.6896553,
+      "apg": 6.182926654815674,
+      "fgPct": 44.757999420166016,
+      "fg3Pct": 0,
+      "ftPct": 86.43199920654297,
+      "mpg": 35.67073059082031,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "3978",
+    "displayName": "DeMar DeRozan",
+    "team": {
+      "abbreviation": "SAC"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "jersey": "10",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 20.066667556762695,
+      "rpg": 2.935065,
+      "apg": 4.103896,
+      "fgPct": 49.652000427246094,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 35,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6430",
+    "displayName": "Jimmy Butler III",
+    "team": {
+      "abbreviation": "GS"
+    },
+    "position": {
+      "id": "7",
+      "name": "Forward",
+      "displayName": "Forward",
+      "abbreviation": "F",
+      "leaf": false,
+      "slug": "forward"
+    },
+    "jersey": "10",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 20.015384674072266,
+      "rpg": 5.5526314,
+      "apg": 4.868421,
+      "fgPct": 51.948001861572266,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 38.661537170410156,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "2394",
+    "displayName": "Kevin Martin",
+    "team": {
+      "abbreviation": "SA"
+    },
+    "position": {
+      "id": "2",
+      "name": "Shooting Guard",
+      "displayName": "Shooting Guard",
+      "abbreviation": "SG",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "shooting-guard"
+    },
+    "jersey": "23",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 19.9743595123291,
+      "rpg": 3.1904762,
+      "apg": 1.8963585,
+      "fgPct": 43.73099899291992,
+      "fg3Pct": 0,
+      "ftPct": 88.08300018310547,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "6478",
+    "displayName": "Nikola Vucevic",
+    "team": {
+      "abbreviation": "BOS"
+    },
+    "position": {
+      "id": "9",
+      "name": "Center",
+      "displayName": "Center",
+      "abbreviation": "C",
+      "leaf": false,
+      "slug": "center"
+    },
+    "jersey": "4",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 19.29729652404785,
+      "rpg": 10.945945739746094,
+      "apg": 3.328125,
+      "fgPct": 52.321998596191406,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "4249",
+    "displayName": "Gordon Hayward",
+    "team": {
+      "abbreviation": "OKC"
+    },
+    "position": {
+      "id": "5",
+      "name": "Small Forward",
+      "displayName": "Small Forward",
+      "abbreviation": "SF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "small-forward"
+    },
+    "jersey": "33",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 19.25,
+      "rpg": 4.4287424,
+      "apg": 3.5209582,
+      "fgPct": 45.500999450683594,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "2779",
+    "displayName": "Chris Paul",
+    "team": {
+      "abbreviation": "TOR"
+    },
+    "position": {
+      "id": "3",
+      "name": "Guard",
+      "displayName": "Guard",
+      "abbreviation": "G",
+      "leaf": false,
+      "slug": "guard"
+    },
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 19.073171615600586,
+      "rpg": 4.3832116,
+      "apg": 10.219511985778809,
+      "fgPct": 46.90399932861328,
+      "fg3Pct": 0.3982807993888855,
+      "ftPct": 90.03099822998047,
+      "mpg": 34.84146499633789,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "2751",
+    "displayName": "Monta Ellis",
+    "team": {
+      "abbreviation": "IND"
+    },
+    "position": {
+      "id": "2",
+      "name": "Shooting Guard",
+      "displayName": "Shooting Guard",
+      "abbreviation": "SG",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "shooting-guard"
+    },
+    "jersey": "11",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 18.912500381469727,
+      "rpg": 3.45018,
+      "apg": 4.6290517,
+      "fgPct": 45.10599899291992,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  },
+  {
+    "id": "996",
+    "displayName": "Pau Gasol",
+    "team": {
+      "abbreviation": "POR"
+    },
+    "position": {
+      "id": "6",
+      "name": "Power Forward",
+      "displayName": "Power Forward",
+      "abbreviation": "PF",
+      "leaf": true,
+      "parent": {
+        "leaf": false
+      },
+      "slug": "power-forward"
+    },
+    "jersey": "16",
+    "stats": {
+      "gamesPlayed": 0,
+      "ppg": 18.538461685180664,
+      "rpg": 11.782051086425781,
+      "apg": 3.2022839,
+      "fgPct": 49.43600082397461,
+      "fg3Pct": 0,
+      "ftPct": 0,
+      "mpg": 0,
+      "fgm": 0,
+      "fga": 0,
+      "fg3m": 0,
+      "fg3a": 0,
+      "ftm": 0,
+      "fta": 0
+    }
+  }
+]

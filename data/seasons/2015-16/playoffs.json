@@ -1,0 +1,2186 @@
+{
+  "playIn": null,
+  "series": [
+    {
+      "key": "1st Round:ATL-BOS",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "ATL wins series 4-2",
+      "games": [
+        {
+          "id": "400874388",
+          "dateUTC": "2016-04-16T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 102
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874410",
+          "dateUTC": "2016-04-19T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 72
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 89
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874412",
+          "dateUTC": "2016-04-23T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 103
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 111
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874413",
+          "dateUTC": "2016-04-24T22:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 95
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 104
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874415",
+          "dateUTC": "2016-04-27T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 83
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 110
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400874416",
+          "dateUTC": "2016-04-29T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 104
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CHA-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "30",
+        "abbrev": "CHA",
+        "displayName": "Charlotte Hornets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-3",
+      "games": [
+        {
+          "id": "400874414",
+          "dateUTC": "2016-04-17T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 91
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 123
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874417",
+          "dateUTC": "2016-04-20T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 103
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874419",
+          "dateUTC": "2016-04-23T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 80
+          },
+          "home": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 96
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874420",
+          "dateUTC": "2016-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 85
+          },
+          "home": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874421",
+          "dateUTC": "2016-04-28T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 90
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 88
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400874422",
+          "dateUTC": "2016-04-30T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 97
+          },
+          "home": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 90
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400874423",
+          "dateUTC": "2016-05-01T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+            "score": 73
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 106
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CLE-DET",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "8",
+        "abbrev": "DET",
+        "displayName": "Detroit Pistons",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "CLE wins series 4-0",
+      "games": [
+        {
+          "id": "400874343",
+          "dateUTC": "2016-04-17T19:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 101
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 106
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874345",
+          "dateUTC": "2016-04-21T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 90
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 107
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874347",
+          "dateUTC": "2016-04-22T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 101
+          },
+          "home": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 91
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874349",
+          "dateUTC": "2016-04-25T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 100
+          },
+          "home": {
+            "id": "8",
+            "abbrev": "DET",
+            "displayName": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+            "score": 98
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:IND-TOR",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "TOR wins series 4-3",
+      "games": [
+        {
+          "id": "400874380",
+          "dateUTC": "2016-04-16T16:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 100
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 90
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874381",
+          "dateUTC": "2016-04-18T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 87
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 98
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874384",
+          "dateUTC": "2016-04-21T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 101
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 85
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874386",
+          "dateUTC": "2016-04-23T19:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 83
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874387",
+          "dateUTC": "2016-04-26T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 99
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 102
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400874389",
+          "dateUTC": "2016-04-29T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 83
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400874411",
+          "dateUTC": "2016-05-02T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 84
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 89
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-1",
+      "games": [
+        {
+          "id": "400874364",
+          "dateUTC": "2016-04-17T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 70
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 108
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874365",
+          "dateUTC": "2016-04-19T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 85
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 84
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874366",
+          "dateUTC": "2016-04-21T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 131
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874367",
+          "dateUTC": "2016-04-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 119
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 108
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874368",
+          "dateUTC": "2016-04-26T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 104
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 118
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:GS-HOU",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "400874342",
+          "dateUTC": "2016-04-16T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 78
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874344",
+          "dateUTC": "2016-04-19T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 106
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 115
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874346",
+          "dateUTC": "2016-04-22T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 96
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 97
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874348",
+          "dateUTC": "2016-04-24T19:45Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 121
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 94
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874370",
+          "dateUTC": "2016-04-28T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 81
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 114
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAC-POR",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "POR wins series 4-2",
+      "games": [
+        {
+          "id": "400874357",
+          "dateUTC": "2016-04-18T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 95
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 115
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874358",
+          "dateUTC": "2016-04-21T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 81
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874359",
+          "dateUTC": "2016-04-24T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 88
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 96
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874360",
+          "dateUTC": "2016-04-26T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 84
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 98
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400874361",
+          "dateUTC": "2016-04-28T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 108
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 98
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400874362",
+          "dateUTC": "2016-04-30T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 103
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 106
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MEM-SA",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-0",
+      "games": [
+        {
+          "id": "400874374",
+          "dateUTC": "2016-04-18T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 74
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 106
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400874376",
+          "dateUTC": "2016-04-20T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 68
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 94
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400874378",
+          "dateUTC": "2016-04-23T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 96
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 87
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400874379",
+          "dateUTC": "2016-04-24T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 116
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 95
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:ATL-CLE",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "CLE wins series 4-0",
+      "games": [
+        {
+          "id": "400875765",
+          "dateUTC": "2016-05-02T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 93
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400875766",
+          "dateUTC": "2016-05-05T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 98
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 123
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400875767",
+          "dateUTC": "2016-05-06T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 121
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 108
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400875768",
+          "dateUTC": "2016-05-08T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 100
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:MIA-TOR",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "TOR wins series 4-3",
+      "games": [
+        {
+          "id": "400875890",
+          "dateUTC": "2016-05-04T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 102
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 96
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400875891",
+          "dateUTC": "2016-05-06T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 92
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 96
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400875892",
+          "dateUTC": "2016-05-07T21:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 95
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400875893",
+          "dateUTC": "2016-05-10T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 87
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 94
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400875894",
+          "dateUTC": "2016-05-12T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 99
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400875895",
+          "dateUTC": "2016-05-14T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 91
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400875896",
+          "dateUTC": "2016-05-15T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 89
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 116
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:GS-POR",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "400875806",
+          "dateUTC": "2016-05-01T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 106
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 118
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400875807",
+          "dateUTC": "2016-05-04T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 99
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400875808",
+          "dateUTC": "2016-05-08T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 108
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 120
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400875809",
+          "dateUTC": "2016-05-10T02:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 132
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 125
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400875810",
+          "dateUTC": "2016-05-12T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 121
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 125
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:OKC-SA",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "OKC wins series 4-2",
+      "games": [
+        {
+          "id": "400875651",
+          "dateUTC": "2016-05-01T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 92
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 124
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400875652",
+          "dateUTC": "2016-05-03T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 98
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 97
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400875653",
+          "dateUTC": "2016-05-07T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 100
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 96
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400875654",
+          "dateUTC": "2016-05-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 97
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 111
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400875655",
+          "dateUTC": "2016-05-11T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 95
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 91
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400875656",
+          "dateUTC": "2016-05-13T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 99
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 113
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:CLE-TOR",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "CLE wins series 4-2",
+      "games": [
+        {
+          "id": "400876891",
+          "dateUTC": "2016-05-18T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 84
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 115
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400876892",
+          "dateUTC": "2016-05-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 89
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400876893",
+          "dateUTC": "2016-05-22T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 84
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400876894",
+          "dateUTC": "2016-05-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 99
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 105
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400876895",
+          "dateUTC": "2016-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 78
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 116
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400876896",
+          "dateUTC": "2016-05-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 113
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 87
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:GS-OKC",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "GS wins series 4-3",
+      "games": [
+        {
+          "id": "400876750",
+          "dateUTC": "2016-05-17T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 108
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 102
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400876751",
+          "dateUTC": "2016-05-19T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 91
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 118
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400876752",
+          "dateUTC": "2016-05-23T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 105
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 133
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400876753",
+          "dateUTC": "2016-05-25T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 94
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 118
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400876754",
+          "dateUTC": "2016-05-27T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 111
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 120
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400876755",
+          "dateUTC": "2016-05-29T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 108
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 101
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400876756",
+          "dateUTC": "2016-05-31T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 88
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 96
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:CLE-GS",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "CLE wins series 4-3",
+      "games": [
+        {
+          "id": "400878154",
+          "dateUTC": "2016-06-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 89
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400878155",
+          "dateUTC": "2016-06-06T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 77
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400878156",
+          "dateUTC": "2016-06-09T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 90
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 120
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400878157",
+          "dateUTC": "2016-06-11T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 108
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 97
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400878158",
+          "dateUTC": "2016-06-14T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 112
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 97
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400878159",
+          "dateUTC": "2016-06-17T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 115
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400878160",
+          "dateUTC": "2016-06-20T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 93
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 89
+          },
+          "gameNumber": 7
+        }
+      ]
+    }
+  ]
+}

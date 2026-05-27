@@ -1,0 +1,17 @@
+{
+  "season": "2017-18",
+  "champion": {
+    "tricode": "GSW",
+    "city": "Golden State",
+    "name": "Warriors"
+  },
+  "runnerUp": {
+    "tricode": "CLE",
+    "city": "Cleveland",
+    "name": "Cavaliers"
+  },
+  "finalsMVP": "Kevin Durant",
+  "finalsScore": "4-0",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:21:55.455Z"
+}

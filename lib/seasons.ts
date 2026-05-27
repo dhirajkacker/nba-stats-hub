@@ -16,6 +16,16 @@ export const KNOWN_SEASONS = [
   '2022-23',
   '2021-22',
   '2020-21',
+  '2019-20',
+  '2018-19',
+  '2017-18',
+  '2016-17',
+  '2015-16',
+  '2014-15',
+  '2013-14',
+  '2012-13',
+  '2011-12',
+  '2010-11',
 ] as const;
 
 export type SeasonId = (typeof KNOWN_SEASONS)[number];
@@ -46,6 +56,8 @@ const REGULAR_SEASON_END_OVERRIDES: Record<string, string> = {
   // Bubble season — RS paused March 2020, resumed in late July; the "end" for
   // standings purposes is August 14, 2020 (Orlando seeding games concluded).
   '2019-20': '2020-08-14',
+  // Lockout-shortened 66-game season — RS ended April 26, 2012.
+  '2011-12': '2012-04-26',
 };
 
 export function seasonRegularSeasonEndDate(season: string): string {

@@ -1,0 +1,2249 @@
+{
+  "playIn": null,
+  "series": [
+    {
+      "key": "1st Round:ATL-IND",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "IND wins series 4-3",
+      "games": [
+        {
+          "id": "400553057",
+          "dateUTC": "2014-04-19T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 101
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553059",
+          "dateUTC": "2014-04-22T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 85
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553060",
+          "dateUTC": "2014-04-24T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 85
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 98
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553062",
+          "dateUTC": "2014-04-26T18:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 91
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 88
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553064",
+          "dateUTC": "2014-04-29T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 107
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 97
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553068",
+          "dateUTC": "2014-05-01T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 95
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 88
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400553070",
+          "dateUTC": "2014-05-03T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 80
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 92
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:BKN-TOR",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "17",
+        "abbrev": "BKN",
+        "displayName": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BKN wins series 4-3",
+      "games": [
+        {
+          "id": "400553085",
+          "dateUTC": "2014-04-19T16:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 94
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 87
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553086",
+          "dateUTC": "2014-04-22T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 95
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 100
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553087",
+          "dateUTC": "2014-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 98
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553089",
+          "dateUTC": "2014-04-27T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 87
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 79
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553091",
+          "dateUTC": "2014-04-30T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 113
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 115
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553093",
+          "dateUTC": "2014-05-02T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 83
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 97
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400553094",
+          "dateUTC": "2014-05-04T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 104
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 103
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CHA-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "30",
+        "abbrev": "CHA",
+        "displayName": "Charlotte Bobcats",
+        "logo": "https://a.espncdn.com/guid/377633c2-0dd1-91a1-83c0-9ed2d0c00ea1/logos/default.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-0",
+      "games": [
+        {
+          "id": "400553072",
+          "dateUTC": "2014-04-20T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Bobcats",
+            "logo": "https://a.espncdn.com/guid/377633c2-0dd1-91a1-83c0-9ed2d0c00ea1/logos/default.png",
+            "score": 88
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 99
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553075",
+          "dateUTC": "2014-04-23T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Bobcats",
+            "logo": "https://a.espncdn.com/guid/377633c2-0dd1-91a1-83c0-9ed2d0c00ea1/logos/default.png",
+            "score": 97
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553077",
+          "dateUTC": "2014-04-26T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 98
+          },
+          "home": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Bobcats",
+            "logo": "https://a.espncdn.com/guid/377633c2-0dd1-91a1-83c0-9ed2d0c00ea1/logos/default.png",
+            "score": 85
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553079",
+          "dateUTC": "2014-04-28T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 109
+          },
+          "home": {
+            "id": "30",
+            "abbrev": "CHA",
+            "displayName": "Charlotte Bobcats",
+            "logo": "https://a.espncdn.com/guid/377633c2-0dd1-91a1-83c0-9ed2d0c00ea1/logos/default.png",
+            "score": 98
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CHI-WSH",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "4",
+        "abbrev": "CHI",
+        "displayName": "Chicago Bulls",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "27",
+        "abbrev": "WSH",
+        "displayName": "Washington Wizards",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "WSH wins series 4-1",
+      "games": [
+        {
+          "id": "400553096",
+          "dateUTC": "2014-04-20T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 102
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553098",
+          "dateUTC": "2014-04-23T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 101
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 99
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553100",
+          "dateUTC": "2014-04-26T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 100
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 97
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553102",
+          "dateUTC": "2014-04-27T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 89
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 98
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553103",
+          "dateUTC": "2014-04-30T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 75
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 69
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-SA",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-3",
+      "games": [
+        {
+          "id": "400553054",
+          "dateUTC": "2014-04-20T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 85
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 90
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553055",
+          "dateUTC": "2014-04-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 113
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 92
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553056",
+          "dateUTC": "2014-04-26T20:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 108
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 109
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553058",
+          "dateUTC": "2014-04-29T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 93
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553061",
+          "dateUTC": "2014-04-30T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 103
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 109
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553063",
+          "dateUTC": "2014-05-03T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 111
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 113
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400553065",
+          "dateUTC": "2014-05-04T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 96
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 119
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:GS-LAC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAC win series 4-3",
+      "games": [
+        {
+          "id": "400553078",
+          "dateUTC": "2014-04-19T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 109
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 105
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553081",
+          "dateUTC": "2014-04-22T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 98
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 138
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553084",
+          "dateUTC": "2014-04-25T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 98
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 96
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553088",
+          "dateUTC": "2014-04-27T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 97
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 118
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553090",
+          "dateUTC": "2014-04-30T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 103
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 113
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553092",
+          "dateUTC": "2014-05-02T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 99
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 100
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400553095",
+          "dateUTC": "2014-05-04T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 121
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 126
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:HOU-POR",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "POR wins series 4-2",
+      "games": [
+        {
+          "id": "400553097",
+          "dateUTC": "2014-04-21T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 122
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 120
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553099",
+          "dateUTC": "2014-04-24T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 112
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553101",
+          "dateUTC": "2014-04-26T02:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 121
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553104",
+          "dateUTC": "2014-04-28T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 120
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 123
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553107",
+          "dateUTC": "2014-05-01T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 98
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 108
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553108",
+          "dateUTC": "2014-05-03T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 98
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 99
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MEM-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-3",
+      "games": [
+        {
+          "id": "400553066",
+          "dateUTC": "2014-04-20T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 86
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 100
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400553067",
+          "dateUTC": "2014-04-22T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 111
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400553069",
+          "dateUTC": "2014-04-25T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 95
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 98
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400553071",
+          "dateUTC": "2014-04-27T01:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 92
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400553073",
+          "dateUTC": "2014-04-30T01:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 100
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 99
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400553074",
+          "dateUTC": "2014-05-02T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 104
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 84
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "400553076",
+          "dateUTC": "2014-05-04T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 109
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 120
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BKN-MIA",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "17",
+        "abbrev": "BKN",
+        "displayName": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "400556274",
+          "dateUTC": "2014-05-06T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 86
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 107
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400556275",
+          "dateUTC": "2014-05-08T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 82
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 94
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400556276",
+          "dateUTC": "2014-05-11T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 90
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 104
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400556277",
+          "dateUTC": "2014-05-13T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 102
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 96
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400556278",
+          "dateUTC": "2014-05-14T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 94
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 96
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:IND-WSH",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "27",
+        "abbrev": "WSH",
+        "displayName": "Washington Wizards",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "IND wins series 4-2",
+      "games": [
+        {
+          "id": "400556174",
+          "dateUTC": "2014-05-05T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 102
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 96
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400556175",
+          "dateUTC": "2014-05-07T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 82
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 86
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400556176",
+          "dateUTC": "2014-05-10T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 85
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 63
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400556177",
+          "dateUTC": "2014-05-12T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 95
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 92
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400556179",
+          "dateUTC": "2014-05-13T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 102
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 79
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400556180",
+          "dateUTC": "2014-05-16T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 80
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:LAC-OKC",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-2",
+      "games": [
+        {
+          "id": "400556254",
+          "dateUTC": "2014-05-06T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 122
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400556255",
+          "dateUTC": "2014-05-08T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 112
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400556256",
+          "dateUTC": "2014-05-10T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 118
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 112
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400556257",
+          "dateUTC": "2014-05-11T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 99
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400556258",
+          "dateUTC": "2014-05-14T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 104
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400556259",
+          "dateUTC": "2014-05-16T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 104
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 98
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:POR-SA",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-1",
+      "games": [
+        {
+          "id": "400556334",
+          "dateUTC": "2014-05-07T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 92
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 116
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400556335",
+          "dateUTC": "2014-05-09T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 97
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400556336",
+          "dateUTC": "2014-05-11T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 118
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400556337",
+          "dateUTC": "2014-05-13T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 92
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 103
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400556338",
+          "dateUTC": "2014-05-15T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 82
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 104
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:IND-MIA",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-2",
+      "games": [
+        {
+          "id": "400558914",
+          "dateUTC": "2014-05-18T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 96
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 107
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400558915",
+          "dateUTC": "2014-05-21T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 87
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 83
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400558916",
+          "dateUTC": "2014-05-25T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 87
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400558917",
+          "dateUTC": "2014-05-27T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 90
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400558918",
+          "dateUTC": "2014-05-29T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 90
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400558919",
+          "dateUTC": "2014-05-31T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 92
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 117
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:OKC-SA",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-2",
+      "games": [
+        {
+          "id": "400558954",
+          "dateUTC": "2014-05-20T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 122
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400558955",
+          "dateUTC": "2014-05-22T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 77
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 112
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400558956",
+          "dateUTC": "2014-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 97
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 106
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400558957",
+          "dateUTC": "2014-05-28T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 92
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400558958",
+          "dateUTC": "2014-05-30T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 89
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 117
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "400558959",
+          "dateUTC": "2014-06-01T00:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 112
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 107
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:MIA-SA",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-1",
+      "games": [
+        {
+          "id": "400559374",
+          "dateUTC": "2014-06-06T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 95
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "400559375",
+          "dateUTC": "2014-06-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 98
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 96
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "400559376",
+          "dateUTC": "2014-06-11T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 111
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 92
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "400559377",
+          "dateUTC": "2014-06-13T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 107
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 86
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "400559378",
+          "dateUTC": "2014-06-16T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 87
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 104
+          },
+          "gameNumber": 5
+        }
+      ]
+    }
+  ]
+}

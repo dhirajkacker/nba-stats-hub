@@ -1,0 +1,17 @@
+{
+  "season": "2012-13",
+  "champion": {
+    "tricode": "MIA",
+    "city": "Miami",
+    "name": "Heat"
+  },
+  "runnerUp": {
+    "tricode": "SAS",
+    "city": "San Antonio",
+    "name": "Spurs"
+  },
+  "finalsMVP": "LeBron James",
+  "finalsScore": "4-3",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:22:46.106Z"
+}

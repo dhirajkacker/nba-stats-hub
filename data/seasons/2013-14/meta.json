@@ -1,0 +1,17 @@
+{
+  "season": "2013-14",
+  "champion": {
+    "tricode": "SAS",
+    "city": "San Antonio",
+    "name": "Spurs"
+  },
+  "runnerUp": {
+    "tricode": "MIA",
+    "city": "Miami",
+    "name": "Heat"
+  },
+  "finalsMVP": "Kawhi Leonard",
+  "finalsScore": "4-1",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:22:37.761Z"
+}

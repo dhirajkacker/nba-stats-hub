@@ -1,0 +1,2102 @@
+{
+  "playIn": null,
+  "series": [
+    {
+      "key": "1st Round:BOS-MIL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "401029429",
+          "dateUTC": "2018-04-15T17:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 107
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 113
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029430",
+          "dateUTC": "2018-04-18T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 106
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 120
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029432",
+          "dateUTC": "2018-04-21T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029434",
+          "dateUTC": "2018-04-22T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 104
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029435",
+          "dateUTC": "2018-04-24T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 87
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401029436",
+          "dateUTC": "2018-04-27T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 86
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 97
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401029437",
+          "dateUTC": "2018-04-29T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 96
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 112
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CLE-IND",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "CLE wins series 4-3",
+      "games": [
+        {
+          "id": "401029417",
+          "dateUTC": "2018-04-15T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 98
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 80
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029421",
+          "dateUTC": "2018-04-18T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 97
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 100
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029424",
+          "dateUTC": "2018-04-20T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 90
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 92
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029427",
+          "dateUTC": "2018-04-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 104
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029428",
+          "dateUTC": "2018-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 95
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 98
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401029431",
+          "dateUTC": "2018-04-28T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 87
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 121
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401029433",
+          "dateUTC": "2018-04-29T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 105
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MIA-PHI",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "PHI wins series 4-1",
+      "games": [
+        {
+          "id": "401029439",
+          "dateUTC": "2018-04-15T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 130
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029442",
+          "dateUTC": "2018-04-17T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 113
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 103
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029443",
+          "dateUTC": "2018-04-19T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 128
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 108
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029444",
+          "dateUTC": "2018-04-21T18:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 106
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 102
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029447",
+          "dateUTC": "2018-04-25T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 104
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:TOR-WSH",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "27",
+        "abbrev": "WSH",
+        "displayName": "Washington Wizards",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "TOR wins series 4-2",
+      "games": [
+        {
+          "id": "401029410",
+          "dateUTC": "2018-04-14T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 106
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 114
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029412",
+          "dateUTC": "2018-04-17T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 119
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 130
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029413",
+          "dateUTC": "2018-04-21T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 103
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 122
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029415",
+          "dateUTC": "2018-04-22T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 98
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 106
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029416",
+          "dateUTC": "2018-04-25T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 98
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 108
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401029419",
+          "dateUTC": "2018-04-27T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 102
+          },
+          "home": {
+            "id": "27",
+            "abbrev": "WSH",
+            "displayName": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+            "score": 92
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:GS-SA",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "401029441",
+          "dateUTC": "2018-04-14T19:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 92
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 113
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029446",
+          "dateUTC": "2018-04-17T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 101
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 116
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029453",
+          "dateUTC": "2018-04-20T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 97
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029455",
+          "dateUTC": "2018-04-22T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 90
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 103
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029456",
+          "dateUTC": "2018-04-25T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 91
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 99
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:HOU-MIN",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "16",
+        "abbrev": "MIN",
+        "displayName": "Minnesota Timberwolves",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "HOU wins series 4-1",
+      "games": [
+        {
+          "id": "401029411",
+          "dateUTC": "2018-04-16T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 101
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029414",
+          "dateUTC": "2018-04-19T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 82
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029418",
+          "dateUTC": "2018-04-21T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 105
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 121
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029422",
+          "dateUTC": "2018-04-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 119
+          },
+          "home": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029423",
+          "dateUTC": "2018-04-26T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "16",
+            "abbrev": "MIN",
+            "displayName": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+            "score": 104
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 122
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:NO-POR",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "3",
+        "abbrev": "NO",
+        "displayName": "New Orleans Pelicans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "NO wins series 4-0",
+      "games": [
+        {
+          "id": "401029459",
+          "dateUTC": "2018-04-15T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 97
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 95
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029460",
+          "dateUTC": "2018-04-18T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 111
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029461",
+          "dateUTC": "2018-04-20T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 102
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 119
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029462",
+          "dateUTC": "2018-04-21T21:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 123
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 131
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:OKC-UTAH",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "26",
+        "abbrev": "UTAH",
+        "displayName": "Utah Jazz",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "UTAH wins series 4-2",
+      "games": [
+        {
+          "id": "401029438",
+          "dateUTC": "2018-04-15T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 108
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 116
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401029440",
+          "dateUTC": "2018-04-19T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 102
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 95
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401029445",
+          "dateUTC": "2018-04-22T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 102
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 115
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401029450",
+          "dateUTC": "2018-04-24T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 96
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 113
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401029451",
+          "dateUTC": "2018-04-26T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 99
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 107
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401029452",
+          "dateUTC": "2018-04-28T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 91
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 96
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-PHI",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "BOS wins series 4-1",
+      "games": [
+        {
+          "id": "401031671",
+          "dateUTC": "2018-05-01T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 101
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 117
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401031672",
+          "dateUTC": "2018-05-04T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 103
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401031673",
+          "dateUTC": "2018-05-05T21:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 98
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401031674",
+          "dateUTC": "2018-05-07T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 103
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401031675",
+          "dateUTC": "2018-05-10T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 112
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:CLE-TOR",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "CLE wins series 4-0",
+      "games": [
+        {
+          "id": "401031713",
+          "dateUTC": "2018-05-02T00:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 113
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 112
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401031714",
+          "dateUTC": "2018-05-03T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 128
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 110
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401031715",
+          "dateUTC": "2018-05-06T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 103
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 105
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401031716",
+          "dateUTC": "2018-05-08T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 93
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 128
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:GS-NO",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "3",
+        "abbrev": "NO",
+        "displayName": "New Orleans Pelicans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "GS wins series 4-1",
+      "games": [
+        {
+          "id": "401031412",
+          "dateUTC": "2018-04-29T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 101
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 123
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401031645",
+          "dateUTC": "2018-05-02T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 116
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 121
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401031646",
+          "dateUTC": "2018-05-05T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 100
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 119
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401031647",
+          "dateUTC": "2018-05-06T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 118
+          },
+          "home": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 92
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401031648",
+          "dateUTC": "2018-05-09T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "3",
+            "abbrev": "NO",
+            "displayName": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "score": 104
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 113
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:HOU-UTAH",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "26",
+        "abbrev": "UTAH",
+        "displayName": "Utah Jazz",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "HOU wins series 4-1",
+      "games": [
+        {
+          "id": "401031590",
+          "dateUTC": "2018-04-29T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 96
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401031639",
+          "dateUTC": "2018-05-03T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 116
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 108
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401031640",
+          "dateUTC": "2018-05-05T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 113
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 92
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401031641",
+          "dateUTC": "2018-05-07T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 100
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 87
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401031642",
+          "dateUTC": "2018-05-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 102
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 112
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-CLE",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "CLE wins series 4-3",
+      "games": [
+        {
+          "id": "401032840",
+          "dateUTC": "2018-05-13T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 83
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 108
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401032841",
+          "dateUTC": "2018-05-16T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 94
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401032842",
+          "dateUTC": "2018-05-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 86
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 116
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401032843",
+          "dateUTC": "2018-05-22T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 111
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401032844",
+          "dateUTC": "2018-05-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 83
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 96
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401032845",
+          "dateUTC": "2018-05-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 99
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 109
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401032846",
+          "dateUTC": "2018-05-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 87
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 79
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:GS-HOU",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "GS wins series 4-3",
+      "games": [
+        {
+          "id": "401032761",
+          "dateUTC": "2018-05-15T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 119
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 106
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401032762",
+          "dateUTC": "2018-05-17T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 105
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 127
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401032763",
+          "dateUTC": "2018-05-21T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 85
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 126
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401032764",
+          "dateUTC": "2018-05-23T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 95
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 92
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401032765",
+          "dateUTC": "2018-05-25T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 94
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 98
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401032766",
+          "dateUTC": "2018-05-27T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 86
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 115
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401032767",
+          "dateUTC": "2018-05-29T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 101
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 92
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:CLE-GS",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "5",
+        "abbrev": "CLE",
+        "displayName": "Cleveland Cavaliers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "9",
+        "abbrev": "GS",
+        "displayName": "Golden State Warriors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "GS wins series 4-0",
+      "games": [
+        {
+          "id": "401034613",
+          "dateUTC": "2018-06-01T01:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 114
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 124
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401034614",
+          "dateUTC": "2018-06-04T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 103
+          },
+          "home": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 122
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401034615",
+          "dateUTC": "2018-06-07T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 110
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401034616",
+          "dateUTC": "2018-06-09T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "9",
+            "abbrev": "GS",
+            "displayName": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "score": 108
+          },
+          "home": {
+            "id": "5",
+            "abbrev": "CLE",
+            "displayName": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "score": 85
+          },
+          "gameNumber": 4
+        }
+      ]
+    }
+  ]
+}

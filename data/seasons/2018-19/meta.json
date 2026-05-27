@@ -1,0 +1,17 @@
+{
+  "season": "2018-19",
+  "champion": {
+    "tricode": "TOR",
+    "city": "Toronto",
+    "name": "Raptors"
+  },
+  "runnerUp": {
+    "tricode": "GSW",
+    "city": "Golden State",
+    "name": "Warriors"
+  },
+  "finalsMVP": "Kawhi Leonard",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:21:39.884Z"
+}

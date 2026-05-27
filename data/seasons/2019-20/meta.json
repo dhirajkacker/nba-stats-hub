@@ -1,0 +1,17 @@
+{
+  "season": "2019-20",
+  "champion": {
+    "tricode": "LAL",
+    "city": "Los Angeles",
+    "name": "Lakers"
+  },
+  "runnerUp": {
+    "tricode": "MIA",
+    "city": "Miami",
+    "name": "Heat"
+  },
+  "finalsMVP": "LeBron James",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:21:15.411Z"
+}

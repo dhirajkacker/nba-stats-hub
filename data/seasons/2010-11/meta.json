@@ -1,0 +1,17 @@
+{
+  "season": "2010-11",
+  "champion": {
+    "tricode": "DAL",
+    "city": "Dallas",
+    "name": "Mavericks"
+  },
+  "runnerUp": {
+    "tricode": "MIA",
+    "city": "Miami",
+    "name": "Heat"
+  },
+  "finalsMVP": "Dirk Nowitzki",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:23:05.151Z"
+}

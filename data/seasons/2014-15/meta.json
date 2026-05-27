@@ -1,0 +1,17 @@
+{
+  "season": "2014-15",
+  "champion": {
+    "tricode": "GSW",
+    "city": "Golden State",
+    "name": "Warriors"
+  },
+  "runnerUp": {
+    "tricode": "CLE",
+    "city": "Cleveland",
+    "name": "Cavaliers"
+  },
+  "finalsMVP": "Andre Iguodala",
+  "finalsScore": "4-2",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:22:27.974Z"
+}

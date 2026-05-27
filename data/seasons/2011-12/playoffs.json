@@ -1,0 +1,2144 @@
+{
+  "playIn": null,
+  "series": [
+    {
+      "key": "1st Round:ATL-BOS",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "1",
+        "abbrev": "ATL",
+        "displayName": "Atlanta Hawks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "BOS wins series 4-2",
+      "games": [
+        {
+          "id": "320429001",
+          "dateUTC": "2012-04-29T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 74
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 83
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320501001",
+          "dateUTC": "2012-05-01T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 87
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 80
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320504002",
+          "dateUTC": "2012-05-04T23:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 84
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 90
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320506002",
+          "dateUTC": "2012-05-06T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 79
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320508001",
+          "dateUTC": "2012-05-09T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 86
+          },
+          "home": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 87
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320510002",
+          "dateUTC": "2012-05-11T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "1",
+            "abbrev": "ATL",
+            "displayName": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+            "score": 80
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 83
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:CHI-PHI",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "4",
+        "abbrev": "CHI",
+        "displayName": "Chicago Bulls",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "PHI wins series 4-2",
+      "games": [
+        {
+          "id": "320428004",
+          "dateUTC": "2012-04-28T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 91
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 103
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320501004",
+          "dateUTC": "2012-05-02T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 109
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 92
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320504020",
+          "dateUTC": "2012-05-05T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 74
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 79
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320506020",
+          "dateUTC": "2012-05-06T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 82
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320508004",
+          "dateUTC": "2012-05-09T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 69
+          },
+          "home": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 77
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320510020",
+          "dateUTC": "2012-05-10T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "4",
+            "abbrev": "CHI",
+            "displayName": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+            "score": 78
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 79
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:IND-ORL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "19",
+        "abbrev": "ORL",
+        "displayName": "Orlando Magic",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "IND wins series 4-1",
+      "games": [
+        {
+          "id": "320428011",
+          "dateUTC": "2012-04-28T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 81
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 77
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320430011",
+          "dateUTC": "2012-04-30T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 78
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320502019",
+          "dateUTC": "2012-05-02T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 97
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 74
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320505019",
+          "dateUTC": "2012-05-05T18:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320508011",
+          "dateUTC": "2012-05-08T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 87
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 105
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MIA-NY",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "18",
+        "abbrev": "NY",
+        "displayName": "New York Knicks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "320428014",
+          "dateUTC": "2012-04-28T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 67
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 100
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320430014",
+          "dateUTC": "2012-04-30T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 94
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 104
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320503018",
+          "dateUTC": "2012-05-03T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 87
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 70
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320506018",
+          "dateUTC": "2012-05-06T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 87
+          },
+          "home": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 89
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320509014",
+          "dateUTC": "2012-05-09T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "18",
+            "abbrev": "NY",
+            "displayName": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+            "score": 94
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 106
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-0",
+      "games": [
+        {
+          "id": "320428025",
+          "dateUTC": "2012-04-29T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 98
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 99
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320430025",
+          "dateUTC": "2012-05-01T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 99
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 102
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320503006",
+          "dateUTC": "2012-05-04T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 95
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 79
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320505006",
+          "dateUTC": "2012-05-05T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 103
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 97
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-LAL",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAL win series 4-3",
+      "games": [
+        {
+          "id": "320429013",
+          "dateUTC": "2012-04-29T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 88
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 103
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320501013",
+          "dateUTC": "2012-05-02T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 100
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 104
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320504007",
+          "dateUTC": "2012-05-05T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 84
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320506007",
+          "dateUTC": "2012-05-07T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 92
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 88
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320508013",
+          "dateUTC": "2012-05-09T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 102
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 99
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320510007",
+          "dateUTC": "2012-05-11T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 96
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 113
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "320512013",
+          "dateUTC": "2012-05-13T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 87
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 96
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAC-MEM",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "29",
+        "abbrev": "MEM",
+        "displayName": "Memphis Grizzlies",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "LAC win series 4-3",
+      "games": [
+        {
+          "id": "320429029",
+          "dateUTC": "2012-04-30T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 99
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 98
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320502029",
+          "dateUTC": "2012-05-03T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 98
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320505012",
+          "dateUTC": "2012-05-05T20:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 86
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 87
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320507012",
+          "dateUTC": "2012-05-08T02:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 97
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320509029",
+          "dateUTC": "2012-05-10T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 80
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 92
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320511012",
+          "dateUTC": "2012-05-12T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 90
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 88
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "320513029",
+          "dateUTC": "2012-05-13T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 82
+          },
+          "home": {
+            "id": "29",
+            "abbrev": "MEM",
+            "displayName": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+            "score": 72
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:SA-UTAH",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "26",
+        "abbrev": "UTAH",
+        "displayName": "Utah Jazz",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "SA wins series 4-0",
+      "games": [
+        {
+          "id": "320429024",
+          "dateUTC": "2012-04-29T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 91
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 106
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320502024",
+          "dateUTC": "2012-05-02T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 83
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320505026",
+          "dateUTC": "2012-05-06T02:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 102
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 90
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320507026",
+          "dateUTC": "2012-05-08T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 87
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 81
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-PHI",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "320512002",
+          "dateUTC": "2012-05-13T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 91
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320514002",
+          "dateUTC": "2012-05-14T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 82
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 81
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320516020",
+          "dateUTC": "2012-05-16T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 107
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 91
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320518020",
+          "dateUTC": "2012-05-19T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 83
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 92
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320521002",
+          "dateUTC": "2012-05-21T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 85
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320523020",
+          "dateUTC": "2012-05-24T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 75
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 82
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "320526002",
+          "dateUTC": "2012-05-27T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 75
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 85
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:IND-MIA",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-2",
+      "games": [
+        {
+          "id": "320513014",
+          "dateUTC": "2012-05-13T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 86
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 95
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320515014",
+          "dateUTC": "2012-05-15T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 78
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 75
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320517011",
+          "dateUTC": "2012-05-17T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 75
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 94
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320520011",
+          "dateUTC": "2012-05-20T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 101
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320522014",
+          "dateUTC": "2012-05-23T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 83
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320524011",
+          "dateUTC": "2012-05-25T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 105
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 93
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:LAC-SA",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "SA wins series 4-0",
+      "games": [
+        {
+          "id": "320515024",
+          "dateUTC": "2012-05-16T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 92
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 108
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320517024",
+          "dateUTC": "2012-05-18T01:45Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 88
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320519012",
+          "dateUTC": "2012-05-19T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 96
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 86
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320520012",
+          "dateUTC": "2012-05-21T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 102
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:LAL-OKC",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "OKC wins series 4-1",
+      "games": [
+        {
+          "id": "320514025",
+          "dateUTC": "2012-05-15T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 90
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 119
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320516025",
+          "dateUTC": "2012-05-17T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 75
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 77
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320518013",
+          "dateUTC": "2012-05-19T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 96
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 99
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320519013",
+          "dateUTC": "2012-05-20T02:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 103
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320521025",
+          "dateUTC": "2012-05-22T01:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 90
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 106
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-MIA",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 3,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-3",
+      "games": [
+        {
+          "id": "320528014",
+          "dateUTC": "2012-05-29T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 79
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320530014",
+          "dateUTC": "2012-05-31T00:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 111
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320601002",
+          "dateUTC": "2012-06-02T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320603002",
+          "dateUTC": "2012-06-04T00:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 93
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320605014",
+          "dateUTC": "2012-06-06T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 94
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 90
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320607002",
+          "dateUTC": "2012-06-08T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 98
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 79
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "320609014",
+          "dateUTC": "2012-06-10T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 88
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 101
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:OKC-SA",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "24",
+        "abbrev": "SA",
+        "displayName": "San Antonio Spurs",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "OKC wins series 4-2",
+      "games": [
+        {
+          "id": "320527024",
+          "dateUTC": "2012-05-28T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 98
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 101
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320529024",
+          "dateUTC": "2012-05-30T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 111
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 120
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320531025",
+          "dateUTC": "2012-06-01T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 82
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320602025",
+          "dateUTC": "2012-06-03T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 103
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 109
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320604024",
+          "dateUTC": "2012-06-05T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 108
+          },
+          "home": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 103
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "320606025",
+          "dateUTC": "2012-06-07T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "24",
+            "abbrev": "SA",
+            "displayName": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+            "score": 99
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 107
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:MIA-OKC",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "320612025",
+          "dateUTC": "2012-06-13T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 94
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 105
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "320614025",
+          "dateUTC": "2012-06-15T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 100
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 96
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "320617014",
+          "dateUTC": "2012-06-18T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 85
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 91
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "320619014",
+          "dateUTC": "2012-06-20T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 98
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 104
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "320621014",
+          "dateUTC": "2012-06-22T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 106
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 121
+          },
+          "gameNumber": 5
+        }
+      ]
+    }
+  ]
+}

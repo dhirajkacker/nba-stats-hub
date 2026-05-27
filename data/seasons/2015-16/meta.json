@@ -1,0 +1,17 @@
+{
+  "season": "2015-16",
+  "champion": {
+    "tricode": "CLE",
+    "city": "Cleveland",
+    "name": "Cavaliers"
+  },
+  "runnerUp": {
+    "tricode": "GSW",
+    "city": "Golden State",
+    "name": "Warriors"
+  },
+  "finalsMVP": "LeBron James",
+  "finalsScore": "4-3",
+  "frozen": true,
+  "frozenAt": "2026-05-27T02:22:17.793Z"
+}

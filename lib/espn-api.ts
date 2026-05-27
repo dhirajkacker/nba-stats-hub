@@ -166,7 +166,11 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
     // and losses don't leak into the table.
     const teamMap = new Map<number, Standing>();
     const baseDate = seasonEndDate ? new Date(seasonEndDate) : new Date();
-    const MAX_DAYS_BACK = 60;
+    // 200 days handles weird seasons (e.g., 2019-20 bubble: 8 non-bubble teams
+    // stopped playing March 11, 2020 — five months before the bubble ended).
+    // The loop exits early once all 30 teams are found, so normal seasons pay
+    // no penalty.
+    const MAX_DAYS_BACK = 200;
     const BATCH_SIZE = 7;
 
     for (let batchStart = 0; batchStart < MAX_DAYS_BACK && teamMap.size < 30; batchStart += BATCH_SIZE) {

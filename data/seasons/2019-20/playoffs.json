@@ -1,0 +1,2309 @@
+{
+  "playIn": null,
+  "series": [
+    {
+      "key": "1st Round:BKN-TOR",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "17",
+        "abbrev": "BKN",
+        "displayName": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "TOR wins series 4-0",
+      "games": [
+        {
+          "id": "401236261",
+          "dateUTC": "2020-08-17T20:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 110
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 134
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236262",
+          "dateUTC": "2020-08-19T17:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 99
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 104
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236263",
+          "dateUTC": "2020-08-21T17:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 117
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 92
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236264",
+          "dateUTC": "2020-08-23T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 150
+          },
+          "home": {
+            "id": "17",
+            "abbrev": "BKN",
+            "displayName": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+            "score": 122
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:BOS-PHI",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "20",
+        "abbrev": "PHI",
+        "displayName": "Philadelphia 76ers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 0,
+      "completed": true,
+      "summary": "BOS wins series 4-0",
+      "games": [
+        {
+          "id": "401236268",
+          "dateUTC": "2020-08-17T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 101
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236269",
+          "dateUTC": "2020-08-19T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 101
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 128
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236270",
+          "dateUTC": "2020-08-21T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 94
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236271",
+          "dateUTC": "2020-08-23T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 110
+          },
+          "home": {
+            "id": "20",
+            "abbrev": "PHI",
+            "displayName": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+            "score": 106
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:IND-MIA",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "11",
+        "abbrev": "IND",
+        "displayName": "Indiana Pacers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 0,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-0",
+      "games": [
+        {
+          "id": "401236315",
+          "dateUTC": "2020-08-18T20:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 113
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 101
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236316",
+          "dateUTC": "2020-08-20T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 109
+          },
+          "home": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 100
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236317",
+          "dateUTC": "2020-08-22T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 115
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 124
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236318",
+          "dateUTC": "2020-08-24T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "11",
+            "abbrev": "IND",
+            "displayName": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+            "score": 87
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 99
+          },
+          "gameNumber": 4
+        }
+      ]
+    },
+    {
+      "key": "1st Round:MIL-ORL",
+      "round": "1st Round",
+      "conference": "East",
+      "teamA": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "19",
+        "abbrev": "ORL",
+        "displayName": "Orlando Magic",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "MIL wins series 4-1",
+      "games": [
+        {
+          "id": "401236254",
+          "dateUTC": "2020-08-18T17:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 122
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 110
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236255",
+          "dateUTC": "2020-08-20T22:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 96
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 111
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236256",
+          "dateUTC": "2020-08-22T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 121
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 107
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236257",
+          "dateUTC": "2020-08-24T17:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 121
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 106
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401236258",
+          "dateUTC": "2020-08-26T20:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 0
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 0
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401236259",
+          "dateUTC": "2020-08-28T20:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 0
+          },
+          "home": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 0
+          }
+        },
+        {
+          "id": "401236260",
+          "dateUTC": "2020-08-29T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "19",
+            "abbrev": "ORL",
+            "displayName": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+            "score": 104
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 118
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DAL-LAC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "6",
+        "abbrev": "DAL",
+        "displayName": "Dallas Mavericks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAC win series 4-2",
+      "games": [
+        {
+          "id": "401236273",
+          "dateUTC": "2020-08-18T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 110
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 118
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236274",
+          "dateUTC": "2020-08-20T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 127
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236275",
+          "dateUTC": "2020-08-22T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 130
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 122
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236276",
+          "dateUTC": "2020-08-23T19:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 133
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 135
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401236277",
+          "dateUTC": "2020-08-26T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 111
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 154
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401236278",
+          "dateUTC": "2020-08-28T01:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 0
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 0
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401236279",
+          "dateUTC": "2020-08-30T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 111
+          },
+          "home": {
+            "id": "6",
+            "abbrev": "DAL",
+            "displayName": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+            "score": 97
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "1st Round:DEN-UTAH",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "26",
+        "abbrev": "UTAH",
+        "displayName": "Utah Jazz",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "DEN wins series 4-3",
+      "games": [
+        {
+          "id": "401236280",
+          "dateUTC": "2020-08-17T17:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 125
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 135
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236281",
+          "dateUTC": "2020-08-19T20:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 124
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236282",
+          "dateUTC": "2020-08-21T20:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 87
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 124
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236283",
+          "dateUTC": "2020-08-24T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 127
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 129
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401236284",
+          "dateUTC": "2020-08-25T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 107
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 117
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401236285",
+          "dateUTC": "2020-08-27T20:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 0
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 0
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401236286",
+          "dateUTC": "2020-08-31T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 119
+          },
+          "home": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 107
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401241818",
+          "dateUTC": "2020-09-02T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "26",
+            "abbrev": "UTAH",
+            "displayName": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "score": 78
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 80
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:HOU-OKC",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "25",
+        "abbrev": "OKC",
+        "displayName": "Oklahoma City Thunder",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "HOU wins series 4-3",
+      "games": [
+        {
+          "id": "401236294",
+          "dateUTC": "2020-08-18T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 108
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 123
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236295",
+          "dateUTC": "2020-08-20T19:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 98
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 111
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236296",
+          "dateUTC": "2020-08-22T22:00Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 107
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 119
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236297",
+          "dateUTC": "2020-08-24T20:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 114
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 117
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401236298",
+          "dateUTC": "2020-08-26T22:30Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 0
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 0
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401236299",
+          "dateUTC": "2020-08-28T22:30Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 0
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 0
+          }
+        },
+        {
+          "id": "401236300",
+          "dateUTC": "2020-08-29T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 80
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 114
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401241638",
+          "dateUTC": "2020-09-01T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 100
+          },
+          "home": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 104
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401241819",
+          "dateUTC": "2020-09-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "25",
+            "abbrev": "OKC",
+            "displayName": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+            "score": 102
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 104
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "1st Round:LAL-POR",
+      "round": "1st Round",
+      "conference": "West",
+      "teamA": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "22",
+        "abbrev": "POR",
+        "displayName": "Portland Trail Blazers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "LAL win series 4-1",
+      "games": [
+        {
+          "id": "401236287",
+          "dateUTC": "2020-08-19T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 100
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 93
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401236288",
+          "dateUTC": "2020-08-21T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 88
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 111
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401236289",
+          "dateUTC": "2020-08-23T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 116
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 108
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401236290",
+          "dateUTC": "2020-08-25T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 135
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 115
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401236291",
+          "dateUTC": "2020-08-27T01:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 0
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 0
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401236292",
+          "dateUTC": "2020-08-29T01:00Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 0
+          },
+          "home": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 0
+          }
+        },
+        {
+          "id": "401236293",
+          "dateUTC": "2020-08-30T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "22",
+            "abbrev": "POR",
+            "displayName": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+            "score": 122
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 131
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:BOS-TOR",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "28",
+        "abbrev": "TOR",
+        "displayName": "Toronto Raptors",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "BOS wins series 4-3",
+      "games": [
+        {
+          "id": "401240075",
+          "dateUTC": "2020-08-27T22:30Z",
+          "status": "scheduled",
+          "statusDetail": "Postponed",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 0
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 0
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401240076",
+          "dateUTC": "2020-08-30T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 112
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 94
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401240077",
+          "dateUTC": "2020-09-01T21:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 102
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 99
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401240078",
+          "dateUTC": "2020-09-03T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 104
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 103
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401240079",
+          "dateUTC": "2020-09-05T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 100
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 93
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401240080",
+          "dateUTC": "2020-09-07T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 111
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 89
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401240081",
+          "dateUTC": "2020-09-09T22:40Z",
+          "status": "final",
+          "statusDetail": "Final/2OT",
+          "away": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 125
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 122
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401241765",
+          "dateUTC": "2020-09-12T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 92
+          },
+          "home": {
+            "id": "28",
+            "abbrev": "TOR",
+            "displayName": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+            "score": 87
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:MIA-MIL",
+      "round": "Conference Semis",
+      "conference": "East",
+      "teamA": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "15",
+        "abbrev": "MIL",
+        "displayName": "Milwaukee Bucks",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 1,
+      "completed": true,
+      "summary": "MIA wins series 4-1",
+      "games": [
+        {
+          "id": "401241760",
+          "dateUTC": "2020-08-31T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 104
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401241766",
+          "dateUTC": "2020-09-02T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 116
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 114
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401241767",
+          "dateUTC": "2020-09-04T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 100
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401241769",
+          "dateUTC": "2020-09-06T19:30Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 118
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401241770",
+          "dateUTC": "2020-09-08T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 103
+          },
+          "home": {
+            "id": "15",
+            "abbrev": "MIL",
+            "displayName": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+            "score": 94
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:DEN-LAC",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "12",
+        "abbrev": "LAC",
+        "displayName": "LA Clippers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 3,
+      "completed": true,
+      "summary": "DEN wins series 4-3",
+      "games": [
+        {
+          "id": "401241853",
+          "dateUTC": "2020-09-04T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 97
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 120
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401242795",
+          "dateUTC": "2020-09-06T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 110
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401242796",
+          "dateUTC": "2020-09-08T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 113
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 107
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401242797",
+          "dateUTC": "2020-09-10T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 96
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 85
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401242798",
+          "dateUTC": "2020-09-11T22:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 111
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 105
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401242799",
+          "dateUTC": "2020-09-13T17:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 98
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 111
+          },
+          "gameNumber": 6
+        },
+        {
+          "id": "401242800",
+          "dateUTC": "2020-09-16T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 104
+          },
+          "home": {
+            "id": "12",
+            "abbrev": "LAC",
+            "displayName": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+            "score": 89
+          },
+          "gameNumber": 7
+        }
+      ]
+    },
+    {
+      "key": "Conference Semis:HOU-LAL",
+      "round": "Conference Semis",
+      "conference": "West",
+      "teamA": {
+        "id": "10",
+        "abbrev": "HOU",
+        "displayName": "Houston Rockets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAL win series 4-1",
+      "games": [
+        {
+          "id": "401242801",
+          "dateUTC": "2020-09-05T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 112
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 97
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401242802",
+          "dateUTC": "2020-09-07T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 109
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 117
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401242803",
+          "dateUTC": "2020-09-09T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 112
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 102
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401242804",
+          "dateUTC": "2020-09-10T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 110
+          },
+          "home": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 100
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401242805",
+          "dateUTC": "2020-09-13T00:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "10",
+            "abbrev": "HOU",
+            "displayName": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+            "score": 96
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 119
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:BOS-MIA",
+      "round": "Conference Finals",
+      "conference": "East",
+      "teamA": {
+        "id": "2",
+        "abbrev": "BOS",
+        "displayName": "Boston Celtics",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 2,
+      "winsB": 4,
+      "completed": true,
+      "summary": "MIA wins series 4-2",
+      "games": [
+        {
+          "id": "401245393",
+          "dateUTC": "2020-09-15T22:40Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 117
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 114
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401245394",
+          "dateUTC": "2020-09-17T23:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 106
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 101
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401245395",
+          "dateUTC": "2020-09-20T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 117
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 106
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401247145",
+          "dateUTC": "2020-09-24T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 109
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 112
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401247146",
+          "dateUTC": "2020-09-26T00:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 108
+          },
+          "home": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 121
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401247147",
+          "dateUTC": "2020-09-27T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "2",
+            "abbrev": "BOS",
+            "displayName": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+            "score": 113
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 125
+          },
+          "gameNumber": 6
+        }
+      ]
+    },
+    {
+      "key": "Conference Finals:DEN-LAL",
+      "round": "Conference Finals",
+      "conference": "West",
+      "teamA": {
+        "id": "7",
+        "abbrev": "DEN",
+        "displayName": "Denver Nuggets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "winsA": 1,
+      "winsB": 4,
+      "completed": true,
+      "summary": "LAL win series 4-1",
+      "games": [
+        {
+          "id": "401246234",
+          "dateUTC": "2020-09-19T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 114
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 126
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401246235",
+          "dateUTC": "2020-09-20T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 103
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 105
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401246236",
+          "dateUTC": "2020-09-23T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 106
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 114
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401246237",
+          "dateUTC": "2020-09-25T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 114
+          },
+          "home": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 108
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401246238",
+          "dateUTC": "2020-09-27T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "7",
+            "abbrev": "DEN",
+            "displayName": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+            "score": 107
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 117
+          },
+          "gameNumber": 5
+        }
+      ]
+    },
+    {
+      "key": "NBA Finals:LAL-MIA",
+      "round": "NBA Finals",
+      "conference": "Finals",
+      "teamA": {
+        "id": "13",
+        "abbrev": "LAL",
+        "displayName": "Los Angeles Lakers",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": 0
+      },
+      "teamB": {
+        "id": "14",
+        "abbrev": "MIA",
+        "displayName": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "score": 0
+      },
+      "winsA": 4,
+      "winsB": 2,
+      "completed": true,
+      "summary": "LAL win series 4-2",
+      "games": [
+        {
+          "id": "401248433",
+          "dateUTC": "2020-10-01T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 98
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 116
+          },
+          "gameNumber": 1
+        },
+        {
+          "id": "401248434",
+          "dateUTC": "2020-10-03T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 114
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 124
+          },
+          "gameNumber": 2
+        },
+        {
+          "id": "401248435",
+          "dateUTC": "2020-10-04T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 104
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 115
+          },
+          "gameNumber": 3
+        },
+        {
+          "id": "401248436",
+          "dateUTC": "2020-10-07T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 102
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 96
+          },
+          "gameNumber": 4
+        },
+        {
+          "id": "401248437",
+          "dateUTC": "2020-10-10T01:00Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 111
+          },
+          "home": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 108
+          },
+          "gameNumber": 5
+        },
+        {
+          "id": "401248438",
+          "dateUTC": "2020-10-11T23:30Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "away": {
+            "id": "13",
+            "abbrev": "LAL",
+            "displayName": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+            "score": 106
+          },
+          "home": {
+            "id": "14",
+            "abbrev": "MIA",
+            "displayName": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+            "score": 93
+          },
+          "gameNumber": 6
+        }
+      ]
+    }
+  ]
+}
