@@ -87,3 +87,13 @@ export function seasonPostseasonAnchorDate(season: string): string {
 export function seasonLabel(season: string): string {
   return `${season} Season`;
 }
+
+// True if the season featured the league-wide Play-In Tournament (7v8 / 9v10
+// / 8-seed games per conference). Officially adopted starting 2020-21. The
+// 2019-20 bubble had a one-off partial play-in for the West 8 seed; we don't
+// count it here — the standings color coding would be misleading for both
+// conferences if 2019-20 were treated as a play-in season.
+export function seasonHasPlayIn(season: string): boolean {
+  const [start] = season.split('-');
+  return parseInt(start) >= 2020;
+}

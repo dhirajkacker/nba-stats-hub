@@ -1,5 +1,6 @@
 import { Standing } from '@/lib/types';
 import { getTeamLogoUrl } from '@/lib/team-logos';
+import { seasonHasPlayIn } from '@/lib/seasons';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -14,16 +15,22 @@ export default function StandingsTable({ standings, conference, season }: Standi
     .filter((team) => team.conference === conference)
     .sort((a, b) => a.confRank - b.confRank);
 
-  // Helper function to get the status indicator for each team
+  const hasPlayIn = seasonHasPlayIn(season);
+
+  // With play-in (2020-21+): 1-6 playoffs, 7-10 play-in, 11-15 out.
+  // Without play-in (pre-2020-21): 1-8 playoffs, 9-15 out.
+  const playoffCutoff = hasPlayIn ? 6 : 8;
+  const playInCutoff = 10;
+
   const getTeamStatus = (rank: number) => {
-    if (rank <= 6) {
+    if (rank <= playoffCutoff) {
       return {
         type: 'playoff',
         color: 'bg-green-500',
         bgColor: 'bg-green-50',
         label: 'Playoff'
       };
-    } else if (rank <= 10) {
+    } else if (hasPlayIn && rank <= playInCutoff) {
       return {
         type: 'playin',
         color: 'bg-yellow-500',
@@ -128,15 +135,17 @@ export default function StandingsTable({ standings, conference, season }: Standi
           <div className="flex flex-wrap gap-3 text-xs">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              <span className="text-gray-700 font-medium">Playoffs (1-6)</span>
+              <span className="text-gray-700 font-medium">Playoffs (1-{playoffCutoff})</span>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <span className="text-gray-700 font-medium">Play-In (7-10)</span>
-            </div>
+            {hasPlayIn && (
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <span className="text-gray-700 font-medium">Play-In ({playoffCutoff + 1}-{playInCutoff})</span>
+              </div>
+            )}
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-              <span className="text-gray-700 font-medium">Out of Contention (11-15)</span>
+              <span className="text-gray-700 font-medium">Out of Contention ({(hasPlayIn ? playInCutoff : playoffCutoff) + 1}-15)</span>
             </div>
           </div>
         </div>
