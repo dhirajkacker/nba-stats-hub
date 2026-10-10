@@ -1,6 +1,6 @@
-import { getPlayerDetails, getPlayerStats, getPlayerGameLog } from '@/lib/espn-players';
+import { getPlayerDetails, getPlayerSeasonStats, getPlayerGameLog } from '@/lib/espn-players';
 import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
-import { seasonLabel } from '@/lib/seasons';
+import { seasonLabel, seasonToESPNYear } from '@/lib/seasons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -41,10 +41,11 @@ export default async function PlayerPage({ params }: PlayerPageProps) {
 
   console.log(`Player page loading for ID: ${playerId} (season ${season})`);
 
+  const espnYear = seasonToESPNYear(season);
   const [player, stats, gameLogs] = await Promise.all([
     getPlayerDetails(playerId),
-    getPlayerStats(playerId),
-    getPlayerGameLog(playerId, 10)
+    getPlayerSeasonStats(playerId, espnYear),
+    getPlayerGameLog(playerId, espnYear, 10)
   ]);
 
   if (!player) {

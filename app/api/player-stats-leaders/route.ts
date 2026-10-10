@@ -30,6 +30,17 @@ export async function GET(request: NextRequest) {
       const status = getLastFetchStatus();
       console.log(`API: Fetched ${topPlayers.length} players from ${status.source} in ${fetchTime}ms`);
 
+      // The season exists but ESPN has no leaders yet (before opening night).
+      // That's an expected empty state, not an outage.
+      if (topPlayers.length === 0 && status.seasonUnavailable) {
+        return NextResponse.json([], {
+          headers: {
+            'Cache-Control': 'public, s-maxage=600, stale-while-revalidate=1200',
+            'X-Season-Status': 'not-started',
+          },
+        });
+      }
+
       if (topPlayers.length === 0) {
         console.error('API: No players returned - all data sources failed');
         console.error('API: Errors:', status.errors);

@@ -24,15 +24,18 @@ const TEAM_ID_MAP: { [key: string]: string } = {
 };
 
 /**
- * Get team statistics from ESPN
+ * Get a team's regular-season statistics from ESPN for one season.
+ * espnSeasonYear is the season's end year (2027 for 2026-27). Without it ESPN
+ * returns its own default, which is the previous season until the new
+ * regular season starts. A season with no games yet returns no categories.
  */
-export async function getTeamStats(teamTricode: string): Promise<any> {
+export async function getTeamStats(teamTricode: string, espnSeasonYear: number): Promise<any> {
   try {
     const normalizedTricode = normalizeTeamTricode(teamTricode);
     const teamId = TEAM_ID_MAP[normalizedTricode];
     if (!teamId) return null;
 
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/statistics`;
+    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/statistics?season=${espnSeasonYear}&seasontype=2`;
 
     const response = await fetch(url, {
       next: { revalidate: 1800 }, // Cache for 30 minutes
@@ -52,50 +55,30 @@ export async function getTeamStats(teamTricode: string): Promise<any> {
 }
 
 /**
- * Get team game log (recent games)
+ * Get a team's last N completed games for one season, regular season and
+ * playoffs combined, oldest first. Preseason games are excluded.
+ * espnSeasonYear is the season's end year (2027 for 2026-27).
  */
-export async function getTeamGameLog(teamTricode: string, limit: number = 10): Promise<any[]> {
+export async function getTeamGameLog(teamTricode: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
   try {
     const normalizedTricode = normalizeTeamTricode(teamTricode);
     const teamId = TEAM_ID_MAP[normalizedTricode];
     if (!teamId) return [];
 
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}`;
+    const base = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/schedule?season=${espnSeasonYear}`;
+    const [regular, postseason] = await Promise.all(
+      [2, 3].map(async (seasonType) => {
+        const res = await fetch(`${base}&seasontype=${seasonType}`, { next: { revalidate: 600 } });
+        if (!res.ok) return [];
+        const data = await res.json();
+        return (data?.events ?? []) as any[];
+      })
+    );
 
-    const response = await fetch(url, {
-      next: { revalidate: 600 }, // 10 minutes cache
-    });
-
-    if (!response.ok) {
-      console.error('Failed to fetch team game log:', response.statusText);
-      return [];
-    }
-
-    const data = await response.json();
-
-    // Extract recent games from the team data
-    const events = data?.team?.nextEvent || data?.team?.previousEvent || [];
-
-    // Get season schedule to extract recent games
-    const scheduleUrl = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/schedule`;
-
-    const scheduleResponse = await fetch(scheduleUrl, {
-      next: { revalidate: 600 },
-    });
-
-    if (!scheduleResponse.ok) {
-      return [];
-    }
-
-    const scheduleData = await scheduleResponse.json();
-
-    // Get completed games from the schedule
-    const allEvents = scheduleData?.events || [];
-    const completedGames = allEvents
+    return [...regular, ...postseason]
       .filter((event: any) => event.competitions?.[0]?.status?.type?.completed)
-      .slice(-limit); // Get last N games
-
-    return completedGames;
+      .sort((a: any, b: any) => new Date(a.date).getTime() - new Date(b.date).getTime())
+      .slice(-limit);
   } catch (error) {
     console.error('Error fetching team game log:', error);
     return [];

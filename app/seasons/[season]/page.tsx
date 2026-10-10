@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import LiveScores from '@/components/LiveScores';
 import StandingsTable from '@/components/StandingsTable';
+import PreseasonNotice, { seasonNotStarted } from '@/components/PreseasonNotice';
 import PlayInBracket from '@/components/PlayInBracket';
 import PlayoffBracket from '@/components/PlayoffBracket';
 import ClientDate from '@/components/ClientDate';
@@ -109,6 +110,7 @@ export default async function SeasonHome({
             <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
             <h2 className="text-3xl font-black text-gray-900">Regular Season Standings</h2>
           </div>
+          {!meta.frozen && seasonNotStarted(standings?.standings) && <PreseasonNotice season={season} />}
           {standings && standings.standings.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <StandingsTable standings={standings.standings} conference="East" season={season} />

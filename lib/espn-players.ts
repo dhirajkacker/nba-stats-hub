@@ -411,11 +411,12 @@ export async function getPlayerStats(playerId: string): Promise<any> {
 /**
  * Get player game log (recent games) with player stats - robust error handling
  */
-export async function getPlayerGameLog(playerId: string, limit: number = 10): Promise<any[]> {
-  console.log(`Fetching game log with stats for player ID: ${playerId}`);
+export async function getPlayerGameLog(playerId: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
+  console.log(`Fetching game log with stats for player ID: ${playerId} (season ${espnSeasonYear})`);
+  const seasonQuery = `?season=${espnSeasonYear}`;
 
   // Fetch from web API which includes player stats per game
-  const webUrl = `https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog`;
+  const webUrl = `https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog${seasonQuery}`;
   const webResponse = await robustFetch(webUrl, {
     timeout: 10000,
     retries: 3,
@@ -423,7 +424,7 @@ export async function getPlayerGameLog(playerId: string, limit: number = 10): Pr
   });
 
   // Also fetch basic game log for game info (date, opponent, score)
-  const basicUrl = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog`;
+  const basicUrl = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog${seasonQuery}`;
   const basicResponse = await robustFetch(basicUrl, {
     timeout: 10000,
     retries: 2,
@@ -464,8 +465,8 @@ export async function getPlayerGameLog(playerId: string, limit: number = 10): Pr
 
     // Process events from seasonTypes (contains stats array per game)
     for (const seasonType of seasonTypes) {
-      // Only process regular season games
-      if (!seasonType.displayName?.includes('Regular')) continue;
+      // Regular season, play-in and playoff games. Preseason games are skipped.
+      if (seasonType.displayName?.includes('Preseason')) continue;
 
       const categories = seasonType.categories || [];
       for (const category of categories) {
@@ -492,7 +493,9 @@ export async function getPlayerGameLog(playerId: string, limit: number = 10): Pr
 
     // Use events from web API for game info (they have more complete data)
     Object.entries(events).forEach(([eventId, gameInfo]: [string, any]) => {
-      const playerStats = playerStatsMap[eventId] || {};
+      // Events outside the season types kept above (i.e. preseason) are dropped.
+      if (!playerStatsMap[eventId]) return;
+      const playerStats = playerStatsMap[eventId];
 
       combinedGames.push({
         ...gameInfo,
@@ -548,6 +551,39 @@ export async function findPlayerInRosters(playerId: string): Promise<ESPNPlayer 
     return null;
   } catch (error) {
     console.log(`Error searching rosters for player ID ${playerId}:`, error);
+    return null;
+  }
+}
+
+/**
+ * Regular-season per-game averages for one player in one season, from ESPN's
+ * core API. espnSeasonYear is the season's end year (2016 for 2015-16).
+ * Returns null when the player has no stats that season, including a current
+ * season that hasn't started yet. Shape matches getPlayerStats().
+ */
+export async function getPlayerSeasonStats(playerId: string, espnSeasonYear: number): Promise<any> {
+  const url = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${espnSeasonYear}/types/2/athletes/${playerId}/statistics`;
+  try {
+    const res = await fetch(url, { next: { revalidate: 3600 } });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const statistics: any[] = [];
+    const seen = new Set<string>();
+    for (const category of data.splits?.categories ?? []) {
+      for (const stat of category.stats ?? []) {
+        if (seen.has(stat.name)) continue;
+        seen.add(stat.name);
+        statistics.push({
+          name: stat.name,
+          displayName: stat.displayName,
+          value: stat.value,
+          displayValue: stat.displayValue,
+        });
+      }
+    }
+    return statistics.length > 0 ? { statistics } : null;
+  } catch (error) {
+    console.log(`Error fetching season ${espnSeasonYear} stats for player ${playerId}:`, error);
     return null;
   }
 }

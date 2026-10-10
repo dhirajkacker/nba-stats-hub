@@ -7,27 +7,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Standing } from '@/lib/types';
 
-interface TeamWithStats extends Standing {
-  ppg?: number;
-  oppPpg?: number;
-  fgPct?: number;
-  fg3Pct?: number;
-  ftPct?: number;
-  rpg?: number;
-  apg?: number;
-  spg?: number;
-  bpg?: number;
-  topg?: number;
-  offRating?: number;
-  defRating?: number;
-  netRating?: number;
-  pace?: number;
-}
-
 export default function TeamsPage() {
   const params = useParams<{ season: string }>();
   const season = params.season;
-  const [allTeams, setAllTeams] = useState<TeamWithStats[]>([]);
+  const [allTeams, setAllTeams] = useState<Standing[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -39,33 +22,16 @@ export default function TeamsPage() {
         }
         const standings = await response.json();
 
-        // Add mock advanced stats - in production, fetch from real API
-        const teamsWithStats: TeamWithStats[] = (standings?.standings || []).map((team: Standing) => ({
-          ...team,
-          ppg: 110 + Math.random() * 15,
-          oppPpg: 105 + Math.random() * 15,
-          fgPct: 45 + Math.random() * 10,
-          fg3Pct: 35 + Math.random() * 8,
-          ftPct: 75 + Math.random() * 10,
-          rpg: 42 + Math.random() * 8,
-          apg: 23 + Math.random() * 7,
-          spg: 7 + Math.random() * 3,
-          bpg: 4 + Math.random() * 2,
-          topg: 12 + Math.random() * 3,
-          offRating: 108 + Math.random() * 12,
-          defRating: 108 + Math.random() * 12,
-          netRating: -3 + Math.random() * 8,
-          pace: 96 + Math.random() * 8,
-        }));
+        const teams: Standing[] = [...(standings?.standings || [])];
 
-        teamsWithStats.sort((a, b) => {
+        teams.sort((a, b) => {
           if (b.wins !== a.wins) {
             return b.wins - a.wins;
           }
           return a.losses - b.losses;
         });
 
-        setAllTeams(teamsWithStats);
+        setAllTeams(teams);
       } catch (error) {
         console.error('Error loading teams:', error);
       } finally {
@@ -120,20 +86,6 @@ export default function TeamsPage() {
                     <th className="text-center py-3 px-3 font-bold text-gray-700">Away</th>
                     <th className="text-center py-3 px-3 font-bold text-gray-700">L10</th>
                     <th className="text-center py-3 px-3 font-bold text-gray-700">Streak</th>
-                    <th className="text-center py-3 px-3 font-bold text-green-700 bg-green-50">PPG</th>
-                    <th className="text-center py-3 px-3 font-bold text-red-700 bg-red-50">Opp PPG</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">FG%</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">3PT%</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">FT%</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">RPG</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">APG</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">SPG</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">BPG</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">TOV</th>
-                    <th className="text-center py-3 px-3 font-bold text-purple-700 bg-purple-50">OffRtg</th>
-                    <th className="text-center py-3 px-3 font-bold text-blue-700 bg-blue-50">DefRtg</th>
-                    <th className="text-center py-3 px-3 font-bold text-orange-700 bg-orange-50">NetRtg</th>
-                    <th className="text-center py-3 px-3 font-bold text-gray-700">Pace</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -193,48 +145,6 @@ export default function TeamsPage() {
                       </td>
                       <td className="text-center py-3 px-3 text-gray-700 font-medium">
                         {team.streak}
-                      </td>
-                      <td className="text-center py-3 px-3 font-bold text-green-700 bg-green-50">
-                        {team.ppg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 font-bold text-red-700 bg-red-50">
-                        {team.oppPpg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.fgPct?.toFixed(1) || '-'}%
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.fg3Pct?.toFixed(1) || '-'}%
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.ftPct?.toFixed(1) || '-'}%
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.rpg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.apg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.spg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.bpg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.topg?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 font-bold text-purple-700 bg-purple-50">
-                        {team.offRating?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 font-bold text-blue-700 bg-blue-50">
-                        {team.defRating?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 font-bold text-orange-700 bg-orange-50">
-                        {team.netRating?.toFixed(1) || '-'}
-                      </td>
-                      <td className="text-center py-3 px-3 text-gray-700">
-                        {team.pace?.toFixed(1) || '-'}
                       </td>
                     </tr>
                   ))}

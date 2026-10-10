@@ -84,7 +84,7 @@ async function main() {
   // type-2 (regular season) games until we have all 30 teams.
   const rsEnd = seasonRegularSeasonEndDate(season);
   console.log(`[1/4] Standings (anchor: ${rsEnd})...`);
-  const standings = await getESPNStandingsBySeason(rsEnd);
+  const standings = await getESPNStandingsBySeason(rsEnd, seasonToESPNYear(season));
   if (!standings || standings.standings.length === 0) {
     console.error('  ✗ Failed to fetch standings — aborting');
     process.exit(1);
@@ -101,6 +101,7 @@ async function main() {
   console.log(`[2/4] Playoffs (anchor: ${psAnchor}, ±days)...`);
   const playoffs = await getPlayoffsData({
     anchorDate: psAnchor,
+    seasonYear: seasonToESPNYear(season),
     daysBack: 90,
     daysForward: 30,
   });

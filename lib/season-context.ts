@@ -6,7 +6,7 @@
 
 import { promises as fs } from 'fs';
 import path from 'path';
-import { CURRENT_SEASON, seasonRegularSeasonEndDate, seasonPostseasonAnchorDate } from './seasons';
+import { CURRENT_SEASON, seasonRegularSeasonEndDate, seasonPostseasonAnchorDate, seasonToESPNYear } from './seasons';
 import { getESPNStandings, getESPNStandingsBySeason } from './espn-api';
 import { getPlayoffsData as livePlayoffs, type PlayoffsData } from './playoffs-api';
 import { getTopPlayersByAllStats, type ESPNStatsLeader } from './espn-stats-leaders';
@@ -39,23 +39,25 @@ export async function getSeasonStandings(season: string): Promise<Standings | nu
   const snap = await readSnapshot<Standings>(season, 'standings.json');
   if (snap) return snap;
   // Snapshot missing: best-effort fallback — walk the regular-season end window.
-  return getESPNStandingsBySeason(seasonRegularSeasonEndDate(season));
+  return getESPNStandingsBySeason(seasonRegularSeasonEndDate(season), seasonToESPNYear(season));
 }
 
 export async function getSeasonPlayoffs(season: string): Promise<PlayoffsData> {
   if (season === CURRENT_SEASON) {
-    return livePlayoffs();
+    return livePlayoffs({ seasonYear: seasonToESPNYear(season) });
   }
   const snap = await readSnapshot<PlayoffsData>(season, 'playoffs.json');
   if (snap) return snap;
   // Snapshot missing: try to assemble from ESPN events anchored at the season's
   // postseason window. Requires the anchorDate option on getPlayoffsData.
-  return livePlayoffs({ anchorDate: seasonPostseasonAnchorDate(season) });
+  return livePlayoffs({ anchorDate: seasonPostseasonAnchorDate(season), seasonYear: seasonToESPNYear(season) });
 }
 
 export async function getSeasonLeaders(season: string, limit = 30): Promise<ESPNStatsLeader[]> {
   if (season === CURRENT_SEASON) {
-    return getTopPlayersByAllStats(limit);
+    // Pass the season explicitly. Without it the ESPN year is guessed from
+    // today's date, which drifts from CURRENT_SEASON around the rollover.
+    return getTopPlayersByAllStats(limit, season);
   }
   const snap = await readSnapshot<ESPNStatsLeader[]>(season, 'leaders.json');
   return snap ?? [];

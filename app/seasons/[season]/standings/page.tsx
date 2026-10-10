@@ -1,4 +1,5 @@
 import StandingsTable from '@/components/StandingsTable';
+import PreseasonNotice, { seasonNotStarted } from '@/components/PreseasonNotice';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getSeasonStandings, getSeasonMeta } from '@/lib/season-context';
@@ -49,6 +50,7 @@ export default async function StandingsPage({
             <h2 className="text-3xl font-black text-gray-900">{heading}</h2>
           </div>
 
+          {!meta.frozen && seasonNotStarted(standings?.standings) && <PreseasonNotice season={season} />}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {standings && standings.standings.length > 0 ? (
               <>

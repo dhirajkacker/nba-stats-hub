@@ -1,4 +1,5 @@
 import { getSeasonStandings } from '@/lib/season-context';
+import { seasonToESPNYear, isCurrentSeason } from '@/lib/seasons';
 import { getTeamLogoUrl, getTeamColor } from '@/lib/team-logos';
 import { getTeamStats, getTeamGameLog, getTeamRosterWithStats } from '@/lib/espn-team-stats';
 import { resolveTeamIdentifier, normalizeTricode } from '@/lib/team-identifiers';
@@ -58,10 +59,14 @@ export default async function TeamPage({ params }: TeamPageProps) {
     notFound();
   }
 
+  const espnYear = seasonToESPNYear(season);
+  const isCurrent = isCurrentSeason(season);
+  // ESPN only serves today's roster, so archived seasons skip it rather than
+  // showing current players under an old season.
   const [teamStats, gameLogs, roster] = await Promise.all([
-    getTeamStats(team.teamTricode),
-    getTeamGameLog(team.teamTricode, 10),
-    getTeamRosterWithStats(team.teamTricode)
+    getTeamStats(team.teamTricode, espnYear),
+    getTeamGameLog(team.teamTricode, espnYear, 10),
+    isCurrent ? getTeamRosterWithStats(team.teamTricode) : Promise.resolve([]),
   ]);
 
   const teamColor = getTeamColor(team.teamTricode);
@@ -209,7 +214,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h2 className="text-2xl font-black text-gray-900">Advanced Team Stats</h2>
+              <h2 className="text-2xl font-black text-gray-900">{isCurrent ? 'Advanced Team Stats' : `${season} Team Stats`}</h2>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -369,7 +374,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h2 className="text-2xl font-black text-gray-900">Recent Games</h2>
+              <h2 className="text-2xl font-black text-gray-900">{isCurrent ? 'Recent Games' : 'Final Games of the Season'}</h2>
             </div>
 
             <div className="space-y-4">

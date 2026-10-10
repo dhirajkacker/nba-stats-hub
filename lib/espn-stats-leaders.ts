@@ -38,6 +38,9 @@ export interface ESPNStatsLeader {
 export interface FetchStatus {
   source: 'espn-leaders' | 'espn-teams' | 'none';
   playersFound: number;
+  // True when ESPN has no leaders for the requested season yet (HTTP 404),
+  // e.g. between the rollover and the first regular-season games.
+  seasonUnavailable?: boolean;
   errors: string[];
   retryAttempts: number;
 }
@@ -88,6 +91,9 @@ async function fetchWithRetry(
 
       lastError = new Error(`HTTP ${response.status}: ${response.statusText}`);
       console.log(`Attempt ${attempt}/${maxRetries} failed: ${lastError.message}`);
+      // 404 means the resource doesn't exist (e.g. a season with no games yet).
+      // Retrying won't change that.
+      if (response.status === 404) break;
     } catch (error: any) {
       lastError = error;
       if (error.name === 'AbortError') {
@@ -411,6 +417,14 @@ export async function getTopScorers(limit: number = 30, season?: string): Promis
   } catch (error: any) {
     lastFetchStatus.errors.push(`Leaders API: ${error.message}`);
     console.error(`[Leaders API] FAILED: ${error.message}`);
+
+    // ESPN has no leaders for this season yet. The Teams API fallback would
+    // return another season's per-athlete stats under this season's label,
+    // so return nothing and let the caller show a "not started" state.
+    if (String(error.message).includes('HTTP 404')) {
+      lastFetchStatus.seasonUnavailable = true;
+      return [];
+    }
 
     // Try secondary source: Teams API
     try {

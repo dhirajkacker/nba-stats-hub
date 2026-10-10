@@ -140,12 +140,13 @@ async function fetchDay(dateStr: string): Promise<any[]> {
 
 export interface PlayoffsFetchOpts {
   anchorDate?: string; // ISO YYYY-MM-DD; defaults to today.
+  seasonYear?: number; // ESPN season year (end year). When set, other seasons' games are ignored.
   daysBack?: number;
   daysForward?: number;
 }
 
 export async function getPlayoffsData(opts: PlayoffsFetchOpts = {}): Promise<PlayoffsData> {
-  const { anchorDate, daysBack = 70, daysForward = 30 } = opts;
+  const { anchorDate, seasonYear, daysBack = 70, daysForward = 30 } = opts;
   const anchor = anchorDate ? new Date(`${anchorDate}T12:00:00Z`) : new Date();
   anchor.setUTCHours(12, 0, 0, 0);
   const dates: string[] = [];
@@ -165,6 +166,7 @@ export async function getPlayoffsData(opts: PlayoffsFetchOpts = {}): Promise<Pla
   for (const event of events) {
     const seasonType = event.season?.type;
     if (seasonType !== 3 && seasonType !== 5) continue;
+    if (seasonYear && event.season?.year !== seasonYear) continue;
 
     const comp = event.competitions?.[0];
     if (!comp) continue;

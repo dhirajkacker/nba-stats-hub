@@ -7,6 +7,7 @@ import PlayerSearch from '@/components/PlayerSearch';
 import { PlayerInfo } from '@/lib/player-data';
 import { getTeamLogoUrl } from '@/lib/team-logos';
 import Image from 'next/image';
+import { CURRENT_SEASON } from '@/lib/seasons';
 
 type SortColumn = 'ppg' | 'rpg' | 'apg' | 'fgPct';
 
@@ -101,7 +102,9 @@ export default function PlayersPage() {
               <h2 className="text-2xl font-black text-gray-900">{season} Season Leaders</h2>
             </div>
             <p className="text-gray-600 mt-2 text-sm">
-              Real-time stats from ESPN • Updated daily
+              {season === CURRENT_SEASON
+                ? 'Real-time stats from ESPN • Updated daily'
+                : 'Final regular-season stats from ESPN'}
             </p>
           </div>
 
@@ -112,7 +115,11 @@ export default function PlayersPage() {
             </div>
           ) : topPlayers.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-gray-500">No player data available</p>
+              <p className="text-gray-500">
+                {season === CURRENT_SEASON
+                  ? `Leaders will appear once the ${season} regular season tips off.`
+                  : 'No player data available'}
+              </p>
             </div>
           ) : (
             <div className="overflow-x-auto">

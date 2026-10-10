@@ -2,6 +2,7 @@
 // ESPN has a free, unofficial API that works without authentication
 
 import { Scoreboard, Standings, Game, Standing } from './types';
+import { CURRENT_SEASON, seasonToESPNYear } from './seasons';
 
 const ESPN_BASE_URL = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba';
 
@@ -157,7 +158,47 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
 /**
  * Fetch NBA standings from ESPN scoreboard for a specific season
  */
-export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<Standings | null> {
+// "2027" -> "2026-27"
+function espnYearToSeason(year: number): string {
+  return `${year - 1}-${String(year).slice(-2)}`;
+}
+
+const EASTERN_ABBREVS = ['ATL', 'BOS', 'BKN', 'NJ', 'CHA', 'CHI', 'CLE', 'DET', 'IND', 'MIA', 'MIL', 'NY', 'NYK', 'ORL', 'PHI', 'TOR', 'WAS', 'WSH'];
+
+function emptyStanding(team: any): Standing {
+  return {
+    teamId: parseInt(team.id),
+    teamCity: team.location || '',
+    teamName: team.name || '',
+    teamTricode: team.abbreviation || '',
+    conference: EASTERN_ABBREVS.includes(team.abbreviation) ? 'East' : 'West',
+    confRank: 0,
+    wins: 0,
+    losses: 0,
+    winPct: 0,
+    gamesBehind: 0,
+    homeWins: 0,
+    homeLosses: 0,
+    awayWins: 0,
+    awayLosses: 0,
+    confWins: 0,
+    confLosses: 0,
+    lastTenWins: 0,
+    lastTenLosses: 0,
+    streak: '-',
+  };
+}
+
+/**
+ * Build standings by walking the scoreboard backwards from seasonEndDate (or
+ * today) and taking each team's record from its most recent regular-season game.
+ *
+ * Pass espnSeasonYear (the season's end year, e.g. 2027 for 2026-27) to count
+ * only that season's games. Without it, an early-season walk would pick up the
+ * previous season's final records. With it, the walk stops at October 1 of the
+ * season's start year, and any team that hasn't played yet is listed at 0-0.
+ */
+export async function getESPNStandingsBySeason(seasonEndDate?: string, espnSeasonYear?: number): Promise<Standings | null> {
   try {
     // Fetch scoreboard data in parallel batches walking backwards from baseDate
     // until we've collected all 30 teams' regular-season records. Filtering
@@ -170,8 +211,13 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
     // stopped playing March 11, 2020 — five months before the bubble ended).
     // The loop exits early once all 30 teams are found, so normal seasons pay
     // no penalty.
-    const MAX_DAYS_BACK = 200;
+    let MAX_DAYS_BACK = 200;
     const BATCH_SIZE = 7;
+    if (espnSeasonYear) {
+      const seasonStart = new Date(Date.UTC(espnSeasonYear - 1, 9, 1)); // Oct 1
+      const daysSinceStart = Math.ceil((baseDate.getTime() - seasonStart.getTime()) / 86_400_000);
+      MAX_DAYS_BACK = Math.max(0, Math.min(MAX_DAYS_BACK, daysSinceStart + 1));
+    }
 
     for (let batchStart = 0; batchStart < MAX_DAYS_BACK && teamMap.size < 30; batchStart += BATCH_SIZE) {
       const batchPromises: Promise<any>[] = [];
@@ -195,6 +241,7 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
           // Only count regular-season games (type 2). This freezes the
           // standings to the last regular-season record once postseason begins.
           if (event.season?.type !== 2) return;
+          if (espnSeasonYear && event.season?.year !== espnSeasonYear) return;
           const competition = event.competitions[0];
 
           competition.competitors?.forEach((competitor: any) => {
@@ -249,7 +296,7 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
 
             // Determine conference
             // Note: ESPN uses different abbreviations: WSH (not WAS), NY (not NYK), GS (not GSW), NO (not NOP), SA (not SAS)
-            const isEastern = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DET', 'IND', 'MIA', 'MIL', 'NY', 'NYK', 'ORL', 'PHI', 'TOR', 'WAS', 'WSH'].includes(team.abbreviation);
+            const isEastern = EASTERN_ABBREVS.includes(team.abbreviation);
 
             const standing: Standing = {
               teamId,
@@ -281,17 +328,34 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
 
     console.log('Collected standings for', teamMap.size, 'teams');
 
+    // Early in a season some (or all) teams haven't played a regular-season
+    // game yet. List them at 0-0 so the table always has all 30 teams.
+    if (espnSeasonYear && teamMap.size < 30) {
+      try {
+        const res = await fetch(`${ESPN_BASE_URL}/teams`, { next: { revalidate: 86400 } });
+        if (res.ok) {
+          const data = await res.json();
+          for (const t of data.sports?.[0]?.leagues?.[0]?.teams ?? []) {
+            const id = parseInt(t.team?.id);
+            if (!teamMap.has(id)) teamMap.set(id, emptyStanding(t.team));
+          }
+        }
+      } catch (err) {
+        console.error('Failed to fetch ESPN teams list for 0-0 fill:', err);
+      }
+    }
+
     // Convert map to array
     const allStandings = Array.from(teamMap.values());
 
     // Sort by conference and win percentage
     const eastStandings = allStandings
       .filter(s => s.conference === 'East')
-      .sort((a, b) => b.winPct - a.winPct);
+      .sort((a, b) => b.winPct - a.winPct || b.wins - a.wins || a.teamCity.localeCompare(b.teamCity));
 
     const westStandings = allStandings
       .filter(s => s.conference === 'West')
-      .sort((a, b) => b.winPct - a.winPct);
+      .sort((a, b) => b.winPct - a.winPct || b.wins - a.wins || a.teamCity.localeCompare(b.teamCity));
 
     // Calculate ranks and games behind
     eastStandings.forEach((team, index) => {
@@ -313,8 +377,9 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string): Promise<
     const finalStandings = [...eastStandings, ...westStandings];
     console.log('Processed standings for', finalStandings.length, 'teams (East:', eastStandings.length, 'West:', westStandings.length, ')');
 
-    // Determine season based on date
-    const season = getNBASeasonFromDate(seasonEndDate ? new Date(seasonEndDate) : new Date());
+    const season = espnSeasonYear
+      ? espnYearToSeason(espnSeasonYear)
+      : getNBASeasonFromDate(seasonEndDate ? new Date(seasonEndDate) : new Date());
 
     return {
       season,
@@ -344,14 +409,14 @@ export async function getESPNStandings(): Promise<Standings | null> {
 
     if (!response.ok) {
       console.error('Failed to fetch ESPN standings:', response.status);
-      return getESPNStandingsBySeason();
+      return getESPNStandingsBySeason(undefined, seasonToESPNYear(CURRENT_SEASON));
     }
 
     const data = await response.json();
 
     if (!data.children || !data.children.some((c: any) => (c.standings?.entries?.length ?? 0) > 0)) {
       console.log('ESPN standings endpoint returned no entries; falling back to scoreboard walk');
-      return getESPNStandingsBySeason();
+      return getESPNStandingsBySeason(undefined, seasonToESPNYear(CURRENT_SEASON));
     }
 
     const allStandings: Standing[] = [];
@@ -414,15 +479,13 @@ export async function getESPNStandings(): Promise<Standings | null> {
 
     console.log('Fetched full standings for', allStandings.length, 'teams with home/away splits');
 
-    const season = getNBASeasonFromDate(new Date());
-
     return {
-      season,
+      season: CURRENT_SEASON,
       seasonType: 'Regular Season',
       standings: allStandings,
     };
   } catch (error) {
     console.error('Error fetching ESPN full standings:', error);
-    return getESPNStandingsBySeason();
+    return getESPNStandingsBySeason(undefined, seasonToESPNYear(CURRENT_SEASON));
   }
 }
