@@ -1,0 +1,17 @@
+{
+  "season": "2025-26",
+  "champion": {
+    "tricode": "NYK",
+    "city": "New York",
+    "name": "Knicks"
+  },
+  "runnerUp": {
+    "tricode": "SAS",
+    "city": "San Antonio",
+    "name": "Spurs"
+  },
+  "finalsMVP": "Jalen Brunson",
+  "finalsScore": "4-1",
+  "frozen": true,
+  "frozenAt": "2026-10-10T23:20:55.424Z"
+}

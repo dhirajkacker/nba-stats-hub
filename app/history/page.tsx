@@ -12,8 +12,11 @@ export const metadata: Metadata = {
   },
 };
 
-// Complete NBA Championship History (1947-2024)
+// Complete NBA Championship History (1947-2026). Add the new champion here
+// each October when the outgoing season is frozen (see lib/seasons.ts).
 const NBA_CHAMPIONS = [
+  { year: 2026, champion: 'New York Knicks', runnerUp: 'San Antonio Spurs', score: '4-1', fmvp: 'Jalen Brunson', eastChamp: 'New York Knicks', eastRunnerUp: 'Cleveland Cavaliers', westChamp: 'San Antonio Spurs', westRunnerUp: 'Oklahoma City Thunder' },
+  { year: 2025, champion: 'Oklahoma City Thunder', runnerUp: 'Indiana Pacers', score: '4-3', fmvp: 'Shai Gilgeous-Alexander', eastChamp: 'Indiana Pacers', eastRunnerUp: 'New York Knicks', westChamp: 'Oklahoma City Thunder', westRunnerUp: 'Minnesota Timberwolves' },
   { year: 2024, champion: 'Boston Celtics', runnerUp: 'Dallas Mavericks', score: '4-1', fmvp: 'Jaylen Brown', eastChamp: 'Boston Celtics', eastRunnerUp: 'Indiana Pacers', westChamp: 'Dallas Mavericks', westRunnerUp: 'Minnesota Timberwolves' },
   { year: 2023, champion: 'Denver Nuggets', runnerUp: 'Miami Heat', score: '4-1', fmvp: 'Nikola Jokic', eastChamp: 'Miami Heat', eastRunnerUp: 'Boston Celtics', westChamp: 'Denver Nuggets', westRunnerUp: 'Los Angeles Lakers' },
   { year: 2022, champion: 'Golden State Warriors', runnerUp: 'Boston Celtics', score: '4-2', fmvp: 'Stephen Curry', eastChamp: 'Boston Celtics', eastRunnerUp: 'Miami Heat', westChamp: 'Golden State Warriors', westRunnerUp: 'Dallas Mavericks' },
@@ -123,7 +126,7 @@ export default function HistoryPage() {
                 NBA Champions History
               </h1>
               <p className="text-orange-200 font-medium mt-1">
-                78 seasons of NBA Finals history (1947-2024)
+                {NBA_CHAMPIONS.length} seasons of NBA Finals history (1947-{NBA_CHAMPIONS[0].year})
               </p>
             </div>
           </div>

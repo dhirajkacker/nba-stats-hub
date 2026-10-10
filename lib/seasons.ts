@@ -1,15 +1,18 @@
 // Single source of truth for season identifiers and per-season conversions.
 //
-// To advance the current season (when 2026-27 starts in October 2026):
-//   1. Change CURRENT_SEASON below
-//   2. Prepend the new value to KNOWN_SEASONS
-//   3. Update the redirect destinations in next.config.ts to point at the new
-//      CURRENT_SEASON (they're inlined at build time so they need to change too).
+// To advance the current season (each October, before opening night):
+//   1. Freeze the outgoing season: npm run freeze-season -- <old> --mvp "Name"
+//   2. Change CURRENT_SEASON below
+//   3. Prepend the new value to KNOWN_SEASONS
+//   4. Add the outgoing season's champion to NBA_CHAMPIONS in app/history/page.tsx
+// next.config.ts imports CURRENT_SEASON, so its redirects follow automatically
+// on the next build.
 
-export const CURRENT_SEASON = '2025-26';
+export const CURRENT_SEASON = '2026-27';
 
 // Newest-first. The season nav iterates this array in order.
 export const KNOWN_SEASONS = [
+  '2026-27',
   '2025-26',
   '2024-25',
   '2023-24',
