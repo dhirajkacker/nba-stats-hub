@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2010",
+  "champion": {
+    "tricode": "SEA",
+    "city": "Seattle",
+    "name": "Storm",
+    "teamId": "14",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png"
+  },
+  "runnerUp": {
+    "tricode": "ATL",
+    "city": "Atlanta",
+    "name": "Dream",
+    "teamId": "20",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+  },
+  "finalsScore": "3-0",
+  "finalsMVP": "Lauren Jackson",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:19.498Z"
+}

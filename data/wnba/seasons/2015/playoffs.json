@@ -1,0 +1,489 @@
+{
+  "season": "2015",
+  "format": "conference",
+  "rounds": [
+    {
+      "id": "CSF",
+      "name": "Conference Semifinals",
+      "expected": 4,
+      "series": [
+        {
+          "key": "19-5",
+          "round": "CSF",
+          "conference": "East",
+          "teamA": {
+            "id": "19",
+            "abbrev": "CHI",
+            "name": "Chicago Sky",
+            "shortName": "Sky",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
+            "seed": 2,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 1,
+          "winsB": 2,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "5",
+          "games": [
+            {
+              "id": "400839633",
+              "dateUTC": "2015-09-18T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "19",
+              "awayId": "5",
+              "homeScore": 77,
+              "awayScore": 72,
+              "winnerId": "19",
+              "gameNumber": 1
+            },
+            {
+              "id": "400839634",
+              "dateUTC": "2015-09-19T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "19",
+              "homeScore": 89,
+              "awayScore": 82,
+              "winnerId": "5",
+              "gameNumber": 2
+            },
+            {
+              "id": "400839635",
+              "dateUTC": "2015-09-22T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "19",
+              "awayId": "5",
+              "homeScore": 89,
+              "awayScore": 100,
+              "winnerId": "5",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "16-9",
+          "round": "CSF",
+          "conference": "East",
+          "teamA": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "16",
+            "abbrev": "WSH",
+            "name": "Washington Mystics",
+            "shortName": "Mystics",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
+            "seed": 4,
+            "conference": "East"
+          },
+          "winsA": 2,
+          "winsB": 1,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "9",
+          "games": [
+            {
+              "id": "400839630",
+              "dateUTC": "2015-09-18T23:00Z",
+              "status": "final",
+              "statusDetail": "Final/2OT",
+              "homeId": "9",
+              "awayId": "16",
+              "homeScore": 83,
+              "awayScore": 86,
+              "winnerId": "16",
+              "gameNumber": 1
+            },
+            {
+              "id": "400839631",
+              "dateUTC": "2015-09-20T17:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "16",
+              "awayId": "9",
+              "homeScore": 68,
+              "awayScore": 86,
+              "winnerId": "9",
+              "gameNumber": 2
+            },
+            {
+              "id": "400839632",
+              "dateUTC": "2015-09-22T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "16",
+              "homeScore": 79,
+              "awayScore": 74,
+              "winnerId": "9",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "11-3",
+          "round": "CSF",
+          "conference": "West",
+          "teamA": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "3",
+            "abbrev": "TUL",
+            "name": "Tulsa Shock",
+            "shortName": "Shock",
+            "logo": null,
+            "seed": 3,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "11",
+          "games": [
+            {
+              "id": "400839118",
+              "dateUTC": "2015-09-18T02:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "11",
+              "awayId": "3",
+              "homeScore": 88,
+              "awayScore": 55,
+              "winnerId": "11",
+              "gameNumber": 1
+            },
+            {
+              "id": "400839119",
+              "dateUTC": "2015-09-20T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "3",
+              "awayId": "11",
+              "homeScore": 67,
+              "awayScore": 91,
+              "winnerId": "11",
+              "gameNumber": 2
+            }
+          ]
+        },
+        {
+          "key": "6-8",
+          "round": "CSF",
+          "conference": "West",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "6",
+            "abbrev": "LA",
+            "name": "Los Angeles Sparks",
+            "shortName": "Sparks",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+            "seed": 4,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 1,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "400838810",
+              "dateUTC": "2015-09-19T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "6",
+              "homeScore": 67,
+              "awayScore": 65,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "400838811",
+              "dateUTC": "2015-09-20T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "6",
+              "awayId": "8",
+              "homeScore": 81,
+              "awayScore": 71,
+              "winnerId": "6",
+              "gameNumber": 2
+            },
+            {
+              "id": "400838812",
+              "dateUTC": "2015-09-23T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "6",
+              "homeScore": 91,
+              "awayScore": 80,
+              "winnerId": "8",
+              "gameNumber": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CF",
+      "name": "Conference Finals",
+      "expected": 2,
+      "series": [
+        {
+          "key": "5-9",
+          "round": "CF",
+          "conference": "East",
+          "teamA": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 1,
+          "winsB": 2,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "5",
+          "games": [
+            {
+              "id": "400844305",
+              "dateUTC": "2015-09-23T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "5",
+              "homeScore": 84,
+              "awayScore": 67,
+              "winnerId": "9",
+              "gameNumber": 1
+            },
+            {
+              "id": "400844306",
+              "dateUTC": "2015-09-27T17:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "9",
+              "homeScore": 70,
+              "awayScore": 64,
+              "winnerId": "5",
+              "gameNumber": 2
+            },
+            {
+              "id": "400844307",
+              "dateUTC": "2015-09-29T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "5",
+              "homeScore": 51,
+              "awayScore": 66,
+              "winnerId": "5",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "11-8",
+          "round": "CF",
+          "conference": "West",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "400844348",
+              "dateUTC": "2015-09-25T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "11",
+              "homeScore": 67,
+              "awayScore": 60,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "400844349",
+              "dateUTC": "2015-09-27T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "11",
+              "awayId": "8",
+              "homeScore": 71,
+              "awayScore": 72,
+              "winnerId": "8",
+              "gameNumber": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "WNBA Finals",
+      "expected": 1,
+      "series": [
+        {
+          "key": "5-8",
+          "round": "F",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 3,
+          "winsB": 2,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "400847195",
+              "dateUTC": "2015-10-04T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "5",
+              "homeScore": 69,
+              "awayScore": 75,
+              "winnerId": "5",
+              "gameNumber": 1
+            },
+            {
+              "id": "400847196",
+              "dateUTC": "2015-10-07T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "5",
+              "homeScore": 77,
+              "awayScore": 71,
+              "winnerId": "8",
+              "gameNumber": 2
+            },
+            {
+              "id": "400847197",
+              "dateUTC": "2015-10-10T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "8",
+              "homeScore": 77,
+              "awayScore": 80,
+              "winnerId": "8",
+              "gameNumber": 3
+            },
+            {
+              "id": "400847198",
+              "dateUTC": "2015-10-12T00:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "8",
+              "homeScore": 75,
+              "awayScore": 69,
+              "winnerId": "5",
+              "gameNumber": 4
+            },
+            {
+              "id": "400847199",
+              "dateUTC": "2015-10-15T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "5",
+              "homeScore": 69,
+              "awayScore": 52,
+              "winnerId": "8",
+              "gameNumber": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2020",
+  "champion": {
+    "tricode": "SEA",
+    "city": "Seattle",
+    "name": "Storm",
+    "teamId": "14",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png"
+  },
+  "runnerUp": {
+    "tricode": "LV",
+    "city": "Las Vegas",
+    "name": "Aces",
+    "teamId": "17",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png"
+  },
+  "finalsScore": "3-0",
+  "finalsMVP": "Breanna Stewart",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.830Z"
+}

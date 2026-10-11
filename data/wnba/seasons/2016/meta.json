@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2016",
+  "champion": {
+    "tricode": "LA",
+    "city": "Los Angeles",
+    "name": "Sparks",
+    "teamId": "6",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png"
+  },
+  "runnerUp": {
+    "tricode": "MIN",
+    "city": "Minnesota",
+    "name": "Lynx",
+    "teamId": "8",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png"
+  },
+  "finalsScore": "3-2",
+  "finalsMVP": "Candace Parker",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.924Z"
+}

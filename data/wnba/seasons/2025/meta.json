@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2025",
+  "champion": {
+    "tricode": "LV",
+    "city": "Las Vegas",
+    "name": "Aces",
+    "teamId": "17",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png"
+  },
+  "runnerUp": {
+    "tricode": "PHX",
+    "city": "Phoenix",
+    "name": "Mercury",
+    "teamId": "11",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png"
+  },
+  "finalsScore": "4-0",
+  "finalsMVP": "A'ja Wilson",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.703Z"
+}

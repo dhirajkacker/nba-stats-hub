@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2015",
+  "champion": {
+    "tricode": "MIN",
+    "city": "Minnesota",
+    "name": "Lynx",
+    "teamId": "8",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png"
+  },
+  "runnerUp": {
+    "tricode": "IND",
+    "city": "Indiana",
+    "name": "Fever",
+    "teamId": "5",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png"
+  },
+  "finalsScore": "3-2",
+  "finalsMVP": "Sylvia Fowles",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.946Z"
+}

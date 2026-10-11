@@ -3,6 +3,7 @@
 // Usage:
 //   npm run freeze-season -- 2024-25
 //   npm run freeze-season -- 2024-25 --mvp "Shai Gilgeous-Alexander"
+//   npm run freeze-season -- --league wnba 2025      (see freeze-wnba-season.ts)
 //
 // Idempotent. Safe to run multiple times: rewrites the four files. Preserves
 // finalsMVP from a prior meta.json if --mvp isn't passed.
@@ -75,6 +76,13 @@ async function readExistingMeta(outDir: string): Promise<SeasonMeta | null> {
 }
 
 async function main() {
+  // WNBA seasons have their own freezer (single-year seasons, different data).
+  const leagueIdx = process.argv.indexOf('--league');
+  if (leagueIdx >= 0 && process.argv[leagueIdx + 1] === 'wnba') {
+    const { freezeWnba } = await import('./freeze-wnba-season');
+    await freezeWnba(process.argv.slice(2).filter((a) => /^\d{4}$/.test(a)));
+    return;
+  }
   const { season, mvp } = parseArgs(process.argv);
   const outDir = path.join(process.cwd(), 'data', 'seasons', season);
   await fs.mkdir(outDir, { recursive: true });

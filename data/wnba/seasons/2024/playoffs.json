@@ -1,0 +1,495 @@
+{
+  "season": "2024",
+  "format": "eight-team",
+  "rounds": [
+    {
+      "id": "R1",
+      "name": "First Round",
+      "expected": 4,
+      "series": [
+        {
+          "key": "20-9",
+          "round": "R1",
+          "teamA": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "20",
+            "abbrev": "ATL",
+            "name": "Atlanta Dream",
+            "shortName": "Dream",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+            "seed": 8,
+            "conference": "East"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "9",
+          "games": [
+            {
+              "id": "401721255",
+              "dateUTC": "2024-09-22T17:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "20",
+              "homeScore": 83,
+              "awayScore": 69,
+              "winnerId": "9",
+              "gameNumber": 1
+            },
+            {
+              "id": "401721258",
+              "dateUTC": "2024-09-24T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "20",
+              "homeScore": 91,
+              "awayScore": 82,
+              "winnerId": "9",
+              "gameNumber": 2
+            }
+          ]
+        },
+        {
+          "key": "18-5",
+          "round": "R1",
+          "teamA": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 6,
+            "conference": "East"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "18",
+          "games": [
+            {
+              "id": "401721253",
+              "dateUTC": "2024-09-22T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "5",
+              "homeScore": 93,
+              "awayScore": 69,
+              "winnerId": "18",
+              "gameNumber": 1
+            },
+            {
+              "id": "401721254",
+              "dateUTC": "2024-09-25T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "5",
+              "homeScore": 87,
+              "awayScore": 81,
+              "winnerId": "18",
+              "gameNumber": 2
+            }
+          ]
+        },
+        {
+          "key": "11-8",
+          "round": "R1",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 7,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "401721261",
+              "dateUTC": "2024-09-22T21:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "11",
+              "homeScore": 102,
+              "awayScore": 95,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "401721260",
+              "dateUTC": "2024-09-26T01:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "11",
+              "homeScore": 101,
+              "awayScore": 88,
+              "winnerId": "8",
+              "gameNumber": 2
+            }
+          ]
+        },
+        {
+          "key": "14-17",
+          "round": "R1",
+          "teamA": {
+            "id": "17",
+            "abbrev": "LV",
+            "name": "Las Vegas Aces",
+            "shortName": "Aces",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+            "seed": 4,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "14",
+            "abbrev": "SEA",
+            "name": "Seattle Storm",
+            "shortName": "Storm",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+            "seed": 5,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "17",
+          "games": [
+            {
+              "id": "401721256",
+              "dateUTC": "2024-09-23T02:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "14",
+              "homeScore": 78,
+              "awayScore": 67,
+              "winnerId": "17",
+              "gameNumber": 1
+            },
+            {
+              "id": "401721262",
+              "dateUTC": "2024-09-25T01:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "14",
+              "homeScore": 83,
+              "awayScore": 76,
+              "winnerId": "17",
+              "gameNumber": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SF",
+      "name": "Semifinals",
+      "expected": 2,
+      "series": [
+        {
+          "key": "17-9",
+          "round": "SF",
+          "teamA": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "17",
+            "abbrev": "LV",
+            "name": "Las Vegas Aces",
+            "shortName": "Aces",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+            "seed": 4,
+            "conference": "West"
+          },
+          "winsA": 3,
+          "winsB": 1,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "9",
+          "games": [
+            {
+              "id": "401724938",
+              "dateUTC": "2024-09-29T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "17",
+              "homeScore": 87,
+              "awayScore": 77,
+              "winnerId": "9",
+              "gameNumber": 1
+            },
+            {
+              "id": "401724939",
+              "dateUTC": "2024-10-01T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "17",
+              "homeScore": 88,
+              "awayScore": 84,
+              "winnerId": "9",
+              "gameNumber": 2
+            },
+            {
+              "id": "401724940",
+              "dateUTC": "2024-10-05T01:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "9",
+              "homeScore": 95,
+              "awayScore": 81,
+              "winnerId": "17",
+              "gameNumber": 3
+            },
+            {
+              "id": "401724941",
+              "dateUTC": "2024-10-06T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "9",
+              "homeScore": 62,
+              "awayScore": 76,
+              "winnerId": "9",
+              "gameNumber": 4
+            }
+          ]
+        },
+        {
+          "key": "18-8",
+          "round": "SF",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 3,
+          "winsB": 2,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "401725075",
+              "dateUTC": "2024-09-30T00:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "18",
+              "homeScore": 70,
+              "awayScore": 73,
+              "winnerId": "18",
+              "gameNumber": 1
+            },
+            {
+              "id": "401725076",
+              "dateUTC": "2024-10-02T01:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "18",
+              "homeScore": 77,
+              "awayScore": 70,
+              "winnerId": "8",
+              "gameNumber": 2
+            },
+            {
+              "id": "401725077",
+              "dateUTC": "2024-10-04T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "8",
+              "homeScore": 81,
+              "awayScore": 90,
+              "winnerId": "8",
+              "gameNumber": 3
+            },
+            {
+              "id": "401725078",
+              "dateUTC": "2024-10-06T21:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "8",
+              "homeScore": 92,
+              "awayScore": 82,
+              "winnerId": "18",
+              "gameNumber": 4
+            },
+            {
+              "id": "401725079",
+              "dateUTC": "2024-10-09T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "18",
+              "homeScore": 88,
+              "awayScore": 77,
+              "winnerId": "8",
+              "gameNumber": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "WNBA Finals",
+      "expected": 1,
+      "series": [
+        {
+          "key": "8-9",
+          "round": "F",
+          "teamA": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "winsA": 3,
+          "winsB": 2,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "9",
+          "games": [
+            {
+              "id": "401726988",
+              "dateUTC": "2024-10-11T00:00Z",
+              "status": "final",
+              "statusDetail": "Final/OT",
+              "homeId": "9",
+              "awayId": "8",
+              "homeScore": 93,
+              "awayScore": 95,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "401726989",
+              "dateUTC": "2024-10-13T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "8",
+              "homeScore": 80,
+              "awayScore": 66,
+              "winnerId": "9",
+              "gameNumber": 2
+            },
+            {
+              "id": "401726990",
+              "dateUTC": "2024-10-17T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "9",
+              "homeScore": 77,
+              "awayScore": 80,
+              "winnerId": "9",
+              "gameNumber": 3
+            },
+            {
+              "id": "401726991",
+              "dateUTC": "2024-10-19T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "9",
+              "homeScore": 82,
+              "awayScore": 80,
+              "winnerId": "8",
+              "gameNumber": 4
+            },
+            {
+              "id": "401726992",
+              "dateUTC": "2024-10-21T00:00Z",
+              "status": "final",
+              "statusDetail": "Final/OT",
+              "homeId": "9",
+              "awayId": "8",
+              "homeScore": 67,
+              "awayScore": 62,
+              "winnerId": "9",
+              "gameNumber": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

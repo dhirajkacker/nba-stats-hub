@@ -11,4 +11,7 @@ export const WNBA_LIVE_SEASON: string | null = '2026';
 export const WNBA_LANDING_SEASON = '2026';
 
 // Newest first.
-export const WNBA_KNOWN_SEASONS: readonly string[] = ['2026'];
+export const WNBA_KNOWN_SEASONS: readonly string[] = [
+  '2026', '2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018',
+  '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010',
+];

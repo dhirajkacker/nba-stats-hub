@@ -1,0 +1,430 @@
+{
+  "season": "2020",
+  "format": "single-elim",
+  "rounds": [
+    {
+      "id": "R1",
+      "name": "First Round",
+      "expected": 2,
+      "series": [
+        {
+          "key": "18-19",
+          "round": "R1",
+          "teamA": {
+            "id": "19",
+            "abbrev": "CHI",
+            "name": "Chicago Sky",
+            "shortName": "Sky",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
+            "seed": 6,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 7,
+            "conference": "East"
+          },
+          "winsA": 0,
+          "winsB": 1,
+          "bestOf": 1,
+          "completed": true,
+          "winnerId": "18",
+          "games": [
+            {
+              "id": "401244169",
+              "dateUTC": "2020-09-15T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "19",
+              "awayId": "18",
+              "homeScore": 81,
+              "awayScore": 94,
+              "winnerId": "18",
+              "gameNumber": null
+            }
+          ]
+        },
+        {
+          "key": "11-16",
+          "round": "R1",
+          "teamA": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 5,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "16",
+            "abbrev": "WSH",
+            "name": "Washington Mystics",
+            "shortName": "Mystics",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
+            "seed": 8,
+            "conference": "East"
+          },
+          "winsA": 1,
+          "winsB": 0,
+          "bestOf": 1,
+          "completed": true,
+          "winnerId": "11",
+          "games": [
+            {
+              "id": "401244170",
+              "dateUTC": "2020-09-16T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "11",
+              "awayId": "16",
+              "homeScore": 85,
+              "awayScore": 84,
+              "winnerId": "11",
+              "gameNumber": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "Second Round",
+      "expected": 2,
+      "series": [
+        {
+          "key": "11-8",
+          "round": "R2",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 4,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 5,
+            "conference": "West"
+          },
+          "winsA": 1,
+          "winsB": 0,
+          "bestOf": 1,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "401244171",
+              "dateUTC": "2020-09-17T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "11",
+              "homeScore": 80,
+              "awayScore": 79,
+              "winnerId": "8",
+              "gameNumber": null
+            }
+          ]
+        },
+        {
+          "key": "18-6",
+          "round": "R2",
+          "teamA": {
+            "id": "6",
+            "abbrev": "LA",
+            "name": "Los Angeles Sparks",
+            "shortName": "Sparks",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+            "seed": 3,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 7,
+            "conference": "East"
+          },
+          "winsA": 0,
+          "winsB": 1,
+          "bestOf": 1,
+          "completed": true,
+          "winnerId": "18",
+          "games": [
+            {
+              "id": "401244172",
+              "dateUTC": "2020-09-18T01:20Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "6",
+              "awayId": "18",
+              "homeScore": 59,
+              "awayScore": 73,
+              "winnerId": "18",
+              "gameNumber": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SF",
+      "name": "Semifinals",
+      "expected": 2,
+      "series": [
+        {
+          "key": "17-18",
+          "round": "SF",
+          "teamA": {
+            "id": "17",
+            "abbrev": "LV",
+            "name": "Las Vegas Aces",
+            "shortName": "Aces",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 7,
+            "conference": "East"
+          },
+          "winsA": 3,
+          "winsB": 2,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "17",
+          "games": [
+            {
+              "id": "401244173",
+              "dateUTC": "2020-09-20T17:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "18",
+              "homeScore": 62,
+              "awayScore": 87,
+              "winnerId": "18",
+              "gameNumber": 1
+            },
+            {
+              "id": "401244176",
+              "dateUTC": "2020-09-22T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "18",
+              "homeScore": 83,
+              "awayScore": 75,
+              "winnerId": "17",
+              "gameNumber": 2
+            },
+            {
+              "id": "401244177",
+              "dateUTC": "2020-09-25T01:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "17",
+              "homeScore": 77,
+              "awayScore": 68,
+              "winnerId": "18",
+              "gameNumber": 3
+            },
+            {
+              "id": "401244179",
+              "dateUTC": "2020-09-27T17:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "17",
+              "homeScore": 75,
+              "awayScore": 84,
+              "winnerId": "17",
+              "gameNumber": 4
+            },
+            {
+              "id": "401248413",
+              "dateUTC": "2020-09-29T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "18",
+              "homeScore": 66,
+              "awayScore": 63,
+              "winnerId": "17",
+              "gameNumber": 5
+            }
+          ]
+        },
+        {
+          "key": "14-8",
+          "round": "SF",
+          "teamA": {
+            "id": "14",
+            "abbrev": "SEA",
+            "name": "Seattle Storm",
+            "shortName": "Storm",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 4,
+            "conference": "West"
+          },
+          "winsA": 3,
+          "winsB": 0,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "14",
+          "games": [
+            {
+              "id": "401244174",
+              "dateUTC": "2020-09-20T19:00Z",
+              "status": "scheduled",
+              "statusDetail": "Postponed",
+              "homeId": "14",
+              "awayId": "8",
+              "homeScore": null,
+              "awayScore": null,
+              "winnerId": null,
+              "gameNumber": 1
+            },
+            {
+              "id": "401244175",
+              "dateUTC": "2020-09-23T01:20Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "14",
+              "awayId": "8",
+              "homeScore": 88,
+              "awayScore": 86,
+              "winnerId": "14",
+              "gameNumber": 1
+            },
+            {
+              "id": "401244178",
+              "dateUTC": "2020-09-24T23:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "14",
+              "awayId": "8",
+              "homeScore": 89,
+              "awayScore": 79,
+              "winnerId": "14",
+              "gameNumber": 2
+            },
+            {
+              "id": "401244180",
+              "dateUTC": "2020-09-27T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "14",
+              "homeScore": 71,
+              "awayScore": 92,
+              "winnerId": "14",
+              "gameNumber": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "WNBA Finals",
+      "expected": 1,
+      "series": [
+        {
+          "key": "14-17",
+          "round": "F",
+          "teamA": {
+            "id": "17",
+            "abbrev": "LV",
+            "name": "Las Vegas Aces",
+            "shortName": "Aces",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "14",
+            "abbrev": "SEA",
+            "name": "Seattle Storm",
+            "shortName": "Storm",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "winsA": 0,
+          "winsB": 3,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "14",
+          "games": [
+            {
+              "id": "401244183",
+              "dateUTC": "2020-10-02T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "14",
+              "homeScore": 80,
+              "awayScore": 93,
+              "winnerId": "14",
+              "gameNumber": 1
+            },
+            {
+              "id": "401244184",
+              "dateUTC": "2020-10-04T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "14",
+              "homeScore": 91,
+              "awayScore": 104,
+              "winnerId": "14",
+              "gameNumber": 2
+            },
+            {
+              "id": "401244185",
+              "dateUTC": "2020-10-06T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "14",
+              "awayId": "17",
+              "homeScore": 92,
+              "awayScore": 59,
+              "winnerId": "14",
+              "gameNumber": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2023",
+  "champion": {
+    "tricode": "LV",
+    "city": "Las Vegas",
+    "name": "Aces",
+    "teamId": "17",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png"
+  },
+  "runnerUp": {
+    "tricode": "NY",
+    "city": "New York",
+    "name": "Liberty",
+    "teamId": "9",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png"
+  },
+  "finalsScore": "3-1",
+  "finalsMVP": "A'ja Wilson",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.760Z"
+}

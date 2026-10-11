@@ -1,0 +1,601 @@
+[
+  {
+    "id": "585",
+    "displayName": "Diana Taurasi",
+    "team": {
+      "abbreviation": "PHO",
+      "id": "11",
+      "logo": "https://a.espncdn.com/guid/514d18a9-00a8-d52b-dda2-37d707f19bd0/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "3",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/585.png",
+    "stats": {
+      "gamesPlayed": 31,
+      "ppg": 22.64516,
+      "rpg": 4.2580647,
+      "apg": 4.709677,
+      "fgPct": 42.656,
+      "fg3Pct": 37.38317787647247,
+      "ftPct": 91.244,
+      "mpg": 32.19355
+    }
+  },
+  {
+    "id": "685",
+    "displayName": "Cappie Pondexter",
+    "team": {
+      "abbreviation": "NYL",
+      "id": "9",
+      "logo": "https://a.espncdn.com/guid/ad8ccde6-59b3-fbe6-2faf-a835fa224ca1/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "25",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 21.441177,
+      "rpg": 4.5,
+      "apg": 4.852941,
+      "fgPct": 48.289,
+      "fg3Pct": 42.953020334243774,
+      "ftPct": 89.205,
+      "mpg": 34.32353
+    }
+  },
+  {
+    "id": "872",
+    "displayName": "Angel McCoughtry",
+    "team": {
+      "abbreviation": "ATL",
+      "id": "20",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "35",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/872.png",
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 21.058823,
+      "rpg": 4.9117646,
+      "apg": 3.0882354,
+      "fgPct": 40.796,
+      "fg3Pct": 26.1904776096344,
+      "ftPct": 80.252,
+      "mpg": 30.705883
+    }
+  },
+  {
+    "id": "222",
+    "displayName": "Lauren Jackson",
+    "team": {
+      "abbreviation": "SEA",
+      "id": "14",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "15",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 32,
+      "ppg": 20.5,
+      "rpg": 8.25,
+      "apg": 1.1875,
+      "fgPct": 46.218,
+      "fg3Pct": 34.61538553237915,
+      "ftPct": 91.011,
+      "mpg": 31.03125
+    }
+  },
+  {
+    "id": "125",
+    "displayName": "Tamika Catchings",
+    "team": {
+      "abbreviation": "IND",
+      "id": "5",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "24",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 18.17647,
+      "rpg": 7.117647,
+      "apg": 3.9705882,
+      "fgPct": 48.364,
+      "fg3Pct": 44.76190507411957,
+      "ftPct": 84.865,
+      "mpg": 31.411764
+    }
+  },
+  {
+    "id": "766",
+    "displayName": "Sylvia Fowles",
+    "team": {
+      "abbreviation": "CHI",
+      "id": "19",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png"
+    },
+    "position": {
+      "abbreviation": "C"
+    },
+    "jersey": "34",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/766.png",
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 17.82353,
+      "rpg": 9.941176,
+      "apg": 1.5,
+      "fgPct": 58.163,
+      "fg3Pct": 100,
+      "ftPct": 76.02,
+      "mpg": 31.970589
+    }
+  },
+  {
+    "id": "124",
+    "displayName": "Iziane Castro",
+    "team": {
+      "abbreviation": "ATL",
+      "id": "20",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "8",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 16.911764,
+      "rpg": 1.7352941,
+      "apg": 2.6176472,
+      "fgPct": 44.355,
+      "fg3Pct": 29.487180709838867,
+      "ftPct": 65.926,
+      "mpg": 28.941177
+    }
+  },
+  {
+    "id": "695",
+    "displayName": "Seimone Augustus",
+    "team": {
+      "abbreviation": "MIN",
+      "id": "8",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "33",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/695.png",
+    "stats": {
+      "gamesPlayed": 25,
+      "ppg": 16.88,
+      "rpg": 3.24,
+      "apg": 1.88,
+      "fgPct": 42.927,
+      "fg3Pct": 33.6448609828949,
+      "ftPct": 66.667,
+      "mpg": 33.2
+    }
+  },
+  {
+    "id": "394",
+    "displayName": "Tina Thompson",
+    "team": {
+      "abbreviation": "LOS",
+      "id": "6",
+      "logo": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "7",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 33,
+      "ppg": 16.60606,
+      "rpg": 6.242424,
+      "apg": 1.8181819,
+      "fgPct": 44.595,
+      "fg3Pct": 35.18518507480621,
+      "ftPct": 87.156,
+      "mpg": 33.18182
+    }
+  },
+  {
+    "id": "805",
+    "displayName": "Crystal Langhorne",
+    "team": {
+      "abbreviation": "WAS",
+      "id": "16",
+      "logo": "https://a.espncdn.com/guid/39c302ad-d5df-e0d0-33e8-1cffebc5bc75/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "1",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 16.32353,
+      "rpg": 9.705882,
+      "apg": 1.1470588,
+      "fgPct": 58.933,
+      "fg3Pct": 16.66666716337204,
+      "ftPct": 77.241,
+      "mpg": 34.058823
+    }
+  },
+  {
+    "id": "388",
+    "displayName": "Penny Taylor",
+    "team": {
+      "abbreviation": "PHO",
+      "id": "11",
+      "logo": "https://a.espncdn.com/guid/514d18a9-00a8-d52b-dda2-37d707f19bd0/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "13",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 32,
+      "ppg": 15.90625,
+      "rpg": 4.40625,
+      "apg": 5.03125,
+      "fgPct": 50.882,
+      "fg3Pct": 44.23076808452606,
+      "ftPct": 89.313,
+      "mpg": 29.96875
+    }
+  },
+  {
+    "id": "689",
+    "displayName": "Candice Dupree",
+    "team": {
+      "abbreviation": "PHO",
+      "id": "11",
+      "logo": "https://a.espncdn.com/guid/514d18a9-00a8-d52b-dda2-37d707f19bd0/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "24",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/689.png",
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 15.735294,
+      "rpg": 7.5588236,
+      "apg": 1.3235294,
+      "fgPct": 66.379,
+      "fg3Pct": 0,
+      "ftPct": 93.59,
+      "mpg": 29.82353
+    }
+  },
+  {
+    "id": "918",
+    "displayName": "Tina Charles",
+    "team": {
+      "abbreviation": "CON",
+      "id": "18",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png"
+    },
+    "position": {
+      "abbreviation": "C"
+    },
+    "jersey": "31",
+    "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/918.png",
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 15.529411,
+      "rpg": 11.705882,
+      "apg": 1.5,
+      "fgPct": 48.7,
+      "fg3Pct": 0,
+      "ftPct": 76.316,
+      "mpg": 31
+    }
+  },
+  {
+    "id": "9",
+    "displayName": "DeLisha Milton-Jones",
+    "team": {
+      "abbreviation": "LOS",
+      "id": "6",
+      "logo": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "1",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 15.3529415,
+      "rpg": 4.7352943,
+      "apg": 2.5294118,
+      "fgPct": 46.959,
+      "fg3Pct": 31.707316637039185,
+      "ftPct": 86.614,
+      "mpg": 32.235294
+    }
+  },
+  {
+    "id": "680",
+    "displayName": "Sophia Young-Malcolm",
+    "team": {
+      "abbreviation": "SAS",
+      "id": "17",
+      "logo": null
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "33",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 15.323529,
+      "rpg": 5.2352943,
+      "apg": 2.3823528,
+      "fgPct": 50.116,
+      "fg3Pct": 26.31579041481018,
+      "ftPct": 65.833,
+      "mpg": 31.82353
+    }
+  },
+  {
+    "id": "14",
+    "displayName": "Becky Hammon",
+    "team": {
+      "abbreviation": "SAS",
+      "id": "17",
+      "logo": null
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "25",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 32,
+      "ppg": 15.125,
+      "rpg": 2.90625,
+      "apg": 5.375,
+      "fgPct": 44.167,
+      "fg3Pct": 38.98304998874664,
+      "ftPct": 96.04,
+      "mpg": 33.5625
+    }
+  },
+  {
+    "id": "651",
+    "displayName": "Monique Currie",
+    "team": {
+      "abbreviation": "WAS",
+      "id": "16",
+      "logo": "https://a.espncdn.com/guid/39c302ad-d5df-e0d0-33e8-1cffebc5bc75/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "25",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 14.088235,
+      "rpg": 4.7941175,
+      "apg": 1.617647,
+      "fgPct": 43.582,
+      "fg3Pct": 44.57831382751465,
+      "ftPct": 87.719,
+      "mpg": 26.205883
+    }
+  },
+  {
+    "id": "122",
+    "displayName": "Swin Cash",
+    "team": {
+      "abbreviation": "SEA",
+      "id": "14",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "32",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 13.823529,
+      "rpg": 5.970588,
+      "apg": 2,
+      "fgPct": 43.514,
+      "fg3Pct": 40.697672963142395,
+      "ftPct": 80.714,
+      "mpg": 30.764706
+    }
+  },
+  {
+    "id": "156",
+    "displayName": "Katie Douglas",
+    "team": {
+      "abbreviation": "IND",
+      "id": "5",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "23",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 13.735294,
+      "rpg": 3.4411764,
+      "apg": 3.264706,
+      "fgPct": 44.855,
+      "fg3Pct": 39.080458879470825,
+      "ftPct": 83.099,
+      "mpg": 29.82353
+    }
+  },
+  {
+    "id": "213",
+    "displayName": "Chamique Holdsclaw",
+    "team": {
+      "abbreviation": "SAS",
+      "id": "17",
+      "logo": null
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 29,
+      "ppg": 13.551724,
+      "rpg": 5.3448277,
+      "apg": 2,
+      "fgPct": 49.39,
+      "fg3Pct": 35.48386991024017,
+      "ftPct": 80.556,
+      "mpg": 28.965517
+    }
+  },
+  {
+    "id": "865",
+    "displayName": "Renee Montgomery",
+    "team": {
+      "abbreviation": "CON",
+      "id": "18",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "21",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 13.323529,
+      "rpg": 2.1764705,
+      "apg": 4.0588236,
+      "fgPct": 40.102,
+      "fg3Pct": 34.92063581943512,
+      "ftPct": 85.542,
+      "mpg": 27.647058
+    }
+  },
+  {
+    "id": "609",
+    "displayName": "Sancho Lyttle",
+    "team": {
+      "abbreviation": "ATL",
+      "id": "20",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "31",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 32,
+      "ppg": 12.84375,
+      "rpg": 9.875,
+      "apg": 2.1875,
+      "fgPct": 48.358,
+      "fg3Pct": 0,
+      "ftPct": 72.5,
+      "mpg": 29.0625
+    }
+  },
+  {
+    "id": "545",
+    "displayName": "Lindsay Whalen",
+    "team": {
+      "abbreviation": "MIN",
+      "id": "8",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "13",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 33,
+      "ppg": 12.606061,
+      "rpg": 3.969697,
+      "apg": 5.5757575,
+      "fgPct": 40.979,
+      "fg3Pct": 23.076923191547394,
+      "ftPct": 89.865,
+      "mpg": 33.60606
+    }
+  },
+  {
+    "id": "2",
+    "displayName": "Erika de Souza",
+    "team": {
+      "abbreviation": "ATL",
+      "id": "20",
+      "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+    },
+    "position": {
+      "abbreviation": "F"
+    },
+    "jersey": "14",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 12.382353,
+      "rpg": 8.323529,
+      "apg": 0.88235295,
+      "fgPct": 57.057,
+      "fg3Pct": 0,
+      "ftPct": 54.667,
+      "mpg": 25.647058
+    }
+  },
+  {
+    "id": "2069374",
+    "displayName": "Lindsey Harding",
+    "team": {
+      "abbreviation": "WAS",
+      "id": "16",
+      "logo": "https://a.espncdn.com/guid/39c302ad-d5df-e0d0-33e8-1cffebc5bc75/logos/default.png"
+    },
+    "position": {
+      "abbreviation": "G"
+    },
+    "jersey": "10",
+    "headshot": null,
+    "stats": {
+      "gamesPlayed": 34,
+      "ppg": 12.088235,
+      "rpg": 3.0294118,
+      "apg": 4.029412,
+      "fgPct": 44.476,
+      "fg3Pct": 28.846153616905212,
+      "ftPct": 76.636,
+      "mpg": 33.235294
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "league": "wnba",
+  "season": "2019",
+  "champion": {
+    "tricode": "WSH",
+    "city": "Washington",
+    "name": "Mystics",
+    "teamId": "16",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png"
+  },
+  "runnerUp": {
+    "tricode": "CON",
+    "city": "Connecticut",
+    "name": "Sun",
+    "teamId": "18",
+    "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png"
+  },
+  "finalsScore": "3-2",
+  "finalsMVP": "Emma Meesseman",
+  "frozen": true,
+  "frozenAt": "2026-10-11T01:17:18.854Z"
+}

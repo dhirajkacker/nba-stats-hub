@@ -160,7 +160,9 @@ export async function buildWnbaPlayoffs(
       abbrev: row?.teamTricode ?? c.team.abbreviation,
       name: row ? `${row.teamCity} ${row.teamName}` : c.team.displayName,
       shortName: row?.teamName ?? c.team.shortDisplayName ?? c.team.name,
-      logo: row?.logo ?? c.team.logo ?? null,
+      // A null season logo is deliberate (relocated franchise; see standings),
+      // so only fall back to the game's logo for teams missing from standings.
+      logo: row ? row.logo ?? null : c.team.logo ?? null,
       seed: row?.playoffSeed ?? null,
       conference: row?.conference,
     };

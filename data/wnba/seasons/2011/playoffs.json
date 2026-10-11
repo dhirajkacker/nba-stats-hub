@@ -1,0 +1,465 @@
+{
+  "season": "2011",
+  "format": "conference",
+  "rounds": [
+    {
+      "id": "CSF",
+      "name": "Conference Semifinals",
+      "expected": 4,
+      "series": [
+        {
+          "key": "5-9",
+          "round": "CSF",
+          "conference": "East",
+          "teamA": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "9",
+            "abbrev": "NY",
+            "name": "New York Liberty",
+            "shortName": "Liberty",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+            "seed": 4,
+            "conference": "East"
+          },
+          "winsA": 2,
+          "winsB": 1,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "5",
+          "games": [
+            {
+              "id": "310915005",
+              "dateUTC": "2011-09-16T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "9",
+              "homeScore": 74,
+              "awayScore": 72,
+              "winnerId": "5",
+              "gameNumber": 1
+            },
+            {
+              "id": "310917009",
+              "dateUTC": "2011-09-17T20:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "9",
+              "awayId": "5",
+              "homeScore": 87,
+              "awayScore": 72,
+              "winnerId": "9",
+              "gameNumber": 2
+            },
+            {
+              "id": "310919005",
+              "dateUTC": "2011-09-20T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "9",
+              "homeScore": 72,
+              "awayScore": 62,
+              "winnerId": "5",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "18-20",
+          "round": "CSF",
+          "conference": "East",
+          "teamA": {
+            "id": "18",
+            "abbrev": "CON",
+            "name": "Connecticut Sun",
+            "shortName": "Sun",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+            "seed": 2,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "20",
+            "abbrev": "ATL",
+            "name": "Atlanta Dream",
+            "shortName": "Dream",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 0,
+          "winsB": 2,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "20",
+          "games": [
+            {
+              "id": "310916018",
+              "dateUTC": "2011-09-16T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "18",
+              "awayId": "20",
+              "homeScore": 84,
+              "awayScore": 89,
+              "winnerId": "20",
+              "gameNumber": 1
+            },
+            {
+              "id": "310918020",
+              "dateUTC": "2011-09-18T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "20",
+              "awayId": "18",
+              "homeScore": 69,
+              "awayScore": 64,
+              "winnerId": "20",
+              "gameNumber": 2
+            }
+          ]
+        },
+        {
+          "key": "11-14",
+          "round": "CSF",
+          "conference": "West",
+          "teamA": {
+            "id": "14",
+            "abbrev": "SEA",
+            "name": "Seattle Storm",
+            "shortName": "Storm",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+            "seed": 2,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 3,
+            "conference": "West"
+          },
+          "winsA": 1,
+          "winsB": 2,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "11",
+          "games": [
+            {
+              "id": "310915014",
+              "dateUTC": "2011-09-16T02:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "14",
+              "awayId": "11",
+              "homeScore": 80,
+              "awayScore": 61,
+              "winnerId": "14",
+              "gameNumber": 1
+            },
+            {
+              "id": "310917011",
+              "dateUTC": "2011-09-18T02:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "11",
+              "awayId": "14",
+              "homeScore": 92,
+              "awayScore": 83,
+              "winnerId": "11",
+              "gameNumber": 2
+            },
+            {
+              "id": "310919014",
+              "dateUTC": "2011-09-20T02:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "14",
+              "awayId": "11",
+              "homeScore": 75,
+              "awayScore": 77,
+              "winnerId": "11",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "17-8",
+          "round": "CSF",
+          "conference": "West",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "17",
+            "abbrev": "SA",
+            "name": "San Antonio Silver Stars",
+            "shortName": "Silver Stars",
+            "logo": null,
+            "seed": 4,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 1,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "310916008",
+              "dateUTC": "2011-09-17T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "17",
+              "homeScore": 66,
+              "awayScore": 65,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "310918017",
+              "dateUTC": "2011-09-18T21:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "17",
+              "awayId": "8",
+              "homeScore": 84,
+              "awayScore": 75,
+              "winnerId": "17",
+              "gameNumber": 2
+            },
+            {
+              "id": "310920008",
+              "dateUTC": "2011-09-21T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "17",
+              "homeScore": 85,
+              "awayScore": 67,
+              "winnerId": "8",
+              "gameNumber": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CF",
+      "name": "Conference Finals",
+      "expected": 2,
+      "series": [
+        {
+          "key": "20-5",
+          "round": "CF",
+          "conference": "East",
+          "teamA": {
+            "id": "5",
+            "abbrev": "IND",
+            "name": "Indiana Fever",
+            "shortName": "Fever",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+            "seed": 1,
+            "conference": "East"
+          },
+          "teamB": {
+            "id": "20",
+            "abbrev": "ATL",
+            "name": "Atlanta Dream",
+            "shortName": "Dream",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 1,
+          "winsB": 2,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "20",
+          "games": [
+            {
+              "id": "310922005",
+              "dateUTC": "2011-09-22T23:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "20",
+              "homeScore": 82,
+              "awayScore": 74,
+              "winnerId": "5",
+              "gameNumber": 1
+            },
+            {
+              "id": "310925020",
+              "dateUTC": "2011-09-25T19:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "20",
+              "awayId": "5",
+              "homeScore": 94,
+              "awayScore": 77,
+              "winnerId": "20",
+              "gameNumber": 2
+            },
+            {
+              "id": "310927005",
+              "dateUTC": "2011-09-28T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "5",
+              "awayId": "20",
+              "homeScore": 67,
+              "awayScore": 83,
+              "winnerId": "20",
+              "gameNumber": 3
+            }
+          ]
+        },
+        {
+          "key": "11-8",
+          "round": "CF",
+          "conference": "West",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "11",
+            "abbrev": "PHX",
+            "name": "Phoenix Mercury",
+            "shortName": "Mercury",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+            "seed": 3,
+            "conference": "West"
+          },
+          "winsA": 2,
+          "winsB": 0,
+          "bestOf": 3,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "310922008",
+              "dateUTC": "2011-09-23T01:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "11",
+              "homeScore": 95,
+              "awayScore": 67,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "310925011",
+              "dateUTC": "2011-09-25T21:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "11",
+              "awayId": "8",
+              "homeScore": 86,
+              "awayScore": 103,
+              "winnerId": "8",
+              "gameNumber": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "WNBA Finals",
+      "expected": 1,
+      "series": [
+        {
+          "key": "20-8",
+          "round": "F",
+          "teamA": {
+            "id": "8",
+            "abbrev": "MIN",
+            "name": "Minnesota Lynx",
+            "shortName": "Lynx",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+            "seed": 1,
+            "conference": "West"
+          },
+          "teamB": {
+            "id": "20",
+            "abbrev": "ATL",
+            "name": "Atlanta Dream",
+            "shortName": "Dream",
+            "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+            "seed": 3,
+            "conference": "East"
+          },
+          "winsA": 3,
+          "winsB": 0,
+          "bestOf": 5,
+          "completed": true,
+          "winnerId": "8",
+          "games": [
+            {
+              "id": "311002008",
+              "dateUTC": "2011-10-03T00:30Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "20",
+              "homeScore": 88,
+              "awayScore": 74,
+              "winnerId": "8",
+              "gameNumber": 1
+            },
+            {
+              "id": "311005008",
+              "dateUTC": "2011-10-06T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "8",
+              "awayId": "20",
+              "homeScore": 101,
+              "awayScore": 95,
+              "winnerId": "8",
+              "gameNumber": 2
+            },
+            {
+              "id": "311007020",
+              "dateUTC": "2011-10-08T00:00Z",
+              "status": "final",
+              "statusDetail": "Final",
+              "homeId": "20",
+              "awayId": "8",
+              "homeScore": 67,
+              "awayScore": 73,
+              "winnerId": "8",
+              "gameNumber": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

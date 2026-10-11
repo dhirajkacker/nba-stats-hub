@@ -10,7 +10,7 @@
 // current season. Callers validate with team counts and win/loss totals.
 
 import type { Standing, Standings } from '../types';
-import { espnJson, WNBA_STANDINGS_V2 } from './espn';
+import { espnJson, WNBA, WNBA_STANDINGS_V2 } from './espn';
 import { wnbaSeasonFacts } from './seasons';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -63,6 +63,15 @@ export async function fetchWnbaStandings(season: string, revalidate = 600): Prom
 
   const seedOverrides = wnbaSeasonFacts(season)?.seedOverrides;
 
+  // ESPN gives a relocated franchise's old seasons the current team's logo
+  // (2010 Tulsa Shock shows the Dallas Wings logo, San Antonio shows the Las
+  // Vegas Aces). When the season's team name differs from the franchise's
+  // current name, drop the logo so pages show an initials badge instead.
+  const current = await espnJson(`${WNBA.site}/teams`, 86400);
+  const currentName = new Map<string, string>(
+    (current?.sports?.[0]?.leagues?.[0]?.teams ?? []).map((t: Entry) => [String(t.team.id), t.team.displayName]),
+  );
+
   const rows: Standing[] = leagueEntries.map((e) => {
     const team = e.team;
     const wins = num(e, 'wins');
@@ -88,7 +97,7 @@ export async function fetchWnbaStandings(season: string, revalidate = 600): Prom
       homeWins, homeLosses, awayWins, awayLosses,
       confWins, confLosses, lastTenWins, lastTenLosses,
       streak,
-      logo: team.logos?.[0]?.href ?? null,
+      logo: currentName.get(String(team.id)) === team.displayName ? team.logos?.[0]?.href ?? null : null,
       playoffSeed: seed > 0 ? seed : null,
       leagueRank: 0,
       ...(clincher && clincher !== '-' ? { clincher } : {}),
