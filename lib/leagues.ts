@@ -137,3 +137,24 @@ export function espnUrls(league: LeagueId) {
     core: `${ESPN_CORE}/${slug}`,
   };
 }
+
+/** Which league a site path belongs to. */
+export function leagueFromPath(pathname: string): LeagueId {
+  return pathname === '/wnba' || pathname.startsWith('/wnba/') ? 'wnba' : 'nba';
+}
+
+/**
+ * Where the league switch should send someone viewing `pathname`. Section
+ * pages (standings, players, teams, history) map to the same section of the
+ * other league's landing season. Team, player and game pages map to the other
+ * league's home, because ids and seasons don't carry across leagues.
+ */
+export function switchLeagueHref(pathname: string, target: LeagueId): string {
+  const from = leagueFromPath(pathname);
+  const rest = from === 'wnba' ? pathname.slice('/wnba'.length) || '/' : pathname;
+  const landing = LEAGUES[target].landingSeason;
+  if (rest === '/history') return leagueHref(target, '/history');
+  const section = rest.match(/^\/seasons\/[^/]+\/(standings|players|teams)\/?$/)?.[1];
+  if (section) return seasonPath(target, landing, `/${section}`);
+  return seasonPath(target, landing);
+}

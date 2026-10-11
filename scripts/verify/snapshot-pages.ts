@@ -72,7 +72,10 @@ function parseHtml(html: string): Snap {
     .map((a) => `${a.name || a.property}=${a.content}`)
     .sort();
   // Next.js may stream <title> into the body; drop it so the text is stable.
+  // The NBA | WNBA switch (data-league-switch links) is dropped too: it's the
+  // one intended addition to every page, and the crawler checks it separately.
   const body = html
+    .replace(/<a\b[^>]*data-league-switch[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/<script[\s\S]*?<\/script>/g, '')
     .replace(/<style[\s\S]*?<\/style>/g, '')
     .replace(/<title>[\s\S]*?<\/title>/g, '');

@@ -103,8 +103,12 @@ export async function PlayerPageView({ league, params }: { league: LeagueId; par
                   unoptimized
                 />
               </div>
-            ) : (
+            ) : league === 'nba' ? (
               <div className="text-8xl">👤</div>
+            ) : (
+              <div className="w-24 h-24 rounded-full border-4 border-white shadow-xl bg-white/15 flex items-center justify-center text-3xl font-black tracking-tight">
+                {String(player.displayName ?? '?').split(/\s+/).map((w: string) => w[0]).slice(0, 2).join('').toUpperCase()}
+              </div>
             )}
             <div>
               <h1 className="text-5xl font-black tracking-tight mb-2">

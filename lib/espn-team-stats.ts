@@ -196,10 +196,28 @@ async function fetchPlayerStats(league: LeagueId, playerId: string, retries: num
   return defaultStats;
 }
 
+/** Regular-season field-goal percentage from ESPN's core season stats (0 if none). */
+async function fetchSeasonFieldGoalPct(league: LeagueId, playerId: string, espnSeasonYear: number): Promise<number> {
+  try {
+    const res = await fetch(`${espnUrls(league).core}/seasons/${espnSeasonYear}/types/2/athletes/${playerId}/statistics`, {
+      next: { revalidate: 3600 },
+    });
+    if (!res.ok) return 0;
+    const data = await res.json();
+    for (const cat of data.splits?.categories ?? []) {
+      const stat = cat.stats?.find((x: any) => x.name === 'fieldGoalPct');
+      if (stat && Number.isFinite(Number(stat.value))) return Number(stat.value);
+    }
+  } catch {
+    // fall through
+  }
+  return 0;
+}
+
 /**
  * Get team roster from ESPN with player stats
  */
-export async function getTeamRosterWithStats(league: LeagueId, teamId: string): Promise<any[]> {
+export async function getTeamRosterWithStats(league: LeagueId, teamId: string, espnSeasonYear?: number): Promise<any[]> {
   try {
     const url = `${espnUrls(league).site}/teams/${teamId}/roster`;
 
@@ -240,6 +258,10 @@ export async function getTeamRosterWithStats(league: LeagueId, teamId: string): 
 
           // Fetch stats with retry logic
           const stats = await fetchPlayerStats(league, playerId);
+          // ESPN's WNBA stat summary has no FG%; take it from the season stats.
+          if (league === 'wnba' && !stats.fgPct && espnSeasonYear) {
+            stats.fgPct = await fetchSeasonFieldGoalPct(league, playerId, espnSeasonYear);
+          }
 
           console.log(`  ${playerName}: PPG=${stats.ppg}, RPG=${stats.rpg}, APG=${stats.apg}, FG%=${stats.fgPct}`);
 

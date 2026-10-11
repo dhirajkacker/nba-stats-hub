@@ -4,6 +4,7 @@ import { getTeamStats, getTeamGameLog, getTeamRosterWithStats, nbaTeamId } from 
 import { resolveTeamIdentifier, normalizeTricode } from '@/lib/team-identifiers';
 import { espnYear, isLiveSeason, leagueInfo, seasonPath, type LeagueId } from '@/lib/leagues';
 import { getWnbaTeamForSeason } from '@/lib/wnba/teams';
+import { wnbaSeasonFacts } from '@/lib/wnba/seasons';
 import { theme } from '@/lib/theme';
 import type { Standing } from '@/lib/types';
 import Image from 'next/image';
@@ -77,11 +78,20 @@ export async function TeamPageView({ league, params }: { league: LeagueId; param
     ? await Promise.all([
         getTeamStats(league, espnTeamId, year),
         getTeamGameLog(league, espnTeamId, year, 10),
-        isCurrent ? getTeamRosterWithStats(league, espnTeamId) : Promise.resolve([]),
+        isCurrent ? getTeamRosterWithStats(league, espnTeamId, year) : Promise.resolve([]),
       ])
     : [null, [], []];
 
   const teamColor = leagueTeamColor(league, teamRef(league, team));
+  // NBA: conference rank as before. WNBA: the official playoff seed when the
+  // team made the playoffs (league-wide from 2016, per conference before).
+  const wnbaSeeding = league === 'wnba' ? wnbaSeasonFacts(season)?.seeding ?? 'league' : null;
+  const playoffLine = wnbaSeeding === 'conference' ? 4 : 8;
+  const seedLabel = team.playoffSeed && team.playoffSeed <= playoffLine
+      ? `#${team.playoffSeed} Seed`
+      : wnbaSeeding === 'league'
+        ? `#${team.leagueRank} in the WNBA`
+        : `#${team.confRank} in the ${team.conference}`;
   const logoSrc = teamLogoSrc(league, teamRef(league, team), 'medium');
 
   const winPctDisplay = (team.winPct * 100).toFixed(1);
@@ -145,7 +155,7 @@ export async function TeamPageView({ league, params }: { league: LeagueId; param
                 <span className="text-gray-300">•</span>
                 <span>{team.conference}ern Conference</span>
                 <span className="text-gray-300">•</span>
-                <span>#{team.confRank} Seed</span>
+                <span>{league === 'nba' ? <>#{team.confRank} Seed</> : seedLabel}</span>
               </div>
             </div>
           </div>
