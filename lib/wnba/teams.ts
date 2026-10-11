@@ -1,6 +1,10 @@
-// Filled in with the WNBA data layer.
-import type { Standing } from '../types';
+// Look up a WNBA team as it was in a given season, by ESPN franchise id.
 
-export async function getWnbaTeamForSeason(_season: string, _teamId: string): Promise<Standing | null> {
-  return null;
+import type { Standing } from '../types';
+import { getWnbaSeasonStandings } from './season-context';
+
+/** The team's standings row for the season, or null if it didn't play that season. */
+export async function getWnbaTeamForSeason(season: string, teamId: string): Promise<Standing | null> {
+  const standings = await getWnbaSeasonStandings(season);
+  return standings?.standings.find((t) => String(t.teamId) === teamId) ?? null;
 }

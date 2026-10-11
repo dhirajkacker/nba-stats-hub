@@ -1,19 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSeasonStandings } from '@/lib/season-context';
 import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
-import { leagueFromParam } from '@/lib/leagues';
+import { isKnownLeagueSeason, leagueFromParam, leagueInfo } from '@/lib/leagues';
+import { getWnbaSeasonStandings } from '@/lib/wnba/season-context';
 
 export async function GET(request: NextRequest) {
   try {
     const league = leagueFromParam(request.nextUrl.searchParams.get('league'));
-    if (league !== 'nba') {
-      // WNBA data arrives in a later step; unknown leagues are rejected.
-      return NextResponse.json({ error: league ? 'League not supported yet' : 'Unknown league' }, { status: league ? 501 : 400 });
+    if (!league) {
+      return NextResponse.json({ error: 'Unknown league' }, { status: 400 });
     }
     const seasonParam = request.nextUrl.searchParams.get('season');
-    const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
 
-    const standings = await getSeasonStandings(season);
+    let standings;
+    if (league === 'wnba') {
+      const season = seasonParam && isKnownLeagueSeason('wnba', seasonParam) ? seasonParam : leagueInfo('wnba').landingSeason;
+      standings = await getWnbaSeasonStandings(season);
+    } else {
+      const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
+      standings = await getSeasonStandings(season);
+    }
 
     if (!standings) {
       return NextResponse.json(
