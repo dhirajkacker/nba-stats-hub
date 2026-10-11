@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
 
 // Image metadata
-export const alt = 'NBA Stats Hub - Basketball Statistics & Live Scores';
+export const alt = 'NBA & WNBA Stats Hub - Basketball Statistics & Live Scores';
 export const size = {
   width: 1200,
   height: 630,
@@ -41,7 +41,7 @@ export default async function Image() {
         {/* Title */}
         <div
           style={{
-            fontSize: 72,
+            fontSize: 64,
             fontWeight: 900,
             background: 'linear-gradient(90deg, #ff6b35 0%, #f7931e 100%)',
             backgroundClip: 'text',
@@ -51,7 +51,7 @@ export default async function Image() {
             letterSpacing: '-0.02em',
           }}
         >
-          NBA Stats Hub
+          NBA & WNBA Stats Hub
         </div>
 
         {/* Subtitle */}
@@ -121,7 +121,7 @@ export default async function Image() {
             color: '#999',
           }}
         >
-          nba-stats-hub.vercel.app
+          dkbball.com
         </div>
       </div>
     ),

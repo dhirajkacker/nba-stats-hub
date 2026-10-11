@@ -15,22 +15,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NBA Stats Hub - Real-time Scores, Standings & Statistics",
-  description: "Track live NBA games, team standings, player stats, and comprehensive basketball analytics. Get real-time scores, advanced statistics, and detailed team/player comparisons.",
-  keywords: ["NBA", "basketball", "stats", "scores", "standings", "live games", "player statistics", "team stats"],
+  metadataBase: new URL("https://dkbball.com"),
+  title: "NBA & WNBA Stats Hub - Real-time Scores, Standings & Statistics",
+  description: "Live NBA and WNBA scores, standings, playoff brackets, player and team stats, and every season since 2010.",
+  keywords: ["NBA", "WNBA", "basketball", "stats", "scores", "standings", "playoffs", "live games", "player statistics", "team stats"],
   authors: [{ name: "Dhiraj Kacker" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nba-stats-hub.vercel.app",
-    siteName: "NBA Stats Hub",
-    title: "NBA Stats Hub - Real-time Scores & Statistics",
-    description: "Track live NBA games, standings, and player stats with real-time updates. Your go-to source for comprehensive basketball analytics.",
+    url: "https://dkbball.com",
+    siteName: "NBA & WNBA Stats Hub",
+    title: "NBA & WNBA Stats Hub - Real-time Scores & Statistics",
+    description: "Live NBA and WNBA scores, standings, playoff brackets, and player and team stats.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NBA Stats Hub - Real-time Scores & Statistics",
-    description: "Track live NBA games, standings, and player stats with real-time updates.",
+    title: "NBA & WNBA Stats Hub - Real-time Scores & Statistics",
+    description: "Live NBA and WNBA scores, standings, playoff brackets, and player and team stats.",
   },
   icons: {
     icon: [
