@@ -43,3 +43,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 conversation-history.txt
+
+# verification snapshots and ESPN response cache
+.verify/
+.cache/
