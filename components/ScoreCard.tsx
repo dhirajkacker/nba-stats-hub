@@ -74,19 +74,37 @@ export default function ScoreCard({ game, season, league }: ScoreCardProps) {
     return <span className="text-gray-500">{game.gameStatusText}</span>;
   };
 
+  // Preseason games are exhibitions: badge them and mute the card so they
+  // can't be mistaken for games that count.
+  const isPreseason = game.seasonType === 1;
+
   const awayWinning = game.awayTeam.score > game.homeTeam.score;
   const homeWinning = game.homeTeam.score > game.awayTeam.score;
 
   return (
-    <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
+    <div
+      className={
+        isPreseason
+          ? 'bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-dashed border-slate-300 overflow-hidden group'
+          : 'bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group'
+      }
+      data-season-type={game.seasonType}
+    >
       <Link href={seasonPath(league, season, `/games/${game.gameId}`)} className="block p-5">
         <div className="flex justify-between items-center mb-4">
-          <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">
-            {new Date(game.gameTimeUTC).toLocaleDateString('en-US', {
-              weekday: 'short',
-              month: 'short',
-              day: 'numeric',
-            })}
+          <div className="flex items-center gap-2">
+            {isPreseason && (
+              <span className="text-[10px] font-black uppercase tracking-widest text-slate-700 bg-slate-200 border border-slate-300 rounded px-1.5 py-0.5">
+                Preseason
+              </span>
+            )}
+            <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+              {new Date(game.gameTimeUTC).toLocaleDateString('en-US', {
+                weekday: 'short',
+                month: 'short',
+                day: 'numeric',
+              })}
+            </div>
           </div>
           <div>{getStatusDisplay()}</div>
         </div>

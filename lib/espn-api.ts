@@ -145,6 +145,7 @@ export async function getESPNScoreboard(league: LeagueId, date?: string): Promis
         period: parseInt(competition.status.period) || 0,
         gameClock: competition.status.displayClock || '',
         regulationPeriods: 4,
+        seasonType: event.season?.type,
       };
     });
 

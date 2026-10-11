@@ -219,6 +219,19 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
         </div>
       )}
 
+      {!isLoading && games.some((g) => g.seasonType === 1) && (
+        <div className="flex items-start gap-3 rounded-lg border-2 border-dashed border-slate-300 bg-slate-50 px-4 py-3">
+          <span className="text-[10px] font-black uppercase tracking-widest text-slate-700 bg-slate-200 border border-slate-300 rounded px-1.5 py-0.5 mt-0.5">
+            Preseason
+          </span>
+          <p className="text-sm text-slate-700">
+            {games.every((g) => g.seasonType === 1)
+              ? 'These are preseason exhibition games. Results and records don\'t count toward the standings.'
+              : 'Games marked preseason are exhibitions. Their results don\'t count toward the standings.'}
+          </p>
+        </div>
+      )}
+
       {liveGames.length > 0 && (
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">

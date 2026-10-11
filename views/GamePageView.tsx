@@ -176,6 +176,7 @@ export default function GamePageView() {
   const playoffSeries = seriesList.find(s => s?.type === 'playoff');
   const gameNote = gameData.header.gameNote;
   const isPlayoff = gameData.header.season?.type === 3 && (!!playoffSeries || !!gameNote);
+  const isPreseason = gameData.header.season?.type === 1;
 
   if (!awayTeam || !homeTeam) {
     return null;
@@ -224,6 +225,13 @@ export default function GamePageView() {
             <span className="text-xl font-black">
               LIVE - Q{status.period} {status.displayClock}
             </span>
+          </div>
+        )}
+
+        {isPreseason && (
+          <div className="rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 px-4 sm:px-6 py-3 mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <span className="text-sm sm:text-base font-black uppercase tracking-wider text-slate-800">Preseason</span>
+            <span className="text-xs sm:text-sm text-slate-600">Exhibition game. The result doesn&apos;t count toward the standings.</span>
           </div>
         )}
 

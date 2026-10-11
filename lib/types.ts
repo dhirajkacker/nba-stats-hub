@@ -46,6 +46,8 @@ export interface Game {
   period: number;
   gameClock: string;
   regulationPeriods: number;
+  /** ESPN season type: 1 preseason, 2 regular season, 3 postseason, 5 play-in. */
+  seasonType?: number;
 }
 
 export interface Scoreboard {
