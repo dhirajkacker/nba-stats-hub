@@ -184,6 +184,17 @@ function diffValue(a: unknown, b: unknown, p: string, out: string[]) {
   out.push(`${p}: ${JSON.stringify(a)?.slice(0, 200)} -> ${JSON.stringify(b)?.slice(0, 200)}`);
 }
 
+// ESPN game summaries are passed through raw, and ESPN edits these blocks on
+// its side (news, injury reports, betting lines). They aren't ours to diff.
+const VOLATILE_SUMMARY_KEYS = ['news', 'injuries', 'videos', 'odds', 'pickcenter', 'againstTheSpread', 'leaders', 'winprobability', 'broadcasts', 'meta'];
+
+function stripVolatile(snap: any): any {
+  if (!snap?.json || typeof snap.json !== 'object' || !String(snap.url).startsWith('/api/game/')) return snap;
+  const json = { ...snap.json };
+  for (const k of VOLATILE_SUMMARY_KEYS) delete json[k];
+  return { ...snap, json };
+}
+
 // dirA may be "baseline,baseline2": a snapshot passes if it matches any of
 // them. Two baseline runs of unchanged code capture ESPN's own flakiness.
 async function diff(dirAList: string, dirB: string): Promise<number> {
@@ -195,8 +206,8 @@ async function diff(dirAList: string, dirB: string): Promise<number> {
     const read = async (d: string) => {
       try { return JSON.parse(await fs.readFile(path.join(d, f), 'utf-8')); } catch { return undefined; }
     };
-    const b = await read(dirB);
-    const alts = await Promise.all(dirAs.map(read));
+    const b = stripVolatile(await read(dirB));
+    const alts = (await Promise.all(dirAs.map(read))).map(stripVolatile);
     if (alts.some((alt) => JSON.stringify(alt) === JSON.stringify(b))) continue;
     const a = alts[0];
     const out: string[] = [];

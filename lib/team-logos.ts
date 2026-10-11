@@ -1,3 +1,5 @@
+import type { LeagueId } from './leagues';
+
 // Team logo utility - uses ESPN's CDN for team logos
 
 export function getTeamLogoUrl(teamTricode: string, size: 'small' | 'medium' | 'large' = 'medium'): string {
@@ -125,4 +127,67 @@ export function getTeamColor(teamTricode: string): string {
   };
 
   return teamColors[normalizedTricode] || '#1D428A'; // Default to NBA blue
+}
+
+// ---------------------------------------------------------------------------
+// League-aware wrappers. Every page that can show WNBA teams must use these,
+// never getTeamLogoUrl/getTeamColor directly: those map tricodes to NBA teams,
+// so a WNBA "NY" would render the Knicks logo.
+// ---------------------------------------------------------------------------
+
+
+export interface TeamRef {
+  abbrev?: string;
+  id?: string | number;
+  /** ESPN-provided logo URL. Required for WNBA logos. */
+  logo?: string | null;
+}
+
+/**
+ * Logo URL for a team, or null when none is known (render an initials badge).
+ * NBA: the existing tricode-based ESPN logo. WNBA: only the logo URL ESPN gave
+ * us for that team and season. WNBA logos are never derived from a tricode,
+ * because tricodes change across eras and collide with NBA ones.
+ */
+export function teamLogoSrc(
+  league: LeagueId,
+  team: TeamRef,
+  size: 'small' | 'medium' | 'large' = 'medium',
+): string | null {
+  if (league === 'nba') return getTeamLogoUrl(team.abbrev ?? '', size);
+  return team.logo || null;
+}
+
+// WNBA colors keyed by ESPN franchise id (ids persist through relocations, so
+// id 17 is San Antonio in 2010 and Las Vegas today). Values are ESPN's primary
+// colors, except where the primary is too light for white header text; those
+// use a darker shade from the team's palette.
+const WNBA_TEAM_COLORS: Record<string, string> = {
+  '20': '#E31837',     // Atlanta Dream
+  '19': '#5091CD',     // Chicago Sky
+  '18': '#F05023',     // Connecticut Sun
+  '3': '#002B5C',      // Dallas Wings (Detroit/Tulsa Shock)
+  '129689': '#5B3B8C', // Golden State Valkyries (primary #B38FCF is too light)
+  '5': '#002D62',      // Indiana Fever
+  '17': '#4A4B4D',     // Las Vegas Aces / San Antonio (primary #A7A8AA is too light)
+  '6': '#552583',      // Los Angeles Sparks
+  '8': '#266092',      // Minnesota Lynx
+  '9': '#2D7A6E',      // New York Liberty (primary #86CEBC is too light)
+  '11': '#3C286E',     // Phoenix Mercury
+  '132052': '#3F6F80', // Portland Fire (primary #CEE5EB is too light)
+  '14': '#2C5235',     // Seattle Storm
+  '131935': '#33476D', // Toronto Tempo
+  '16': '#E03A3E',     // Washington Mystics
+};
+
+export const WNBA_DEFAULT_COLOR = '#C2410C';
+
+export function teamColor(league: LeagueId, team: TeamRef): string {
+  if (league === 'nba') return getTeamColor(team.abbrev ?? '');
+  return WNBA_TEAM_COLORS[String(team.id ?? '')] ?? WNBA_DEFAULT_COLOR;
+}
+
+/** Up to three letters for a logo placeholder badge. */
+export function teamInitials(team: TeamRef & { name?: string }): string {
+  return (team.abbrev || team.name || '?').slice(0, 3).toUpperCase();
 }

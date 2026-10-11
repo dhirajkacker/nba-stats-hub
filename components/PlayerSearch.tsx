@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { getTeamLogoUrl } from '@/lib/team-logos';
+import { teamLogoSrc } from '@/lib/team-logos';
+import { apiUrl, seasonPath } from '@/lib/leagues';
+import { useLeague } from './LeagueProvider';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSeason } from './SeasonProvider';
@@ -14,7 +16,9 @@ interface SearchResult {
     abbreviation: string;
   };
   team?: {
+    id?: string;
     abbreviation: string;
+    logo?: string;
   };
   height?: string;
   weight?: string;
@@ -27,6 +31,7 @@ interface PlayerSearchProps {
 
 export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }: PlayerSearchProps = {}) {
   const season = useSeason();
+  const league = useLeague();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -44,7 +49,7 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
 
     setIsLoading(true);
     try {
-      const response = await fetch(`/api/players/search?q=${encodeURIComponent(trimmedQuery)}`);
+      const response = await fetch(apiUrl(league, '/api/players/search', { q: trimmedQuery }));
       if (response.ok) {
         const data = await response.json();
         setResults(data);
@@ -103,12 +108,12 @@ export default function PlayerSearch({ onSelectForComparison, isPlayerSelected }
                   selected ? 'border-orange-500 bg-orange-50' : 'border-gray-200 hover:border-orange-500'
                 }`}
               >
-                <Link href={`/seasons/${season}/players/${player.id}`} className="block">
+                <Link href={seasonPath(league, season, `/players/${player.id}`)} className="block">
                 <div className="flex items-center gap-4 mb-4">
-                  {player.team?.abbreviation && (
+                  {player.team?.abbreviation && teamLogoSrc(league, { abbrev: player.team.abbreviation, id: player.team.id, logo: player.team.logo }) && (
                     <div className="relative w-12 h-12 flex-shrink-0">
                       <Image
-                        src={getTeamLogoUrl(player.team.abbreviation, 'small')}
+                        src={teamLogoSrc(league, { abbrev: player.team.abbreviation, id: player.team.id, logo: player.team.logo }, 'small')!}
                         alt={`${player.team.abbreviation} logo`}
                         width={48}
                         height={48}

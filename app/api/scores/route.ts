@@ -1,15 +1,20 @@
 import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
 import { getScoreboardForAPI } from '@/lib/nba-api';
+import { leagueFromParam } from '@/lib/leagues';
 
 export async function GET(request: NextRequest) {
   try {
     // Get date from query parameter (format: YYYY-MM-DD)
     const searchParams = request.nextUrl.searchParams;
     const date = searchParams.get('date') || undefined;
+    const league = leagueFromParam(searchParams.get('league'));
+    if (!league) {
+      return NextResponse.json({ error: 'Unknown league' }, { status: 400 });
+    }
 
     console.log('[Scores API] Fetching scoreboard for date:', date);
-    const scoreboard = await getScoreboardForAPI(date);
+    const scoreboard = await getScoreboardForAPI(league, date);
     console.log('[Scores API] Scoreboard result:', scoreboard ? 'success' : 'null/undefined');
 
     if (!scoreboard) {

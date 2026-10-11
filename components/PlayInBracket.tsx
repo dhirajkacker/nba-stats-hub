@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { seasonPath } from '@/lib/leagues';
 import Link from 'next/link';
 import { PlayInData, PlayInGame, Conference } from '@/lib/playoffs-api';
 import { getTeamLogoUrl } from '@/lib/team-logos';
@@ -94,7 +95,7 @@ function GameBox({ game, slot, seeds, season }: { game: PlayInGame | undefined; 
 
   return (
     <Link
-      href={`/seasons/${season}/games/${game.id}`}
+      href={seasonPath('nba', season, `/games/${game.id}`)}
       className="block rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden"
     >
       <div className="flex items-center justify-between px-3 py-1.5 bg-gray-50 border-b border-gray-100">

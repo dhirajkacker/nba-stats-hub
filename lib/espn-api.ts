@@ -3,6 +3,7 @@
 
 import { Scoreboard, Standings, Game, Standing } from './types';
 import { CURRENT_SEASON, seasonToESPNYear } from './seasons';
+import { espnUrls, type LeagueId } from './leagues';
 
 const ESPN_BASE_URL = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba';
 
@@ -30,7 +31,7 @@ function getNBASeasonFromDate(date: Date): string {
  * Fetch scoreboard from ESPN for a specific date
  * @param date - Date string in YYYY-MM-DD format (REQUIRED for correct timezone handling)
  */
-export async function getESPNScoreboard(date?: string): Promise<Scoreboard | null> {
+export async function getESPNScoreboard(league: LeagueId, date?: string): Promise<Scoreboard | null> {
   try {
     // Format date as YYYYMMDD for ESPN API
     // Use the date string directly to avoid timezone conversion issues
@@ -48,7 +49,7 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
       console.warn('ESPN API called without date - using server date:', dateString);
     }
 
-    const url = `${ESPN_BASE_URL}/scoreboard?dates=${dateString}`;
+    const url = `${espnUrls(league).site}/scoreboard?dates=${dateString}`;
     console.log('Fetching from ESPN scoreboard:', url, 'for input date:', date, 'formatted:', dateString);
 
     const response = await fetch(url, {
@@ -121,6 +122,7 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
           teamId: parseInt(homeTeam.team.id),
           teamName: homeTeam.team.name,
           teamTricode: homeTeam.team.abbreviation,
+          teamLogo: homeTeam.team.logo,
           teamCity: homeTeam.team.location || '',
           score: parseInt(homeTeam.score) || 0,
           inBonus: false,
@@ -132,6 +134,7 @@ export async function getESPNScoreboard(date?: string): Promise<Scoreboard | nul
           teamId: parseInt(awayTeam.team.id),
           teamName: awayTeam.team.name,
           teamTricode: awayTeam.team.abbreviation,
+          teamLogo: awayTeam.team.logo,
           teamCity: awayTeam.team.location || '',
           score: parseInt(awayTeam.score) || 0,
           inBonus: false,
@@ -243,6 +246,11 @@ export async function getESPNStandingsBySeason(seasonEndDate?: string, espnSeaso
           if (event.season?.type !== 2) return;
           if (espnSeasonYear && event.season?.year !== espnSeasonYear) return;
           const competition = event.competitions[0];
+          // ESPN tags All-Star games and the in-season Cup final as regular-season
+          // games. All-Star "teams" (STARS, WORLD, ...) aren't franchises and the
+          // Cup final doesn't count in the standings, so skip both.
+          const competitionType = competition?.type?.abbreviation;
+          if (competitionType === 'ALLSTAR' || competitionType === 'CC') return;
 
           competition.competitors?.forEach((competitor: any) => {
             const team = competitor.team;

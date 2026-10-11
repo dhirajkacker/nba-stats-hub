@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPlayerStats } from '@/lib/nba-api';
 import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
+import { leagueFromParam } from '@/lib/leagues';
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
+    // This route reads stats.nba.com, so it only serves the NBA.
+    if (leagueFromParam(searchParams.get('league')) !== 'nba') {
+      return NextResponse.json({ error: 'This endpoint only supports the NBA' }, { status: 400 });
+    }
     const playerIdParam = searchParams.get('playerId');
     const seasonParam = searchParams.get('season');
     const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;

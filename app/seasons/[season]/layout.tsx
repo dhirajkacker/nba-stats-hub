@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { isKnownSeason } from '@/lib/seasons';
 import SeasonNav from '@/components/SeasonNav';
 import { SeasonProvider } from '@/components/SeasonProvider';
+import { LeagueProvider } from '@/components/LeagueProvider';
 
 export default async function SeasonLayout({
   params,
@@ -16,9 +17,11 @@ export default async function SeasonLayout({
   }
 
   return (
-    <SeasonProvider season={season}>
-      <SeasonNav currentSeason={season} />
-      {children}
-    </SeasonProvider>
+    <LeagueProvider league="nba">
+      <SeasonProvider season={season}>
+        <SeasonNav league="nba" currentSeason={season} />
+        {children}
+      </SeasonProvider>
+    </LeagueProvider>
   );
 }

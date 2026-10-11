@@ -1,4 +1,8 @@
-// Fetch advanced team statistics from ESPN API
+// Team data from ESPN: season stats, game log and current roster.
+// Functions take the league and an ESPN team id. NBA callers turn a tricode
+// into an id with nbaTeamId(); WNBA pages already have the franchise id.
+
+import { espnUrls, type LeagueId } from './leagues';
 
 // Normalize team tricode to handle variations (ESPN uses non-standard codes)
 function normalizeTeamTricode(code: string): string {
@@ -23,19 +27,20 @@ const TEAM_ID_MAP: { [key: string]: string } = {
   'SAC': '23', 'SAS': '24', 'TOR': '28', 'UTA': '26', 'WAS': '27'
 };
 
+/** ESPN team id for an NBA tricode (any of ESPN's or the standard spellings). */
+export function nbaTeamId(teamTricode: string): string | null {
+  return TEAM_ID_MAP[normalizeTeamTricode(teamTricode)] ?? null;
+}
+
 /**
  * Get a team's regular-season statistics from ESPN for one season.
  * espnSeasonYear is the season's end year (2027 for 2026-27). Without it ESPN
  * returns its own default, which is the previous season until the new
  * regular season starts. A season with no games yet returns no categories.
  */
-export async function getTeamStats(teamTricode: string, espnSeasonYear: number): Promise<any> {
+export async function getTeamStats(league: LeagueId, teamId: string, espnSeasonYear: number): Promise<any> {
   try {
-    const normalizedTricode = normalizeTeamTricode(teamTricode);
-    const teamId = TEAM_ID_MAP[normalizedTricode];
-    if (!teamId) return null;
-
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/statistics?season=${espnSeasonYear}&seasontype=2`;
+    const url = `${espnUrls(league).site}/teams/${teamId}/statistics?season=${espnSeasonYear}&seasontype=2`;
 
     const response = await fetch(url, {
       next: { revalidate: 1800 }, // Cache for 30 minutes
@@ -59,13 +64,9 @@ export async function getTeamStats(teamTricode: string, espnSeasonYear: number):
  * playoffs combined, oldest first. Preseason games are excluded.
  * espnSeasonYear is the season's end year (2027 for 2026-27).
  */
-export async function getTeamGameLog(teamTricode: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
+export async function getTeamGameLog(league: LeagueId, teamId: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
   try {
-    const normalizedTricode = normalizeTeamTricode(teamTricode);
-    const teamId = TEAM_ID_MAP[normalizedTricode];
-    if (!teamId) return [];
-
-    const base = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/schedule?season=${espnSeasonYear}`;
+    const base = `${espnUrls(league).site}/teams/${teamId}/schedule?season=${espnSeasonYear}`;
     const [regular, postseason] = await Promise.all(
       [2, 3].map(async (seasonType) => {
         const res = await fetch(`${base}&seasontype=${seasonType}`, { next: { revalidate: 600 } });
@@ -98,13 +99,13 @@ export interface PlayerStats {
 /**
  * Fetch individual player stats with timeout and retry logic
  */
-async function fetchPlayerStats(playerId: string, retries: number = 2): Promise<PlayerStats> {
+async function fetchPlayerStats(league: LeagueId, playerId: string, retries: number = 2): Promise<PlayerStats> {
   const defaultStats: PlayerStats = { ppg: 0, rpg: 0, apg: 0, fgPct: 0, gamesPlayed: 0, height: '-', weight: '-' };
 
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       // Use the same endpoint that works for the players page
-      const url = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}`;
+      const url = `${espnUrls(league).common}/athletes/${playerId}`;
 
       // Create abort controller for timeout
       const controller = new AbortController();
@@ -198,13 +199,9 @@ async function fetchPlayerStats(playerId: string, retries: number = 2): Promise<
 /**
  * Get team roster from ESPN with player stats
  */
-export async function getTeamRosterWithStats(teamTricode: string): Promise<any[]> {
+export async function getTeamRosterWithStats(league: LeagueId, teamId: string): Promise<any[]> {
   try {
-    const normalizedTricode = normalizeTeamTricode(teamTricode);
-    const teamId = TEAM_ID_MAP[normalizedTricode];
-    if (!teamId) return [];
-
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/roster`;
+    const url = `${espnUrls(league).site}/teams/${teamId}/roster`;
 
     const response = await fetch(url, {
       headers: {
@@ -221,7 +218,7 @@ export async function getTeamRosterWithStats(teamTricode: string): Promise<any[]
     const data = await response.json();
     const athletes = data.athletes || [];
 
-    console.log(`Fetching stats for ${athletes.length} players on ${teamTricode}...`);
+    console.log(`Fetching stats for ${athletes.length} players on ${league} team ${teamId}...`);
 
     // Fetch stats for each player in batches to avoid overwhelming the API
     const batchSize = 5;
@@ -242,7 +239,7 @@ export async function getTeamRosterWithStats(teamTricode: string): Promise<any[]
           const playerName = String(athlete.displayName || athlete.fullName || '');
 
           // Fetch stats with retry logic
-          const stats = await fetchPlayerStats(playerId);
+          const stats = await fetchPlayerStats(league, playerId);
 
           console.log(`  ${playerName}: PPG=${stats.ppg}, RPG=${stats.rpg}, APG=${stats.apg}, FG%=${stats.fgPct}`);
 
@@ -268,7 +265,7 @@ export async function getTeamRosterWithStats(teamTricode: string): Promise<any[]
     // Sort by PPG descending so top scorers appear first
     rosterWithStats.sort((a, b) => b.stats.ppg - a.stats.ppg);
 
-    console.log(`Successfully loaded roster for ${teamTricode} with ${rosterWithStats.length} players`);
+    console.log(`Successfully loaded roster for ${league} team ${teamId} with ${rosterWithStats.length} players`);
     return rosterWithStats;
   } catch (error) {
     console.error('Error fetching team roster:', error);

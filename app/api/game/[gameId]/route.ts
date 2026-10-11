@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { espnUrls, leagueFromParam } from '@/lib/leagues';
 
 export async function GET(
   request: NextRequest,
@@ -6,11 +7,16 @@ export async function GET(
 ) {
   try {
     const { gameId } = await params;
+    const league = leagueFromParam(request.nextUrl.searchParams.get('league'));
+    if (!league) {
+      return NextResponse.json({ error: 'Unknown league' }, { status: 400 });
+    }
 
     console.log('[Game API] Fetching game summary for:', gameId);
 
     // Fetch from ESPN game summary API
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=${gameId}`;
+    // The league is part of the URL, so another league's game id fails here.
+    const url = `${espnUrls(league).site}/summary?event=${gameId}`;
     const response = await fetch(url, {
       next: { revalidate: 30 },
     });

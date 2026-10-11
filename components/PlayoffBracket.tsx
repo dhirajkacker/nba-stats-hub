@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { seasonPath } from '@/lib/leagues';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlayoffSeries, PlayoffRound, PlayoffGame } from '@/lib/playoffs-api';
@@ -56,7 +57,7 @@ function GameRow({ game }: { game: PlayoffGame }) {
 
   return (
     <Link
-      href={`/seasons/${season}/games/${game.id}`}
+      href={seasonPath('nba', season, `/games/${game.id}`)}
       className="block rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition-colors px-3 py-2"
     >
       <div className="flex items-center justify-between text-[10px] uppercase tracking-wider text-gray-500 font-bold mb-1">

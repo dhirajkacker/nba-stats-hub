@@ -24,6 +24,8 @@ export interface TeamScore {
   teamId: number;
   teamName: string;
   teamTricode: string;
+  /** ESPN logo URL from the scoreboard. */
+  teamLogo?: string;
   teamCity: string;
   score: number;
   inBonus: boolean;
@@ -71,6 +73,15 @@ export interface Standing {
   lastTenWins: number;
   lastTenLosses: number;
   streak: string;
+  // WNBA-only fields (NBA snapshots don't carry them).
+  /** ESPN logo URL for the team as it was that season. */
+  logo?: string | null;
+  /** Official playoff seed from ESPN: league-wide from 2016, conference seed before. Null if the team missed the playoffs. */
+  playoffSeed?: number | null;
+  /** Rank in the league-wide table (1 = best record). */
+  leagueRank?: number;
+  /** ESPN clinch marker (x, y, z, e...). */
+  clincher?: string;
 }
 
 export interface Standings {

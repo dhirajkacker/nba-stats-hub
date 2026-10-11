@@ -12,10 +12,19 @@ import { getPlayoffsData as livePlayoffs, type PlayoffsData } from './playoffs-a
 import { getTopPlayersByAllStats, type ESPNStatsLeader } from './espn-stats-leaders';
 import type { Standings } from './types';
 
+export interface SeasonTeamRef {
+  tricode: string;
+  city: string;
+  name: string;
+  /** ESPN team id and logo; WNBA snapshots carry them. */
+  teamId?: string;
+  logo?: string | null;
+}
+
 export interface SeasonMeta {
   season: string;
-  champion?: { tricode: string; city: string; name: string };
-  runnerUp?: { tricode: string; city: string; name: string };
+  champion?: SeasonTeamRef;
+  runnerUp?: SeasonTeamRef;
   finalsMVP?: string;
   finalsScore?: string;
   frozen: boolean;

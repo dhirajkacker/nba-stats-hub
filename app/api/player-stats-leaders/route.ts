@@ -3,6 +3,7 @@ import { getPlayerStatsFromLeaders } from '@/lib/nba-leaders';
 import { getLastFetchStatus } from '@/lib/espn-stats-leaders';
 import { getSeasonLeaders } from '@/lib/season-context';
 import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
+import { leagueFromParam } from '@/lib/leagues';
 
 // Increase timeout for Vercel serverless function
 export const maxDuration = 30;
@@ -12,6 +13,11 @@ export const revalidate = 3600;
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
+    const league = leagueFromParam(request.nextUrl.searchParams.get('league'));
+    if (league !== 'nba') {
+      // WNBA data arrives in a later step; unknown leagues are rejected.
+      return NextResponse.json({ error: league ? 'League not supported yet' : 'Unknown league' }, { status: league ? 501 : 400 });
+    }
     const playerIdParam = searchParams.get('playerId');
     const limitParam = searchParams.get('limit');
     const includeStatus = searchParams.get('includeStatus') === 'true';

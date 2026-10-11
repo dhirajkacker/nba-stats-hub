@@ -1,0 +1,403 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { teamLogoSrc } from '@/lib/team-logos';
+import { apiUrl, seasonPath, teamPath } from '@/lib/leagues';
+import { theme } from '@/lib/theme';
+import { useLeague } from '@/components/LeagueProvider';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+
+interface TeamStats {
+  id?: string;
+  displayName: string;
+  shortDisplayName: string;
+  abbreviation: string;
+  logo?: string;
+  logos?: { href: string }[];
+}
+
+interface PlayerStat {
+  athlete: {
+    id: string;
+    displayName: string;
+    jersey: string;
+    position: { abbreviation: string };
+  };
+  stats: string[]; // [MIN, FG, 3PT, FT, OREB, DREB, REB, AST, STL, BLK, TO, PF, +/-, PTS]
+}
+
+interface BoxScore {
+  teams: {
+    team: TeamStats;
+    statistics: Array<{ name: string; displayValue: string }>;
+  }[];
+  players: {
+    team: TeamStats;
+    statistics: Array<{
+      name: string;
+      athletes: PlayerStat[];
+    }>;
+  }[];
+}
+
+interface PlayoffSeriesInfo {
+  type: string;
+  title?: string;
+  description?: string;
+  summary?: string;
+  completed?: boolean;
+}
+
+interface GameData {
+  header: {
+    gameNote?: string;
+    competitions: Array<{
+      competitors: Array<{
+        team: TeamStats;
+        score: string;
+        homeAway: string;
+        winner?: boolean;
+        record: Array<{
+          type: string;
+          summary: string;
+          displayValue: string;
+        }>;
+      }>;
+      status: {
+        type: {
+          completed: boolean;
+          detail: string;
+          state: string;
+        };
+        displayClock: string;
+        period: number;
+      };
+      date: string;
+      series?: PlayoffSeriesInfo[] | PlayoffSeriesInfo;
+    }>;
+    season?: { type?: number };
+  };
+  boxscore?: BoxScore;
+}
+
+export default function GamePageView() {
+  const league = useLeague();
+  const params = useParams<{ season: string; gameId: string }>();
+  const season = params?.season;
+  const gameId = params?.gameId;
+  const [gameData, setGameData] = useState<GameData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchGameData() {
+      try {
+        setIsLoading(true);
+        const response = await fetch(apiUrl(league, `/api/game/${gameId}`));
+
+        if (!response.ok) {
+          throw new Error('Game not found');
+        }
+
+        const data = await response.json();
+        setGameData(data);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching game data:', err);
+        setError('Failed to load game data');
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    if (gameId) {
+      fetchGameData();
+    }
+  }, [gameId, league]);
+
+  if (isLoading) {
+    return (
+      <div className={`min-h-screen ${theme(league).pageBg} flex items-center justify-center`}>
+        <div className="text-center">
+          <div className={`inline-block animate-spin rounded-full h-12 w-12 border-b-2 ${theme(league).spinner}`}></div>
+          <p className="text-gray-500 mt-4">Loading game details...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !gameData) {
+    return (
+      <div className={`min-h-screen ${theme(league).pageBg}`}>
+        <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <Link href={seasonPath(league, season)} className="text-orange-200 hover:text-white mb-4 inline-block">
+              ← Back to Home
+            </Link>
+            <h1 className="text-4xl font-black tracking-tight">Game Not Found</h1>
+          </div>
+        </header>
+        <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <p className="text-gray-600 text-lg">{error || 'Game data unavailable'}</p>
+            <Link href={seasonPath(league, season)} className="mt-4 inline-block bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700">
+              Go Home
+            </Link>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  const competition = gameData.header.competitions[0];
+  const awayTeam = competition.competitors.find(c => c.homeAway === 'away');
+  const homeTeam = competition.competitors.find(c => c.homeAway === 'home');
+  const status = competition.status;
+  const isFinished = status.type.completed;
+  const isLive = status.type.state === 'in';
+
+  const statusDetail = (() => {
+    if (isFinished || isLive) return status.type.detail;
+    const d = new Date(competition.date);
+    if (isNaN(d.getTime())) return status.type.detail;
+    return d.toLocaleString(undefined, {
+      weekday: 'short', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
+    });
+  })();
+
+  const isOT = status.type.detail.includes('OT') || status.period > 4;
+  const otText = isOT ? status.type.detail.replace('Final/', '') : '';
+
+  const seriesField = competition.series;
+  const seriesList = Array.isArray(seriesField) ? seriesField : seriesField ? [seriesField] : [];
+  const playoffSeries = seriesList.find(s => s?.type === 'playoff');
+  const gameNote = gameData.header.gameNote;
+  const isPlayoff = gameData.header.season?.type === 3 && (!!playoffSeries || !!gameNote);
+
+  if (!awayTeam || !homeTeam) {
+    return null;
+  }
+
+  const gameTeamLogo = (team: { abbreviation: string; id?: string; logo?: string; logos?: { href: string }[] }, size: 'small' | 'medium') =>
+    teamLogoSrc(league, { abbrev: team.abbreviation, id: team.id, logo: team.logo ?? team.logos?.[0]?.href }, size) ?? '';
+
+  const getRecord = (competitor: typeof awayTeam) => {
+    const totalRecord = competitor.record?.find(r => r.type === 'total');
+    return totalRecord?.displayValue || '';
+  };
+
+  const displayOrder = ['PTS', 'MIN', 'FG', '3PT', 'FT', 'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', '+/-'];
+  const espnStatOrder = ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-'];
+  const statIndices = displayOrder.map(stat => espnStatOrder.indexOf(stat));
+
+  return (
+    <div className={`min-h-screen ${theme(league).pageBg}`}>
+      <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+          <Link href={seasonPath(league, season)} className="text-orange-200 hover:text-white mb-2 sm:mb-4 inline-block text-sm sm:text-base">
+            ← Back to Home
+          </Link>
+          <h1 className="text-2xl sm:text-4xl font-black tracking-tight mb-1 sm:mb-2">
+            Game Details
+          </h1>
+          <p className="text-orange-200 font-medium text-sm sm:text-base">
+            {new Date(competition.date).toLocaleDateString('en-US', {
+              weekday: 'long',
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+            })}
+          </p>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {isLive && (
+          <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl shadow-lg p-4 mb-8 flex items-center justify-center gap-3">
+            <span className="relative flex h-4 w-4">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-white"></span>
+            </span>
+            <span className="text-xl font-black">
+              LIVE - Q{status.period} {status.displayClock}
+            </span>
+          </div>
+        )}
+
+        {isPlayoff && (
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl shadow-lg px-4 sm:px-6 py-3 sm:py-4 mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
+            {gameNote && (
+              <span className="text-sm sm:text-lg font-black uppercase tracking-wider">
+                {gameNote}
+              </span>
+            )}
+            {playoffSeries?.summary && (
+              <span className="text-xs sm:text-sm font-bold bg-white/20 px-3 py-1 rounded-full self-start sm:self-auto">
+                {playoffSeries.summary}
+              </span>
+            )}
+          </div>
+        )}
+
+        <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 mb-8">
+          <div
+            className={`flex items-center justify-between p-4 sm:p-8 ${
+              awayTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
+            }`}
+          >
+            <Link href={teamPath(league, season, { abbrev: awayTeam.team.abbreviation, id: awayTeam.team.id })} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+              <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
+                <Image
+                  src={gameTeamLogo(awayTeam.team, 'medium')}
+                  alt={`${awayTeam.team.displayName} logo`}
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
+                  {awayTeam.team.displayName}
+                </h2>
+                <p className="text-xs text-gray-500 font-medium">
+                  {getRecord(awayTeam)}
+                </p>
+              </div>
+            </Link>
+            <div
+              className={`text-4xl sm:text-7xl font-black shrink-0 ml-2 ${
+                awayTeam.winner ? 'text-orange-600' : 'text-gray-800'
+              }`}
+            >
+              {awayTeam.score}
+            </div>
+          </div>
+
+          <div className="bg-gray-100 py-2 sm:py-3 px-4 sm:px-8 flex items-center justify-center gap-4">
+            <div className="h-px flex-1 bg-gray-300"></div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-gray-500 font-bold text-sm sm:text-base">
+                {statusDetail}
+              </span>
+              {isOT && (
+                <span className="text-orange-600 font-black text-sm bg-orange-100 px-3 py-1 rounded-full">
+                  {otText}
+                </span>
+              )}
+            </div>
+            <div className="h-px flex-1 bg-gray-300"></div>
+          </div>
+
+          <div
+            className={`flex items-center justify-between p-4 sm:p-8 ${
+              homeTeam.winner ? 'bg-gradient-to-r from-orange-50 to-orange-100' : ''
+            }`}
+          >
+            <Link href={teamPath(league, season, { abbrev: homeTeam.team.abbreviation, id: homeTeam.team.id })} className="flex items-center gap-3 sm:gap-6 flex-1 min-w-0 group">
+              <div className="relative w-14 h-14 sm:w-24 sm:h-24 shrink-0 transition-transform group-hover:scale-105">
+                <Image
+                  src={gameTeamLogo(homeTeam.team, 'medium')}
+                  alt={`${homeTeam.team.displayName} logo`}
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-3xl font-black text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
+                  {homeTeam.team.displayName}
+                </h2>
+                <p className="text-xs text-gray-500 font-medium">
+                  {getRecord(homeTeam)}
+                </p>
+              </div>
+            </Link>
+            <div
+              className={`text-4xl sm:text-7xl font-black shrink-0 ml-2 ${
+                homeTeam.winner ? 'text-orange-600' : 'text-gray-800'
+              }`}
+            >
+              {homeTeam.score}
+            </div>
+          </div>
+        </div>
+
+        {gameData.boxscore && gameData.boxscore.players && (
+          <div className="space-y-8">
+            {gameData.boxscore.players.map((teamBox, idx) => (
+              <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-4">
+                  <h2 className="text-2xl font-black flex items-center gap-3">
+                    <Image
+                      src={gameTeamLogo(teamBox.team, 'small')}
+                      alt={`${teamBox.team.displayName} logo`}
+                      width={32}
+                      height={32}
+                      className="object-contain"
+                      unoptimized
+                    />
+                    {teamBox.team.displayName} Box Score
+                  </h2>
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs sm:text-sm">
+                    <thead className="bg-gray-50 border-b-2 border-gray-200">
+                      <tr>
+                        <th className="text-left py-2 sm:py-3 px-2 sm:px-4 font-bold text-gray-700 sticky left-0 bg-gray-50 min-w-[120px] sm:min-w-[180px]">
+                          Player
+                        </th>
+                        <th className="text-center py-2 sm:py-3 px-1 sm:px-2 font-bold text-gray-700 whitespace-nowrap">POS</th>
+                        {displayOrder.map(col => (
+                          <th key={col} className="text-center py-2 sm:py-3 px-1 sm:px-2 font-bold text-gray-700 whitespace-nowrap">
+                            {col}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {teamBox.statistics[0]?.athletes.map((player, playerIdx) => (
+                        <tr key={playerIdx} className="hover:bg-orange-50 transition-colors group">
+                          <td className="py-2 sm:py-3 px-2 sm:px-4 sticky left-0 bg-white group-hover:bg-orange-50 transition-colors">
+                            <Link
+                              href={seasonPath(league, season, `/players/${player.athlete.id}`)}
+                              className="flex items-center gap-1 sm:gap-2 text-gray-900 hover:text-orange-600"
+                            >
+                              <span className="w-5 sm:w-6 text-gray-500 font-semibold text-xs">#{player.athlete.jersey}</span>
+                              <span className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors truncate max-w-[80px] sm:max-w-none">
+                                {player.athlete.displayName}
+                              </span>
+                            </Link>
+                          </td>
+                          <td className="text-center py-2 sm:py-3 px-1 sm:px-2 text-gray-600 font-medium whitespace-nowrap">
+                            {player.athlete.position?.abbreviation}
+                          </td>
+                          {statIndices.map((espnIdx, displayIdx) => (
+                            <td key={displayIdx} className="text-center py-2 sm:py-3 px-1 sm:px-2 text-gray-900 font-medium whitespace-nowrap">
+                              {player.stats[espnIdx]}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {!gameData.boxscore && isFinished && (
+          <div className="bg-white rounded-xl shadow-lg p-12 text-center border border-gray-100">
+            <p className="text-gray-600 text-lg">Box score not yet available for this game</p>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}

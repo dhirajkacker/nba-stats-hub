@@ -2,6 +2,7 @@
 
 import { Scoreboard, Standings, TeamStats, PlayerStats, GameLog } from './types';
 import { getESPNScoreboard, getESPNStandings } from './espn-api';
+import type { LeagueId } from './leagues';
 
 const NBA_BASE_URL = 'https://cdn.nba.com';
 const NBA_STATS_URL = 'https://stats.nba.com/stats';
@@ -48,7 +49,7 @@ export async function getScoreboard(date?: string): Promise<Scoreboard | null> {
   console.log('getScoreboard() called for date:', dateString);
 
   // Use ESPN API for all dates to ensure consistent handling
-  return await getESPNScoreboard(dateString);
+  return await getESPNScoreboard('nba', dateString);
 }
 
 /**
@@ -63,20 +64,20 @@ export async function getTodayScoreboard(): Promise<Scoreboard | null> {
  * Always uses ESPN API to ensure consistent date handling regardless of server timezone
  * @param date - Optional date string in YYYY-MM-DD format. Uses client's date if not provided.
  */
-export async function getScoreboardForAPI(date?: string): Promise<Scoreboard | null> {
+export async function getScoreboardForAPI(league: LeagueId, date?: string): Promise<Scoreboard | null> {
   // If no date provided, we can't determine client's date server-side
   // Client should always pass the date explicitly
   if (!date) {
     console.warn('getScoreboardForAPI called without date parameter - this should not happen');
     // Fallback to ESPN with undefined date (ESPN will use its own "today")
-    return await getESPNScoreboard(undefined);
+    return await getESPNScoreboard(league, undefined);
   }
 
   console.log('getScoreboardForAPI() called for date:', date);
 
   // Always use ESPN API for consistent date handling
   // This avoids timezone mismatches between server and client
-  return await getESPNScoreboard(date);
+  return await getESPNScoreboard(league, date);
 }
 
 /**

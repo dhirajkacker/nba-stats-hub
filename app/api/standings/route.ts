@@ -1,9 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSeasonStandings } from '@/lib/season-context';
 import { CURRENT_SEASON, isKnownSeason } from '@/lib/seasons';
+import { leagueFromParam } from '@/lib/leagues';
 
 export async function GET(request: NextRequest) {
   try {
+    const league = leagueFromParam(request.nextUrl.searchParams.get('league'));
+    if (league !== 'nba') {
+      // WNBA data arrives in a later step; unknown leagues are rejected.
+      return NextResponse.json({ error: league ? 'League not supported yet' : 'Unknown league' }, { status: league ? 501 : 400 });
+    }
     const seasonParam = request.nextUrl.searchParams.get('season');
     const season = seasonParam && isKnownSeason(seasonParam) ? seasonParam : CURRENT_SEASON;
 

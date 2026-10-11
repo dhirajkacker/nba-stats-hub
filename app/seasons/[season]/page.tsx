@@ -8,6 +8,7 @@ import ClientDate from '@/components/ClientDate';
 import ChampionHero from '@/components/ChampionHero';
 import { getSeasonStandings, getSeasonPlayoffs, getSeasonMeta } from '@/lib/season-context';
 import { seasonLabel } from '@/lib/seasons';
+import { seasonPath } from '@/lib/leagues';
 
 export default async function SeasonHome({
   params,
@@ -49,7 +50,7 @@ export default async function SeasonHome({
             </div>
             <div className="flex items-center gap-4">
               <Link
-                href={`/seasons/${season}/players`}
+                href={seasonPath('nba', season, '/players')}
                 className="bg-orange-500 bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm px-4 py-2 rounded-lg border border-orange-400 transition-colors"
               >
                 <p className="text-xs text-orange-200 uppercase tracking-wide">Browse</p>
@@ -63,7 +64,7 @@ export default async function SeasonHome({
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Champion hero (frozen past seasons only) */}
         {meta.frozen && meta.champion && (
-          <ChampionHero meta={meta} />
+          <ChampionHero meta={meta} league="nba" />
         )}
 
         {/* Live games (current season only) */}

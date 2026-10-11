@@ -1,4 +1,5 @@
 import { Standing } from '@/lib/types';
+import { teamPath } from '@/lib/leagues';
 import { getTeamLogoUrl } from '@/lib/team-logos';
 import { seasonHasPlayIn } from '@/lib/seasons';
 import Image from 'next/image';
@@ -91,7 +92,7 @@ export default function StandingsTable({ standings, conference, season }: Standi
                   </td>
                 <td className="px-2 py-2 whitespace-nowrap">
                   <Link
-                    href={`/seasons/${season}/teams/${team.teamTricode.toLowerCase()}`}
+                    href={teamPath('nba', season, { abbrev: team.teamTricode })}
                     className="flex items-center gap-2 text-gray-900 group-hover:text-orange-600 transition-colors"
                   >
                     <div className="relative w-6 h-6 flex-shrink-0">

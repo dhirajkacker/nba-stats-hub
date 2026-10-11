@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getSeasonStandings, getSeasonMeta } from '@/lib/season-context';
 import { seasonLabel } from '@/lib/seasons';
+import { seasonPath } from '@/lib/leagues';
 
 export const metadata: Metadata = {
   title: 'NBA Standings - NBA Stats Hub',
@@ -31,7 +32,7 @@ export default async function StandingsPage({
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100">
       <header className="bg-gradient-to-r from-gray-900 via-orange-600 to-gray-900 text-white shadow-2xl border-b-4 border-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href={`/seasons/${season}`} className="text-orange-200 hover:text-white mb-4 inline-block">
+          <Link href={seasonPath('nba', season)} className="text-orange-200 hover:text-white mb-4 inline-block">
             ← Back to Home
           </Link>
           <h1 className="text-5xl font-black tracking-tight mb-2">

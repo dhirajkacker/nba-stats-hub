@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import ScoreCard from './ScoreCard';
 import { useSeason } from './SeasonProvider';
+import { useLeague } from './LeagueProvider';
+import { apiUrl } from '@/lib/leagues';
 import { Scoreboard } from '@/lib/types';
 
 interface LiveScoresProps {
@@ -45,6 +47,7 @@ function getDateDisplay(dateString: string): string {
 
 export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
   const season = useSeason();
+  const league = useLeague();
   const [selectedDate, setSelectedDate] = useState<string>(formatDateLocal(new Date()));
   const [scoreboard, setScoreboard] = useState<Scoreboard | null>(initialScoreboard || null);
   const [isLoading, setIsLoading] = useState(!initialScoreboard);
@@ -58,7 +61,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
     async function fetchScoreboard() {
       try {
         setIsLoading(true);
-        const response = await fetch(`/api/scores?date=${espnDate}`);
+        const response = await fetch(apiUrl(league, '/api/scores', { date: espnDate }));
 
         if (!response.ok) {
           throw new Error('Failed to fetch scores');
@@ -88,7 +91,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
 
     const interval = setInterval(async () => {
       try {
-        const response = await fetch(`/api/scores?date=${espnDate}`);
+        const response = await fetch(apiUrl(league, '/api/scores', { date: espnDate }));
         if (response.ok) {
           const data = await response.json();
           setScoreboard(data);
@@ -232,7 +235,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {liveGames.map((game) => (
-              <ScoreCard key={game.gameId} game={game} season={season} />
+              <ScoreCard key={game.gameId} game={game} season={season} league={league} />
             ))}
           </div>
         </div>
@@ -246,7 +249,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {finishedGames.map((game) => (
-              <ScoreCard key={game.gameId} game={game} season={season} />
+              <ScoreCard key={game.gameId} game={game} season={season} league={league} />
             ))}
           </div>
         </div>
@@ -260,7 +263,7 @@ export default function LiveScores({ initialScoreboard }: LiveScoresProps) {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {upcomingGames.map((game) => (
-              <ScoreCard key={game.gameId} game={game} season={season} />
+              <ScoreCard key={game.gameId} game={game} season={season} league={league} />
             ))}
           </div>
         </div>

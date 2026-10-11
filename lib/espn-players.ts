@@ -1,4 +1,7 @@
-// Fetch all NBA players from ESPN API
+// Player data from ESPN: rosters, search, bio, season stats and game logs.
+// Every exported function takes the league first.
+
+import { espnUrls, type LeagueId } from './leagues';
 
 export interface ESPNPlayer {
   id: string;
@@ -12,6 +15,8 @@ export interface ESPNPlayer {
   team?: {
     id: string;
     abbreviation: string;
+    /** ESPN logo URL. Set for WNBA results, whose logos can't be derived from the abbreviation. */
+    logo?: string;
   };
   height?: string;
   weight?: string;
@@ -118,7 +123,7 @@ export async function getTeamRoster(teamTricode: string): Promise<ESPNPlayer[]> 
     const teamId = TEAM_ID_MAP[normalizedTricode];
     if (!teamId) return [];
 
-    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/${teamId}/roster`;
+    const url = `${espnUrls('nba').site}/teams/${teamId}/roster`;
 
     const response = await fetch(url, {
       next: { revalidate: 3600 }, // Cache for 1 hour (rosters change infrequently)
@@ -150,6 +155,49 @@ export async function getTeamRoster(teamTricode: string): Promise<ESPNPlayer[]> 
     }));
   } catch (error) {
     console.error('Error fetching team roster:', error);
+    return [];
+  }
+}
+
+/**
+ * Current rosters for every WNBA team. Teams come from ESPN's team list
+ * (keyed by franchise id), since WNBA abbreviations collide with NBA ones.
+ */
+async function getWnbaRosters(): Promise<ESPNPlayer[][]> {
+  const { site } = espnUrls('wnba');
+  try {
+    const res = await fetch(`${site}/teams`, { next: { revalidate: 86400 } });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const teams: any[] = (data.sports?.[0]?.leagues?.[0]?.teams ?? []).map((t: any) => t.team);
+    return await Promise.all(
+      teams.map(async (team: any) => {
+        try {
+          const r = await fetch(`${site}/teams/${team.id}/roster`, { next: { revalidate: 3600 } });
+          if (!r.ok) return [];
+          const roster = await r.json();
+          return (roster.athletes ?? []).map((athlete: any) => ({
+            id: athlete.id,
+            firstName: athlete.firstName || '',
+            lastName: athlete.lastName || '',
+            displayName: athlete.displayName || athlete.fullName || '',
+            jersey: athlete.jersey,
+            position: athlete.position,
+            team: {
+              id: String(team.id),
+              abbreviation: team.abbreviation,
+              logo: team.logos?.[0]?.href,
+            },
+            height: athlete.height,
+            weight: athlete.weight,
+          }));
+        } catch {
+          return [];
+        }
+      }),
+    );
+  } catch (error) {
+    console.error('Error fetching WNBA rosters:', error);
     return [];
   }
 }
@@ -197,15 +245,16 @@ function calculateMatchScore(playerName: string, query: string): number {
  * Search all NBA players across all teams
  * This fetches rosters from all teams and searches with fuzzy matching
  */
-export async function searchAllPlayers(query: string): Promise<ESPNPlayer[]> {
+export async function searchAllPlayers(league: LeagueId, query: string): Promise<ESPNPlayer[]> {
   if (!query || query.length < 2) return [];
 
   const trimmedQuery = query.trim();
   const allPlayers: ESPNPlayer[] = [];
 
   // Fetch rosters from all teams in parallel
-  const rosterPromises = NBA_TEAMS.map(team => getTeamRoster(team));
-  const rosters = await Promise.all(rosterPromises);
+  const rosters = league === 'nba'
+    ? await Promise.all(NBA_TEAMS.map(team => getTeamRoster(team)))
+    : await getWnbaRosters();
 
   // Flatten all rosters into one array
   rosters.forEach(roster => {
@@ -236,10 +285,11 @@ export async function searchAllPlayers(query: string): Promise<ESPNPlayer[]> {
 /**
  * Get player details by ID from ESPN with robust error handling
  */
-export async function getPlayerDetails(playerId: string): Promise<any> {
-  console.log(`Fetching player details for ID: ${playerId}`);
+export async function getPlayerDetails(league: LeagueId, playerId: string): Promise<any> {
+  console.log(`Fetching ${league} player details for ID: ${playerId}`);
 
-  const url = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}`;
+  // The league is part of the URL, so another league's player id returns 404.
+  const url = `${espnUrls(league).common}/athletes/${playerId}`;
   const response = await robustFetch(url, {
     timeout: 10000,
     retries: 3,
@@ -291,132 +341,14 @@ export async function getPlayerDetails(playerId: string): Promise<any> {
 }
 
 /**
- * Get comprehensive player statistics with robust error handling
- * Fetches from multiple sources and combines data
- */
-export async function getPlayerStats(playerId: string): Promise<any> {
-  console.log(`Fetching stats for player ID: ${playerId}`);
-
-  // Primary source: athlete details endpoint (includes statsSummary)
-  const url = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}`;
-  const response = await robustFetch(url, {
-    timeout: 10000,
-    retries: 3,
-    description: `player stats for ${playerId}`,
-  });
-
-  if (!response) {
-    console.log(`Could not fetch stats for player ID ${playerId}`);
-    return null;
-  }
-
-  try {
-    const data = await response.json();
-    const athlete = data.athlete;
-
-    if (!athlete) {
-      return null;
-    }
-
-    // Get stats from statsSummary (primary source)
-    const statsSummary = athlete.statsSummary?.statistics || [];
-
-    // Start with basic stats from statsSummary
-    const allStats = [...statsSummary];
-    const existingNames = new Set(statsSummary.map((s: any) => s.name));
-
-    // Try to fetch comprehensive stats from web API
-    const webStatsUrl = `https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/stats`;
-    const webResponse = await robustFetch(webStatsUrl, {
-      timeout: 8000,
-      retries: 2,
-      description: `comprehensive stats for ${playerId}`,
-    });
-
-    if (webResponse) {
-      try {
-        const webData = await webResponse.json();
-        const categories = webData.categories || [];
-
-        // Find the averages category which has per-game stats
-        const averagesCategory = categories.find((c: any) => c.name === 'averages');
-        if (averagesCategory) {
-          const labels = averagesCategory.labels || [];
-          const totals = averagesCategory.totals || [];
-          const displayNames = averagesCategory.displayNames || [];
-
-          // Map labels to stat values
-          const statMappings: { [key: string]: { name: string; index: number } } = {
-            'GP': { name: 'gamesPlayed', index: labels.indexOf('GP') },
-            'GS': { name: 'gamesStarted', index: labels.indexOf('GS') },
-            'MIN': { name: 'avgMinutes', index: labels.indexOf('MIN') },
-            'FG%': { name: 'fieldGoalPct', index: labels.indexOf('FG%') },
-            '3P%': { name: 'threePointFieldGoalPct', index: labels.indexOf('3P%') },
-            'FT%': { name: 'freeThrowPct', index: labels.indexOf('FT%') },
-            'OR': { name: 'avgOffensiveRebounds', index: labels.indexOf('OR') },
-            'DR': { name: 'avgDefensiveRebounds', index: labels.indexOf('DR') },
-            'REB': { name: 'avgRebounds', index: labels.indexOf('REB') },
-            'AST': { name: 'avgAssists', index: labels.indexOf('AST') },
-            'STL': { name: 'avgSteals', index: labels.indexOf('STL') },
-            'BLK': { name: 'avgBlocks', index: labels.indexOf('BLK') },
-            'TO': { name: 'avgTurnovers', index: labels.indexOf('TO') },
-            'PF': { name: 'avgFouls', index: labels.indexOf('PF') },
-            'PTS': { name: 'avgPoints', index: labels.indexOf('PTS') },
-          };
-
-          for (const [label, mapping] of Object.entries(statMappings)) {
-            if (mapping.index >= 0 && mapping.index < totals.length && !existingNames.has(mapping.name)) {
-              const value = totals[mapping.index];
-              // Parse value - handle formats like "6.9-14.1" for FG
-              let displayValue = value;
-              let numValue = parseFloat(value);
-
-              // Skip if it's a compound stat like "6.9-14.1"
-              if (typeof value === 'string' && value.includes('-') && !value.startsWith('-')) {
-                continue;
-              }
-
-              if (!isNaN(numValue)) {
-                allStats.push({
-                  name: mapping.name,
-                  displayName: displayNames[mapping.index] || label,
-                  value: numValue,
-                  displayValue: displayValue,
-                });
-                existingNames.add(mapping.name);
-              }
-            }
-          }
-
-          console.log(`Added ${allStats.length - statsSummary.length} stats from web API`);
-        }
-      } catch (webError) {
-        console.log(`Could not parse web stats for ${playerId}:`, webError);
-      }
-    }
-
-    console.log(`Found ${allStats.length} total stats for ${athlete.displayName}`);
-    console.log(`Available stats: ${allStats.map((s: any) => s.name).join(', ')}`);
-
-    return {
-      statistics: allStats,
-      displayName: athlete.displayName,
-    };
-  } catch (error) {
-    console.log(`Error parsing player stats for ID ${playerId}:`, error);
-    return null;
-  }
-}
-
-/**
  * Get player game log (recent games) with player stats - robust error handling
  */
-export async function getPlayerGameLog(playerId: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
+export async function getPlayerGameLog(league: LeagueId, playerId: string, espnSeasonYear: number, limit: number = 10): Promise<any[]> {
   console.log(`Fetching game log with stats for player ID: ${playerId} (season ${espnSeasonYear})`);
   const seasonQuery = `?season=${espnSeasonYear}`;
 
   // Fetch from web API which includes player stats per game
-  const webUrl = `https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog${seasonQuery}`;
+  const webUrl = `${espnUrls(league).web}/athletes/${playerId}/gamelog${seasonQuery}`;
   const webResponse = await robustFetch(webUrl, {
     timeout: 10000,
     retries: 3,
@@ -424,7 +356,7 @@ export async function getPlayerGameLog(playerId: string, espnSeasonYear: number,
   });
 
   // Also fetch basic game log for game info (date, opponent, score)
-  const basicUrl = `https://site.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${playerId}/gamelog${seasonQuery}`;
+  const basicUrl = `${espnUrls(league).common}/athletes/${playerId}/gamelog${seasonQuery}`;
   const basicResponse = await robustFetch(basicUrl, {
     timeout: 10000,
     retries: 2,
@@ -530,39 +462,13 @@ export async function getPlayerGameLog(playerId: string, espnSeasonYear: number,
 }
 
 /**
- * Find player in team rosters by player ID (fallback for players without athlete pages)
- */
-export async function findPlayerInRosters(playerId: string): Promise<ESPNPlayer | null> {
-  try {
-    console.log(`Searching for player ID ${playerId} in team rosters (fallback)`);
-
-    // Search through all team rosters to find the player
-    for (const teamTricode of NBA_TEAMS) {
-      const roster = await getTeamRoster(teamTricode);
-      const player = roster.find(p => p.id === playerId);
-
-      if (player) {
-        console.log(`Found player ${player.displayName} in ${teamTricode} roster`);
-        return player;
-      }
-    }
-
-    console.log(`Player ID ${playerId} not found in any team roster`);
-    return null;
-  } catch (error) {
-    console.log(`Error searching rosters for player ID ${playerId}:`, error);
-    return null;
-  }
-}
-
-/**
  * Regular-season per-game averages for one player in one season, from ESPN's
  * core API. espnSeasonYear is the season's end year (2016 for 2015-16).
  * Returns null when the player has no stats that season, including a current
- * season that hasn't started yet. Shape matches getPlayerStats().
+ * season that hasn't started yet. Shape: { statistics: [{ name, displayName, value, displayValue }] }.
  */
-export async function getPlayerSeasonStats(playerId: string, espnSeasonYear: number): Promise<any> {
-  const url = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${espnSeasonYear}/types/2/athletes/${playerId}/statistics`;
+export async function getPlayerSeasonStats(league: LeagueId, playerId: string, espnSeasonYear: number): Promise<any> {
+  const url = `${espnUrls(league).core}/seasons/${espnSeasonYear}/types/2/athletes/${playerId}/statistics`;
   try {
     const res = await fetch(url, { next: { revalidate: 3600 } });
     if (!res.ok) return null;

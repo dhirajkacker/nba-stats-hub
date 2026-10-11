@@ -1,11 +1,13 @@
 import { Game } from '@/lib/types';
-import { getTeamLogoUrl } from '@/lib/team-logos';
+import { teamLogoSrc } from '@/lib/team-logos';
+import { seasonPath, type LeagueId } from '@/lib/leagues';
 import Image from 'next/image';
 import Link from 'next/link';
 
 interface ScoreCardProps {
   game: Game;
   season: string;
+  league: LeagueId;
 }
 
 // Helper function to format game clock from ISO 8601 duration format (PT08M33.00S) to readable format (8:33)
@@ -27,7 +29,7 @@ function formatGameClock(clock: string): string {
   return clock;
 }
 
-export default function ScoreCard({ game, season }: ScoreCardProps) {
+export default function ScoreCard({ game, season, league }: ScoreCardProps) {
   const isLive = game.gameStatus.status === 2;
   const isFinished = game.gameStatus.status === 3;
   const isUpcoming = game.gameStatus.status === 1;
@@ -77,7 +79,7 @@ export default function ScoreCard({ game, season }: ScoreCardProps) {
 
   return (
     <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden group">
-      <Link href={`/seasons/${season}/games/${game.gameId}`} className="block p-5">
+      <Link href={seasonPath(league, season, `/games/${game.gameId}`)} className="block p-5">
         <div className="flex justify-between items-center mb-4">
           <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">
             {new Date(game.gameTimeUTC).toLocaleDateString('en-US', {
@@ -98,7 +100,7 @@ export default function ScoreCard({ game, season }: ScoreCardProps) {
         <div className="flex items-center gap-3 flex-1">
           <div className="relative w-12 h-12 flex-shrink-0">
             <Image
-              src={getTeamLogoUrl(game.awayTeam.teamTricode, 'small')}
+              src={teamLogoSrc(league, { abbrev: game.awayTeam.teamTricode, id: game.awayTeam.teamId, logo: game.awayTeam.teamLogo }, 'small') ?? ''}
               alt={`${game.awayTeam.teamName} logo`}
               width={48}
               height={48}
@@ -138,7 +140,7 @@ export default function ScoreCard({ game, season }: ScoreCardProps) {
         <div className="flex items-center gap-3 flex-1">
           <div className="relative w-12 h-12 flex-shrink-0">
             <Image
-              src={getTeamLogoUrl(game.homeTeam.teamTricode, 'small')}
+              src={teamLogoSrc(league, { abbrev: game.homeTeam.teamTricode, id: game.homeTeam.teamId, logo: game.homeTeam.teamLogo }, 'small') ?? ''}
               alt={`${game.homeTeam.teamName} logo`}
               width={48}
               height={48}
